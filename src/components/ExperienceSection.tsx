@@ -9,7 +9,7 @@ const experiences = [
     description: 'Research semiconductor markets for the Ecosystem Development team. Develop technical content and build tools that support the lab’s daily work.',
     achievements: [
       'Distill 30+ weekly industry-news items into market insight reports to support technical planning.',
-      'Create 10+ technical marketing materials, including whitepapers, case studies and presentations for partners and prospects.',
+      'Create 10+ technical marketing materials for partners and prospects, including educational content on foundry business models and chip fabrication.',
       'Built Daily News Push in Python to deliver approximately eight semiconductor stories to the IC lab each morning through Outlook.',
       'Support weekly outreach to 100+ industry leaders and partners in coordination with engineering and ecosystem-development teams.',
     ],

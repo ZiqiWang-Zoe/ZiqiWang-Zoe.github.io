@@ -1,6 +1,6 @@
 import { lazy, Suspense, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ArrowUpRight, Beaker, Scale, Code2, Cpu, Megaphone } from 'lucide-react';
+import { ArrowUpRight, Beaker, Scale, Code2, Megaphone } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 const ProjectDetails = lazy(() => import('./ProjectDetails'));
 
@@ -30,36 +30,6 @@ const projects: {
     outcomes: 'The lab receives approximately eight selected stories each morning. Leadership has given positive feedback on the briefing’s usefulness.',
     tags: ['Python', 'Outlook COM', 'Claude Code', 'Automation'],
     detail: 'news',
-  },
-  {
-    icon: Cpu,
-    title: 'Semiconductor Foundry Landscape',
-    category: 'Industry Research',
-    context: 'A 43-page presentation on foundry business models and competitive positioning.',
-    role: 'Research & Presentation Development · Futurewei',
-    actions: [
-      'Compared sixteen manufacturers across process capability, business model and application focus',
-      'Explained the technical ecosystem behind customer switching costs',
-      'Documented sources with a refresh schedule for changing market figures',
-    ],
-    outcomes: 'Leadership uses the deck to introduce the semiconductor industry to external audiences.',
-    tags: ['Semiconductors', 'Competitive Analysis', 'Technical Marketing'],
-    detail: 'foundry',
-  },
-  {
-    icon: Cpu,
-    title: 'Chip Fabrication Explained',
-    category: 'Technical Education · In Progress',
-    context: 'An educational presentation following the physical processes used to manufacture chips.',
-    role: 'Technical Research & Presentation Development · Futurewei',
-    actions: [
-      'Explain wafer preparation and thin-film deposition through their physical mechanisms',
-      'Use diagrams to connect spin coating with later patterning steps',
-      'Organize technical material for an introductory audience',
-    ],
-    outcomes: 'The seventeen-page draft has received positive feedback from leadership. Development is ongoing.',
-    tags: ['Chip Fabrication', 'Technical Writing', 'PowerPoint'],
-    detail: 'fabrication',
   },
   {
     icon: Megaphone,
@@ -138,7 +108,7 @@ export function ProjectsSection() {
           <span className="section-label">Selected Projects</span>
           <h2 className="section-title">Featured Work</h2>
           <p className="section-description">
-            Selected work in semiconductor research, automation and digital marketing.
+            Selected work in automation, digital marketing and research.
           </p>
         </div>
 
@@ -187,7 +157,7 @@ export function ProjectsSection() {
                 const next = new URLSearchParams(params);
                 next.set('project', project.detail!);
                 setParams(next, { preventScrollReset: true });
-              }}>View {project.detail === 'news' ? 'project & Python code' : project.detail === 'caspa' ? 'event materials & video' : 'presentation & analysis'}<ArrowUpRight size={16}/></a>}
+              }}>View {project.detail === 'news' ? 'project & Python code' : 'event materials & video'}<ArrowUpRight size={16}/></a>}
               {project.url && (
                 <a
                   href={project.url}
