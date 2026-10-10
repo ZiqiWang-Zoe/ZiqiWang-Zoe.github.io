@@ -63,7 +63,14 @@ function NewsDetails() {
     </section>
     <section><h3 className="text-xl mb-5">Operational debugging</h3><div className="space-y-4">{iterations.map(item => <article key={item.date} className="rounded-lg border border-border p-5"><span className="text-xs font-medium text-primary">{item.date.includes('2026') ? item.date : `${item.date} · 2026`}</span><h4 className="text-base mt-2 mb-3">{item.title}</h4><p className="text-sm text-muted-foreground mb-2">{item.symptom}</p><p className="text-sm leading-relaxed">{item.change}</p></article>)}</div></section>
     <section className="space-y-4"><h3 className="text-xl">Editorial criteria</h3><p className="text-sm text-muted-foreground">The briefing prioritizes developments that affect the semiconductor business, particularly startups and manufacturing. Stories must meet the coverage window and language requirements. Repeated coverage is consolidated before ranking.</p><p className="text-sm text-muted-foreground">The workflow ranks stories by structural impact and fit with the lab’s interests. Each summary links to its source. If full article text is unavailable, the available snippet limits what the summary can claim.</p></section>
-    <section className="space-y-4"><h3 className="text-xl">Sample briefing</h3><p className="text-sm text-muted-foreground">The team currently receives approximately eight stories each morning. This original August 17, 2026 report contains ten and shows the delivered format.</p><iframe src={assetUrl('work/news-sample.html')} title="Original IC lab briefing — August 17, 2026" loading="lazy" sandbox="" className="w-full h-[420px] rounded-lg border border-border bg-white" /><EvidenceLink path="work/news-sample.html">Open complete briefing</EvidenceLink></section>
+    <section className="space-y-4">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h3 className="text-xl">Sample newsletter</h3>
+        <EvidenceLink path="work/news-email-2026-10-10.html">Open full newsletter</EvidenceLink>
+      </div>
+      <p className="text-sm text-muted-foreground">The October 10, 2026 edition contains six stories. This is the original newsletter body with its article images, headlines and summaries.</p>
+      <iframe src={assetUrl('work/news-email-2026-10-10.html')} title="IC News Daily — October 10, 2026 newsletter body" loading="lazy" sandbox="allow-popups allow-popups-to-escape-sandbox" referrerPolicy="no-referrer" className="w-full h-[720px] sm:h-[820px] rounded-lg border border-border bg-white" />
+    </section>
     <section className="rounded-lg bg-secondary/60 p-5"><h3 className="text-lg mb-3">Current limitations</h3><p className="text-sm text-muted-foreground leading-relaxed">The application requires a signed-in Windows Outlook environment. A Sent Items record confirms the sending step; it does not establish inbox delivery or readership. Local records reduce repeated sends without guaranteeing exactly-once delivery. Further work would add unique run identifiers, concurrency controls and tests with simulated Outlook responses.</p></section>
   </div>;
 }
