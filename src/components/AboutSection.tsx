@@ -39,7 +39,7 @@ export function AboutSection() {
                 I'm a digital marketing professional with a background in <span className="highlight-text">Advertising</span> and <span className="highlight-text">Digital Social Media</span>, passionate about using consumer insights to create impactful marketing strategies.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                My experience spans consumer brands, B2B technology companies, and research-driven projects. I specialize in social media strategy, content optimization, influencer marketing, and performance analysis.
+                At Futurewei, I research the semiconductor industry and develop technical marketing materials. I also built a Python application that delivers a daily news briefing to the IC lab. My earlier experience includes social campaigns, B2B growth and consumer research.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 I have a particular interest in skincare, consumer trust, and marketing in complex or regulated industries—areas where transparency and education are critical to building meaningful customer relationships.

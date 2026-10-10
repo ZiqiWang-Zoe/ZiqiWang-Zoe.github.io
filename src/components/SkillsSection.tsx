@@ -9,6 +9,7 @@ const skillCategories = [
       'Content Optimization',
       'Performance Tracking',
       'SEO Fundamentals',
+      'Semiconductor Market Research',
     ],
   },
   {
@@ -19,6 +20,7 @@ const skillCategories = [
       'Campaign Management',
       'Brand Development',
       'Content Creation',
+      'Technical Content',
     ],
   },
   {
@@ -29,13 +31,14 @@ const skillCategories = [
       'Google Ads',
       'Adobe Creative Suite',
       'Microsoft Office',
+      'Claude Code',
     ],
   },
   {
     icon: Code,
     title: 'Data & Technical',
     skills: [
-      'Python (Basic)',
+      'Python Workflow Automation',
       'R (Basic)',
       'Analytics Platforms',
       'Survey Design',

@@ -1,4 +1,8 @@
-import { ArrowUpRight, Beaker, Scale, TrendingUp } from 'lucide-react';
+import { lazy, Suspense, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { ArrowUpRight, Beaker, Scale, Code2, Cpu, Megaphone } from 'lucide-react';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+const ProjectDetails = lazy(() => import('./ProjectDetails'));
 
 const projects: {
   icon: typeof Beaker;
@@ -10,7 +14,68 @@ const projects: {
   outcomes: string;
   tags: string[];
   url?: string;
+  detail?: string;
 }[] = [
+  {
+    icon: Code2,
+    title: 'Daily News Push',
+    category: 'Python Automation',
+    context: 'A daily semiconductor briefing built for the IC lab at Futurewei.',
+    role: 'Project Creator · Python Development',
+    actions: [
+      'Built source collection, article extraction and HTML email production in Python',
+      'Implemented Outlook delivery checks, subscription handling and test-recipient controls',
+      'Defined editorial criteria for the research workflow run through Claude Code',
+    ],
+    outcomes: 'The lab receives approximately eight selected stories each morning. Leadership has given positive feedback on the briefing’s usefulness.',
+    tags: ['Python', 'Outlook COM', 'Claude Code', 'Automation'],
+    detail: 'news',
+  },
+  {
+    icon: Cpu,
+    title: 'Semiconductor Foundry Landscape',
+    category: 'Industry Research',
+    context: 'A 43-page presentation on foundry business models and competitive positioning.',
+    role: 'Research & Presentation Development · Futurewei',
+    actions: [
+      'Compared sixteen manufacturers across process capability, business model and application focus',
+      'Explained the technical ecosystem behind customer switching costs',
+      'Documented sources with a refresh schedule for changing market figures',
+    ],
+    outcomes: 'Leadership uses the deck to introduce the semiconductor industry to external audiences.',
+    tags: ['Semiconductors', 'Competitive Analysis', 'Technical Marketing'],
+    detail: 'foundry',
+  },
+  {
+    icon: Cpu,
+    title: 'Chip Fabrication Explained',
+    category: 'Technical Education · In Progress',
+    context: 'An educational presentation following the physical processes used to manufacture chips.',
+    role: 'Technical Research & Presentation Development · Futurewei',
+    actions: [
+      'Explain wafer preparation and thin-film deposition through their physical mechanisms',
+      'Use diagrams to connect spin coating with later patterning steps',
+      'Organize technical material for an introductory audience',
+    ],
+    outcomes: 'The seventeen-page draft has received positive feedback from leadership. Development is ongoing.',
+    tags: ['Chip Fabrication', 'Technical Writing', 'PowerPoint'],
+    detail: 'fabrication',
+  },
+  {
+    icon: Megaphone,
+    title: 'CASPA Event Communications',
+    category: 'Volunteer Work',
+    context: 'Marketing and proceedings work for a semiconductor industry organization.',
+    role: 'Marketing & Proceedings Volunteer',
+    actions: [
+      'Promote events for the semiconductor community',
+      'Edit event-related video for the marketing team',
+      'Support the yearbook and related documentation through the proceedings team',
+    ],
+    outcomes: 'Current work supports ACDB 2026. The project includes the event poster and a published CASPA × IEEE Summer Symposium video.',
+    tags: ['Event Marketing', 'Video Editing', 'Documentation'],
+    detail: 'caspa',
+  },
   {
     icon: Beaker,
     title: 'Skincare Consumer Insights & Recommendation System',
@@ -54,23 +119,18 @@ const projects: {
     outcomes: 'Delivered strategic insights on effective marketing approaches for complex, compliance-sensitive products.',
     tags: ['Market Research', 'Content Strategy', 'B2B Marketing'],
   },
-  {
-    icon: TrendingUp,
-    title: 'Independent Business Growth Project',
-    category: 'Entrepreneurial',
-    context: 'Built and scaled a nail art business through organic social media growth.',
-    role: 'Founder & Marketing Lead',
-    actions: [
-      'Developed brand identity and visual content strategy',
-      'Built community through Instagram engagement',
-      'Managed customer relationships and retention',
-    ],
-    outcomes: 'Grew customer base organically through strategic social media marketing and word-of-mouth referrals.',
-    tags: ['Entrepreneurship', 'Brand Building', 'Instagram Marketing'],
-  },
+
 ];
 
 export function ProjectsSection() {
+  const [params, setParams] = useSearchParams();
+  const active = projects.find(project => project.detail && project.detail === params.get('project'));
+  const trigger = useRef<HTMLAnchorElement | null>(null);
+  function closeProject() {
+    const next = new URLSearchParams(params);
+    next.delete('project');
+    setParams(next, { replace: true, preventScrollReset: true });
+  }
   return (
     <section id="projects" className="section-spacing bg-secondary/30">
       <div className="container-main">
@@ -78,7 +138,7 @@ export function ProjectsSection() {
           <span className="section-label">Selected Projects</span>
           <h2 className="section-title">Featured Work</h2>
           <p className="section-description">
-            A selection of projects showcasing strategy, research, and execution across different contexts.
+            Selected work in semiconductor research, automation and digital marketing.
           </p>
         </div>
 
@@ -121,6 +181,13 @@ export function ProjectsSection() {
                   <span key={tag} className="tag text-xs">{tag}</span>
                 ))}
               </div>
+              {project.detail && <a href={`?project=${project.detail}#projects`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline mt-4" onClick={event => {
+                event.preventDefault();
+                trigger.current = event.currentTarget;
+                const next = new URLSearchParams(params);
+                next.set('project', project.detail!);
+                setParams(next, { preventScrollReset: true });
+              }}>View {project.detail === 'news' ? 'project & Python code' : project.detail === 'caspa' ? 'event materials & video' : 'presentation & analysis'}<ArrowUpRight size={16}/></a>}
               {project.url && (
                 <a
                   href={project.url}
@@ -136,6 +203,18 @@ export function ProjectsSection() {
           ))}
         </div>
       </div>
+      <Dialog open={Boolean(active)} onOpenChange={open => { if (!open) closeProject(); }}>
+        <DialogContent className="w-[calc(100%-1.5rem)] max-w-5xl max-h-[90dvh] p-0 flex flex-col overflow-hidden rounded-xl" onCloseAutoFocus={event => { if (trigger.current) { event.preventDefault(); trigger.current.focus(); } }}>
+          <DialogHeader className="px-6 md:px-8 pt-6 pb-4 pr-12 border-b border-border text-left shrink-0">
+            <span className="section-label !mb-1">{active?.category}</span>
+            <DialogTitle className="text-2xl md:text-3xl leading-tight">{active?.title}</DialogTitle>
+            <DialogDescription className="pt-1">{active?.role}</DialogDescription>
+          </DialogHeader>
+          <div className="overflow-y-auto overscroll-contain px-6 md:px-8 py-6 min-h-0 text-sm md:text-base leading-relaxed">
+            {active?.detail && <Suspense fallback={<p role="status">Loading project…</p>}><ProjectDetails key={active.detail} id={active.detail}/></Suspense>}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }

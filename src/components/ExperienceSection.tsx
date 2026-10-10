@@ -2,10 +2,26 @@ import { Briefcase, Building2, GraduationCap } from 'lucide-react';
 
 const experiences = [
   {
+    icon: Briefcase,
+    title: 'Technical Marketing',
+    company: 'Futurewei Technologies · Santa Clara, CA',
+    period: 'Jun. 2026 – Present',
+    description: 'Research semiconductor markets for the Ecosystem Development team. Develop technical content and build tools that support the lab’s daily work.',
+    achievements: [
+      'Distill 30+ weekly industry-news items into market insight reports to support technical planning.',
+      'Create 10+ technical marketing materials, including whitepapers, case studies and presentations for partners and prospects.',
+      'Built Daily News Push in Python to deliver approximately eight semiconductor stories to the IC lab each morning through Outlook.',
+      'Support weekly outreach to 100+ industry leaders and partners in coordination with engineering and ecosystem-development teams.',
+    ],
+    tools: ['Semiconductor Research', 'Technical Marketing', 'Python Automation', 'Claude Code'],
+    workLink: '?project=news#projects',
+    workLabel: 'Explore Daily News Push',
+  },
+  {
     icon: Building2,
-    title: 'Social Media Associate',
+    title: 'Social Media Intern',
     company: 'Echobend',
-    period: 'Recent',
+    period: 'Sep. 2024 – Feb. 2025',
     description: 'Executed and optimized multi-platform social media content and campaigns across multiple client accounts, supporting influencer initiatives and performance analysis.',
     achievements: [
       'Executed end-to-end social media content strategies across multiple platforms including Meta Ads (Facebook and Instagram) and Website Traffic Campaign, driving an 11.7% increase in overall audience engagement.',
@@ -19,7 +35,7 @@ const experiences = [
     icon: Briefcase,
     title: 'Marketing Intern (B2B & Growth)',
     company: 'CambioML',
-    period: 'Previous',
+    period: 'Sep. 2024 – Feb. 2025',
     description: 'Supported growth marketing initiatives for a B2B technology company. Focused on content marketing, lead generation, and market research.',
     achievements: [
       'Generated a database of 100+ potential B2B partners in the Bay Area, supporting business growth.',
@@ -91,7 +107,7 @@ export function ExperienceSection() {
           <span className="section-label">Experience</span>
           <h2 className="section-title">Professional Journey</h2>
           <p className="section-description">
-            Building expertise across agencies, startups, academia, and entrepreneurship.
+            Experience in technical marketing, digital campaigns and academic research.
           </p>
         </div>
 
@@ -131,6 +147,7 @@ export function ExperienceSection() {
                     ))}
                   </ul>
                   
+                  {exp.workLink && <a href={exp.workLink} className="inline-flex text-sm font-medium text-primary hover:underline mb-4">{exp.workLabel} ↗</a>}
                   <div className="flex flex-wrap gap-2">
                     {exp.tools.map((tool) => (
                       <span key={tool} className="tag text-xs">{tool}</span>

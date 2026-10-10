@@ -1,18 +1,18 @@
-import { Sparkles, Users } from 'lucide-react';
+import { Megaphone, Users } from 'lucide-react';
 
 const leadershipExperiences = [
   {
-    icon: Sparkles,
-    title: 'Founder & CEO',
-    company: 'Start-up Nail Business',
-    period: 'Aug. 2023 – Present',
-    description: 'Launched a successful small business specializing in affordable, high-quality nail art.',
+    icon: Megaphone,
+    title: 'Marketing & Proceedings Volunteer',
+    company: 'CASPA · Semiconductor Industry Community',
+    period: '2026 – Present',
+    description: 'Contribute to event communications through CASPA’s marketing and proceedings teams. Current work supports ACDB 2026, the Annual Conference & Dinner Banquet.',
     achievements: [
-      'Launched a successful small business specializing in affordable, high-quality nail art.',
-      'Implemented consistent social media strategies, achieving stable revenue and building a loyal customer base.',
-      'Gained a social media following of 200 on platforms such as Instagram and Red Book.',
+      'Promote CASPA events for the semiconductor community.',
+      'Edit event-related videos for the marketing team.',
+      'Support the yearbook and related documentation with the proceedings team.',
     ],
-    tools: ['Instagram', 'Red Book', 'Social Media Marketing'],
+    tools: ['Event Communications', 'Video Editing', 'Yearbook', 'Documentation'],
   },
   {
     icon: Users,
@@ -34,9 +34,9 @@ export function LeadershipSection() {
       <div className="container-main">
         <div className="section-header">
           <span className="section-label">Leadership</span>
-          <h2 className="section-title">Leadership Experiences</h2>
+          <h2 className="section-title">Leadership & Volunteering</h2>
           <p className="section-description">
-            Building and leading teams across entrepreneurship and campus organizations.
+            Contributions to industry communities and campus organizations.
           </p>
         </div>
 
