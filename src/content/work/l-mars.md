@@ -44,5 +44,3 @@ Retrieval alone barely moved accuracy. The gain came from checking sources befor
 ChatGPT, Perplexity, Claude and Google's AI Overviews now answer many of the questions buyers used to search for. Each of them runs some version of the same loop: retrieve, judge which sources are credible, cite a few.
 
 That makes "which sources does the model trust, and why" a marketing question. It decides whether a company's own pages are cited, or a competitor's comparison post is. Working on L-MARS gave me a working model of that selection step, which is the starting point for answer engine optimization (AEO).
-
-The [AEO teardown](/work/aeo-teardown/) applies this to real AI companies.

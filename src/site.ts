@@ -14,4 +14,4 @@ export const site = {
 
 // Placeholders mark content Ziqi still has to supply. Flip to false before merging to main,
 // which hides every <Placeholder /> instead of shipping "TODO" boxes to recruiters.
-export const SHOW_PLACEHOLDERS = true;
+export const SHOW_PLACEHOLDERS = false;
