@@ -4,7 +4,7 @@ summary: Event promotion, video editing and yearbook work for a Bay Area semicon
 org: CASPA
 period: 2026 to present
 role: Marketing and proceedings volunteer
-order: 5
+order: 3
 featured: true
 wide: true
 tint: ink

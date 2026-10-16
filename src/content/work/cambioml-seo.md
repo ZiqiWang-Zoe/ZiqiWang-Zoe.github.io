@@ -6,7 +6,7 @@ metricLabel: weekly growth in website reach
 org: CambioML, San Jose
 period: Sep 2024 to Feb 2025
 role: Marketing Intern, B2B and Growth
-order: 3
+order: 4
 featured: true
 tint: blue
 status: draft
