@@ -6,7 +6,7 @@ metricLabel: average short-form views per post
 org: Echobend, Los Angeles
 period: Sep 2024 to Feb 2025
 role: Social Media Intern
-order: 2
+order: 4
 featured: true
 tint: gray
 status: draft

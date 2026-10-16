@@ -12,7 +12,7 @@ const d = entry.data;
 ---
 
 <a href={`/work/${entry.id}/`} class:list={['card', d.wide && 'wide']}>
-  <div class:list={['frame', `tint-${d.tint}`, !d.cover && 'is-stat']}>
+  <div class:list={['frame', `tint-${d.tint}`, !d.cover && 'is-stat', d.coverFit === 'cover' && 'landscape']}>
     {
       d.cover ? (
         <Image
@@ -46,10 +46,10 @@ const d = entry.data;
   .frame {
     position: relative;
     aspect-ratio: 4 / 3;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     padding: 40px 40px 0;
   }
@@ -69,18 +69,24 @@ const d = entry.data;
   }
   .frame img {
     width: min(100%, 420px);
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 16px 48px rgb(21 26 43 / 0.16);
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 12px 32px rgb(21 26 43 / 0.12);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .wide .frame img {
     width: min(100%, 520px);
   }
+  .wide .landscape {
+    align-items: center;
+    padding: 48px;
+  }
+  .wide .landscape img {
+    width: min(100%, 820px);
+    border-radius: 8px;
+  }
   .card:hover .frame img {
-    transform: translateY(-8px);
+    transform: translateY(-3px);
   }
   .is-stat {
     align-items: center;
@@ -93,9 +99,6 @@ const d = entry.data;
     gap: 10px;
     text-align: center;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .card:hover .stat {
-    transform: scale(1.03);
   }
   .stat strong {
     font-size: clamp(56px, 8vw, 96px);

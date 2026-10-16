@@ -1,11 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import { site, SHOW_PLACEHOLDERS } from '../site';
-import newsEmail from '../assets/work/news-email.png';
-import caspaPoster from '../assets/work/caspa-poster.png';
 
 const work = (await getCollection('work'))
   .filter((w) => SHOW_PLACEHOLDERS || w.data.status !== 'planned')
@@ -15,10 +12,9 @@ const more = work.filter((w) => !w.data.featured);
 
 // Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
 const stats = [
-  { value: '7x', label: 'average short-form views, ~1K to 7K per post', org: 'Echobend' },
+  { value: '1K → 7K', label: 'average short-form views per post', org: 'Echobend' },
   { value: '+11.7%', label: 'engagement from Meta Ads campaigns', org: 'Echobend' },
   { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
-  { value: '100+', label: 'industry partners reached every week', org: 'Futurewei' },
 ];
 
 const experience = [
@@ -43,18 +39,17 @@ const education = [
   <section class="wrap hero">
     <div class="intro">
       <div class="me">
-        <!-- TODO(Ziqi): replace with a real headshot (square, 400x400 or larger) -->
-        <div class="avatar" aria-hidden="true">ZW</div>
+        <!-- TODO(Ziqi): add a real headshot here (48px circle, source 400x400+) once she has one -->
         <div>
           <h1>{site.name}</h1>
           <p class="muted">Technical Marketing @ Futurewei</p>
         </div>
       </div>
-      <p class="statement">I market technical products, and I build the tools I use to do it.</p>
+      <p class="statement">I turn complex AI and semiconductor products into stories, campaigns and tools people use.</p>
       <p class="muted about">
-        USC Digital Social Media graduate in San Jose. I write for engineering audiences, run paid and
-        short-form social, and co-authored <a class="link" href="/work/l-mars/">L-MARS</a>, a paper on how AI
-        systems choose which sources to cite.
+        Technical marketer in San Jose. Semiconductor market research at Futurewei, B2B growth at an AI
+        startup, paid and short-form social, and co-author of <a class="link" href="/work/l-mars/">L-MARS</a>,
+        a paper on how AI systems choose which sources to cite.
       </p>
       <div class="actions">
         <a class="pill pill-dark" href={`mailto:${site.email}`}>Email</a>
@@ -63,13 +58,6 @@ const education = [
       </div>
     </div>
 
-    <a class="collage" href="/work/daily-news-push/" aria-label="See the daily briefing case study">
-      <Image class="sheet back" src={caspaPoster} alt="" widths={[400, 800]} sizes="260px" loading="eager" />
-      <Image class="sheet front" src={newsEmail} alt="The IC News Daily briefing Ziqi built for Futurewei" widths={[480, 960]} sizes="340px" loading="eager" />
-    </a>
-  </section>
-
-  <section class="wrap">
     <ul class="stats">
       {
         stats.map((s) => (
@@ -82,6 +70,7 @@ const education = [
       }
     </ul>
   </section>
+
 
   <section class="wrap" id="work">
     <h2 class="label">Selected work</h2>
@@ -154,8 +143,8 @@ const education = [
   }
   .hero {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 64px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+    gap: 80px;
     align-items: center;
     padding-top: 72px;
   }
@@ -167,25 +156,13 @@ const education = [
   .me h1 {
     font-size: 15px;
   }
-  .avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: var(--surface);
-    color: var(--faint);
-    display: grid;
-    place-items: center;
-    font-size: 14px;
-    font-weight: 500;
-    flex-shrink: 0;
-  }
   .statement {
     margin-top: 36px;
-    font-size: clamp(32px, 4.4vw, 52px);
+    font-size: clamp(34px, 3.6vw, 50px);
     font-weight: 500;
     line-height: 1.1;
-    letter-spacing: -0.035em;
-    max-width: 16ch;
+    letter-spacing: -0.03em;
+    max-width: 20ch;
   }
   .about {
     margin-top: 20px;
@@ -199,46 +176,14 @@ const education = [
     margin-top: 28px;
   }
 
-  .collage {
-    position: relative;
-    height: 480px;
-    border-radius: 24px;
-    background: var(--tint-blue);
-    overflow: hidden;
-  }
-  .collage :global(.sheet) {
-    position: absolute;
-    border-radius: 12px;
-    box-shadow: 0 20px 60px rgb(21 26 43 / 0.2);
-    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .collage :global(.back) {
-    width: 46%;
-    right: 8%;
-    top: 12%;
-    transform: rotate(5deg);
-  }
-  .collage :global(.front) {
-    width: 60%;
-    left: 9%;
-    top: 18%;
-    transform: rotate(-3deg);
-  }
-  .collage:hover :global(.back) {
-    transform: rotate(7deg) translateY(-6px);
-  }
-  .collage:hover :global(.front) {
-    transform: rotate(-4deg) translateY(-10px);
-  }
 
   .stats {
     list-style: none;
-    padding: 28px 0 0;
+    padding: 0 0 0 48px;
     margin: 0;
-    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    gap: 36px;
   }
   .stats li {
     display: flex;
@@ -246,7 +191,7 @@ const education = [
     gap: 6px;
   }
   .stats strong {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: 500;
     letter-spacing: -0.035em;
     line-height: 1;
@@ -312,22 +257,19 @@ const education = [
       grid-template-columns: 1fr;
       gap: 48px;
     }
-    .collage {
-      height: 400px;
-    }
     .stats {
-      grid-template-columns: 1fr 1fr;
+      padding: 32px 0 0;
+      border-left: 0;
+      border-top: 1px solid var(--line);
+      gap: 24px;
     }
   }
   @media (max-width: 767px) {
     section + section {
-      margin-top: 72px;
+      margin-top: 56px;
     }
     .hero {
       padding-top: 40px;
-    }
-    .collage {
-      height: 340px;
     }
     .grid,
     .cv {

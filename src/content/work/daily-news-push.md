@@ -20,6 +20,10 @@ todo:
   - One sentence from lab leadership on how the briefing is used (with permission)
 ---
 
+## Result
+
+The lab receives about eight selected stories each morning. Leadership has given positive feedback on the briefing's usefulness.
+
 ## The problem
 
 Part of my job in Ecosystem Development is distilling 30+ industry-news items a week into market insight reports. I built a way to put a selected version of that reading in front of the IC lab every morning.
@@ -34,20 +38,13 @@ A daily email briefing, *IC News Daily*, delivered to the lab each morning.
 
 [Read a sample briefing (Oct 10, 2026)](/work/news-email-2026-10-10.html)
 
-## What broke, and what I changed
+## How I made it reliable
 
-Running something every morning for real readers surfaced problems a demo never would.
+A daily briefing has to arrive every day. Three fixes made the sends dependable:
 
-| When | What went wrong | What I changed |
-|---|---|---|
-| Jul 2026 | Readers could not reliably reach the subscription link on the private network. | Subscriptions now work by email with a tag in the subject, with a review step for ambiguous requests. |
-| Aug 3 | Outlook returned without error while the briefing sat in the Outbox. | A send only counts once a matching message appears in Sent Items, checked for up to three minutes. |
-| Aug 4 | A reworded AI summary triggered a false failure alert. | Success is decided from the mail state, never from the wording of generated text. |
-| Aug 17 | An unattended run could stall on a setup step. | The launcher prepares every output folder before the AI step begins. |
-
-## Result
-
-The lab receives about eight selected stories each morning. Leadership has given positive feedback on the briefing's usefulness.
+- **Easy to join.** Readers could not reliably reach the original subscription link on the private network, so subscribing now works by replying with a tagged email.
+- **A send only counts when it is sent.** Outlook could report success while the briefing sat in the Outbox. Now a run succeeds only once the message appears in Sent Items.
+- **AI writes, code decides.** A reworded AI summary once triggered a false failure alert. Success is now judged from the mail state, never from generated text.
 
 ## Source excerpts
 

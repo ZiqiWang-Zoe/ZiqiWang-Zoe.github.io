@@ -6,17 +6,18 @@ metricLabel: answers with no citation, naive RAG vs. the judge loop
 org: ICML 2026 AI4Law workshop
 period: "2026"
 role: Co-author
-order: 4
+order: 2
 featured: true
 wide: true
 tint: gray
-cover: ../../assets/work/l-mars-arxiv.png
+cover: ../../assets/work/l-mars-card.png
+coverFit: cover
 coverAlt: The L-MARS paper on arXiv, by Boqin Yuan and Ziqi Wang
 status: draft
 todo:
   - "Authorship: arXiv v4 lists two authors (Boqin Yuan, Ziqi Wang). Confirm whether to say co-author or co-first author"
   - "Ziqi's own contribution to the paper, in one or two sentences"
-  - A figure from the paper (system diagram) as the cover image
+  - A system diagram from the paper would make a stronger cover than the arXiv title block
   - "Ziqi to confirm the 'Why a marketer worked on this' section in her own words"
 ---
 

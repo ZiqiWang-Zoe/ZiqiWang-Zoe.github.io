@@ -21,7 +21,7 @@ const work = defineCollection({
       todo: z.array(z.string()).default([]),
       cover: image().optional(),
       coverAlt: z.string().optional(),
-      // contain: show the whole image on a soft backdrop (screenshots, posters).
+      // contain: tall screenshot cropped at the bottom. cover: landscape image shown whole and centered.
       coverFit: z.enum(['contain', 'cover']).default('contain'),
       // Card styling on the home grid.
       tint: z.enum(['gray', 'blue', 'ink']).default('gray'),
