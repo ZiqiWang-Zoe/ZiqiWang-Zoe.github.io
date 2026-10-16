@@ -2,41 +2,30 @@
 import { site } from '../site';
 ---
 
-<footer class="wrap" id="contact">
-  <div class="cta">
-    <h2>Hiring for technical, product or growth marketing?</h2>
-    <p class="muted">I am based in San Jose and looking for full-time roles in the Bay Area.</p>
-    <div class="links">
-      <a class="btn btn-primary" href={`mailto:${site.email}`}>Email me</a>
-      <a class="btn" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href={site.resume} target="_blank" rel="noopener">Resume</a>
-    </div>
+<footer class="col">
+  <div class="inner">
+  <p>Looking for full-time technical, product or growth marketing roles in the Bay Area.</p>
+  <p class="links muted">
+    <a class="link" href={`mailto:${site.email}`}>{site.email}</a>
+    <a class="link" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+    <a class="link" href={site.resume} target="_blank" rel="noopener">Resume</a>
+  </p>
   </div>
-  <p class="fine muted">{site.email}</p>
 </footer>
 
 <style>
   footer {
-    margin-top: 120px;
-    padding-top: 56px;
-    padding-bottom: 48px;
+    margin-top: 96px;
+    padding-bottom: 64px;
+  }
+  .inner {
+    padding-top: 32px;
     border-top: 1px solid var(--line);
-  }
-  h2 {
-    font-size: clamp(24px, 3.4vw, 32px);
-    max-width: 22ch;
-  }
-  .cta p {
-    margin-top: 12px;
   }
   .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-  }
-  .fine {
-    margin-top: 56px;
-    font-size: 14px;
+    gap: 6px 20px;
+    margin-top: 8px;
   }
 </style>

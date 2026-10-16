@@ -1,0 +1,114 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'work'>;
+  eager?: boolean;
+}
+
+const { entry, eager = false } = Astro.props;
+const d = entry.data;
+---
+
+<a href={`/work/${entry.id}/`} class="card">
+  <div class:list={['frame', d.coverFit === 'cover' && 'bleed']}>
+    {
+      d.cover ? (
+        <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 1280]} sizes="(max-width: 640px) 100vw, 592px" loading={eager ? 'eager' : 'lazy'} />
+      ) : d.metric ? (
+        <div class="stat">
+          <strong>{d.metric}</strong>
+          <span>{d.metricLabel}</span>
+        </div>
+      ) : (
+        <div class="stat">
+          <span class="org">{d.org}</span>
+        </div>
+      )
+    }
+  </div>
+  <div class="caption">
+    <h3>{d.title}</h3>
+    <p class="muted">{d.summary}</p>
+  </div>
+</a>
+
+<style>
+  .card {
+    display: block;
+  }
+  .frame {
+    position: relative;
+    aspect-ratio: 16 / 11;
+    border-radius: 16px;
+    background: var(--surface);
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 36px 48px 0;
+  }
+  .frame img {
+    width: 78%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 10px 40px rgb(21 22 24 / 0.1);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .bleed {
+    padding: 0;
+  }
+  .bleed img {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .card:hover .frame img {
+    transform: translateY(-6px);
+  }
+  .stat {
+    align-self: center;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+  }
+  .stat strong {
+    font-size: clamp(44px, 9vw, 64px);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat span {
+    font-size: 14px;
+    color: var(--muted);
+    max-width: 28ch;
+  }
+  .stat .org {
+    font-size: 18px;
+    color: var(--fg);
+  }
+  .caption {
+    padding: 16px 4px 0;
+  }
+  .caption h3 {
+    font-size: 15px;
+  }
+  .caption p {
+    margin-top: 2px;
+  }
+  @media (max-width: 640px) {
+    .frame {
+      padding: 24px 24px 0;
+    }
+    .frame img {
+      width: 88%;
+    }
+  }
+</style>

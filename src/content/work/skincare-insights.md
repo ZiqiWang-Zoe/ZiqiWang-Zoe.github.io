@@ -4,8 +4,8 @@ summary: My USC capstone. Consumer research on information asymmetry in skincare
 org: University of Southern California
 period: Graduate capstone
 role: Lead researcher and designer
-order: 4
-featured: true
+order: 5
+featured: false
 status: draft
 todo:
   - "The capstone deck or report (Ziqi to share), which this page will be written from"

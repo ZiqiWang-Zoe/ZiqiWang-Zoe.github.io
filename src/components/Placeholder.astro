@@ -1,51 +1,23 @@
 ---
-// Marks content Ziqi still has to supply. Hidden everywhere once SHOW_PLACEHOLDERS is false.
+// Neutral stand-in for content Ziqi still has to supply. Hidden once SHOW_PLACEHOLDERS is false.
 import { SHOW_PLACEHOLDERS } from '../site';
 
 interface Props {
   need: string;
-  inline?: boolean;
-  ratio?: string;
 }
 
-const { need, inline = false, ratio } = Astro.props;
+const { need } = Astro.props;
 ---
 
-{
-  SHOW_PLACEHOLDERS &&
-    (inline ? (
-      <span class="todo inline">TODO: {need}</span>
-    ) : (
-      <div class="todo block" style={ratio ? `aspect-ratio:${ratio}` : undefined}>
-        <span>TODO</span>
-        <p>{need}</p>
-      </div>
-    ))
-}
+{SHOW_PLACEHOLDERS && <p class="draft">Draft · {need}</p>}
 
 <style>
-  .todo {
-    color: var(--todo);
-    background: var(--todo-bg);
-    border: 1px dashed var(--todo);
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .inline {
-    display: inline-block;
-    padding: 2px 8px;
-    margin: 2px 0;
-  }
-  .block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    padding: 20px;
-  }
-  .block span {
-    font-weight: 600;
-    font-size: 12px;
+  .draft {
+    margin-top: 40px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px dashed var(--line);
+    color: var(--faint);
+    font-size: 13px;
   }
 </style>

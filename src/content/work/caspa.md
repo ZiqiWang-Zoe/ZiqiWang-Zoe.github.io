@@ -1,12 +1,15 @@
 ---
 title: Event communications for CASPA
-summary: Volunteer marketing and proceedings work for a Bay Area semiconductor association, including the ACDB 2026 poster and a published symposium video.
+summary: Event promotion, video editing and yearbook work for a Bay Area semiconductor association's annual conference.
 org: CASPA
 period: 2026 to present
 role: Marketing and proceedings volunteer
-order: 6
-status: ready
-cover: /work/caspa-acdb-poster.png
+order: 3
+featured: true
+status: draft
+todo:
+  - "Confirm whether Ziqi designed the ACDB poster or only promoted it; the card caption depends on it"
+cover: ../../assets/work/caspa-poster.png
 coverAlt: CASPA ACDB 2026 event poster
 ---
 

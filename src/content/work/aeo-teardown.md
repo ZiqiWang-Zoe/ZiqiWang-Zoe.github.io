@@ -4,8 +4,7 @@ summary: A fixed set of buyer questions, run across ChatGPT, Claude, Perplexity 
 org: Independent research
 period: In progress
 role: Author
-order: 5
-featured: true
+order: 6
 status: planned
 todo:
   - Choose the five companies and the question set

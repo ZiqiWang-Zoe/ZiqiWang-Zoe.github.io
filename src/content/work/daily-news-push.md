@@ -8,13 +8,14 @@ period: "2026"
 role: Creator, editorial and Python
 order: 1
 featured: true
+cover: ../../assets/work/news-email.png
+coverAlt: The IC News Daily briefing from October 10, 2026
 status: draft
 todo:
   - "Why the lab needed this: one or two sentences in Ziqi's words"
   - "The editorial criteria: what makes a story worth sending to this audience"
   - Number of recipients, if it can be shared
   - One sentence from lab leadership on how the briefing is used (with permission)
-  - A screenshot of a real briefing to use as the cover image
 ---
 
 ## The problem

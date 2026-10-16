@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Placeholder from '../../components/Placeholder.astro';
 import { SHOW_PLACEHOLDERS } from '../../site';
@@ -18,108 +19,117 @@ const d = entry.data;
 ---
 
 <Base title={d.title} description={d.summary}>
-  <article class="wrap">
-    <a href="/#work" class="back muted">All work</a>
+  <article class="col">
+    <a href="/#work" class="back muted">Ziqi Wang</a>
+
     <header>
-      <p class="meta muted">{d.org} · {d.period}</p>
       <h1>{d.title}</h1>
-      <p class="lede">{d.summary}</p>
+      <p class="lede muted">{d.summary}</p>
       <dl>
+        <div><dt>Where</dt><dd>{d.org}</dd></div>
+        <div><dt>When</dt><dd>{d.period}</dd></div>
         <div><dt>Role</dt><dd>{d.role}</dd></div>
-        {d.metric && <div><dt>Result</dt><dd><strong>{d.metric}</strong> {d.metricLabel}</dd></div>}
+        {d.metric && <div><dt>Result</dt><dd>{d.metric} {d.metricLabel}</dd></div>}
       </dl>
     </header>
 
-    {d.cover && <img class="cover" src={d.cover} alt={d.coverAlt ?? ''} loading="eager" />}
+    {
+      d.cover && (
+        <figure class="frame">
+          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 1280]} sizes="(max-width: 640px) 100vw, 592px" loading="eager" />
+        </figure>
+      )
+    }
 
-    <div class="body narrow">
+    <div class="body">
       <Content />
     </div>
 
-    {
-      SHOW_PLACEHOLDERS && d.todo.length > 0 && (
-        <aside class="narrow todo-list">
-          <Placeholder need={`Still needed for this page: ${d.todo.join(' / ')}`} />
-        </aside>
-      )
-    }
+    {SHOW_PLACEHOLDERS && d.todo.length > 0 && <Placeholder need={`Still needed: ${d.todo.join('; ')}`} />}
   </article>
 </Base>
 
 <style>
   article {
-    padding-top: 40px;
-  }
-  .back {
-    font-size: 15px;
-    text-decoration: none;
+    padding-top: 80px;
   }
   .back::before {
     content: '← ';
   }
-  header {
-    margin-top: 40px;
-    max-width: 760px;
+  .back:hover {
+    color: var(--fg);
   }
-  .meta {
-    font-size: 15px;
+  header {
+    margin-top: 48px;
   }
   h1 {
-    margin-top: 12px;
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(24px, 4.4vw, 30px);
+    letter-spacing: -0.025em;
+    line-height: 1.25;
   }
   .lede {
-    margin-top: 20px;
-    font-size: 20px;
-    color: var(--muted);
-    max-width: 62ch;
+    margin-top: 12px;
   }
   dl {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 48px;
-    margin: 32px 0 0;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+    margin: 28px 0 0;
   }
   dt {
     font-size: 13px;
-    color: var(--muted);
+    color: var(--faint);
   }
   dd {
-    margin: 4px 0 0;
+    margin: 2px 0 0;
   }
-  .cover {
-    margin-top: 48px;
-    max-height: 640px;
-    width: auto;
-    border-radius: 12px;
-    border: 1px solid var(--line);
+  .frame {
+    margin: 40px 0 0;
+    border-radius: 16px;
+    background: var(--surface);
+    padding: 32px 32px 0;
+    max-height: 560px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .frame img {
+    width: 82%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 10px 40px rgb(21 22 24 / 0.1);
   }
   .body {
-    margin-top: 56px;
+    margin-top: 48px;
   }
   .body :global(h2) {
-    font-size: 22px;
-    margin: 48px 0 14px;
+    font-size: 15px;
+    margin: 40px 0 10px;
   }
   .body :global(p),
   .body :global(ul),
   .body :global(ol) {
-    margin: 0 0 16px;
+    margin: 0 0 14px;
+  }
+  .body :global(ul),
+  .body :global(ol) {
+    padding-left: 18px;
   }
   .body :global(li) {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .body :global(a) {
-    color: var(--accent);
-    text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+    text-decoration: underline;
+    text-decoration-color: var(--faint);
+    text-underline-offset: 3px;
+  }
+  .body :global(strong) {
+    font-weight: 500;
   }
   .body :global(table) {
     width: 100%;
     border-collapse: collapse;
-    font-size: 15px;
-    margin: 8px 0 24px;
+    font-size: 14px;
+    margin: 4px 0 20px;
     display: block;
     overflow-x: auto;
   }
@@ -127,17 +137,25 @@ const d = entry.data;
   .body :global(td) {
     text-align: left;
     vertical-align: top;
-    padding: 10px 16px 10px 0;
+    padding: 8px 14px 8px 0;
   }
-  .body :global(thead th) {
+  .body :global(th) {
+    color: var(--faint);
+    font-weight: 400;
+  }
+  .body :global(td:first-child) {
+    white-space: nowrap;
     color: var(--muted);
-    font-weight: 500;
-    border-bottom: 1px solid var(--line);
   }
-  .body :global(tbody tr + tr td) {
-    border-top: 1px solid var(--line);
-  }
-  .todo-list {
-    margin-top: 48px;
+  @media (max-width: 640px) {
+    article {
+      padding-top: 48px;
+    }
+    .frame {
+      padding: 20px 20px 0;
+    }
+    .frame img {
+      width: 92%;
+    }
   }
 </style>

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Placeholder from '../components/Placeholder.astro';
+import WorkCard from '../components/WorkCard.astro';
 import { site, SHOW_PLACEHOLDERS } from '../site';
 
 const work = (await getCollection('work'))
@@ -11,348 +11,195 @@ const featured = work.filter((w) => w.data.featured);
 const more = work.filter((w) => !w.data.featured);
 
 const experience = [
-  { when: 'Jun 2026 to now', role: 'Technical Marketing Intern', org: 'Futurewei Technologies, Santa Clara', note: 'Market insight reports from 30+ industry items a week, 10+ whitepapers, case studies and decks, weekly outreach to 100+ partners.' },
-  { when: '2026 to now', role: 'Marketing and Proceedings Volunteer', org: 'CASPA', note: 'Event promotion, video editing and yearbook work for a Bay Area semiconductor association.' },
-  { when: 'Sep 2024 to Feb 2025', role: 'Social Media Intern', org: 'Echobend, Los Angeles', note: 'Meta Ads and short-form video across client accounts. Views ~1K to 7K per post, engagement +11.7%.' },
-  { when: 'Sep 2024 to Feb 2025', role: 'Marketing Intern, B2B and Growth', org: 'CambioML, San Jose', note: 'SEO and content: backlinks +12%, weekly reach ~+15%. Built a 100+ company prospect list.' },
-  { when: 'Aug 2023 to May 2024', role: 'Digital Media Assistant', org: 'University Payroll & Benefits, Illinois', note: 'Video production documentation and internal communications.' },
-  { when: 'Dec 2022 to May 2024', role: 'UX Researcher', org: 'University of Illinois', note: 'VR experiments on how avatar design shapes self-efficacy (the Proteus effect).' },
-  { when: 'Aug 2022 to Dec 2022', role: 'Advertising Campaigner', org: 'Amazon & GO, Illinois', note: '$2,000 campaign for Acure: traffic and CTR +20%, sales ~+10% in four months.' },
-  { when: 'Aug 2022 to now', role: 'Co-founder and President', org: 'Choom, Champaign', note: 'Built and led a 50-member dance crew at UIUC, including fundraising and its social media.' },
-  { when: 'Apr 2021 to Jul 2021', role: 'Brand Representative, Group Leader', org: 'Abercrombie & Fitch, Beijing', note: 'New-product events that lifted sales 30%. First prize in the store\'s seasonal sales competition.' },
+  { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
+  { when: '2026', role: 'Marketing Volunteer', org: 'CASPA' },
+  { when: '2024', role: 'Social Media Intern', org: 'Echobend' },
+  { when: '2024', role: 'Marketing Intern, B2B and Growth', org: 'CambioML' },
+  { when: '2023', role: 'Digital Media Assistant', org: 'University of Illinois' },
+  { when: '2022', role: 'UX Researcher', org: 'University of Illinois' },
+  { when: '2022', role: 'Advertising Campaigner', org: 'Amazon & GO' },
+  { when: '2022', role: 'Co-founder and President', org: 'Choom dance crew' },
+  { when: '2021', role: 'Brand Representative', org: 'Abercrombie & Fitch' },
 ];
 
 const education = [
-  { degree: 'M.S. Digital Social Media', school: 'University of Southern California', when: '2026', gpa: '4.0' },
-  { degree: 'B.S. Advertising, minors in Business and Communication', school: 'University of Illinois Urbana-Champaign', when: '2024', gpa: '3.90' },
-];
-
-const certs = [
-  { name: 'Google Analytics Individual Qualification', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
-  { name: 'Google Ads Search Certification', when: '2023' },
-  { name: 'Google Ads Display Certification', when: '2023' },
-  { name: 'Social Media Monitoring, LinkedIn Learning', when: '2023', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
-  { name: 'Amazon Sponsored Ads Certification', when: '2022' },
+  { when: '2026', role: 'M.S. Digital Social Media', org: 'USC' },
+  { when: '2024', role: 'B.S. Advertising', org: 'University of Illinois' },
 ];
 ---
 
 <Base>
-  <section class="wrap hero">
-    <div class="intro">
-      <h1>I market technical products, and I build the tools I use to do it.</h1>
-      <Placeholder inline need="Ziqi to rewrite this line in her own voice" />
-      <ul class="proof">
-        <li>Technical Marketing at Futurewei</li>
-        <li>M.S. Digital Social Media, USC</li>
-        <li>Co-author of <a href="/work/l-mars/">L-MARS</a>, ICML 2026 AI4Law workshop</li>
-      </ul>
-      <div class="actions">
-        <a class="btn btn-primary" href={site.resume} target="_blank" rel="noopener">Resume</a>
-        <a class="btn" href={`mailto:${site.email}`}>Email me</a>
+  <div class="col page">
+    <header class="me">
+      <!-- TODO(Ziqi): replace with a real headshot (square, 400x400 or larger) -->
+      <div class="avatar" aria-hidden="true">ZW</div>
+      <div>
+        <h1>{site.name}</h1>
+        <p class="muted">Technical Marketing @ Futurewei</p>
       </div>
-    </div>
-    <div class="portrait">
-      <Placeholder need="Photo of Ziqi: natural light, half-body, plain background. 1200x1500." ratio="4 / 5" />
-    </div>
-  </section>
+    </header>
 
-  <section class="wrap" id="work">
-    <h2 class="section-title">Selected work</h2>
-    <ol class="work">
+    <section>
+      <p class="statement">I market technical products, and I build the tools I use to do it.</p>
+      <p class="muted about">
+        USC Digital Social Media graduate based in San Jose. I write for engineering audiences, run paid and
+        short-form social, and co-authored <a class="link" href="/work/l-mars/">L-MARS</a>, a paper on how AI
+        systems choose which sources to cite.
+      </p>
+      <div class="actions">
+        <a class="pill pill-dark" href={`mailto:${site.email}`}>Email</a>
+        <a class="pill" href={site.resume} target="_blank" rel="noopener">Resume</a>
+        <a class="pill" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="label">Work</h2>
+      <div class="cards">
+        {featured.map((w, i) => <WorkCard entry={w} eager={i === 0} />)}
+      </div>
+
       {
-        featured.map((w) => (
-          <li>
-            <a href={`/work/${w.id}/`} class="row">
-              <div class="row-text">
-                <h3>{w.data.title}</h3>
-                <p class="muted">{w.data.summary}</p>
-                <p class="row-meta muted">{w.data.org}</p>
-              </div>
-              <div class="row-metric">
-                {w.data.metric ? (
-                  <>
-                    <strong>{w.data.metric}</strong>
-                    <span class="muted">{w.data.metricLabel}</span>
-                  </>
-                ) : w.data.status === 'planned' ? (
-                  <span class="muted">In progress</span>
-                ) : null}
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ol>
-
-    {
-      more.length > 0 && (
-        <div class="more">
-          <h3 class="muted">More work</h3>
-          <ul>
+        more.length > 0 && (
+          <ul class="rows more">
             {more.map((w) => (
               <li>
-                <a href={`/work/${w.id}/`}>{w.data.title}</a>
-                <span class="muted">{w.data.org}</span>
+                <a href={`/work/${w.id}/`} class="row">
+                  <span>{w.data.title}</span>
+                  <span class="muted">{w.data.org}</span>
+                </a>
               </li>
             ))}
           </ul>
-        </div>
-      )
-    }
-  </section>
-
-  <section class="wrap quote">
-    <Placeholder need="One sentence from a Futurewei manager or CASPA lead about working with Ziqi, with their name and title. Ask for permission first." />
-  </section>
-
-  <section class="wrap" id="experience">
-    <h2 class="section-title">Experience</h2>
-    <ol class="timeline">
-      {
-        experience.map((e) => (
-          <li>
-            <p class="when muted">{e.when}</p>
-            <div>
-              <p class="role">
-                {e.role}, <span class="muted">{e.org}</span>
-              </p>
-              <p class="note muted">{e.note}</p>
-            </div>
-          </li>
-        ))
-      }
-      {
-        SHOW_PLACEHOLDERS && (
-          <li>
-            <p class="when muted">Dates?</p>
-            <Placeholder need="Nail business, founder: dates, platform, what she grew it to. Also confirm Choom is a student club (the build plan lists it as a job)." />
-          </li>
         )
       }
-    </ol>
+    </section>
 
-    <div class="split">
-      <div>
-        <h3 class="sub">Education</h3>
-        <ul class="plain">
-          {
-            education.map((e) => (
-              <li>
-                <p class="role">{e.degree}</p>
-                <p class="note muted">{e.school}, {e.when}. GPA {e.gpa}</p>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div>
-        <h3 class="sub">Certifications</h3>
-        <ul class="plain">
-          {
-            certs.map((c) => (
-              <li>
-                <p class="role">{c.url ? <a href={c.url} target="_blank" rel="noopener">{c.name}</a> : c.name}</p>
-                <p class="note muted">{c.when}</p>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section id="experience">
+      <h2 class="label">Experience</h2>
+      <ul class="rows">
+        {
+          experience.map((e) => (
+            <li class="row">
+              <span class="when">{e.when}</span>
+              <span>
+                {e.role} <span class="muted">at {e.org}</span>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="label">Education</h2>
+      <ul class="rows">
+        {
+          education.map((e) => (
+            <li class="row">
+              <span class="when">{e.when}</span>
+              <span>
+                {e.role} <span class="muted">at {e.org}</span>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted certs">
+        Certified in Google Ads Search and Display, Google Analytics, and Amazon Sponsored Ads.
+      </p>
+    </section>
+  </div>
 </Base>
 
 <style>
-  .hero {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 56px;
+  .page {
+    padding-top: 80px;
+  }
+  section {
+    margin-top: 64px;
+  }
+  .me {
+    display: flex;
     align-items: center;
-    padding-top: 72px;
-    padding-bottom: 96px;
+    gap: 14px;
   }
-  h1 {
-    font-size: clamp(34px, 5.2vw, 54px);
-    letter-spacing: -0.03em;
-    max-width: 17ch;
-    margin-bottom: 16px;
+  .me h1 {
+    font-size: 15px;
   }
-  .proof {
-    list-style: none;
-    padding: 0;
-    margin: 28px 0 0;
-    color: var(--muted);
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--surface);
+    color: var(--faint);
     display: grid;
-    gap: 4px;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    flex-shrink: 0;
   }
-  .proof a {
-    color: var(--fg);
+  .me + section {
+    margin-top: 40px;
+  }
+  .statement {
+    font-size: clamp(24px, 4.4vw, 30px);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.025em;
+    max-width: 22ch;
+  }
+  .about {
+    margin-top: 16px;
+    max-width: 58ch;
   }
   .actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 36px;
+    gap: 8px;
+    margin-top: 24px;
   }
-  .section-title {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--muted);
-    letter-spacing: 0;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--line);
+  .cards {
+    display: grid;
+    gap: 48px;
   }
-  section + section {
-    margin-top: 96px;
-  }
-
-  .work {
+  .rows {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   .row {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 40px;
-    padding: 32px 0;
-    text-decoration: none;
-    border-bottom: 1px solid var(--line);
-  }
-  .row h3 {
-    font-size: 22px;
-    transition: color 0.2s;
-  }
-  .row:hover h3 {
-    color: var(--accent);
-  }
-  .row-text p {
-    margin-top: 8px;
-    max-width: 60ch;
-  }
-  .row-meta {
-    font-size: 14px;
-  }
-  .row-metric {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    text-align: right;
+    gap: 16px;
+    padding: 7px 0;
   }
-  .row-metric strong {
-    font-size: 32px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    font-variant-numeric: tabular-nums;
-  }
-  .row-metric span {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-
   .more {
-    margin-top: 40px;
+    margin-top: 48px;
   }
-  .more h3 {
-    font-size: 15px;
-    font-weight: 500;
+  .more .row {
+    justify-content: space-between;
   }
-  .more ul {
-    list-style: none;
-    padding: 0;
-    margin: 12px 0 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .more li {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    font-size: 15px;
-  }
-
-  .timeline {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0 0;
-  }
-  .timeline li {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 32px;
-    padding: 18px 0;
+  .more .row:hover span:first-child {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .when {
-    font-size: 14px;
-    padding-top: 2px;
+    width: 48px;
+    flex-shrink: 0;
+    color: var(--faint);
     font-variant-numeric: tabular-nums;
   }
-  .role {
-    font-weight: 500;
+  .certs {
+    margin-top: 16px;
+    font-size: 14px;
   }
-  .note {
-    margin-top: 4px;
-    font-size: 15px;
-    max-width: 64ch;
-  }
-
-  .split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 56px;
-    margin-top: 64px;
-  }
-  .sub {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
-  .plain {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 14px;
-  }
-
-  @media (max-width: 767px) {
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 40px;
-      padding-top: 40px;
-      padding-bottom: 64px;
+  @media (max-width: 640px) {
+    .page {
+      padding-top: 48px;
     }
-    .portrait {
-      max-width: 280px;
-    }
-    .row {
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-    .row-metric {
-      text-align: left;
-      flex-direction: row;
-      align-items: baseline;
-      gap: 10px;
-    }
-    .row-metric strong {
-      font-size: 24px;
-    }
-    .more ul {
-      grid-template-columns: 1fr;
-    }
-    .timeline li {
-      grid-template-columns: 1fr;
-      gap: 4px;
-    }
-    .split {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-    section + section {
-      margin-top: 72px;
+    .more .row {
+      flex-direction: column;
+      gap: 0;
     }
   }
 </style>

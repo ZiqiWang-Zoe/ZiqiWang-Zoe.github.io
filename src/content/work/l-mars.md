@@ -6,7 +6,7 @@ metricLabel: legal questions in the evaluation benchmark
 org: ICML 2026 AI4Law workshop
 period: "2026"
 role: Co-author
-order: 3
+order: 4
 featured: true
 status: draft
 todo:
