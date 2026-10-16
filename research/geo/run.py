@@ -5,7 +5,8 @@ Usage:
   python3 research/geo/run.py --engines openai,anthropic,perplexity --runs 2
   python3 research/geo/run.py --questions research/geo/baseline-ziqi.csv --engines perplexity --runs 1
 
-Keys come from OPENAI_API_KEY, ANTHROPIC_API_KEY, PERPLEXITY_API_KEY.
+Keys come from OPENAI_API_KEY, ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, either exported or as
+KEY=value lines in research/geo/.env (gitignored). Exported values win.
 Output: research/geo/raw/<date>/<engine>.jsonl, one line per (question, run). Re-running skips
 lines that already exist, so an interrupted run can be resumed.
 
@@ -24,6 +25,13 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HERE = Path(__file__).parent
+
+env_file = HERE / ".env"
+if env_file.exists():
+    for line in env_file.read_text().splitlines():
+        key, sep, value = line.strip().partition("=")
+        if sep and not key.startswith("#"):
+            os.environ.setdefault(key.strip(), value.strip().strip("'\""))
 
 MODELS = {
     "openai": os.environ.get("GEO_OPENAI_MODEL", "gpt-5"),
