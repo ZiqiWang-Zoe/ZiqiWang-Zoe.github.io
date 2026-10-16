@@ -49,7 +49,7 @@ const education = [
   <section class="wrap hero">
     <div class="intro">
       <div class="me">
-        <Image class="avatar" src={headshot} alt="Ziqi Wang" width={112} height={112} loading="eager" />
+        <Image class="avatar" src={headshot} alt="Ziqi Wang" width={144} height={144} loading="eager" />
         <div>
           <h1>{site.name}</h1>
           <p class="muted">Technical Marketing @ Futurewei</p>
@@ -172,17 +172,22 @@ const education = [
   .me {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
   }
   .me :global(.avatar) {
-    width: 56px;
-    height: 56px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
   }
   .me h1 {
-    font-size: 15px;
+    font-size: 22px;
+    letter-spacing: -0.015em;
+  }
+  .me p {
+    font-size: 17px;
+    margin-top: 2px;
   }
   .statement {
     margin-top: 36px;

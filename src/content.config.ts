@@ -26,6 +26,10 @@ const work = defineCollection({
       // Card styling on the home grid.
       tint: z.enum(['gray', 'blue', 'ink']).default('gray'),
       wide: z.boolean().default(false),
+      // Publications: shown on the card as live text beside the cover figure.
+      paper: z
+        .object({ title: z.string(), authors: z.string(), venue: z.string() })
+        .optional(),
     }),
 });
 

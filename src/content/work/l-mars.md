@@ -10,12 +10,15 @@ order: 2
 featured: true
 wide: true
 tint: gray
-cover: ../../assets/work/l-mars-card.png
+cover: ../../assets/work/l-mars-workflow.png
 coverFit: cover
-coverAlt: The L-MARS paper on arXiv, by Boqin Yuan and Ziqi Wang
+coverAlt: The L-MARS system, from the paper. Query, search, judge and summary agents share evidence with provenance
+paper:
+  title: "L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit"
+  authors: Boqin Yuan, Ziqi Wang (co-first authors)
+  venue: ICML 2026, AI4Law Workshop
 status: draft
 todo:
-  - A system diagram from the paper would make a stronger cover than the arXiv title block
   - "Ziqi to confirm the 'Why a marketer worked on this' section in her own words"
 ---
 

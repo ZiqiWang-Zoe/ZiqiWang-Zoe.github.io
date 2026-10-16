@@ -12,9 +12,26 @@ const d = entry.data;
 ---
 
 <a href={`/work/${entry.id}/`} class:list={['card', d.wide && 'wide']}>
-  <div class:list={['frame', `tint-${d.tint}`, !d.cover && 'is-stat', d.coverFit === 'cover' && 'landscape']}>
+  <div class:list={['frame', `tint-${d.tint}`, !d.cover && 'is-stat', d.coverFit === 'cover' && 'landscape', d.paper && 'is-paper']}>
     {
-      d.cover ? (
+      d.paper && d.cover ? (
+        <div class="paper">
+          <div class="paper-text">
+            <p class="venue">{d.paper.venue}</p>
+            <p class="paper-title">{d.paper.title}</p>
+            <p class="authors">{d.paper.authors}</p>
+            {d.metric && (
+              <p class="paper-stat">
+                <strong>{d.metric}</strong>
+                <span>{d.metricLabel}</span>
+              </p>
+            )}
+          </div>
+          <div class="sheet">
+            <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[800, 1600]} sizes="(max-width: 767px) 100vw, 620px" loading="eager" />
+          </div>
+        </div>
+      ) : d.cover ? (
         <Image
           src={d.cover}
           alt={d.coverAlt ?? ''}
@@ -135,7 +152,73 @@ const d = entry.data;
     white-space: nowrap;
     padding-top: 2px;
   }
+  .wide .is-paper {
+    aspect-ratio: auto;
+    padding: 48px;
+    align-items: center;
+  }
+  .paper {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+  }
+  .venue {
+    font-size: 13px;
+    color: var(--faint);
+  }
+  .paper-title {
+    margin-top: 10px;
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  .authors {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .paper-stat {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .paper-stat strong {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+  .paper-stat span {
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .sheet {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 12px 32px rgb(21 26 43 / 0.12);
+  }
+  .frame .sheet :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .card:hover .frame .sheet :global(img) {
+    transform: none;
+  }
   @media (max-width: 767px) {
+    .wide .is-paper {
+      padding: 24px;
+    }
+    .paper {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
     .frame,
     .wide .frame {
       aspect-ratio: 4 / 3;
