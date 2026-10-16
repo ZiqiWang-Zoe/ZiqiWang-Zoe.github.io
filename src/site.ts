@@ -6,8 +6,7 @@ export const site = {
   linkedin: 'https://linkedin.com/in/ziqiwang-zoe',
   github: 'https://github.com/ZiqiWang-Zoe',
   arxiv: 'https://arxiv.org/abs/2509.00761',
-  // TODO(Ziqi): her Google Scholar profile URL. Until then the button points at the L-MARS arXiv page.
-  scholar: '',
+  scholar: 'https://scholar.google.com/citations?user=k0ZmsF4AAAAJ&hl=en',
   resume: '/Ziqi-Resume.pdf',
   description:
     'Ziqi Wang is a technical marketer in the San Francisco Bay Area. Technical Marketing at Futurewei, M.S. Digital Social Media at USC, co-first author of L-MARS.',
