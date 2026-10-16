@@ -1,0 +1,60 @@
+# What AI search says about five AI companies: data and method
+
+Raw data and scripts behind `src/content/work/aeo-teardown.md`. Every number in the case study must be
+reproducible from the files here.
+
+## Scope (agreed 2026-10-16)
+
+- **Companies:** Mintlify, Exa, Fireworks AI, AssemblyAI, LangChain. Domains, aliases and the
+  competitors we track are in `companies.csv`.
+- **Questions:** 60 in `questions.csv`, 12 per company. Six per company are unbranded (category and
+  use case, where a buyer has not named a vendor yet) and six are branded (comparison, alternatives,
+  pricing, fit, brand). Share of voice is measured on the unbranded six only.
+- **Engines:**
+  - ChatGPT: OpenAI Responses API with the `web_search` tool (`run.py`)
+  - Claude: Anthropic Messages API with the `web_search` server tool (`run.py`)
+  - Perplexity: Sonar API (`run.py`)
+  - Google AI Overviews: captured by hand in a logged-out browser, `aio/<date>.csv`
+- **Runs:** 2 per question per API engine, on the same day, to show how stable answers are.
+  AI Overviews: 1 run.
+- **Spot check:** 10 questions also asked in the consumer ChatGPT, Claude and Perplexity apps and
+  pasted into `consumer-check/<date>.csv` (MIN-01, MIN-04, EXA-01, EXA-07, FW-01,
+  FW-09, AAI-01, AAI-07, LC-01, LC-09), to report how closely API answers match what a buyer sees.
+- **Bonus baseline:** `baseline-ziqi.csv`, the same engines asked about Ziqi herself, before the new
+  site is indexed. Re-run later with the same file to measure the change.
+
+## Files
+
+| Path | What it is |
+|---|---|
+| `questions.csv`, `companies.csv`, `baseline-ziqi.csv` | Inputs, frozen before the run |
+| `run.py` | Asks the API engines and stores full responses |
+| `raw/<date>/<engine>.jsonl` | One line per question and run: answer text, cited URLs, full API response |
+| `aio/<date>.csv` | Hand-captured AI Overviews: `qid,shown,answer,cited_urls` |
+| `claims/<company>.md` | The company's own claims, copied from its site on run day, with URLs |
+| `coded.csv` | One row per answer, coded per the codebook below |
+| `analysis.py`, `results/` | Tables and the chart used in the case study |
+
+## Codebook (per answer)
+
+| Field | Rule |
+|---|---|
+| `mentioned` | Company name or an alias from `companies.csv` appears in the answer text |
+| `position` | Rank of the company among all vendors named, in order of first appearance (1 = named first). Blank if not mentioned |
+| `vendors_named` | Every tracked company or competitor named, in order |
+| `recommended` | The answer picks the company as the top or default choice (judgment, see below) |
+| `citations_own` / `_competitor` / `_third_party` | Count of cited URLs on the company's own domains, a competitor's domain, or anywhere else |
+| `third_party_types` | Third-party citations grouped as review/listicle, docs/blog of another vendor, community (Reddit, HN, Stack Overflow), GitHub, news, other |
+| `claims_survive` | For branded questions: which of the company's claims from `claims/<company>.md` appear correctly, appear wrong (for example an outdated price), or are missing |
+
+`mentioned`, `position`, `vendors_named` and the citation counts are computed by `analysis.py` from
+string and domain matching. `recommended` and `claims_survive` need judgment: Claude codes a first
+pass, and Ziqi reviews every row before any number is published. `coded.csv` records who coded each
+judgment field.
+
+## Limits to state in the write-up
+
+- API answers can differ from the consumer apps (different default model, no personalization or
+  location). The spot check measures how much.
+- One day, two runs. AI answers change week to week, so this is a snapshot, not a ranking.
+- English questions, asked from the US.

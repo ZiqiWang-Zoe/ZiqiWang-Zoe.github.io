@@ -1,0 +1,61 @@
+qid,company,intent,branded,question
+MIN-01,Mintlify,category,no,What is the best documentation platform for a developer-facing API startup?
+MIN-02,Mintlify,category,no,What tools do AI companies use to host their developer docs?
+MIN-03,Mintlify,use-case,no,Which docs platform has a built-in AI assistant that answers questions from my documentation?
+MIN-04,Mintlify,use-case,no,How do I make my API documentation easy for LLMs and AI agents to read?
+MIN-05,Mintlify,use-case,no,What is a good alternative to Docusaurus for a startup that does not want to maintain its own docs site?
+MIN-06,Mintlify,use-case,no,Which documentation platforms generate llms.txt or an MCP server automatically?
+MIN-07,Mintlify,comparison,yes,Mintlify vs GitBook: which is better for developer docs?
+MIN-08,Mintlify,comparison,yes,Mintlify vs ReadMe for API reference documentation
+MIN-09,Mintlify,alternatives,yes,What are the best Mintlify alternatives?
+MIN-10,Mintlify,pricing,yes,How much does Mintlify cost?
+MIN-11,Mintlify,fit,yes,Is Mintlify a good choice for an open-source project?
+MIN-12,Mintlify,brand,yes,What is Mintlify and what is it known for?
+EXA-01,Exa,category,no,What is the best web search API for AI agents?
+EXA-02,Exa,category,no,How do I give my LLM app access to real-time web search?
+EXA-03,Exa,use-case,no,What is the best search API for retrieval-augmented generation (RAG)?
+EXA-04,Exa,use-case,no,Which search APIs return the full page content and not just links?
+EXA-05,Exa,use-case,no,What API can I use to find companies or web pages similar to a given one?
+EXA-06,Exa,use-case,no,What should I use to replace the Bing Search API in an LLM application?
+EXA-07,Exa,comparison,yes,Exa vs Tavily: which search API is better for agents?
+EXA-08,Exa,comparison,yes,Exa vs Perplexity Sonar API
+EXA-09,Exa,alternatives,yes,What are the best Exa AI alternatives?
+EXA-10,Exa,pricing,yes,How much does the Exa API cost?
+EXA-11,Exa,fit,yes,Is Exa a good search backend for a deep research agent?
+EXA-12,Exa,brand,yes,What is Exa AI and what is it known for?
+FW-01,Fireworks AI,category,no,What is the fastest inference API for open-source LLMs?
+FW-02,Fireworks AI,category,no,What is the best platform to serve open-weight models like Llama, DeepSeek or Qwen in production?
+FW-03,Fireworks AI,use-case,no,What is the cheapest way to run DeepSeek through an API?
+FW-04,Fireworks AI,use-case,no,What is the best platform to fine-tune and deploy an open-source model?
+FW-05,Fireworks AI,use-case,no,Which serverless inference providers are best for LLM apps?
+FW-06,Fireworks AI,use-case,no,Which LLM inference provider is best for function calling and structured output with open models?
+FW-07,Fireworks AI,comparison,yes,Fireworks AI vs Together AI
+FW-08,Fireworks AI,comparison,yes,Fireworks AI vs Groq: which is better for production inference?
+FW-09,Fireworks AI,alternatives,yes,What are the best Fireworks AI alternatives?
+FW-10,Fireworks AI,pricing,yes,How much does Fireworks AI cost?
+FW-11,Fireworks AI,fit,yes,Is Fireworks AI a good choice for enterprise (compliance and security)?
+FW-12,Fireworks AI,brand,yes,What is Fireworks AI and what is it known for?
+AAI-01,AssemblyAI,category,no,What is the most accurate speech-to-text API?
+AAI-02,AssemblyAI,category,no,What is the best transcription API for call center and meeting recordings?
+AAI-03,AssemblyAI,use-case,no,Which speech-to-text API has the best speaker diarization?
+AAI-04,AssemblyAI,use-case,no,What is the best real-time streaming speech recognition API for voice agents?
+AAI-05,AssemblyAI,use-case,no,What should I use instead of self-hosting Whisper?
+AAI-06,AssemblyAI,use-case,no,Which speech-to-text APIs support PII redaction for healthcare or finance?
+AAI-07,AssemblyAI,comparison,yes,AssemblyAI vs Deepgram
+AAI-08,AssemblyAI,comparison,yes,AssemblyAI vs OpenAI Whisper for transcription
+AAI-09,AssemblyAI,alternatives,yes,What are the best AssemblyAI alternatives?
+AAI-10,AssemblyAI,pricing,yes,How much does AssemblyAI cost per hour of audio?
+AAI-11,AssemblyAI,fit,yes,Is AssemblyAI good for extracting insights and summaries from customer calls?
+AAI-12,AssemblyAI,brand,yes,What is AssemblyAI and what is it known for?
+LC-01,LangChain,category,no,What is the best framework for building AI agents in Python?
+LC-02,LangChain,category,no,What is the best framework for building a RAG application?
+LC-03,LangChain,use-case,no,How do I build a stateful multi-agent workflow with human-in-the-loop steps?
+LC-04,LangChain,use-case,no,What is the best tool for LLM observability and evaluation?
+LC-05,LangChain,use-case,no,What is the best TypeScript framework for building AI agents?
+LC-06,LangChain,use-case,no,What is the best open-source agent framework for production use?
+LC-07,LangChain,comparison,yes,LangChain vs LlamaIndex
+LC-08,LangChain,comparison,yes,LangGraph vs CrewAI for multi-agent systems
+LC-09,LangChain,alternatives,yes,What are the best LangChain alternatives?
+LC-10,LangChain,pricing,yes,How much does LangSmith cost?
+LC-11,LangChain,fit,yes,Is LangChain still worth using in 2026?
+LC-12,LangChain,brand,yes,What is LangChain and what is it known for?

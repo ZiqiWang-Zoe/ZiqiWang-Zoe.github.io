@@ -1,0 +1,6 @@
+company,own_domains,aliases,tracked_competitors
+Mintlify,mintlify.com,Mintlify,GitBook;ReadMe;Docusaurus;Fern;Redocly;Scalar;Document360;Nextra;Stoplight
+Exa,exa.ai,Exa;Exa AI;Metaphor,Tavily;Perplexity Sonar;Brave Search API;Parallel;SerpAPI;You.com;Firecrawl;Jina;Serper;Bing Search API
+Fireworks AI,fireworks.ai,Fireworks;Fireworks AI,Together AI;Groq;Baseten;Replicate;DeepInfra;Modal;OpenRouter;Cerebras;AWS Bedrock;Anyscale;Hyperbolic;SambaNova
+AssemblyAI,assemblyai.com,AssemblyAI;Assembly AI,Deepgram;OpenAI Whisper;Google Speech-to-Text;AWS Transcribe;Azure Speech;Rev.ai;Speechmatics;ElevenLabs Scribe;Gladia;Soniox
+LangChain,langchain.com;langchain.dev;python.langchain.com;js.langchain.com;smith.langchain.com,LangChain;LangGraph;LangSmith,LlamaIndex;CrewAI;OpenAI Agents SDK;AutoGen;Microsoft Agent Framework;Pydantic AI;Mastra;Haystack;Semantic Kernel;DSPy;Langfuse;Arize Phoenix;Braintrust;Weights & Biases Weave;Helicone
