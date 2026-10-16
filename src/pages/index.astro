@@ -5,6 +5,9 @@ import headshot from '../assets/ziqi.jpg';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import IconLink from '../components/IconLink.astro';
+import Timeline from '../components/Timeline.astro';
+import { experience, education } from '../data/timeline';
+import seal from '@phosphor-icons/core/assets/regular/seal-check.svg?raw';
 import { site, SHOW_PLACEHOLDERS } from '../site';
 
 const work = (await getCollection('work'))
@@ -15,9 +18,37 @@ const more = work.filter((w) => !w.data.featured);
 
 // Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
 const stats = [
-  { value: '10+', label: 'whitepapers, case studies and decks on semiconductor technology', org: 'Futurewei' },
+  { value: '~8', label: 'stories every morning in the briefing tool she built with Claude Code', org: 'Futurewei' },
   { value: '1K → 7K', label: 'average short-form views per post', org: 'Echobend' },
   { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
+];
+
+// AI workflow. Every tool and example below is on her resume or in the case studies.
+const aiWork = [
+  {
+    title: 'AI-assisted coding',
+    body: 'Built and run IC News Daily, the Python briefing Futurewei\'s IC lab reads every morning, with Claude Code.',
+    tools: 'Claude Code, Cursor, Python, VS Code',
+    href: '/work/daily-news-push/',
+  },
+  {
+    title: 'LLM agents and evaluation',
+    body: 'Designed the agent harness and collected the data for L-MARS, a multi-agent system audited claim by claim.',
+    tools: 'Claude, ChatGPT, Gemini, prompt design, RAG',
+    href: '/work/l-mars/',
+  },
+  {
+    title: 'Content and video production',
+    body: 'Short-form video that grew from about 1K to 7K views per post, plus event video for CASPA.',
+    tools: 'Premiere Pro, Final Cut Pro, CapCut, Photoshop, Canva',
+    href: '/work/echobend-social/',
+  },
+  {
+    title: 'Analytics and reporting',
+    body: 'Turns 30+ industry items a week into market insight reports, and measures campaigns end to end.',
+    tools: 'GA4, Meta Ads Manager, SQL, Python (pandas), Excel, PowerPoint',
+    href: '/work/cambioml-seo/',
+  },
 ];
 
 const certs = [
@@ -30,22 +61,7 @@ const certs = [
   { name: 'Social Media Monitoring', issuer: 'LinkedIn Learning', when: '2023', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
 ];
 
-const experience = [
-  { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
-  { when: '2026', role: 'Marketing Volunteer', org: 'CASPA' },
-  { when: '2024', role: 'Social Media Intern', org: 'Echobend' },
-  { when: '2024', role: 'Marketing Intern, B2B and Growth', org: 'CambioML' },
-  { when: '2023', role: 'Digital Media Assistant', org: 'University of Illinois' },
-  { when: '2022', role: 'UX Researcher', org: 'University of Illinois' },
-  { when: '2022', role: 'Advertising Campaigner', org: 'Amazon & GO' },
-  { when: '2022', role: 'Co-founder and President', org: 'Choom dance crew' },
-  { when: '2021', role: 'Brand Representative', org: 'Abercrombie & Fitch' },
-];
 
-const education = [
-  { when: '2026', role: 'M.S. Digital Social Media', org: 'USC' },
-  { when: '2024', role: 'B.S. Advertising', org: 'University of Illinois' },
-];
 ---
 
 <Base>
@@ -55,20 +71,20 @@ const education = [
         <Image class="avatar" src={headshot} alt="Ziqi Wang" width={144} height={144} loading="eager" />
         <div>
           <h1>{site.name}</h1>
-          <p class="muted">Technical Marketing @ Futurewei</p>
+          <p class="muted">AI-native marketer, Technical Marketing @ Futurewei</p>
         </div>
       </div>
       <p class="statement">I turn complex AI and semiconductor products into stories, campaigns and tools people use.</p>
       <p class="muted about">
-        Technical marketer in San Jose. Semiconductor market research at Futurewei, B2B growth at an AI
-        startup, paid and short-form social, and co-first author of <a class="link" href="/work/l-mars/">L-MARS</a>,
+        Technical marketer in San Jose who works hands-on with current AI tools: I code with Claude Code and
+        Cursor, produce and edit short-form video, and co-first authored <a class="link" href="/work/l-mars/">L-MARS</a>,
         a paper on how AI systems choose which sources to cite.
       </p>
       <div class="actions">
-        <IconLink icon="envelope" href={`mailto:${site.email}`} label={`Email ${site.email}`} primary />
-        <IconLink icon="resume" href={site.resume} label="Resume (PDF)" external />
-        <IconLink icon="linkedin" href={site.linkedin} label="LinkedIn" external />
-        <IconLink icon="scholar" href={site.scholar} label="Google Scholar" external />
+        <IconLink icon="envelope" href={`mailto:${site.email}`} text="Email" label={`Email ${site.email}`} primary />
+        <IconLink icon="resume" href={site.resume} text="Resume" label="Resume (PDF)" external />
+        <IconLink icon="linkedin" href={site.linkedin} text="LinkedIn" external />
+        <IconLink icon="scholar" href={site.scholar} text="Scholar" label="Google Scholar" external />
       </div>
     </div>
 
@@ -86,22 +102,49 @@ const education = [
   </section>
 
 
-  <section class="wrap certs-strip" aria-label="Certifications">
-    <h2 class="label">Certified</h2>
-    <ul class="certs">
+  <section class="wrap ai" aria-labelledby="ai-title">
+    <h2 id="ai-title" class="ai-title">Fluent in current AI tools, and I ship real work with them.</h2>
+    <ul class="ai-grid">
       {
-        certs.map((c) => {
-          const inner = (
-            <>
-              <span class="cert-name">{c.name}</span>
-              <span class="cert-meta">{c.issuer}, {c.when}</span>
-              <span class="cert-verify">{c.url ? 'Verify ↗' : `ID ${c.id}`}</span>
-            </>
-          );
-          return <li>{c.url ? <a class="cert" href={c.url} target="_blank" rel="noopener">{inner}</a> : <div class="cert">{inner}</div>}</li>;
-        })
+        aiWork.map((a) => (
+          <li>
+            <a href={a.href} class="ai-item">
+              <h3>{a.title}</h3>
+              <p class="muted">{a.body}</p>
+              <p class="tools">{a.tools}</p>
+            </a>
+          </li>
+        ))
       }
     </ul>
+  </section>
+
+  <section class="wrap certs-strip" aria-labelledby="certs-title">
+    <h2 id="certs-title" class="label">Certified</h2>
+    <div class="marquee">
+      {
+        [false, true].map((clone) => (
+          <ul class="certs" aria-hidden={clone ? 'true' : undefined}>
+            {certs.map((c) => (
+              <li>
+                <a
+                  class="badge"
+                  href={c.url}
+                  target={c.url ? '_blank' : undefined}
+                  rel={c.url ? 'noopener' : undefined}
+                  tabindex={clone ? -1 : undefined}
+                  title={c.url ? 'Verify credential' : `Credential ID ${c.id}`}
+                >
+                  <span class="seal" set:html={seal} />
+                  <span class="badge-name">{c.name}</span>
+                  <span class="badge-meta">{c.issuer} · {c.when}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
   </section>
 
   <section class="wrap" id="work">
@@ -129,37 +172,10 @@ const education = [
     }
   </section>
 
-  <section class="wrap cv" id="experience">
-    <div>
-      <h2 class="label">Experience</h2>
-      <ul class="rows">
-        {
-          experience.map((e) => (
-            <li class="row">
-              <span class="when">{e.when}</span>
-              <span>
-                {e.role} <span class="muted">at {e.org}</span>
-              </span>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-    <div>
-      <h2 class="label">Education</h2>
-      <ul class="rows">
-        {
-          education.map((e) => (
-            <li class="row">
-              <span class="when">{e.when}</span>
-              <span>
-                {e.role} <span class="muted">at {e.org}</span>
-              </span>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+  <section class="wrap" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <Timeline title="Work" entries={experience} />
+    <Timeline title="Education" entries={education} />
   </section>
 </Base>
 
@@ -281,63 +297,131 @@ const education = [
     color: var(--faint);
     font-variant-numeric: tabular-nums;
   }
-  .cv {
+  .section-title {
+    font-size: clamp(24px, 2.6vw, 32px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin-bottom: 32px;
+  }
+  .ai {
+    margin-top: 96px;
+  }
+  .ai-title {
+    font-size: clamp(24px, 2.6vw, 32px);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    max-width: 26ch;
+  }
+  .ai-grid {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .ai-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    padding-top: 18px;
+    border-top: 2px solid var(--fg);
+  }
+  .ai-item h3 {
+    font-size: 16px;
+  }
+  .ai-item:hover h3 {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .ai-item p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .tools {
+    margin-top: auto;
+    padding-top: 8px;
+    font-size: 13px !important;
+    color: var(--faint);
   }
   .certs-strip {
     margin-top: 72px;
+  }
+  /* One slow marquee: the list scrolls sideways and pauses on hover. */
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
   }
   .certs {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .cert {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-    height: 100%;
-    padding: 16px 18px;
-    border-radius: 12px;
+    gap: 12px;
+    flex-shrink: 0;
+    animation: slide 45s linear infinite;
+  }
+  .marquee:hover .certs {
+    animation-play-state: paused;
+  }
+  @keyframes slide {
+    to {
+      transform: translateX(calc(-100% - 12px));
+    }
+  }
+  .badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 52px;
+    padding: 0 20px 0 14px;
+    border-radius: 999px;
     background: var(--card);
     border: 1px solid var(--line);
+    white-space: nowrap;
     transition: border-color 0.2s;
   }
-  a.cert:hover {
+  a.badge[href]:hover {
     border-color: var(--faint);
   }
-  .cert-name {
+  .seal {
+    display: grid;
+    color: var(--accent);
+  }
+  .seal :global(svg) {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+  }
+  .badge-name {
     font-weight: 500;
   }
-  .cert-meta,
-  .cert-verify {
+  .badge-meta {
     font-size: 13px;
     color: var(--faint);
   }
-  .cert-verify {
-    margin-top: auto;
-    padding-top: 6px;
-  }
-  a.cert:hover .cert-verify {
-    color: var(--fg);
+  @media (prefers-reduced-motion: reduce) {
+    .marquee {
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .certs {
+      animation: none;
+      flex-wrap: wrap;
+      flex-shrink: 1;
+    }
+    .certs[aria-hidden] {
+      display: none;
+    }
   }
 
   @media (max-width: 1100px) {
-    .certs {
-      grid-template-columns: none;
-      grid-auto-flow: column;
-      grid-auto-columns: 180px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding-bottom: 6px;
-    }
-    .certs li {
-      scroll-snap-align: start;
+    .ai-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   @media (max-width: 900px) {
@@ -359,8 +443,8 @@ const education = [
     .hero {
       padding-top: 40px;
     }
-    .grid,
-    .cv {
+    .ai-grid,
+    .grid {
       grid-template-columns: 1fr;
       gap: 48px;
     }

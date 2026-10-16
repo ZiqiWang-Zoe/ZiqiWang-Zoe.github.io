@@ -1,50 +1,56 @@
 ---
-// Round icon button. Icons are inlined from @phosphor-icons/core (regular) and simple-icons (brands).
+// Pill link with a leading icon. All icons are Phosphor "regular" so stroke weight matches.
 import envelope from '@phosphor-icons/core/assets/regular/envelope-simple.svg?raw';
 import resume from '@phosphor-icons/core/assets/regular/file-text.svg?raw';
 import linkedin from '@phosphor-icons/core/assets/regular/linkedin-logo.svg?raw';
-import scholar from 'simple-icons/icons/googlescholar.svg?raw';
+import scholar from '@phosphor-icons/core/assets/regular/graduation-cap.svg?raw';
 
 const icons = { envelope, resume, linkedin, scholar };
 
 interface Props {
   icon: keyof typeof icons;
   href: string;
-  label: string;
+  text: string;
+  label?: string;
   primary?: boolean;
   external?: boolean;
 }
 
-const { icon, href, label, primary = false, external = false } = Astro.props;
+const { icon, href, text, label, primary = false, external = false } = Astro.props;
 ---
 
 <a
-  class:list={['icon-btn', primary && 'primary']}
+  class:list={['btn', primary && 'primary']}
   href={href}
   aria-label={label}
-  title={label}
   target={external ? '_blank' : undefined}
   rel={external ? 'noopener' : undefined}
 >
-  <span set:html={icons[icon]} />
+  <span class="ico" set:html={icons[icon]} />
+  <span>{text}</span>
 </a>
 
 <style>
-  .icon-btn {
-    display: inline-grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 16px 0 14px;
+    border-radius: 999px;
     background: var(--card);
     border: 1px solid var(--line);
     color: var(--fg);
-    transition: border-color 0.2s, transform 0.15s;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgb(21 26 43 / 0.04);
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
   }
-  .icon-btn:hover {
-    border-color: var(--faint);
+  .btn:hover {
+    background: var(--surface);
   }
-  .icon-btn:active {
+  .btn:active {
     transform: translateY(1px);
   }
   .primary {
@@ -53,15 +59,14 @@ const { icon, href, label, primary = false, external = false } = Astro.props;
     color: var(--bg);
   }
   .primary:hover {
-    border-color: var(--fg);
-    opacity: 0.88;
+    background: #2a2c31;
   }
-  span {
+  .ico {
     display: grid;
   }
-  span :global(svg) {
-    width: 20px;
-    height: 20px;
+  .ico :global(svg) {
+    width: 18px;
+    height: 18px;
     fill: currentColor;
   }
 </style>
