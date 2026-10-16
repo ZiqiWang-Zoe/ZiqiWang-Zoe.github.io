@@ -5,7 +5,7 @@ metric: 34% → 13%
 metricLabel: answers with no citation, naive RAG vs. the judge loop
 org: ICML 2026 AI4Law workshop
 period: "2026"
-role: Co-author
+role: Co-first author. Data collection, agent harness design, paper writing
 order: 2
 featured: true
 wide: true
@@ -15,15 +15,15 @@ coverFit: cover
 coverAlt: The L-MARS paper on arXiv, by Boqin Yuan and Ziqi Wang
 status: draft
 todo:
-  - "Authorship: arXiv v4 lists two authors (Boqin Yuan, Ziqi Wang). Confirm whether to say co-author or co-first author"
-  - "Ziqi's own contribution to the paper, in one or two sentences"
   - A system diagram from the paper would make a stronger cover than the arXiv title block
   - "Ziqi to confirm the 'Why a marketer worked on this' section in her own words"
 ---
 
 ## The paper
 
-[**L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit**](https://arxiv.org/abs/2509.00761), by Boqin Yuan and Ziqi Wang. Accepted at the AI4Law Workshop at ICML 2026.
+[**L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit**](https://arxiv.org/abs/2509.00761), by Boqin Yuan and Ziqi Wang (co-first authors). Accepted at the AI4Law Workshop at ICML 2026.
+
+**My part:** I collected the data, designed the agent harness, and co-wrote the paper.
 
 Legal AI is usually scored on multiple-choice accuracy. That misses a common failure: whether the source attached to an answer exists, and whether it supports the rule the system attributes to it. L-MARS searches for evidence, lets a judge agent check it over several turns, and is then audited claim by claim against what it cited.
 
