@@ -1,0 +1,51 @@
+---
+// Marks content Ziqi still has to supply. Hidden everywhere once SHOW_PLACEHOLDERS is false.
+import { SHOW_PLACEHOLDERS } from '../site';
+
+interface Props {
+  need: string;
+  inline?: boolean;
+  ratio?: string;
+}
+
+const { need, inline = false, ratio } = Astro.props;
+---
+
+{
+  SHOW_PLACEHOLDERS &&
+    (inline ? (
+      <span class="todo inline">TODO: {need}</span>
+    ) : (
+      <div class="todo block" style={ratio ? `aspect-ratio:${ratio}` : undefined}>
+        <span>TODO</span>
+        <p>{need}</p>
+      </div>
+    ))
+}
+
+<style>
+  .todo {
+    color: var(--todo);
+    background: var(--todo-bg);
+    border: 1px dashed var(--todo);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .inline {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px 0;
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 20px;
+  }
+  .block span {
+    font-weight: 600;
+    font-size: 12px;
+  }
+</style>

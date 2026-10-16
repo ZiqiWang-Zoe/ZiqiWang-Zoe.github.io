@@ -1,0 +1,143 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Placeholder from '../../components/Placeholder.astro';
+import { SHOW_PLACEHOLDERS } from '../../site';
+
+export async function getStaticPaths() {
+  const all = await getCollection('work');
+  // Planned work has nothing to show yet, so it only gets a page while placeholders are on.
+  return all
+    .filter((entry) => SHOW_PLACEHOLDERS || entry.data.status !== 'planned')
+    .map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+
+<Base title={d.title} description={d.summary}>
+  <article class="wrap">
+    <a href="/#work" class="back muted">All work</a>
+    <header>
+      <p class="meta muted">{d.org} · {d.period}</p>
+      <h1>{d.title}</h1>
+      <p class="lede">{d.summary}</p>
+      <dl>
+        <div><dt>Role</dt><dd>{d.role}</dd></div>
+        {d.metric && <div><dt>Result</dt><dd><strong>{d.metric}</strong> {d.metricLabel}</dd></div>}
+      </dl>
+    </header>
+
+    {d.cover && <img class="cover" src={d.cover} alt={d.coverAlt ?? ''} loading="eager" />}
+
+    <div class="body narrow">
+      <Content />
+    </div>
+
+    {
+      SHOW_PLACEHOLDERS && d.todo.length > 0 && (
+        <aside class="narrow todo-list">
+          <Placeholder need={`Still needed for this page: ${d.todo.join(' / ')}`} />
+        </aside>
+      )
+    }
+  </article>
+</Base>
+
+<style>
+  article {
+    padding-top: 40px;
+  }
+  .back {
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .back::before {
+    content: '← ';
+  }
+  header {
+    margin-top: 40px;
+    max-width: 760px;
+  }
+  .meta {
+    font-size: 15px;
+  }
+  h1 {
+    margin-top: 12px;
+    font-size: clamp(32px, 5vw, 48px);
+  }
+  .lede {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--muted);
+    max-width: 62ch;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 48px;
+    margin: 32px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  dt {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  dd {
+    margin: 4px 0 0;
+  }
+  .cover {
+    margin-top: 48px;
+    max-height: 640px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+  }
+  .body {
+    margin-top: 56px;
+  }
+  .body :global(h2) {
+    font-size: 22px;
+    margin: 48px 0 14px;
+  }
+  .body :global(p),
+  .body :global(ul),
+  .body :global(ol) {
+    margin: 0 0 16px;
+  }
+  .body :global(li) {
+    margin-bottom: 8px;
+  }
+  .body :global(a) {
+    color: var(--accent);
+    text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  .body :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: 8px 0 24px;
+    display: block;
+    overflow-x: auto;
+  }
+  .body :global(th),
+  .body :global(td) {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 16px 10px 0;
+  }
+  .body :global(thead th) {
+    color: var(--muted);
+    font-weight: 500;
+    border-bottom: 1px solid var(--line);
+  }
+  .body :global(tbody tr + tr td) {
+    border-top: 1px solid var(--line);
+  }
+  .todo-list {
+    margin-top: 48px;
+  }
+</style>

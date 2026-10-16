@@ -1,0 +1,18 @@
+---
+title: SEO and B2B growth at an AI startup
+summary: At CambioML I grew backlinks 12% and weekly website reach about 15% through SEO and content work, and built a 100+ company prospect list.
+metric: "+12%"
+metricLabel: backlinks
+org: CambioML, San Jose
+period: Sep 2024 to Feb 2025
+role: Marketing Intern, B2B and Growth
+order: 7
+status: draft
+todo:
+  - "Which pages or content changes drove the backlink gain"
+  - A before and after screenshot from the SEO tool used
+---
+
+- Improved SEO and content, raising backlinks 12% and weekly website reach about 15%.
+- Built a database of 100+ potential B2B partners in the Bay Area.
+- Ran tech and social recruiting campaigns that helped hire 10 software engineering interns.
