@@ -112,6 +112,7 @@ const certs = [
               <h3>{a.title}</h3>
               <p class="muted">{a.body}</p>
               <p class="tools">{a.tools}</p>
+              <span class="ai-link">View evidence →</span>
             </a>
           </li>
         ))
@@ -127,18 +128,19 @@ const certs = [
           <ul class="certs" aria-hidden={clone ? 'true' : undefined}>
             {certs.map((c) => (
               <li>
-                <a
-                  class="badge"
-                  href={c.url}
-                  target={c.url ? '_blank' : undefined}
-                  rel={c.url ? 'noopener' : undefined}
-                  tabindex={clone ? -1 : undefined}
-                  title={c.url ? 'Verify credential' : `Credential ID ${c.id}`}
-                >
-                  <span class="seal" set:html={seal} />
-                  <span class="badge-name">{c.name}</span>
-                  <span class="badge-meta">{c.issuer} · {c.when}</span>
-                </a>
+                {c.url ? (
+                  <a class="badge" href={c.url} target="_blank" rel="noopener" tabindex={clone ? -1 : undefined} aria-label={`${c.name}, ${c.issuer} ${c.when}. Verify credential`}>
+                    <span class="seal" set:html={seal} />
+                    <span class="badge-name">{c.name}</span>
+                    <span class="badge-meta">{c.issuer} · {c.when}</span>
+                  </a>
+                ) : (
+                  <span class="badge">
+                    <span class="seal" set:html={seal} />
+                    <span class="badge-name">{c.name}</span>
+                    <span class="badge-meta">{c.issuer} · {c.when} · ID {c.id}</span>
+                  </span>
+                )}
               </li>
             ))}
           </ul>
@@ -345,6 +347,11 @@ const certs = [
     font-size: 13px !important;
     color: var(--faint);
   }
+  .ai-link {
+    font-size: 13px;
+    color: var(--accent);
+    margin-top: 4px;
+  }
   .certs-strip {
     margin-top: 72px;
   }
@@ -365,7 +372,8 @@ const certs = [
     flex-shrink: 0;
     animation: slide 45s linear infinite;
   }
-  .marquee:hover .certs {
+  .marquee:hover .certs,
+  .marquee:focus-within .certs {
     animation-play-state: paused;
   }
   @keyframes slide {
