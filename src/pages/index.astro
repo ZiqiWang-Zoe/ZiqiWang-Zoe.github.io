@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import headshot from '../assets/ziqi.jpg';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import { site, SHOW_PLACEHOLDERS } from '../site';
@@ -39,7 +41,7 @@ const education = [
   <section class="wrap hero">
     <div class="intro">
       <div class="me">
-        <!-- TODO(Ziqi): add a real headshot here (48px circle, source 400x400+) once she has one -->
+        <Image class="avatar" src={headshot} alt="Ziqi Wang" width={112} height={112} loading="eager" />
         <div>
           <h1>{site.name}</h1>
           <p class="muted">Technical Marketing @ Futurewei</p>
@@ -152,6 +154,13 @@ const education = [
     display: flex;
     align-items: center;
     gap: 14px;
+  }
+  .me :global(.avatar) {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
   }
   .me h1 {
     font-size: 15px;
