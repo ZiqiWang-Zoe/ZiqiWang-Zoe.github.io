@@ -5,8 +5,6 @@ import headshot from '../assets/ziqi.jpg';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import IconLink from '../components/IconLink.astro';
-import Timeline from '../components/Timeline.astro';
-import { experience, education } from '../data/timeline';
 import seal from '@phosphor-icons/core/assets/regular/seal-check.svg?raw';
 import { site, SHOW_PLACEHOLDERS } from '../site';
 
@@ -49,6 +47,23 @@ const aiWork = [
     tools: 'GA4, Meta Ads Manager, SQL, Python (pandas), Excel, PowerPoint',
     href: '/work/cambioml-seo/',
   },
+];
+
+const experience = [
+  { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
+  { when: '2026', role: 'Marketing Volunteer', org: 'CASPA' },
+  { when: '2024', role: 'Social Media Intern', org: 'Echobend' },
+  { when: '2024', role: 'Marketing Intern, B2B and Growth', org: 'CambioML' },
+  { when: '2023', role: 'Digital Media Assistant', org: 'University of Illinois' },
+  { when: '2022', role: 'UX Researcher', org: 'University of Illinois' },
+  { when: '2022', role: 'Advertising Campaigner', org: 'Amazon & GO' },
+  { when: '2022', role: 'Co-founder and President', org: 'Choom dance crew' },
+  { when: '2021', role: 'Brand Representative', org: 'Abercrombie & Fitch' },
+];
+
+const education = [
+  { when: '2026', role: 'M.S. Digital Social Media', org: 'USC' },
+  { when: '2024', role: 'B.S. Advertising', org: 'University of Illinois' },
 ];
 
 const certs = [
@@ -174,10 +189,37 @@ const certs = [
     }
   </section>
 
-  <section class="wrap" id="experience">
-    <h2 class="section-title">Experience</h2>
-    <Timeline title="Work" entries={experience} />
-    <Timeline title="Education" entries={education} />
+  <section class="wrap cv" id="experience">
+    <div>
+      <h2 class="label">Experience</h2>
+      <ul class="rows">
+        {
+          experience.map((e) => (
+            <li class="row">
+              <span class="when">{e.when}</span>
+              <span>
+                {e.role} <span class="muted">at {e.org}</span>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div>
+      <h2 class="label">Education</h2>
+      <ul class="rows">
+        {
+          education.map((e) => (
+            <li class="row">
+              <span class="when">{e.when}</span>
+              <span>
+                {e.role} <span class="muted">at {e.org}</span>
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </section>
 </Base>
 
@@ -299,11 +341,10 @@ const certs = [
     color: var(--faint);
     font-variant-numeric: tabular-nums;
   }
-  .section-title {
-    font-size: clamp(24px, 2.6vw, 32px);
-    font-weight: 500;
-    letter-spacing: -0.025em;
-    margin-bottom: 32px;
+  .cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
   }
   .ai {
     margin-top: 96px;
@@ -452,7 +493,8 @@ const certs = [
       padding-top: 40px;
     }
     .ai-grid,
-    .grid {
+    .grid,
+    .cv {
       grid-template-columns: 1fr;
       gap: 48px;
     }
