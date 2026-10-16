@@ -19,6 +19,14 @@ const stats = [
   { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
 ];
 
+const certs = [
+  { name: 'Google Ads Search', issuer: 'Google', when: '2023' },
+  { name: 'Google Ads Display', issuer: 'Google', when: '2023' },
+  { name: 'Google Analytics', issuer: 'Google', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
+  { name: 'Amazon Sponsored Ads', issuer: 'Amazon', when: '2022' },
+  { name: 'Social Media Monitoring', issuer: 'LinkedIn Learning', when: '2023', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
+];
+
 const experience = [
   { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
   { when: '2026', role: 'Marketing Volunteer', org: 'CASPA' },
@@ -74,6 +82,23 @@ const education = [
   </section>
 
 
+  <section class="wrap certs-strip" aria-label="Certifications">
+    <h2 class="label">Certified</h2>
+    <ul class="certs">
+      {
+        certs.map((c) => {
+          const inner = (
+            <>
+              <span class="cert-name">{c.name}</span>
+              <span class="cert-meta">{c.issuer}, {c.when}{c.url ? ' · Verify ↗' : ''}</span>
+            </>
+          );
+          return <li>{c.url ? <a class="cert" href={c.url} target="_blank" rel="noopener">{inner}</a> : <div class="cert">{inner}</div>}</li>;
+        })
+      }
+    </ul>
+  </section>
+
   <section class="wrap" id="work">
     <h2 class="label">Selected work</h2>
     <div class="grid">
@@ -128,12 +153,6 @@ const education = [
             </li>
           ))
         }
-      </ul>
-      <h2 class="label certs-label">Certifications</h2>
-      <ul class="rows">
-        <li class="row"><span class="when">2025</span><span>Google Analytics</span></li>
-        <li class="row"><span class="when">2023</span><span>Google Ads Search and Display</span></li>
-        <li class="row"><span class="when">2022</span><span>Amazon Sponsored Ads</span></li>
       </ul>
     </div>
   </section>
@@ -257,14 +276,46 @@ const education = [
     grid-template-columns: 1fr 1fr;
     gap: 64px;
   }
-  .certs-label {
-    margin-top: 40px;
+  .certs-strip {
+    margin-top: 72px;
+  }
+  .certs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  .cert {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    transition: border-color 0.2s;
+  }
+  a.cert:hover {
+    border-color: var(--faint);
+  }
+  .cert-name {
+    font-weight: 500;
+  }
+  .cert-meta {
+    font-size: 13px;
+    color: var(--faint);
   }
 
   @media (max-width: 900px) {
     .hero {
       grid-template-columns: 1fr;
       gap: 48px;
+    }
+    .certs {
+      grid-template-columns: 1fr 1fr;
     }
     .stats {
       padding: 32px 0 0;
