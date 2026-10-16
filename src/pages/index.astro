@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import headshot from '../assets/ziqi.jpg';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
+import IconLink from '../components/IconLink.astro';
 import { site, SHOW_PLACEHOLDERS } from '../site';
 
 const work = (await getCollection('work'))
@@ -62,9 +63,10 @@ const education = [
         a paper on how AI systems choose which sources to cite.
       </p>
       <div class="actions">
-        <a class="pill pill-dark" href={`mailto:${site.email}`}>Email</a>
-        <a class="pill" href={site.resume} target="_blank" rel="noopener">Resume</a>
-        <a class="pill" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+        <IconLink icon="envelope" href={`mailto:${site.email}`} label={`Email ${site.email}`} primary />
+        <IconLink icon="resume" href={site.resume} label="Resume (PDF)" external />
+        <IconLink icon="linkedin" href={site.linkedin} label="LinkedIn" external />
+        <IconLink icon="scholar" href={site.scholar || site.arxiv} label="Google Scholar" external />
       </div>
     </div>
 

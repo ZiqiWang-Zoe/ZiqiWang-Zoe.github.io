@@ -1,0 +1,67 @@
+---
+// Round icon button. Icons are inlined from @phosphor-icons/core (regular) and simple-icons (brands).
+import envelope from '@phosphor-icons/core/assets/regular/envelope-simple.svg?raw';
+import resume from '@phosphor-icons/core/assets/regular/file-text.svg?raw';
+import linkedin from '@phosphor-icons/core/assets/regular/linkedin-logo.svg?raw';
+import scholar from 'simple-icons/icons/googlescholar.svg?raw';
+
+const icons = { envelope, resume, linkedin, scholar };
+
+interface Props {
+  icon: keyof typeof icons;
+  href: string;
+  label: string;
+  primary?: boolean;
+  external?: boolean;
+}
+
+const { icon, href, label, primary = false, external = false } = Astro.props;
+---
+
+<a
+  class:list={['icon-btn', primary && 'primary']}
+  href={href}
+  aria-label={label}
+  title={label}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noopener' : undefined}
+>
+  <span set:html={icons[icon]} />
+</a>
+
+<style>
+  .icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .icon-btn:hover {
+    border-color: var(--faint);
+  }
+  .icon-btn:active {
+    transform: translateY(1px);
+  }
+  .primary {
+    background: var(--fg);
+    border-color: var(--fg);
+    color: var(--bg);
+  }
+  .primary:hover {
+    border-color: var(--fg);
+    opacity: 0.88;
+  }
+  span {
+    display: grid;
+  }
+  span :global(svg) {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+</style>
