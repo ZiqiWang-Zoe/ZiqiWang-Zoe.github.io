@@ -23,6 +23,9 @@ const work = defineCollection({
       coverAlt: z.string().optional(),
       // contain: show the whole image on a soft backdrop (screenshots, posters).
       coverFit: z.enum(['contain', 'cover']).default('contain'),
+      // Card styling on the home grid.
+      tint: z.enum(['gray', 'blue', 'ink']).default('gray'),
+      wide: z.boolean().default(false),
     }),
 });
 

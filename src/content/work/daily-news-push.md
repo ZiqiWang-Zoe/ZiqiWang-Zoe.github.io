@@ -8,6 +8,8 @@ period: "2026"
 role: Creator, editorial and Python
 order: 1
 featured: true
+wide: true
+tint: blue
 cover: ../../assets/work/news-email.png
 coverAlt: The IC News Daily briefing from October 10, 2026
 status: draft

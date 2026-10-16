@@ -1,14 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import { site, SHOW_PLACEHOLDERS } from '../site';
+import newsEmail from '../assets/work/news-email.png';
+import caspaPoster from '../assets/work/caspa-poster.png';
 
 const work = (await getCollection('work'))
   .filter((w) => SHOW_PLACEHOLDERS || w.data.status !== 'planned')
   .sort((a, b) => a.data.order - b.data.order);
 const featured = work.filter((w) => w.data.featured);
 const more = work.filter((w) => !w.data.featured);
+
+// Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
+const stats = [
+  { value: '7x', label: 'average short-form views, ~1K to 7K per post', org: 'Echobend' },
+  { value: '+11.7%', label: 'engagement from Meta Ads campaigns', org: 'Echobend' },
+  { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
+  { value: '100+', label: 'industry partners reached every week', org: 'Futurewei' },
+];
 
 const experience = [
   { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
@@ -29,20 +40,19 @@ const education = [
 ---
 
 <Base>
-  <div class="col page">
-    <header class="me">
-      <!-- TODO(Ziqi): replace with a real headshot (square, 400x400 or larger) -->
-      <div class="avatar" aria-hidden="true">ZW</div>
-      <div>
-        <h1>{site.name}</h1>
-        <p class="muted">Technical Marketing @ Futurewei</p>
+  <section class="wrap hero">
+    <div class="intro">
+      <div class="me">
+        <!-- TODO(Ziqi): replace with a real headshot (square, 400x400 or larger) -->
+        <div class="avatar" aria-hidden="true">ZW</div>
+        <div>
+          <h1>{site.name}</h1>
+          <p class="muted">Technical Marketing @ Futurewei</p>
+        </div>
       </div>
-    </header>
-
-    <section>
       <p class="statement">I market technical products, and I build the tools I use to do it.</p>
       <p class="muted about">
-        USC Digital Social Media graduate based in San Jose. I write for engineering audiences, run paid and
+        USC Digital Social Media graduate in San Jose. I write for engineering audiences, run paid and
         short-form social, and co-authored <a class="link" href="/work/l-mars/">L-MARS</a>, a paper on how AI
         systems choose which sources to cite.
       </p>
@@ -51,17 +61,39 @@ const education = [
         <a class="pill" href={site.resume} target="_blank" rel="noopener">Resume</a>
         <a class="pill" href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </section>
+    </div>
 
-    <section id="work">
-      <h2 class="label">Work</h2>
-      <div class="cards">
-        {featured.map((w, i) => <WorkCard entry={w} eager={i === 0} />)}
-      </div>
+    <a class="collage" href="/work/daily-news-push/" aria-label="See the daily briefing case study">
+      <Image class="sheet back" src={caspaPoster} alt="" widths={[400, 800]} sizes="260px" loading="eager" />
+      <Image class="sheet front" src={newsEmail} alt="The IC News Daily briefing Ziqi built for Futurewei" widths={[480, 960]} sizes="340px" loading="eager" />
+    </a>
+  </section>
 
+  <section class="wrap">
+    <ul class="stats">
       {
-        more.length > 0 && (
-          <ul class="rows more">
+        stats.map((s) => (
+          <li>
+            <strong>{s.value}</strong>
+            <span class="muted">{s.label}</span>
+            <span class="where">{s.org}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="wrap" id="work">
+    <h2 class="label">Selected work</h2>
+    <div class="grid">
+      {featured.map((w, i) => <WorkCard entry={w} eager={i === 0} />)}
+    </div>
+
+    {
+      more.length > 0 && (
+        <div class="more">
+          <h2 class="label">More work</h2>
+          <ul class="rows">
             {more.map((w) => (
               <li>
                 <a href={`/work/${w.id}/`} class="row">
@@ -71,11 +103,13 @@ const education = [
               </li>
             ))}
           </ul>
-        )
-      }
-    </section>
+        </div>
+      )
+    }
+  </section>
 
-    <section id="experience">
+  <section class="wrap cv" id="experience">
+    <div>
       <h2 class="label">Experience</h2>
       <ul class="rows">
         {
@@ -89,9 +123,8 @@ const education = [
           ))
         }
       </ul>
-    </section>
-
-    <section>
+    </div>
+    <div>
       <h2 class="label">Education</h2>
       <ul class="rows">
         {
@@ -105,19 +138,26 @@ const education = [
           ))
         }
       </ul>
-      <p class="muted certs">
-        Certified in Google Ads Search and Display, Google Analytics, and Amazon Sponsored Ads.
-      </p>
-    </section>
-  </div>
+      <h2 class="label certs-label">Certifications</h2>
+      <ul class="rows">
+        <li class="row"><span class="when">2025</span><span>Google Analytics</span></li>
+        <li class="row"><span class="when">2023</span><span>Google Ads Search and Display</span></li>
+        <li class="row"><span class="when">2022</span><span>Amazon Sponsored Ads</span></li>
+      </ul>
+    </div>
+  </section>
 </Base>
 
 <style>
-  .page {
-    padding-top: 80px;
+  section + section {
+    margin-top: 96px;
   }
-  section {
-    margin-top: 64px;
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding-top: 72px;
   }
   .me {
     display: flex;
@@ -139,30 +179,102 @@ const education = [
     font-weight: 500;
     flex-shrink: 0;
   }
-  .me + section {
-    margin-top: 40px;
-  }
   .statement {
-    font-size: clamp(24px, 4.4vw, 30px);
+    margin-top: 36px;
+    font-size: clamp(32px, 4.4vw, 52px);
     font-weight: 500;
-    line-height: 1.25;
-    letter-spacing: -0.025em;
-    max-width: 22ch;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    max-width: 16ch;
   }
   .about {
-    margin-top: 16px;
-    max-width: 58ch;
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 50ch;
   }
   .actions {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 24px;
+    margin-top: 28px;
   }
-  .cards {
+
+  .collage {
+    position: relative;
+    height: 480px;
+    border-radius: 24px;
+    background: var(--tint-blue);
+    overflow: hidden;
+  }
+  .collage :global(.sheet) {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgb(21 26 43 / 0.2);
+    transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .collage :global(.back) {
+    width: 46%;
+    right: 8%;
+    top: 12%;
+    transform: rotate(5deg);
+  }
+  .collage :global(.front) {
+    width: 60%;
+    left: 9%;
+    top: 18%;
+    transform: rotate(-3deg);
+  }
+  .collage:hover :global(.back) {
+    transform: rotate(7deg) translateY(-6px);
+  }
+  .collage:hover :global(.front) {
+    transform: rotate(-4deg) translateY(-10px);
+  }
+
+  .stats {
+    list-style: none;
+    padding: 28px 0 0;
+    margin: 0;
+    border-top: 1px solid var(--line);
     display: grid;
-    gap: 48px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
   }
+  .stats li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .stats strong {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stats span {
+    font-size: 14px;
+    line-height: 1.45;
+    max-width: 24ch;
+  }
+  .where {
+    color: var(--faint);
+    font-size: 13px !important;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px 32px;
+  }
+  .grid :global(.wide) {
+    grid-column: 1 / -1;
+  }
+  .more {
+    margin-top: 72px;
+    max-width: 640px;
+  }
+
   .rows {
     list-style: none;
     padding: 0;
@@ -172,9 +284,6 @@ const education = [
     display: flex;
     gap: 16px;
     padding: 7px 0;
-  }
-  .more {
-    margin-top: 48px;
   }
   .more .row {
     justify-content: space-between;
@@ -189,13 +298,41 @@ const education = [
     color: var(--faint);
     font-variant-numeric: tabular-nums;
   }
-  .certs {
-    margin-top: 16px;
-    font-size: 14px;
+  .cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
   }
-  @media (max-width: 640px) {
-    .page {
-      padding-top: 48px;
+  .certs-label {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .collage {
+      height: 400px;
+    }
+    .stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 767px) {
+    section + section {
+      margin-top: 72px;
+    }
+    .hero {
+      padding-top: 40px;
+    }
+    .collage {
+      height: 340px;
+    }
+    .grid,
+    .cv {
+      grid-template-columns: 1fr;
+      gap: 48px;
     }
     .more .row {
       flex-direction: column;

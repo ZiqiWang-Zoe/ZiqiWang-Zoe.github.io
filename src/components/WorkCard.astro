@@ -11,26 +11,31 @@ const { entry, eager = false } = Astro.props;
 const d = entry.data;
 ---
 
-<a href={`/work/${entry.id}/`} class="card">
-  <div class:list={['frame', d.coverFit === 'cover' && 'bleed']}>
+<a href={`/work/${entry.id}/`} class:list={['card', d.wide && 'wide']}>
+  <div class:list={['frame', `tint-${d.tint}`, !d.cover && 'is-stat']}>
     {
       d.cover ? (
-        <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 1280]} sizes="(max-width: 640px) 100vw, 592px" loading={eager ? 'eager' : 'lazy'} />
-      ) : d.metric ? (
+        <Image
+          src={d.cover}
+          alt={d.coverAlt ?? ''}
+          widths={[640, 1280]}
+          sizes={d.wide ? '(max-width: 640px) 100vw, 1040px' : '(max-width: 640px) 100vw, 520px'}
+          loading="eager"
+        />
+      ) : (
         <div class="stat">
           <strong>{d.metric}</strong>
           <span>{d.metricLabel}</span>
-        </div>
-      ) : (
-        <div class="stat">
-          <span class="org">{d.org}</span>
         </div>
       )
     }
   </div>
   <div class="caption">
-    <h3>{d.title}</h3>
-    <p class="muted">{d.summary}</p>
+    <div>
+      <h3>{d.title}</h3>
+      <p class="muted">{d.summary}</p>
+    </div>
+    <span class="org">{d.org}</span>
   </div>
 </a>
 
@@ -40,75 +45,102 @@ const d = entry.data;
   }
   .frame {
     position: relative;
-    aspect-ratio: 16 / 11;
-    border-radius: 16px;
-    background: var(--surface);
+    aspect-ratio: 4 / 3;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 36px 48px 0;
+    padding: 40px 40px 0;
+  }
+  .wide .frame {
+    aspect-ratio: 21 / 9;
+    padding: 48px 48px 0;
+  }
+  .tint-gray {
+    background: var(--surface);
+  }
+  .tint-blue {
+    background: var(--tint-blue);
+  }
+  .tint-ink {
+    background: var(--ink);
+    color: #f4f5f8;
   }
   .frame img {
-    width: 78%;
+    width: min(100%, 420px);
     height: 100%;
     object-fit: cover;
     object-position: top;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 10px 40px rgb(21 22 24 / 0.1);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 16px 48px rgb(21 26 43 / 0.16);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .bleed {
-    padding: 0;
-  }
-  .bleed img {
-    width: 100%;
-    border-radius: 0;
-    box-shadow: none;
+  .wide .frame img {
+    width: min(100%, 520px);
   }
   .card:hover .frame img {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+  }
+  .is-stat {
+    align-items: center;
+    padding: 40px;
   }
   .stat {
-    align-self: center;
-    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     text-align: center;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .card:hover .stat {
+    transform: scale(1.03);
   }
   .stat strong {
-    font-size: clamp(44px, 9vw, 64px);
+    font-size: clamp(56px, 8vw, 96px);
     font-weight: 500;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.045em;
     line-height: 1;
     font-variant-numeric: tabular-nums;
   }
   .stat span {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--muted);
-    max-width: 28ch;
-  }
-  .stat .org {
-    font-size: 18px;
-    color: var(--fg);
+    max-width: 30ch;
   }
   .caption {
-    padding: 16px 4px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 4px 0;
   }
   .caption h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .caption p {
-    margin-top: 2px;
+    margin-top: 4px;
+    max-width: 60ch;
   }
-  @media (max-width: 640px) {
-    .frame {
+  .card:hover h3 {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .org {
+    font-size: 13px;
+    color: var(--faint);
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+  @media (max-width: 767px) {
+    .frame,
+    .wide .frame {
+      aspect-ratio: 4 / 3;
       padding: 24px 24px 0;
     }
-    .frame img {
-      width: 88%;
+    .caption {
+      flex-direction: column;
+      gap: 6px;
     }
   }
 </style>

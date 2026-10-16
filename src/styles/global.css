@@ -10,6 +10,8 @@
   --faint: #9a9da6;
   --line: #e6e6e8;
   --accent: #2346c7;
+  --tint-blue: #e9edfb;
+  --ink: #151a2b;
   color-scheme: light;
 }
 
@@ -66,6 +68,12 @@ img {
   max-width: 640px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .muted {
@@ -129,7 +137,8 @@ img {
 }
 
 @media (max-width: 640px) {
-  .col {
+  .col,
+  .wrap {
     padding: 0 16px;
   }
 }

@@ -6,6 +6,7 @@ period: 2026 to present
 role: Marketing and proceedings volunteer
 order: 3
 featured: true
+tint: ink
 status: draft
 todo:
   - "Confirm whether Ziqi designed the ACDB poster or only promoted it; the card caption depends on it"

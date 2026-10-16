@@ -8,6 +8,7 @@ period: Sep 2024 to Feb 2025
 role: Social Media Intern
 order: 2
 featured: true
+tint: gray
 status: draft
 todo:
   - "2 to 3 anonymized examples: a post before and after, with the view counts visible"
