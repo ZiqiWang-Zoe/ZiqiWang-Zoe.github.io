@@ -42,7 +42,7 @@ A daily email briefing, *IC News Daily*, delivered to the lab each morning.
 
 A daily briefing has to arrive every day. Three fixes made the sends dependable:
 
-- **Easy to join.** Readers could not reliably reach the original subscription link on the private network, so subscribing now works by replying with a tagged email.
+- **Easy to join.** Readers could not reliably reach the original subscription link on the private network, so readers now subscribe or leave by sending an email with a tag in the subject.
 - **A send only counts when it is sent.** Outlook could report success while the briefing sat in the Outbox. Now a run succeeds only once the message appears in Sent Items.
 - **AI writes, code decides.** A reworded AI summary once triggered a false failure alert. Success is now judged from the mail state, never from generated text.
 

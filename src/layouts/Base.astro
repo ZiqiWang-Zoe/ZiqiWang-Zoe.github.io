@@ -8,9 +8,10 @@ import headshot from '../assets/ziqi.jpg';
 interface Props {
   title?: string;
   description?: string;
+  narrow?: boolean;
 }
 
-const { title, description = site.description } = Astro.props;
+const { title, description = site.description, narrow = false } = Astro.props;
 const pageTitle = title ? `${title} | ${site.name}` : `${site.name} | Technical Marketing`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL((await getImage({ src: headshot, width: 600, height: 600, format: 'jpg' })).src, Astro.site).href;
@@ -68,6 +69,6 @@ const person = {
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer narrow={narrow} />
   </body>
 </html>

@@ -29,9 +29,5 @@ Echobend runs social for several client brands. I worked across those accounts o
 
 ## Results
 
-| | |
-|---|---|
-| Average short-form views | ~1K → 7K per post |
-| Overall engagement from Meta campaigns | +11.7% |
-
-The client accounts belong to the clients, so examples here are anonymized.
+- Average short-form views: **~1K → 7K per post**
+- Engagement from Meta campaigns: **+11.7%**
