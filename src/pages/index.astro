@@ -21,10 +21,12 @@ const stats = [
 ];
 
 const certs = [
-  { name: 'Google Ads Search', issuer: 'Google', when: '2023' },
-  { name: 'Google Ads Display', issuer: 'Google', when: '2023' },
+  { name: 'Google Data Analytics', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/3BPH4R94PCVL' },
+  { name: 'Google AI Essentials', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/51J86WZ63O1G' },
   { name: 'Google Analytics', issuer: 'Google', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
-  { name: 'Amazon Sponsored Ads', issuer: 'Amazon', when: '2022' },
+  { name: 'Google Ads Search', issuer: 'Google', when: '2023', id: '195888093' },
+  { name: 'Google Ads Display', issuer: 'Google', when: '2023', id: '196427467' },
+  { name: 'Amazon Sponsored Ads', issuer: 'Amazon Ads', when: '2022', url: 'https://learningconsole.amazonadvertising.com/student/award/LeyCPjyFyDqyJmVoWernTgxY' },
   { name: 'Social Media Monitoring', issuer: 'LinkedIn Learning', when: '2023', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
 ];
 
@@ -92,7 +94,8 @@ const education = [
           const inner = (
             <>
               <span class="cert-name">{c.name}</span>
-              <span class="cert-meta">{c.issuer}, {c.when}{c.url ? ' · Verify ↗' : ''}</span>
+              <span class="cert-meta">{c.issuer}, {c.when}</span>
+              <span class="cert-verify">{c.url ? 'Verify ↗' : `ID ${c.id}`}</span>
             </>
           );
           return <li>{c.url ? <a class="cert" href={c.url} target="_blank" rel="noopener">{inner}</a> : <div class="cert">{inner}</div>}</li>;
@@ -291,8 +294,8 @@ const education = [
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px;
   }
   .cert {
     display: flex;
@@ -311,18 +314,36 @@ const education = [
   .cert-name {
     font-weight: 500;
   }
-  .cert-meta {
+  .cert-meta,
+  .cert-verify {
     font-size: 13px;
     color: var(--faint);
   }
+  .cert-verify {
+    margin-top: auto;
+    padding-top: 6px;
+  }
+  a.cert:hover .cert-verify {
+    color: var(--fg);
+  }
 
+  @media (max-width: 1100px) {
+    .certs {
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: 180px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 6px;
+    }
+    .certs li {
+      scroll-snap-align: start;
+    }
+  }
   @media (max-width: 900px) {
     .hero {
       grid-template-columns: 1fr;
       gap: 48px;
-    }
-    .certs {
-      grid-template-columns: 1fr 1fr;
     }
     .stats {
       padding: 32px 0 0;
