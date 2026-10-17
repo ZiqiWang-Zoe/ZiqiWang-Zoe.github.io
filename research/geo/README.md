@@ -58,3 +58,12 @@ judgment field.
   location). The spot check measures how much.
 - One day, two runs. AI answers change week to week, so this is a snapshot, not a ranking.
 - English questions, asked from the US.
+
+## Hand capture
+
+- **AI Overviews:** copy `aio/template.csv` to `aio/<date>.csv`. For each question, search Google in a
+  logged-out (private) window. Set `shown` to yes or no, paste the Overview text into `answer`, and
+  put the source links in `cited_urls`, separated by spaces.
+- **Consumer spot check:** copy `consumer-check/template.csv` to `consumer-check/<date>.csv`. Ask each
+  question in a new chat in each app. Note the model the app shows, then paste the answer and the
+  source links.
