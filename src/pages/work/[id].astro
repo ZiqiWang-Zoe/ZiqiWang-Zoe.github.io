@@ -35,8 +35,8 @@ const d = entry.data;
 
     {
       d.cover && (
-        <figure class="frame">
-          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 1280]} sizes="(max-width: 640px) 100vw, 592px" loading="eager" />
+        <figure class:list={['frame', d.coverFit === 'cover' && 'landscape']}>
+          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 960, 1280, 1600]} sizes="(max-width: 640px) 100vw, 592px" loading="eager" />
         </figure>
       )
     }
@@ -96,11 +96,26 @@ const d = entry.data;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
+  /* Never let flex stretch an image: width drives size, height follows the real ratio. */
   .frame img {
+    flex: none;
     width: min(100%, 560px);
+    height: auto;
     border-radius: 8px 8px 0 0;
     box-shadow: 0 12px 32px rgb(21 26 43 / 0.12);
+  }
+  .landscape {
+    max-height: none;
+    padding: 48px;
+    align-items: center;
+  }
+  .landscape img {
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    padding: 16px;
   }
   .body {
     margin-top: 48px;
@@ -163,6 +178,13 @@ const d = entry.data;
     }
     .frame img {
       width: 92%;
+    }
+    .landscape {
+      padding: 20px;
+    }
+    .landscape img {
+      width: 100%;
+      padding: 8px;
     }
   }
 </style>

@@ -9,7 +9,7 @@ export const site = {
   scholar: 'https://scholar.google.com/citations?user=k0ZmsF4AAAAJ&hl=en',
   resume: '/Ziqi-Resume.pdf',
   description:
-    'Ziqi Wang is a technical marketer in the San Francisco Bay Area. Technical Marketing Intern at Futurewei, M.S. Digital Social Media at USC, co-first author of L-MARS.',
+    'Ziqi Wang is a technical marketer in the San Francisco Bay Area and a Technical Marketing Intern at Futurewei. She holds an M.S. in Digital Social Media from USC and is a co-first author of L-MARS.',
 };
 
 // Placeholders mark content Ziqi still has to supply. Flip to false before merging to main,

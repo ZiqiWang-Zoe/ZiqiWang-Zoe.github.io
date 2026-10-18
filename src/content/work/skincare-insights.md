@@ -1,6 +1,6 @@
 ---
-title: Closing the information gap in skincare
-summary: My USC capstone. Consumer research on information asymmetry in skincare, turned into an ingredient-transparency framework and a recommendation tool.
+title: Closing the Information Gap in Skincare
+summary: For my USC capstone, I studied information asymmetry in skincare and used the research to create an ingredient-transparency framework and a recommendation tool.
 org: University of Southern California
 period: Graduate capstone
 role: Lead researcher and designer
@@ -15,11 +15,11 @@ todo:
   - Screenshots of the tool in progress
 ---
 
-## The question
+## The Question
 
 Skincare shoppers face a large information gap: ingredient lists they cannot read, and claims they cannot check. My graduate capstone at USC studied that gap and what would help consumers close it.
 
-## What I did
+## What I Did
 
 - Designed a survey-based skin-type assessment.
 - Built an ingredient-transparency framework.

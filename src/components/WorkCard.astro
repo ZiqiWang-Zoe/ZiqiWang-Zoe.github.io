@@ -33,7 +33,7 @@ const split = d.wide && d.cover;
           <Image
             src={d.cover!}
             alt={d.coverAlt ?? ''}
-            widths={[640, 1280]}
+            widths={[640, 960, 1280, 1600]}
             sizes="(max-width: 767px) 100vw, 640px"
             loading={eager ? 'eager' : 'lazy'}
           />
@@ -46,7 +46,7 @@ const split = d.wide && d.cover;
             <Image
               src={d.cover}
               alt={d.coverAlt ?? ''}
-              widths={[640, 1280]}
+              widths={[640, 960, 1280, 1600]}
               sizes="(max-width: 767px) 100vw, 560px"
               loading={eager ? 'eager' : 'lazy'}
             />
@@ -152,6 +152,7 @@ const split = d.wide && d.cover;
     overflow: hidden;
   }
   .visual :global(img) {
+    flex: none;
     width: 100%;
     max-width: 520px;
     height: auto;
@@ -182,6 +183,7 @@ const split = d.wide && d.cover;
     padding: 40px 40px 0;
   }
   .frame:not(.split) :global(img) {
+    flex: none;
     width: min(100%, 420px);
     height: auto;
     border-radius: 8px 8px 0 0;

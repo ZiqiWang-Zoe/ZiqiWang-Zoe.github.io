@@ -1,5 +1,5 @@
 ---
-title: Short-form video and paid social for client brands
+title: Short-Form Video and Paid Social for Client Brands
 summary: At Echobend I worked on Meta Ads and short-form content across client accounts, and average video views grew from about 1K to 7K per post.
 metric: 1K → 7K
 metricLabel: average short-form views per post
@@ -17,15 +17,15 @@ todo:
   - A screenshot of a Meta Ads results view with client names removed
 ---
 
-## The setup
+## The Setup
 
 Echobend runs social for several client brands. I worked across those accounts on organic short-form video and on paid campaigns in Meta Ads.
 
-## What I did
+## What I Did
 
-- **Short-form video.** I tracked platform trends and kept optimizing content against them. Average views rose from about 1K to 7K per post.
-- **Paid social.** I ran Meta Ads campaigns on Facebook, Instagram and for website traffic, iterating on creative from the performance data. Engagement rose 11.7%.
-- **Influencer campaigns.** I supported content execution and rollout for client campaigns featuring macro influencers and celebrity partners, including Sydney Sweeney, Rosé, Mariah Carey and Conan Gray.
+- **Short-form video.** I tracked platform trends and adjusted the content to match them. Average views rose from about 1K to 7K per post.
+- **Paid social.** I ran Meta Ads campaigns on Facebook and Instagram, including campaigns for website traffic. I adjusted the creative based on performance data, and engagement rose 11.7%.
+- **Influencer campaigns.** I helped produce and publish content for client campaigns with macro influencers and celebrity partners, including Sydney Sweeney, Rosé, Mariah Carey and Conan Gray.
 
 ## Results
 

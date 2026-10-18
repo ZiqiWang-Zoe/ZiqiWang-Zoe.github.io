@@ -1,6 +1,6 @@
 ---
-title: How an AI system decides which sources to trust
-summary: "L-MARS, a multi-agent legal question-answering system audited claim by claim against the sources it cites. Answer engines face a similar problem when they decide what to cite."
+title: How an AI System Checks the Sources Behind Its Answers
+summary: "L-MARS is a multi-agent legal question-answering system with an audit that checks each claim against its cited sources. Answer engines face similar citation decisions."
 metric: 34% → 13%
 metricLabel: of claims with no citation, naive RAG vs. the judge loop
 org: ICML 2026 AI4Law workshop
@@ -12,7 +12,7 @@ wide: true
 tint: gray
 cover: ../../assets/work/l-mars-workflow.png
 coverFit: cover
-coverAlt: The L-MARS system, from the paper. Query, search, judge and summary agents share evidence with provenance
+coverAlt: The L-MARS system from the paper. Query, search, judge and summary agents share evidence with source details
 paper:
   title: "L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit"
   authors: Boqin Yuan, Ziqi Wang (co-first authors)
@@ -20,13 +20,13 @@ paper:
 status: ready
 ---
 
-## The paper
+## The Paper
 
 [**L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit**](https://arxiv.org/abs/2509.00761), by Boqin Yuan and Ziqi Wang (co-first authors). Accepted at the AI4Law Workshop at ICML 2026.
 
 **My part:** I collected the data, designed the agent harness, and co-wrote the paper.
 
-Legal AI is usually scored on multiple-choice accuracy. That misses a common failure: whether the source attached to an answer exists, and whether it supports the rule the system attributes to it. L-MARS searches for evidence, lets a judge agent check it over several turns, and is then audited claim by claim against what it cited.
+The paper notes that legal AI is usually scored on multiple-choice accuracy. That score misses a common failure: an answer may cite a source that does not exist or does not support the rule attributed to it. L-MARS searches for evidence and uses a judge agent to check it over several turns. The final audit compares each claim with its cited source.
 
 On a 100-question Bar Exam audit:
 
@@ -37,6 +37,6 @@ On a 100-question Bar Exam audit:
 
 Retrieval alone barely moved accuracy. The citation gains came from the judge loop, which keeps searching when the first evidence is weak.
 
-## Why it matters for marketing
+## Why It Matters for Marketing
 
 ChatGPT, Perplexity, Claude and Google's AI Overviews also retrieve sources, judge them and cite a few. L-MARS studies a version of that step in a legal setting, which is why it connects to generative engine optimization (GEO).

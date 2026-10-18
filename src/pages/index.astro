@@ -24,26 +24,26 @@ const stats = [
 // AI workflow. Every tool and example below is on her resume or in the case studies.
 const aiWork = [
   {
-    title: 'Automated market intelligence',
-    body: 'Used Claude Code and Codex to build the pipeline behind IC News Daily, a newsletter that collects semiconductor news, picks the day\'s stories and sends them to 40 readers in Futurewei\'s IC lab every morning.',
+    title: 'Automated Market Intelligence',
+    body: 'I used Claude Code and Codex to build the pipeline behind IC News Daily. The newsletter collects semiconductor news, picks the day\'s stories and sends them every morning to 40 readers in Futurewei\'s IC lab.',
     tools: 'Claude Code, Codex, Python, Outlook automation',
     href: '/work/daily-news-push/',
   },
   {
-    title: 'AI search and GEO',
-    body: 'Co-first author of L-MARS, which audits whether an AI system\'s answers are backed by the sources it cites, a problem closely related to generative engine optimization. Plus hands-on SEO at CambioML.',
+    title: 'AI Search and GEO',
+    body: 'Co-first author of L-MARS, which checks whether cited sources support an AI system\'s answers, a problem closely related to generative engine optimization (GEO). I also worked on SEO at CambioML.',
     tools: 'GEO / AEO, SEO, ChatGPT, Claude, RAG',
     href: '/work/l-mars/',
   },
   {
-    title: 'Content and video production',
-    body: 'Short-form video that grew from about 1K to 7K views per post, plus event video for CASPA.',
+    title: 'Content and Video Production',
+    body: 'Average short-form video views grew from about 1K to 7K per post. I also edited event video for CASPA.',
     tools: 'Premiere Pro, Final Cut Pro, CapCut, Photoshop, Canva',
     href: '/work/echobend-social/',
   },
   {
-    title: 'Analytics and reporting',
-    body: 'Used SEO and content analytics to lift backlinks 12% and weekly site reach about 15% at CambioML, and turn 30+ industry items a week into market insight reports at Futurewei.',
+    title: 'Analytics and Reporting',
+    body: 'At CambioML, I used SEO and content analytics to raise backlinks 12% and weekly site reach about 15%. At Futurewei, I turn 30+ industry items a week into market insight reports.',
     tools: 'GA4, Meta Ads Manager, SQL, Python (pandas), Excel, PowerPoint',
     href: '/work/cambioml-seo/',
   },
@@ -91,9 +91,9 @@ const certs = [
       </div>
       <p class="statement">I turn complex AI and semiconductor products into stories, campaigns and tools people use.</p>
       <p class="muted about">
-        Technical marketer in San Jose, working in marketing since 2022: retail media for a consumer brand,
+        Technical marketer in San Jose, in marketing since 2022. My work spans retail media for a consumer brand,
         SEO and B2B growth at an AI startup, paid social and short-form video for client brands, and now
-        technical marketing for a semiconductor ecosystem team. I pick up new AI tools as they ship and build
+        technical marketing for a semiconductor ecosystem team. I follow new AI tools closely and build
         with Claude Code and Codex. Next, I want to do product, technical or growth marketing at an
         AI company.
       </p>
@@ -120,7 +120,7 @@ const certs = [
 
 
   <section class="wrap ai" aria-labelledby="ai-title">
-    <h2 id="ai-title" class="ai-title">I work fluently with current AI tools and ship real work with them.</h2>
+    <h2 id="ai-title" class="ai-title">How I Use AI in My Work</h2>
     <ul class="ai-grid">
       {
         aiWork.map((a) => (
@@ -170,7 +170,7 @@ const certs = [
   </section>
 
   <section class="wrap" id="work">
-    <h2 class="label">Selected work</h2>
+    <h2 class="label">Selected Work</h2>
     <div class="grid">
       {featured.map((w, i) => <WorkCard entry={w} eager={i === 0} />)}
     </div>
@@ -178,7 +178,7 @@ const certs = [
     {
       more.length > 0 && (
         <div class="more">
-          <h2 class="label">More work</h2>
+          <h2 class="label">More Work</h2>
           <ul class="rows">
             {more.map((w) => (
               <li>
