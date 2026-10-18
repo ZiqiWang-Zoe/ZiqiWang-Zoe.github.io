@@ -1,9 +1,9 @@
 ---
 title: "Kimi K3 on AMD MI355X and NVIDIA B300: What the Benchmark Measured"
 summary: "Two GPUs with matching memory specs, a 24% throughput gap, and the software work behind it"
-date: 2026-10-20
+date: 2026-10-18
 # draft: shown only in local dev (npm run dev). Change to published to put it on the live site.
-status: draft
+status: published
 # The same post on beehiiv, once it is up. Leave empty until then.
 beehiiv: ""
 ---
