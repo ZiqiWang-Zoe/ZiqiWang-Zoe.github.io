@@ -16,7 +16,7 @@ const more = work.filter((w) => !w.data.featured);
 
 // Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
 const stats = [
-  { value: '~8', label: 'stories every morning in IC News Daily, the newsletter I built with Claude Code and Codex', org: 'Futurewei' },
+  { value: '40', label: 'subscribers to IC News Daily, the daily newsletter I built with Claude Code and Codex', org: 'Futurewei' },
   { value: '1K → 7K', label: 'average short-form views per post', org: 'Echobend' },
   { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
 ];
@@ -25,14 +25,14 @@ const stats = [
 const aiWork = [
   {
     title: 'Automated market intelligence',
-    body: 'Used Claude Code and Codex to build the pipeline behind IC News Daily, a newsletter that collects semiconductor news, picks the stories that matter and lands in Futurewei\'s IC lab every morning.',
+    body: 'Used Claude Code and Codex to build the pipeline behind IC News Daily, a newsletter that collects semiconductor news, picks the day\'s stories and sends them to 40 readers in Futurewei\'s IC lab every morning.',
     tools: 'Claude Code, Codex, Python, Outlook automation',
     href: '/work/daily-news-push/',
   },
   {
     title: 'AI search and GEO',
-    body: 'Co-first author of L-MARS, research on how AI systems choose and cite sources, the question behind generative engine optimization. Backed by hands-on SEO work at CambioML.',
-    tools: 'GEO / AEO, SEO, ChatGPT, Perplexity, Claude, RAG',
+    body: 'Co-first author of L-MARS, which audits whether an AI system\'s answers are backed by the sources it cites, a problem closely related to generative engine optimization. Plus hands-on SEO at CambioML.',
+    tools: 'GEO / AEO, SEO, ChatGPT, Claude, RAG',
     href: '/work/l-mars/',
   },
   {
@@ -43,7 +43,7 @@ const aiWork = [
   },
   {
     title: 'Analytics and reporting',
-    body: 'Turns 30+ industry items a week into market insight reports, and measures campaigns end to end.',
+    body: 'Used SEO and content analytics to lift backlinks 12% and weekly site reach about 15% at CambioML, and turn 30+ industry items a week into market insight reports at Futurewei.',
     tools: 'GA4, Meta Ads Manager, SQL, Python (pandas), Excel, PowerPoint',
     href: '/work/cambioml-seo/',
   },
@@ -51,7 +51,7 @@ const aiWork = [
 
 const experience = [
   { when: '2026', role: 'Technical Marketing Intern', org: 'Futurewei' },
-  { when: '2026', role: 'Marketing Volunteer', org: 'CASPA' },
+  { when: '2026', role: 'Marketing and Proceedings Volunteer', org: 'CASPA' },
   { when: '2024', role: 'Social Media Intern', org: 'Echobend' },
   { when: '2024', role: 'Marketing Intern, B2B and Growth', org: 'CambioML' },
   { when: '2023', role: 'Digital Media Assistant', org: 'University of Illinois' },
@@ -69,7 +69,7 @@ const education = [
 const certs = [
   { name: 'Google Data Analytics', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/3BPH4R94PCVL' },
   { name: 'Google AI Essentials', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/51J86WZ63O1G' },
-  { name: 'Google Analytics', issuer: 'Google', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
+  { name: 'Google Analytics (GAIQ)', issuer: 'Google', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
   { name: 'Google Ads Search', issuer: 'Google', when: '2023', id: '195888093' },
   { name: 'Google Ads Display', issuer: 'Google', when: '2023', id: '196427467' },
   { name: 'Amazon Sponsored Ads', issuer: 'Amazon Ads', when: '2022', url: 'https://learningconsole.amazonadvertising.com/student/award/LeyCPjyFyDqyJmVoWernTgxY' },
@@ -86,7 +86,7 @@ const certs = [
         <Image class="avatar" src={headshot} alt="Ziqi Wang" width={144} height={144} loading="eager" />
         <div>
           <h1>{site.name}</h1>
-          <p class="muted">AI-native marketer, Technical Marketing @ Futurewei</p>
+          <p class="muted">AI-native marketer, Technical Marketing Intern @ Futurewei</p>
         </div>
       </div>
       <p class="statement">I turn complex AI and semiconductor products into stories, campaigns and tools people use.</p>
@@ -94,7 +94,7 @@ const certs = [
         Technical marketer in San Jose, working in marketing since 2022: retail media for a consumer brand,
         SEO and B2B growth at an AI startup, paid social and short-form video for client brands, and now
         technical marketing for a semiconductor ecosystem team. I pick up new AI tools as they ship and build
-        with Claude Code and Codex every day. Next, I want to do product, technical or growth marketing at an
+        with Claude Code and Codex. Next, I want to do product, technical or growth marketing at an
         AI company.
       </p>
       <div class="actions">
@@ -120,7 +120,7 @@ const certs = [
 
 
   <section class="wrap ai" aria-labelledby="ai-title">
-    <h2 id="ai-title" class="ai-title">Fluent in current AI tools, and I ship real work with them.</h2>
+    <h2 id="ai-title" class="ai-title">I work fluently with current AI tools and ship real work with them.</h2>
     <ul class="ai-grid">
       {
         aiWork.map((a) => (
@@ -138,8 +138,11 @@ const certs = [
   </section>
 
   <section class="wrap certs-strip" aria-labelledby="certs-title">
-    <h2 id="certs-title" class="label">Certified</h2>
-    <div class="marquee">
+    <div class="certs-head">
+      <h2 id="certs-title" class="label">Certified</h2>
+      <button type="button" class="marquee-toggle" aria-pressed="false" data-marquee-toggle>Pause</button>
+    </div>
+    <div class="marquee" data-marquee>
       {
         [false, true].map((clone) => (
           <ul class="certs" aria-hidden={clone ? 'true' : undefined}>
@@ -224,6 +227,17 @@ const certs = [
     </div>
   </section>
 </Base>
+
+<script>
+  // Pause control for the certification marquee (WCAG 2.2.2).
+  const toggle = document.querySelector<HTMLButtonElement>('[data-marquee-toggle]');
+  const marquee = document.querySelector('[data-marquee]');
+  toggle?.addEventListener('click', () => {
+    const paused = marquee?.classList.toggle('is-paused') ?? false;
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.textContent = paused ? 'Play' : 'Pause';
+  });
+</script>
 
 <style>
   section + section {
@@ -416,8 +430,26 @@ const certs = [
     animation: slide 45s linear infinite;
   }
   .marquee:hover .certs,
-  .marquee:focus-within .certs {
+  .marquee:focus-within .certs,
+  .marquee.is-paused .certs {
     animation-play-state: paused;
+  }
+  .certs-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .marquee-toggle {
+    font: inherit;
+    font-size: 13px;
+    color: var(--muted);
+    background: none;
+    border: 0;
+    padding: 4px 0;
+    cursor: pointer;
+  }
+  .marquee-toggle:hover {
+    color: var(--fg);
   }
   @keyframes slide {
     to {
@@ -466,6 +498,9 @@ const certs = [
       flex-shrink: 1;
     }
     .certs[aria-hidden] {
+      display: none;
+    }
+    .marquee-toggle {
       display: none;
     }
   }

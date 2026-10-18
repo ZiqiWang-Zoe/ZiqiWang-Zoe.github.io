@@ -1,6 +1,6 @@
 ---
 title: Event communications for CASPA
-summary: Event promotion, video editing and yearbook work for a Bay Area semiconductor association's annual conference.
+summary: Event promotion, event video editing and yearbook work for a Bay Area semiconductor association.
 org: CASPA
 period: 2026 to present
 role: Marketing and proceedings volunteer

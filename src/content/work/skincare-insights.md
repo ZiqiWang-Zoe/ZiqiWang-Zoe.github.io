@@ -22,6 +22,5 @@ Skincare shoppers face a large information gap: ingredient lists they cannot rea
 ## What I did
 
 - Designed a survey-based skin-type assessment.
-- Built an ingredient-transparency framework that explains what common ingredients do and who they suit.
-- Mapped the competitive landscape and wrote content-strategy recommendations.
+- Built an ingredient-transparency framework.
 - Turned the research into recommendation logic for an educational tool. The website version is in progress.

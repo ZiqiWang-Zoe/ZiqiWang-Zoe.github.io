@@ -1,8 +1,8 @@
 ---
 title: How an AI system decides which sources to trust
-summary: "L-MARS, a multi-agent legal question-answering system audited claim by claim against its cited sources. The same question answer engines face when they pick what to cite."
+summary: "L-MARS, a multi-agent legal question-answering system audited claim by claim against the sources it cites. Answer engines face a similar problem when they decide what to cite."
 metric: 34% → 13%
-metricLabel: answers with no citation, naive RAG vs. the judge loop
+metricLabel: of claims with no citation, naive RAG vs. the judge loop
 org: ICML 2026 AI4Law workshop
 period: "2026"
 role: Co-first author. Data collection, agent harness design, paper writing
@@ -17,9 +17,7 @@ paper:
   title: "L-MARS: Legal Multi-Agent System with Agentic Search and Citation-Faithfulness Audit"
   authors: Boqin Yuan, Ziqi Wang (co-first authors)
   venue: ICML 2026, AI4Law Workshop
-status: draft
-todo:
-  - "Ziqi to confirm the 'Why a marketer worked on this' section in her own words"
+status: ready
 ---
 
 ## The paper
@@ -35,12 +33,10 @@ On a 100-question Bar Exam audit:
 | | Naive RAG | L-MARS judge loop |
 |---|---|---|
 | Strict citation F1 | 0.13 | 0.25 |
-| Answers with no citation | 34% | 13% |
+| Claims with no citation | 34% | 13% |
 
-Retrieval alone barely moved accuracy. The gain came from checking sources before answering.
+Retrieval alone barely moved accuracy. The citation gains came from the judge loop, which keeps searching when the first evidence is weak.
 
-## Why a marketer worked on this
+## Why it matters for marketing
 
-ChatGPT, Perplexity, Claude and Google's AI Overviews now answer many of the questions buyers used to search for. Each of them runs some version of the same loop: retrieve, judge which sources are credible, cite a few.
-
-That makes "which sources does the model trust, and why" a marketing question. It decides whether a company's own pages are cited, or a competitor's comparison post is. Working on L-MARS gave me a working model of that selection step, which is the starting point for answer engine optimization (AEO).
+ChatGPT, Perplexity, Claude and Google's AI Overviews also retrieve sources, judge them and cite a few. L-MARS studies a version of that step in a legal setting, which is why it connects to generative engine optimization (GEO).
