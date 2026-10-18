@@ -33,4 +33,16 @@ const work = defineCollection({
     }),
 });
 
-export const collections = { work };
+const writing = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/writing' }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    // draft: only in local dev. published: on the live site, the home page and the sitemap.
+    status: z.enum(['draft', 'published']),
+    beehiiv: z.string().default(''),
+  }),
+});
+
+export const collections = { work, writing };

@@ -6,12 +6,16 @@ import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import IconLink from '../components/IconLink.astro';
 import seal from '@phosphor-icons/core/assets/regular/seal-check.svg?raw';
-import { site, SHOW_PLACEHOLDERS } from '../site';
+import { site, SHOW_PLACEHOLDERS, showDraft } from '../site';
 
 const work = (await getCollection('work'))
   .filter((w) => SHOW_PLACEHOLDERS || w.data.status !== 'planned')
   .sort((a, b) => a.data.order - b.data.order);
 const featured = work.filter((w) => w.data.featured);
+const writing = (await getCollection('writing'))
+  .filter((p) => showDraft(p.data.status))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const fmtDate = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const more = work.filter((w) => !w.data.featured);
 
 // Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
@@ -194,6 +198,32 @@ const certs = [
     }
   </section>
 
+  {
+    writing.length > 0 && (
+      <section class="wrap" id="writing">
+        <div class="more writing">
+          <h2 class="label">Writing</h2>
+          <ul class="rows">
+            {writing.map((p) => (
+              <li>
+                <a href={`/writing/${p.id}/`} class="row">
+                  <span>{p.data.title}</span>
+                  <span class="muted">{fmtDate(p.data.date)}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          {site.newsletter.url && (
+            <p class="newsletter muted">
+              New posts go out in <a href={site.newsletter.url}>{site.newsletter.name}</a>, a free weekly newsletter on AI
+              infrastructure.
+            </p>
+          )}
+        </div>
+      </section>
+    )
+  }
+
   <section class="wrap cv" id="experience">
     <div>
       <h2 class="label">Experience</h2>
@@ -332,6 +362,20 @@ const certs = [
   .more {
     margin-top: 72px;
     max-width: 640px;
+  }
+  .writing {
+    margin-top: 0;
+    max-width: 760px;
+  }
+  .writing .row span:last-child {
+    flex: none;
+  }
+  .newsletter {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  .newsletter a {
+    color: var(--accent);
   }
 
   .rows {
