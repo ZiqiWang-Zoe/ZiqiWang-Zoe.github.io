@@ -11,7 +11,7 @@ featured: true
 wide: true
 tint: blue
 cover: ../../assets/work/news-email.png
-coverAlt: The October 10, 2026 issue of IC News Daily
+coverAlt: A sample issue of IC News Daily, with company branding removed
 status: draft
 todo:
   - "How the 97% open rate is measured (read receipts, tracking or estimate), for interviews"
@@ -24,7 +24,7 @@ todo:
 - **My role:** editor and builder. I decide what belongs in it, and I built the pipeline that produces and sends it.
 - **Track record:** sent every day since July 1, 2026, with an open rate above 97%.
 
-[Read the October 10, 2026 issue](/work/news-email-2026-10-10.html)
+[Read a sample issue](/work/news-email-sample.html) (company branding removed)
 
 ## The editorial idea
 
@@ -52,7 +52,3 @@ Three fixes keep the daily send on schedule:
 ## What I would measure next
 
 Opens and clicks per story, to learn which topics the lab actually reads and tune the editorial criteria around them.
-
-## Source excerpts
-
-For readers who want to see the implementation: [selected sources](/work/news-code/selected-source.txt), [delivery check](/work/news-code/delivery.txt), [send verification](/work/news-code/verification.txt), [subscriptions](/work/news-code/subscriptions.txt).
