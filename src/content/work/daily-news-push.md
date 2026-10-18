@@ -1,50 +1,59 @@
 ---
-title: A daily industry briefing for an IC lab
-summary: I built the morning semiconductor briefing Futurewei's IC lab reads, from story selection to Outlook delivery.
+title: IC News Daily, a newsletter I built for an IC lab
+summary: A daily semiconductor newsletter for Futurewei's IC lab. I set the editorial line, and an AI pipeline I built with Claude Code and Codex collects, selects and sends it every morning.
 metric: "~8"
-metricLabel: selected stories in every morning's briefing
+metricLabel: curated stories in every morning's issue
 org: Futurewei Technologies
 period: "2026"
-role: Creator, editorial and Python
+role: Editor and builder
 order: 1
 featured: true
 wide: true
 tint: blue
 cover: ../../assets/work/news-email.png
-coverAlt: The IC News Daily briefing from October 10, 2026
+coverAlt: The October 10, 2026 issue of IC News Daily
 status: draft
 todo:
-  - "Why the lab needed this: one or two sentences in Ziqi's words"
-  - "The editorial criteria: what makes a story worth sending to this audience"
-  - Number of recipients, if it can be shared
-  - One sentence from lab leadership on how the briefing is used (with permission)
+  - "Number of subscribers and issues sent so far, if it can be shared"
+  - "One sentence from lab leadership on how the newsletter is used (with permission)"
+  - "Why the lab needed this, in Ziqi's words"
 ---
 
-## Result
+## At a glance
 
-The lab receives about eight selected stories each morning. Leadership has given positive feedback on the briefing's usefulness.
+- **What:** a daily email newsletter of about eight semiconductor and AI-infrastructure stories.
+- **Who reads it:** Futurewei's IC lab.
+- **My role:** editor and builder. I decide what belongs in it, and I built the pipeline that produces and sends it.
+- **Result:** it reaches the lab every morning, and leadership has given positive feedback on how useful it is.
 
-## The problem
+[Read the October 10, 2026 issue](/work/news-email-2026-10-10.html)
 
-Part of my job in Ecosystem Development is distilling 30+ industry-news items a week into market insight reports. I built a way to put a selected version of that reading in front of the IC lab every morning.
+## The editorial idea
 
-## What I built
+Part of my job is reading 30+ industry-news items a week for market insight reports. IC News Daily turns that reading into a short morning newsletter for the lab.
 
-A daily email briefing, *IC News Daily*, delivered to the lab each morning.
+Each issue opens with an **Editor's pick**, then a short list of stories. Every story gets a source, a date, a headline and two or three sentences on why it matters. The October 10 issue, for example, covered GPU supply, the cost of powering data centers, AI startup funding and a Senate probe into data-center subsidies.
 
-- **Editorial criteria first.** I defined what counts as a story for this audience. The research pass runs through Claude Code against those criteria and selects about eight stories.
-- **Collection and formatting in Python.** RSS and site collection, full-text extraction, image preparation and the HTML email are scripts I wrote.
-- **Delivery through Outlook,** with subscription handling so readers can join or leave by email, and a test mode that restricts recipients while I make changes.
+## How it is produced
 
-[Read a sample briefing (Oct 10, 2026)](/work/news-email-2026-10-10.html)
+I used **Claude Code** and **Codex** to build the pipeline, which runs on its own every morning:
 
-## How I made it reliable
+1. **Collect.** Python scripts pull new articles from RSS feeds and trade sites, with full-text extraction when a page allows it.
+2. **Select.** An AI research pass reads the candidates against the editorial criteria I wrote and picks about eight stories, with a short summary for each.
+3. **Format.** The issue is rendered as an HTML email with consistent thumbnails that display correctly in Outlook.
+4. **Send.** It goes out through Outlook to the subscriber list. Readers join or leave by sending an email with a tag in the subject.
 
-A daily briefing has to arrive every day. Three fixes made the sends dependable:
+## Keeping it reliable
 
-- **Easy to join.** Readers could not reliably reach the original subscription link on the private network, so readers now subscribe or leave by sending an email with a tag in the subject.
-- **A send only counts when it is sent.** Outlook could report success while the briefing sat in the Outbox. Now a run succeeds only once the message appears in Sent Items.
+A newsletter that arrives some mornings is worse than none. Three fixes made every send dependable:
+
+- **A send only counts when it is sent.** Outlook could report success while the issue sat in the Outbox. Now a run succeeds only once the message appears in Sent Items.
 - **AI writes, code decides.** A reworded AI summary once triggered a false failure alert. Success is now judged from the mail state, never from generated text.
+- **Safe testing.** A test mode limits recipients to approved addresses, so changes never reach the whole lab by accident.
+
+## What I would measure next
+
+Opens and clicks per story, to learn which topics the lab actually reads and tune the editorial criteria around them.
 
 ## Source excerpts
 
