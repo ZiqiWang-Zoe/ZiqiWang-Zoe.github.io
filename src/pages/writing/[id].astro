@@ -119,6 +119,20 @@ const subscribe = site.newsletter.url;
   .body :global(strong) {
     font-weight: 500;
   }
+  .body :global(img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  .body :global(p:has(> img)) {
+    margin-bottom: 8px;
+  }
+  .body :global(p:has(> img) + p em) {
+    font-size: 14px;
+    color: var(--faint);
+    font-style: normal;
+  }
   .body :global(table) {
     width: 100%;
     border-collapse: collapse;

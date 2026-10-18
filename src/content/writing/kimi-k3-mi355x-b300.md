@@ -7,6 +7,9 @@ status: published
 # The same post on beehiiv, once it is up. Leave empty until then.
 beehiiv: ""
 ---
+![Three bar charts. Peak dense 4-bit math: AMD MI355X 10.1 petaflops, NVIDIA B300 13.5. Total tokens per second per GPU at 50 tokens per second per user: AMD 7,567, NVIDIA 6,083. Total tokens per modeled dollar: AMD 18.2 million, NVIDIA 9.7 million.](./kimi-k3-figure.png)
+
+*The B300 has more peak math, and the MI355X served more tokens in this benchmark. Data: AMD and Embedded LLM on the vLLM blog, from SemiAnalysis InferenceX (retrieved October 9, 2026). Chart by Silicon to Serving.*
 
 On October 16, two posts on the vLLM blog described the same open model running on rival hardware. AMD and Embedded LLM reported that eight AMD Instinct MI355X GPUs served Moonshot AI's Kimi K3 at about 7,567 tokens per second per GPU. Eight NVIDIA HGX B300 GPUs served about 6,083. That is 24% more total throughput from the AMD system, counting both input and generated tokens. The same day, an NVIDIA engineer described how coding agents helped write faster Kimi K3 kernels for NVIDIA's rack-scale GB300 platform.
 
