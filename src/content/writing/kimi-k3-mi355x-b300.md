@@ -89,12 +89,10 @@ This section is for readers who want the technical detail behind the claim.
 
 **The cost model.** SemiAnalysis's total-cost-of-ownership model assigns $1.50 per MI355X GPU-hour and $2.26 per B300 GPU-hour. Combined with the throughput gap, that gives about 87% more tokens per modeled dollar for AMD.
 
-## Related Research
+## Papers Behind Kimi K3's Design
 
-- **[DeepSeek-V2](https://arxiv.org/abs/2405.04434) (2024)** introduced multi-head latent attention, which compresses the KV cache. DeepSeek-V2 reports a cache 93.3% smaller than DeepSeek 67B's.
-- **[Kimi Linear](https://arxiv.org/abs/2510.26692) (2025)** mixed Kimi Delta Attention with MLA. It reports up to 75% less KV cache and up to six times the decoding throughput at a one-million-token context.
-- **[Leviathan et al., Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192) (ICML 2023)** showed that a small model can draft tokens for a large model to check, without changing the output distribution.
-- **[ThunderKittens](https://arxiv.org/abs/2410.20399) (2024)** showed that a few tile-level building blocks make fast GPU kernels simpler to write. It is related background; the NVIDIA post does not cite it.
+- **[DeepSeek-V2](https://arxiv.org/abs/2405.04434) (2024)** introduced multi-head latent attention (MLA), which Kimi K3 uses in 24 layers. It compresses the KV cache; DeepSeek-V2 reports a cache 93.3% smaller than DeepSeek 67B's.
+- **[Kimi Linear](https://arxiv.org/abs/2510.26692) (2025)** introduced Kimi Delta Attention, which Kimi K3 uses in its other 69 layers. It reports up to 75% less KV cache at long context.
 
 ## Sources
 
