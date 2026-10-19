@@ -27,7 +27,7 @@ todo:
 
 ## Why This Study
 
-Generative engine optimization (GEO) is the work of getting a brand described correctly in AI answers. An answer engine searches the web, picks a few pages, and writes an answer that links to them. The pages it picks decide what a buyer reads about a company.
+Generative engine optimization (GEO) is the work of getting a brand described correctly in AI answers. An answer engine searches the web, picks a few pages, and writes an answer that links to them. The cited pages show which sources each engine attached to its answer.
 
 My co-authored paper [L-MARS](/work/l-mars/) studies that selection step for legal questions. This study looks at it for companies that sell to developers.
 
@@ -41,49 +41,50 @@ My co-authored paper [L-MARS](/work/l-mars/) studies that selection step for leg
 
 ## What I Found
 
-**The OpenAI model went to the companies themselves.** It searched for all 120 answers and cited about four sources each. 80% of its citations were pages from the company asked about or a tracked competitor, mostly docs and pricing pages. Most of the rest were platform docs from companies such as OpenAI, Microsoft and Google. It cited no review sites.
+**The OpenAI model mostly cited vendors' own sites.** It searched for all 120 answers and cited about four sources each. 80% of its citations were pages from the company asked about (33%) or a tracked competitor (47%), mostly docs and pricing pages. Most of the rest were platform docs from companies such as OpenAI, Microsoft and Google. It cited no review sites.
 
-**Claude and AI Overviews read what others wrote about the companies.** Pages from companies outside the tracked set were 33% of Claude's citations and 41% of AI Overviews'. Review and comparison sites added another 26% for Claude. On "Mintlify vs GitBook", AI Overviews cited eight pages published by other documentation tools and agencies. On Exa's questions, Claude cited comparison posts by Parallel, an Exa competitor, nine times across four questions.
+**Claude and AI Overviews read what others wrote about the companies.** Pages from companies outside the tracked set were 33% of Claude's citations and 41% of AI Overviews'. Review and comparison sites added another 26% for Claude. On "Mintlify vs GitBook", AI Overviews cited Mintlify's own comparison page and eleven others. Eight of the twelve came from other documentation tools and agencies. On Exa's questions, Claude cited comparison posts by Parallel, an Exa competitor, nine times across four questions.
 
 **Claude often answered from memory.** It searched in only 47 of its 120 answers. The rest came from what the model already knew. What a model learned in training still shapes many answers, whatever a company publishes this month.
 
-**Being mentioned and being named first are different results.** On Exa's six category questions, Claude mentioned Exa in all 12 answers. It named Tavily first in six of them and Exa first in three. On Fireworks AI's, Claude named Together AI first in five answers and Fireworks in two, while the OpenAI model named Fireworks first in seven. Mintlify led on all three engines.
+**Being mentioned and being named first are different results.** On Exa's six unbranded questions, Claude mentioned Exa in all 12 answers. It named Tavily first in six of them and Exa first in three. On Fireworks AI's, Claude named Together AI first in five answers and Fireworks in two, while the OpenAI model named Fireworks first in seven. Mintlify led on all three engines.
 
-**Prices were right when the engine read the pricing page.** All 25 pricing answers gave the main list price correctly. The errors came from secondhand sources. Two answers that leaned on third-party guides said LangSmith keeps extended traces for 400 days. LangChain's pricing page says 180.
+**Main list prices were right, and the errors were in the details.** All 25 pricing answers stated the main list price correctly. One Claude answer and one AI Overview repeated a claim from third-party guides that LangSmith keeps extended traces for 400 days. LangChain's pricing page says 180.
 
 ## What Each Company Could Look At
 
 | Company | What the engines did | Our reading: one thing to check |
 |---|---|---|
-| Mintlify | Named first in 9 of 12 OpenAI answers, 11 of 12 Claude answers and 4 of 6 AI Overviews on category questions. | On "Mintlify vs GitBook", 8 of the 12 pages AI Overviews cited came from other docs tools and agencies. A first-party comparison page would give engines Mintlify's own facts. |
+| Mintlify | Named first in 9 of 12 OpenAI answers, 11 of 12 Claude answers and 4 of 6 AI Overviews on unbranded questions. | Mintlify publishes its own GitBook comparison, and AI Overviews cited it. The other cited comparisons mostly came from rival docs tools, so their facts are worth checking. |
 | Exa | Mentioned often, but Claude and AI Overviews named Tavily first more often than Exa. | The comparison posts that rank search APIs, including Parallel's, which Claude cited about Exa. |
-| Fireworks AI | Named first in 7 of 12 OpenAI answers and 2 of 12 Claude answers on category questions. | Which pages Claude cites for "fastest inference API" questions, where Together AI came first. |
-| AssemblyAI | Mentioned in every Claude answer and AI Overview on category questions, named first in 5 of 12 Claude answers. | One Claude answer could not load the pricing page and used third-party prices, including a model rate the pricing page does not list. |
-| LangChain | Mentioned in 10 of 12 OpenAI answers on category questions, named first in 2. | Which framework comparisons the OpenAI model cites for agent and RAG questions. |
+| Fireworks AI | Named first in 7 of 12 OpenAI answers and 2 of 12 Claude answers on unbranded questions. | Which pages Claude cites on these questions. It named Together AI first in 5 of 12 answers, and Cerebras first on the fastest-inference question. |
+| AssemblyAI | Mentioned in every Claude answer and AI Overview on unbranded questions, named first in 5 of 12 Claude answers. | One Claude answer could not load the pricing page and used third-party prices, including a model rate the pricing page does not list. |
+| LangChain | Mentioned in 10 of 12 OpenAI answers on unbranded questions, named first in 2. | Which framework comparisons the OpenAI model cites for questions on agents and retrieval-augmented generation (RAG, answering from a document store). |
 
 ## What Marketers Can Take From It
 
-- **Treat each engine as its own channel.** The same question drew on a company's docs in one engine and on other companies' blog posts in another. Check citations engine by engine before planning content.
-- **Docs and pricing pages are marketing pages now.** The OpenAI model read them directly, and prices came out right when it did. Keep them current and easy for AI tools to fetch.
-- **Know who writes about you.** Competitors' comparison posts were cited as evidence about the companies they compete with. Find the ones that get cited, and make sure your own facts are published where engines can find them.
+- **Check citations engine by engine.** The same question drew on a company's docs in one engine and on other companies' blog posts in another. Plan content per engine.
+- **Keep docs and pricing pages current.** The OpenAI model cited them more than any other source. Make them easy for AI tools to fetch.
+- **Review the third-party pages engines cite about you.** Competitors' comparison posts were cited as evidence about the companies they compete with. Find the ones that get cited, and make sure your own facts are published where engines can find them.
 
 ## Limits
 
 - Codex and Claude Code are developer tools. Their answers can differ from the ChatGPT and Claude apps, which use other system prompts and may use other models. Codex also opened its own built-in OpenAI docs guide in 12 of its 120 answers. The consumer app spot check has not been run yet.
 - Perplexity was left out. Its API needs a paid key, and its website asked for a sign-up before answering.
 - One weekend, two runs. The OpenAI model named the same vendor first in both runs for 52 of 60 questions, and Claude for 48. Answers change week to week, so this is a snapshot.
-- English questions, asked from the US. Source types and top picks were coded by hand with an AI first pass, and every row is in the data.
+- I wrote the 60 questions myself, so they are a chosen set and may differ from what real buyers search. English, asked from the US.
+- Source types and top picks have an AI first pass and are not yet reviewed by hand. Every row is published with the data.
 - AI Overviews hides source URLs behind Google redirect links, so its sources are recorded by the publisher name and page title Google shows.
 
 ## Under the Hood
 
 **Questions and companies.** `questions.csv` holds the 60 questions, frozen before the run. `companies.csv` lists each company's own domains and aliases, and `competitors.csv` the 56 tracked competitors with their domains. Three legacy docs hosts (two for Exa, one for LangChain) were added as own pages during coding; `analysis.py` lists them.
 
-**Collection.** `run.py` asked each question with no conversation history. Codex ran GPT-6 Sol with live web search, a read-only sandbox and no user config, rules or memory. Claude Code ran Sonnet 5.5 with a one-line assistant system prompt, only the WebSearch and WebFetch tools, and no user settings, skills or MCP servers. Every raw response is stored, with local paths removed. AI Overviews was read from the page by a script in a logged-out browser, then saved as text with its source list.
+**Collection.** `run.py` asked each question with no conversation history. Codex ran GPT-6 Sol with live web search, a read-only sandbox and no user config, rules or memory. Claude Code ran Sonnet 5.5 with a one-line assistant system prompt, only the WebSearch and WebFetch tools, and no user settings, skills or MCP servers (Model Context Protocol tool connections). Every raw response is stored, with local paths removed. AI Overviews was read from the page by a script in a logged-out browser, then saved as text with its source list.
 
 **What counts as a citation.** For the two models: every link in the final answer, with placeholder hosts such as acme.com in code samples dropped. Pages the model retrieved but did not link are stored separately and not counted. For AI Overviews: each entry in the source list Google shows beside the summary.
 
-**Coding.** `analysis.py` matches company and competitor names in the answer text, records the order in which they appear, and sorts cited domains into own, competitor or third party. Third-party sources were typed by hand in `host_types.csv`. `judge.py` asked a separate Claude call, with no tools, which product each category answer recommends first, and to quote the sentence that shows it. Every quote was checked to appear word for word in the answer. Pricing answers were checked against each company's pricing page, copied on October 19 into `claims/`.
+**Coding.** `analysis.py` matches company and competitor names in the answer text, records the order in which they appear, and sorts cited domains into own, competitor or third party. Third-party sources were typed in `host_types.csv`, as a first pass not yet reviewed by hand. `judge.py` asked a separate Claude call, with no tools, which product each unbranded answer recommends first, and to quote the sentence that shows it. Every quote was checked to appear word for word in the answer. Pricing answers were checked against each company's pricing page, copied on October 19 into `claims/`.
 
 **Reproduce it.** `python3 research/geo/analysis.py` rebuilds every table in `results/` from the raw files, and `make_figure.py` redraws the chart.
 

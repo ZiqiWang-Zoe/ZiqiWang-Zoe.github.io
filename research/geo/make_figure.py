@@ -55,7 +55,7 @@ fig.text(0.012, 0.92, "Share of all cited sources, 60 buyer questions about five
          color=MUTED, fontsize=10.5)
 fig.text(0.012, 0.03,
          "OpenAI and Claude models: two runs per question with web search on, Oct 18, 2026.\n"
-         "AI Overviews: one logged-out Google search per question, Oct 18 to 19. Source types coded by hand.",
+         "AI Overviews: one logged-out Google search per question, Oct 18 to 19. Source types: first-pass coding.",
          color=MUTED, fontsize=9.5, linespacing=1.4)
 fig.subplots_adjust(left=0.27, right=0.98, top=0.72, bottom=0.17)
 OUT.parent.mkdir(parents=True, exist_ok=True)

@@ -22,5 +22,5 @@ AAI-10,aio,1,yes,Dictation API $0.62/hr,
 LC-10,codex,1,yes,,
 LC-10,codex,2,yes,,
 LC-10,claude_code,1,yes,,
-LC-10,claude_code,2,yes,"$2.50 per 1k base traces, $5.00 per 1k extended",answer attributes these to a third-party guide and says it could not confirm them
-LC-10,aio,1,yes,$2.50 per 1k base traces; $5.00 per 1k extended; 400-day retention; LCUs at $1.50,
+LC-10,claude_code,2,yes,"$2.50 per 1k base traces, $5.00 per 1k extended; 400-day retention (page says 180)",answer attributes these to a third-party guide and says it could not confirm them
+LC-10,aio,1,yes,$2.50 per 1k base traces; $5.00 per 1k extended; 400-day retention (page says 180); LCUs at $1.50,
