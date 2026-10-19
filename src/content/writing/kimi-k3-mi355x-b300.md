@@ -19,11 +19,11 @@ beehiiv: ""
 
 ## What Happened
 
-On October 16, AMD and its partner Embedded LLM published a post on the blog of vLLM, the popular open-source software for running AI models. It compared two servers running Kimi K3, an open model from Moonshot AI. Each server had eight GPUs: AMD's Instinct MI355X in one, NVIDIA's HGX B300 in the other.
+On October 16, AMD and its partner Embedded LLM published [a post on the blog of vLLM](https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x), the popular open-source software for running AI models. It compared two servers running Kimi K3, an open model from Moonshot AI. Each server had eight GPUs: AMD's Instinct MI355X in one, NVIDIA's HGX B300 in the other.
 
 At the same service level for each user, the AMD server produced about 7,567 tokens per second per GPU. The NVIDIA server produced about 6,083. A token is a short piece of text, often about three quarters of a word. The count includes text the model read and text it wrote, so it measures serving capacity on this workload. AMD's lead is 24%.
 
-The same day, an NVIDIA engineer published a separate post on the same blog. It described faster Kimi K3 software for NVIDIA's GB300 GPUs, built with help from AI coding agents. It does not compare MI355X with HGX B300.
+The same day, an NVIDIA engineer published [a separate post](https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel) on the same blog. It described faster Kimi K3 software for NVIDIA's GB300 GPUs, built with help from AI coding agents. It does not compare MI355X with HGX B300.
 
 ## The Positioning Story
 
@@ -89,10 +89,11 @@ This section is for readers who want the technical detail behind the claim.
 
 **The cost model.** SemiAnalysis's total-cost-of-ownership model assigns $1.50 per MI355X GPU-hour and $2.26 per B300 GPU-hour. Combined with the throughput gap, that gives about 87% more tokens per modeled dollar for AMD.
 
-## Papers Behind Kimi K3's Design
+## Further Reading
 
-- **[DeepSeek-V2](https://arxiv.org/abs/2405.04434) (2024)** introduced multi-head latent attention (MLA), which Kimi K3 uses in 24 layers. It compresses the KV cache; DeepSeek-V2 reports a cache 93.3% smaller than DeepSeek 67B's.
-- **[Kimi Linear](https://arxiv.org/abs/2510.26692) (2025)** introduced Kimi Delta Attention, which Kimi K3 uses in its other 69 layers. It reports up to 75% less KV cache at long context.
+- **The model:** Kimi Team, [Kimi K3: Open Frontier Intelligence](https://arxiv.org/abs/2607.24653), technical report, July 2026. It describes the 2.8-trillion-parameter mixture-of-experts design with 104 billion active parameters, built on Kimi Delta Attention and Attention Residuals.
+- **The benchmark:** SemiAnalysis InferenceX, [Kimi K3 on B300 vs MI355X](https://inferencex.semianalysis.com/compare/kimi-k3-b300-vs-mi355x/agentic) and the [AgentX methodology](https://inferencex.semianalysis.com/agentx). The comparison page is live and changes as new runs are submitted, so its current numbers may differ from the October 9 snapshot used here.
+- **The techniques the AMD post builds on:** vLLM blog posts on [AgentX](https://vllm.ai/blog/2026-09-08-vllm-agentx) and [decode context parallelism](https://vllm.ai/blog/2026-08-07-decode-context-parallelism), the method that spreads the conversation history across GPUs.
 
 ## Sources
 
