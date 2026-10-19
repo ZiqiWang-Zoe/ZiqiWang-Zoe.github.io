@@ -1,3 +1,5 @@
 # API keys and smoke-test output stay local
 .env
 raw/smoke-*/
+.venv/
+__pycache__/

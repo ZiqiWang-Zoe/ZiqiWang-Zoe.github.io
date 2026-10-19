@@ -24,7 +24,7 @@ EXA-10,Exa,pricing,yes,How much does the Exa API cost?
 EXA-11,Exa,fit,yes,Is Exa a good search backend for a deep research agent?
 EXA-12,Exa,brand,yes,What is Exa AI and what is it known for?
 FW-01,Fireworks AI,category,no,What is the fastest inference API for open-source LLMs?
-FW-02,Fireworks AI,category,no,What is the best platform to serve open-weight models like Llama, DeepSeek or Qwen in production?
+FW-02,Fireworks AI,category,no,"What is the best platform to serve open-weight models like Llama, DeepSeek or Qwen in production?"
 FW-03,Fireworks AI,use-case,no,What is the cheapest way to run DeepSeek through an API?
 FW-04,Fireworks AI,use-case,no,What is the best platform to fine-tune and deploy an open-source model?
 FW-05,Fireworks AI,use-case,no,Which serverless inference providers are best for LLM apps?

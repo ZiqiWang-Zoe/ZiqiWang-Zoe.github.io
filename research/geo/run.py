@@ -2,8 +2,8 @@
 and save the full raw answers, so every number in the case study traces back to a stored response.
 
 Usage:
-  python3 research/geo/run.py --engines openai,anthropic,perplexity --runs 2
-  python3 research/geo/run.py --questions research/geo/baseline-ziqi.csv --engines perplexity --runs 1
+  research/geo/.venv/bin/python research/geo/run.py --engines openai,anthropic,perplexity --runs 2
+  research/geo/.venv/bin/python research/geo/run.py --questions research/geo/baseline-ziqi.csv --engines perplexity --runs 1
 
 Keys come from OPENAI_API_KEY, ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, either exported or as
 KEY=value lines in research/geo/.env (gitignored). Exported values win.
@@ -36,7 +36,7 @@ if env_file.exists():
 MODELS = {
     "openai": os.environ.get("GEO_OPENAI_MODEL", "gpt-5"),
     "anthropic": os.environ.get("GEO_ANTHROPIC_MODEL", "claude-opus-5-5"),
-    "perplexity": os.environ.get("GEO_PERPLEXITY_MODEL", "sonar"),
+    "perplexity": os.environ.get("GEO_PERPLEXITY_MODEL", "fast"),
 }
 
 
@@ -83,19 +83,25 @@ def ask_anthropic(question, model):
 
 
 def ask_perplexity(question, model):
+    # Sonar Chat Completions was retired on 2026-09-27; its replacement is the Agent API.
+    # The "fast" preset is the documented equivalent of the old "sonar" model.
     import httpx
 
     r = httpx.post(
-        "https://api.perplexity.ai/chat/completions",
+        "https://api.perplexity.ai/v1/agent",
         headers={"Authorization": f"Bearer {os.environ['PERPLEXITY_API_KEY']}"},
-        json={"model": model, "messages": [{"role": "user", "content": question}]},
-        timeout=120,
+        json={"preset": model, "input": question},
+        timeout=180,
     )
     r.raise_for_status()
     data = r.json()
-    results = data.get("search_results") or [{"url": u} for u in data.get("citations") or []]
-    cited = [{"url": s["url"], "title": s.get("title")} for s in results]
-    return data["choices"][0]["message"]["content"], cited, [], data
+    text, cited = [], []
+    for item in data.get("output") or []:
+        if item.get("type") == "message":
+            text += [c.get("text", "") for c in item.get("content") or [] if c.get("type") == "output_text"]
+        elif item.get("type") == "search_results":
+            cited += [{"url": s["url"], "title": s.get("title")} for s in item.get("results") or []]
+    return "".join(text), cited, [], data
 
 
 ENGINES = {"openai": ask_openai, "anthropic": ask_anthropic, "perplexity": ask_perplexity}
