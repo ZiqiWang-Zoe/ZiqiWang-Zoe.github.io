@@ -1,84 +1,100 @@
 ---
-title: "Kimi K3 on AMD MI355X and NVIDIA B300: What the Benchmark Measured"
-summary: "Two GPUs with matching memory specs, a 24% throughput gap, and the software work behind it"
+title: "AMD's Kimi K3 Benchmark: The Claim, the Proof and What Buyers Should Check"
+summary: "A launch teardown: how AMD made its case against NVIDIA's B300, and how much the evidence supports"
 date: 2026-10-18
 # draft: shown only in local dev (npm run dev). Change to published to put it on the live site.
 status: published
 # The same post on beehiiv, once it is up. Leave empty until then.
 beehiiv: ""
 ---
+**TL;DR**
+
+- AMD says eight of its MI355X GPUs served the open model Kimi K3 with 24% more throughput than eight NVIDIA B300s, in a public benchmark of coding-agent traffic.
+- AMD leads on measured output and modeled cost per token in this benchmark. NVIDIA's B300 leads on the published peak math spec.
+- The proof is strong for one model, one workload and one moment in time. Buyers should rerun the test on their own traffic before treating it as a ranking.
+
 ![Three bar charts. Peak dense 4-bit math: AMD MI355X 10.1 petaflops, NVIDIA B300 13.5. Total tokens per second per GPU at 50 tokens per second per user: AMD 7,567, NVIDIA 6,083. Total tokens per modeled dollar: AMD 18.2 million, NVIDIA 9.7 million.](./kimi-k3-figure.png)
 
 *The B300 has more peak math, and the MI355X served more tokens in this benchmark. Data: AMD and Embedded LLM on the vLLM blog, from SemiAnalysis InferenceX (retrieved October 9, 2026). Chart by Silicon to Serving.*
 
-On October 16, two posts on the vLLM blog described the same open model running on rival hardware. AMD and Embedded LLM reported that eight AMD Instinct MI355X GPUs served Moonshot AI's Kimi K3 at about 7,567 tokens per second per GPU. Eight NVIDIA HGX B300 GPUs served about 6,083. That is 24% more total throughput from the AMD system, counting both input and generated tokens. The same day, an NVIDIA engineer described how coding agents helped write faster Kimi K3 kernels for NVIDIA's rack-scale GB300 platform.
+## What Happened
 
-Two things frame the result. AMD and NVIDIA submitted their runs to SemiAnalysis's public InferenceX benchmark. The comparison targets one service level: 50 tokens per second per user. This post covers what the benchmark measured, why two chips with matching memory specs produced different results, and what that means for people who build, buy or sell inference. It ends with the research the work builds on.
+On October 16, AMD and its partner Embedded LLM published a post on the blog of vLLM, the popular open-source software for running AI models. It compared two servers running Kimi K3, an open model from Moonshot AI. Each server had eight GPUs: AMD's Instinct MI355X in one, NVIDIA's HGX B300 in the other.
 
-## What Was Measured
+At the same service level for each user, the AMD server produced about 7,567 tokens per second per GPU. The NVIDIA server produced about 6,083. A token is a short piece of text, often about three quarters of a word. The count includes text the model read and text it wrote, so it measures serving capacity on this workload. AMD's lead is 24%.
 
-The numbers come from vendor-submitted runs published through InferenceX, a public inference benchmark from the research firm SemiAnalysis. The workload, called AgentX, replays real coding-agent sessions with synthetic text. It keeps each session's request lengths, timing and repeated context. Coding agents resend much of the same context on every turn, so with unlimited cache, more than 96% of the prompt text could in theory be reused.
+The same day, an NVIDIA engineer published a separate post on the same blog. It described faster Kimi K3 software for NVIDIA's GB300 GPUs, built with help from AI coding agents. It does not compare MI355X with HGX B300.
 
-The service level comes from the time between tokens: the 90th-percentile gap is one fiftieth of a second, or 50 tokens per second per user. The measure leaves out the wait for the first token. At that service level, the post reports total tokens per second for each GPU.
+## The Positioning Story
+
+**A narrower headline than the result.** The post's title says AMD is "Matching NVIDIA HGX B300 Throughput per GPU." The body reports a 24% lead at one service level. The headline claims less than the data shows, which makes it harder to dispute.
+
+**A buyer's metric in place of a spec sheet.** On paper, the NVIDIA chip leads. It lists 13.5 petaflops of peak 4-bit math against 10.1 for AMD. The post does not compete on that number. It measures the output a customer pays for: tokens served per GPU at a fixed speed for each user. It then adds a cost model from the research firm SemiAnalysis, which puts AMD at about 87% more tokens per dollar.
+
+**Evidence others can check.** The numbers come from InferenceX, a public benchmark from SemiAnalysis. The post links the AMD and NVIDIA configurations and the software changes behind the result. It also lists what differs between the two runs: dates, software versions and cache settings.
+
+**NVIDIA's post covers a different question.** Benjamin Chislett of NVIDIA wrote about a new Kimi K3 software path for 8 or 16 GB300 GPUs. It reports faster kernels and 1.8 times better per-user speed on the same AgentX workload, measured against an earlier GB300 result. It also covers how people should review code that AI agents help write. Readers who see both posts get two separate stories: one about cost per token, one about how fast software can improve.
+
+## The Marketing Lens
+
+| | AMD and Embedded LLM post |
+|---|---|
+| **Claim** | The MI355X matches the HGX B300 on throughput per GPU for Kimi K3. The data shows 24% more. |
+| **Metric chosen** | Tokens per second per GPU at 50 tokens per second per user, plus modeled tokens per dollar. Peak specs, where NVIDIA leads, are mentioned but not the basis of the claim. |
+| **Proof** | Public InferenceX benchmark curves, linked configurations and named software changes. The two records come from different dates and setups. |
+| **Likely audience** | Our reading: teams that buy or run AI serving capacity and compare cost per token. |
+| **Competitor's same-day message** | A separate engineering post on Kimi K3 software speed for GB300 and on reviewing agent-assisted code. It does not compare against the MI355X. |
+| **Caveats the post states** | The two benchmark records are dated six weeks apart. The two setups differ. Numbers are interpolated to one service level. Some cost assumptions are unpublished. |
+| **Verdict** | A strong cost-per-token case for this model and workload, with its limits stated openly. It is a snapshot, and a newer software release on either side could change it. |
+
+## What Buyers Should Check
+
+- **Your own traffic.** The benchmark replays coding-agent sessions, which repeat a lot of context. A chatbot or batch job may behave differently.
+- **Your own speed target.** The comparison is set at 50 tokens per second per user. A product that needs faster replies could see a different result.
+- **The software version.** The two records are six weeks apart, and both sides keep changing their software. Test on the version you will run.
+- **Your own costs.** The $1.50 and $2.26 per GPU-hour figures come from a cost model. Replace them with your own prices for hardware, power and support.
+
+## What Marketers Can Take From It
+
+- **Pick the metric your buyer pays for, then show its limits.** AMD led with tokens per GPU at a set user speed, and it still printed the peak specs where NVIDIA leads.
+- **Make the evidence easy to audit.** Linking the configurations, software versions and benchmark data let engineers check the claim themselves.
+- **Put the caveats next to the claim.** The post lists run dates, setup differences and unpublished cost assumptions, so a skeptical reader finds them in the post itself.
+
+## Under the Hood
+
+This section is for readers who want the technical detail behind the claim.
+
+**What was measured.** The workload, called AgentX, replays real coding-agent sessions with synthetic text, keeping their request lengths, timing and repeated context. The service level is defined by the time between tokens: at the 90th percentile, that gap is one fiftieth of a second, or 50 tokens per second per user. It leaves out the wait for the first token.
 
 | | AMD MI355X | NVIDIA HGX B300 |
 |---|---|---|
-| GPUs, and how the model is split | 8, with eight-way tensor parallelism (TP8) | 8, with eight-way tensor parallelism (TP8) |
+| GPUs, and how the model is split | 8, with eight-way tensor parallelism | 8, with eight-way tensor parallelism |
 | Number formats | 4-bit weights (MXFP4), 8-bit KV cache | 4-bit weights (FP4), 8-bit KV cache |
-| Published dense 4-bit math peak | 10.1 petaflops (MXFP4) | 13.5 petaflops (FP4) |
+| Published dense 4-bit math peak | 10.1 petaflops | 13.5 petaflops |
 | Memory | 288 GB HBM3E, 8 TB/s peak | 288 GB HBM3E, 8 TB/s peak |
 | Configured host-memory cache budget | 224.875 GB per GPU | 281 GB per GPU |
 | Submission date | September 30, 2026 | August 16, 2026 |
-| Total tokens per second per GPU at 50 tokens/s/user | about 7,567 | about 6,083 |
+| Total tokens per second per GPU | about 7,567 | about 6,083 |
 
-Two details matter when reading the last row. The post interpolates between published runs to compare both systems at exactly 50 tokens per second. The runs on either side can differ in load, cache settings and drafting depth. AMD and its partners wrote the comparison, and the post links every configuration.
+**Why less peak math can still win.** A model writes its answer one token at a time, a phase called decode. Each step reads the model's weights and its saved state for the conversation from memory. In Kimi K3, 24 layers keep a compressed history (multi-head latent attention, MLA), and 69 layers carry a fixed-size summary forward (Kimi Delta Attention). At the small batch sizes that fast replies need, these memory reads often limit decode more than math does. Both chips list the same memory. The bandwidth real code reaches, the links between GPUs, and the number of steps per token still differ, and software shapes all three.
 
-## Two Chips with Matching Memory Specs
+**What AMD's software changed.** Kimi K3 is a mixture-of-experts model: a router sends each token to 16 of its 896 expert sub-networks. The AMD post lists more than a dozen changes to vLLM. Four stand out:
 
-On paper, the B300 has more compute: 13.5 petaflops of dense FP4 math, against 10.1 for the MI355X. The two GPUs list the same memory: 288 GB of HBM3E, the stacked memory next to the chip, with a peak bandwidth of 8 TB per second.
+- **Spreading the history across GPUs.** Each GPU now holds one eighth of the MLA history. Before, every GPU held a full copy. For a 142,000-token conversation, the post estimates the history per GPU falls from 1.96 GB to 245 MB.
+- **Keeping old context in CPU memory.** When a session's history no longer fits on the GPU, it can wait in the server's CPU memory and return when the session resumes.
+- **Faster kernels.** Padding MLA's 12 query heads per GPU to 16 let the work use AMD's hand-tuned code. In a single-user test, time per output token fell from 43.8 to 23.6 milliseconds.
+- **Speculative decoding.** A cheap draft step proposes three to seven tokens and the full model checks them in one pass. AMD turned this off in some high-load runs.
 
-Serving a language model has two phases. Prefill processes the prompt tokens that are not already cached, all in parallel, and often keeps the math units busy. Decode then produces the answer one token at a time. For every new token, the GPU reads the active weights and the stored context of the conversation, called the KV cache, from memory. At the small batch sizes that fast per-user speeds require, these memory reads often limit decode more than math does.
+**NVIDIA's software work.** Chislett's post rewrites most of Kimi K3's decode steps as custom kernels in CuTe DSL, NVIDIA's Python language for GPU code. Coding agents helped write and tune them. In one layer, the step count fell from 23 kernels to 13, and the time from 130 to 69 microseconds. Without speculative decoding, decode ran 1.3 to 1.9 times faster, depending on batch size and GPU count. Full-model tests with long inputs found numerical errors that unit tests had missed. On AgentX with one user at a time, per-user speed improved 1.8 times, though that test used 16 GPUs against an earlier 8-GPU result. The author writes that agent-optimized code now arrives faster than people can review it.
 
-Matching peak specs still leave three things open. Real kernels reach different shares of peak bandwidth, the eight GPUs exchange data over different links, and the software takes a different number of steps to produce each token. Software shapes all three.
-
-## What the Software Changed
-
-Kimi K3 is a mixture-of-experts model: for each token, a router picks 16 of its 896 expert sub-networks, so only a small part of the model runs per token. Its attention layers come in two kinds. Twenty-four layers use multi-head latent attention (MLA), which stores a compressed history that grows with the conversation. Sixty-nine layers use Kimi Delta Attention (KDA), a linear attention that keeps a fixed-size state.
-
-The AMD post lists more than a dozen changes to vLLM. Four of them show the main ideas.
-
-**Spreading the history across GPUs.** With the model split eight ways, each GPU still kept a full copy of the MLA history. The team changed this so each GPU holds one eighth of the cached positions, and the GPUs combine their partial attention results. For a 142,000-token conversation, the post estimates that the MLA history per GPU falls from 1.96 GB to 245 MB, before allocation overhead. The freed memory can hold more conversations at once.
-
-**Keeping old context in host memory.** When a coding agent returns to a session, recomputing its long history is expensive. When reusable state no longer fits in GPU memory, vLLM can keep MLA history and KDA checkpoints in the server's CPU memory and copy them back when the session resumes.
-
-**Faster kernels.** One change padded MLA's 12 query heads per GPU to 16 so the work could use AMD's hand-tuned assembly kernels. The post tested it with one user, 32,000 input tokens and 1,000 output tokens, without the history split or speculative decoding. The average time per output token fell from 43.8 to 23.6 milliseconds. Other changes fused several small kernels into one, which matters because each kernel launch costs a few microseconds.
-
-**Speculative decoding.** A cheap draft step proposes several tokens, and the full model checks them all in one pass. The AMD setup drafted three to seven tokens in some runs and turned drafting off in the higher-load runs that spread the history across all eight GPUs.
-
-The cost model widens the gap. SemiAnalysis's total-cost-of-ownership model assigns $1.50 per MI355X GPU-hour and $2.26 per B300 GPU-hour. At the reported throughput, that works out to about 87% more total tokens per modeled dollar for AMD. Some of the model's capital and utilization assumptions are not published.
-
-## NVIDIA's Side of the Same Day
-
-The NVIDIA post, by Benjamin Chislett, runs Kimi K3 on B300 GPUs inside the rack-scale GB300 platform. The comparison above used the eight-GPU HGX B300 server, and this work is not part of it.
-
-The post describes a decode path in which most operations run as custom kernels written in CuTe DSL, NVIDIA's Python language for GPU kernels. Coding agents helped write the kernels, fuse operations together and tune settings. In the post's timeline of one layer, stock vLLM ran 23 kernels in 130 microseconds, and the new path ran 13 kernels in 69 microseconds. Without speculative decoding, decode ran 1.3 to 1.9 times faster, depending on batch size and on whether the model ran on 8 or 16 GPUs.
-
-Chislett devotes a full section to validation. Kernel tests check the numbers. Full-model evaluations with long contexts check that the answers stay correct. The long-context evaluations found numerical problems in attention and communication kernels that the standalone tests had missed. The author writes that agent-optimized code is now arriving faster than people can review it. The proposed answer is for agents to supply tests, evaluations and the conditions under which each change works, while people judge the design and the evidence.
-
-## What It Means
-
-**For people who build inference systems.** Both posts treat memory traffic as central, from different directions. AMD focuses on where the KV cache lives and how it moves between GPUs and host memory. NVIDIA focuses on fusing kernels, overlapping communication with compute and prefetching weights. On this model and benchmark, the AMD system came out ahead despite less peak compute, and its post credits the software work.
-
-**For people who buy it.** A hardware ranking is a snapshot of hardware plus a software version. The two results here were submitted six weeks apart, and both engines keep improving. Cost per token is worth measuring on your own workload, at the per-user speed your product needs, with the engine version you plan to run. Host memory and GPU-to-GPU bandwidth belong in that evaluation too, since both posts lean on them.
-
-**For people who market it.** Peak petaflops and peak memory bandwidth did not predict this result. Equal HBM specs say little about achieved bandwidth, the links between GPUs, power or the cost of the whole system. The benchmark that carried the story compared tokens per modeled dollar at a fixed per-user speed, on replayed agent sessions. Buyers can check that kind of claim against their own workloads.
+**The cost model.** SemiAnalysis's total-cost-of-ownership model assigns $1.50 per MI355X GPU-hour and $2.26 per B300 GPU-hour. Combined with the throughput gap, that gives about 87% more tokens per modeled dollar for AMD.
 
 ## Related Research
 
-- **[DeepSeek-V2](https://arxiv.org/abs/2405.04434) (2024)** introduced multi-head latent attention, which compresses the KV cache into a smaller latent vector. DeepSeek-V2 reports a KV cache 93.3% smaller than DeepSeek 67B's. Kimi K3's MLA layers use this design.
-- **[Kimi Linear](https://arxiv.org/abs/2510.26692) (2025)** introduced Kimi Delta Attention and mixed it with MLA. It reports up to 75% less KV cache and up to six times the decoding throughput at a one-million-token context.
-- **[Leviathan et al., Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192) (ICML 2023)** showed that a small model can draft tokens for a large model to verify in parallel without changing the output distribution. It reports two to three times faster generation on T5-XXL.
-- **[ThunderKittens](https://arxiv.org/abs/2410.20399) (2024)** showed that a few tile-level building blocks make fast GPU kernels much simpler to write, matching cuBLAS and FlashAttention-3. It is related background on tile-level GPU programming; the NVIDIA post does not cite it.
+- **[DeepSeek-V2](https://arxiv.org/abs/2405.04434) (2024)** introduced multi-head latent attention, which compresses the KV cache. DeepSeek-V2 reports a cache 93.3% smaller than DeepSeek 67B's.
+- **[Kimi Linear](https://arxiv.org/abs/2510.26692) (2025)** mixed Kimi Delta Attention with MLA. It reports up to 75% less KV cache and up to six times the decoding throughput at a one-million-token context.
+- **[Leviathan et al., Fast Inference from Transformers via Speculative Decoding](https://arxiv.org/abs/2211.17192) (ICML 2023)** showed that a small model can draft tokens for a large model to check, without changing the output distribution.
+- **[ThunderKittens](https://arxiv.org/abs/2410.20399) (2024)** showed that a few tile-level building blocks make fast GPU kernels simpler to write. It is related background; the NVIDIA post does not cite it.
 
 ## Sources
 
