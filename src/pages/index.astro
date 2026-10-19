@@ -19,13 +19,6 @@ const writing = (await getCollection('writing'))
 const fmtDate = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const more = work.filter((w) => !w.data.featured);
 
-// Every number here is on her resume; see profiles/ziqi/corpus/experience.md.
-const stats = [
-  { value: '40', label: 'subscribers to IC News Daily, the daily newsletter I built with Claude Code and Codex', org: 'Futurewei' },
-  { value: '1K → 7K', label: 'average short-form views per post', org: 'Echobend' },
-  { value: '+12%', label: 'backlinks from SEO and content work', org: 'CambioML' },
-];
-
 // AI workflow. Every tool and example below is on her resume or in the case studies.
 const aiWork = [
   {
@@ -110,18 +103,6 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
         <IconLink icon="scholar" href={site.scholar} text="Scholar" label="Google Scholar" external />
       </div>
     </div>
-
-    <ul class="stats">
-      {
-        stats.map((s) => (
-          <li>
-            <strong>{s.value}</strong>
-            <span class="muted">{s.label}</span>
-            <span class="where">{s.org}</span>
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
 
@@ -264,11 +245,10 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
     margin-top: 96px;
   }
   .hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
-    gap: 80px;
-    align-items: center;
     padding-top: 72px;
+  }
+  .hero > * {
+    max-width: 960px;
   }
   .me {
     display: flex;
@@ -292,16 +272,16 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
   }
   .statement {
     margin-top: 36px;
-    font-size: clamp(34px, 3.6vw, 50px);
+    font-size: clamp(34px, 3.8vw, 54px);
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.06;
     letter-spacing: -0.03em;
-    max-width: 20ch;
+    max-width: 960px;
   }
   .about {
     margin-top: 20px;
     font-size: 16px;
-    max-width: 50ch;
+    max-width: 60ch;
   }
   .actions {
     display: flex;
@@ -311,31 +291,6 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
   }
 
 
-  .stats {
-    list-style: none;
-    padding: 0 0 0 48px;
-    margin: 0;
-    border-left: 1px solid var(--line);
-    display: grid;
-    gap: 36px;
-  }
-  .stats li {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .stats strong {
-    font-size: 44px;
-    font-weight: 500;
-    letter-spacing: -0.035em;
-    line-height: 1;
-    font-variant-numeric: tabular-nums;
-  }
-  .stats span {
-    font-size: 14px;
-    line-height: 1.45;
-    max-width: 24ch;
-  }
   .where {
     color: var(--faint);
     font-size: 13px !important;
@@ -439,7 +394,7 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
     gap: 64px;
   }
   .ai {
-    margin-top: 96px;
+    margin-top: 72px;
   }
   .ai-title {
     font-size: clamp(24px, 2.6vw, 32px);
@@ -602,17 +557,7 @@ const certGroups = ['Advertising and social', 'Analytics and AI'].map((g) => ({ 
     }
   }
   @media (max-width: 900px) {
-    .hero {
-      grid-template-columns: 1fr;
-      gap: 48px;
     }
-    .stats {
-      padding: 32px 0 0;
-      border-left: 0;
-      border-top: 1px solid var(--line);
-      gap: 24px;
-    }
-  }
   @media (max-width: 767px) {
     section + section {
       margin-top: 56px;
