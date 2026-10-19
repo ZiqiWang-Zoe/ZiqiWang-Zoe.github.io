@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { site, showDraft } from '../../site';
+
+const posts = (await getCollection('writing'))
+  .filter((p) => showDraft(p.data.status))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const fmtDate = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+---
+
+<Base title="Writing" description={`Launch teardowns and analysis by ${site.name}.`} narrow>
+  <section class="col">
+    <a href="/#writing" class="back muted">Ziqi Wang</a>
+    <h1>Writing</h1>
+    <p class="lede muted">
+      Teardowns of AI infrastructure launches, also published in{' '}
+      {site.newsletter.url ? <a href={site.newsletter.url}>{site.newsletter.name}</a> : site.newsletter.name}.
+    </p>
+    <ul class="posts">
+      {
+        posts.map((p) => (
+          <li>
+            <a href={`/writing/${p.id}/`} class="post">
+              <span class="post-title">{p.data.title}</span>
+              <span class="post-summary muted">{p.data.summary}</span>
+              <span class="post-date">{fmtDate(p.data.date)}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
+
+<style>
+  section {
+    max-width: 800px;
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+  .back::before {
+    content: '← ';
+  }
+  .back:hover {
+    color: var(--fg);
+  }
+  h1 {
+    margin-top: 48px;
+    font-size: clamp(24px, 4.4vw, 30px);
+    letter-spacing: -0.025em;
+  }
+  .lede {
+    margin-top: 12px;
+  }
+  .lede a {
+    color: var(--accent);
+  }
+  .posts {
+    list-style: none;
+    padding: 0;
+    margin: 32px 0 0;
+    border-top: 1px solid var(--line);
+  }
+  .post {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .post-title {
+    font-weight: 500;
+  }
+  .post:hover .post-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .post-summary {
+    grid-column: 1;
+    font-size: 14px;
+  }
+  .post-date {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 14px;
+    color: var(--faint);
+  }
+  @media (max-width: 640px) {
+    section {
+      padding-top: 48px;
+    }
+    .post {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .post-date {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
+</style>

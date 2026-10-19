@@ -146,7 +146,7 @@ const certs = [
       <section class="wrap writing" id="writing" aria-labelledby="writing-title">
         <h2 id="writing-title" class="label">Writing</h2>
         <ul class="posts">
-          {writing.map((p) => (
+          {writing.slice(0, 3).map((p) => (
             <li>
               <a href={`/writing/${p.id}/`} class="post">
                 <span class="post-title">{p.data.title}</span>
@@ -156,45 +156,36 @@ const certs = [
             </li>
           ))}
         </ul>
-        {site.newsletter.url && (
-          <p class="newsletter muted">
-            New teardowns every week in <a href={site.newsletter.url}>{site.newsletter.name}</a>. Subscribe to get them by email.
-          </p>
+        {writing.length > 3 && (
+          <a href="/writing/" class="all-writing">All writing ({writing.length}) →</a>
         )}
       </section>
     )
   }
 
   <section class="wrap certs-strip" aria-labelledby="certs-title">
-    <div class="certs-head">
-      <h2 id="certs-title" class="label">Certified</h2>
-      <button type="button" class="marquee-toggle" aria-pressed="false" data-marquee-toggle>Pause</button>
-    </div>
-    <div class="marquee" data-marquee>
+    <h2 id="certs-title" class="label">Certifications</h2>
+    <ul class="certs">
       {
-        [false, true].map((clone) => (
-          <ul class="certs" aria-hidden={clone ? 'true' : undefined}>
-            {certs.map((c) => (
-              <li>
-                {c.url ? (
-                  <a class="badge" href={c.url} target="_blank" rel="noopener" tabindex={clone ? -1 : undefined} aria-label={`${c.name}, ${c.issuer} ${c.when}. Verify credential`}>
-                    <span class="seal" set:html={seal} />
-                    <span class="badge-name">{c.name}</span>
-                    <span class="badge-meta">{c.issuer} · {c.when}</span>
-                  </a>
-                ) : (
-                  <span class="badge">
-                    <span class="seal" set:html={seal} />
-                    <span class="badge-name">{c.name}</span>
-                    <span class="badge-meta">{c.issuer} · {c.when} · ID {c.id}</span>
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
+        certs.map((c) => (
+          <li class="cert">
+            <span class="seal" set:html={seal} />
+            <span class="cert-text">
+              <span class="cert-name">{c.name}</span>
+              <span class="cert-meta">
+                {c.issuer}, {c.when}
+                {c.id && <>. ID {c.id}</>}
+              </span>
+            </span>
+            {c.url && (
+              <a class="verify" href={c.url} target="_blank" rel="noopener" aria-label={`Verify ${c.name}`}>
+                Verify
+              </a>
+            )}
+          </li>
         ))
       }
-    </div>
+    </ul>
   </section>
 
   <section class="wrap" id="work">
@@ -256,16 +247,6 @@ const certs = [
   </section>
 </Base>
 
-<script>
-  // Pause control for the certification marquee (WCAG 2.2.2).
-  const toggle = document.querySelector<HTMLButtonElement>('[data-marquee-toggle]');
-  const marquee = document.querySelector('[data-marquee]');
-  toggle?.addEventListener('click', () => {
-    const paused = marquee?.classList.toggle('is-paused') ?? false;
-    toggle.setAttribute('aria-pressed', String(paused));
-    toggle.textContent = paused ? 'Play' : 'Pause';
-  });
-</script>
 
 <style>
   section + section {
@@ -369,13 +350,13 @@ const certs = [
     padding: 0;
     margin: 16px 0 0;
     max-width: 760px;
+    border-top: 1px solid var(--line);
   }
   .post {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 4px 24px;
     padding: 16px 0;
-    border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
   }
   .post-title {
@@ -395,12 +376,15 @@ const certs = [
     font-size: 14px;
     color: var(--faint);
   }
-  .newsletter {
+  .all-writing {
+    display: inline-block;
     margin-top: 14px;
     font-size: 14px;
-  }
-  .newsletter a {
     color: var(--accent);
+  }
+  .all-writing:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .certs-strip {
     margin-top: 72px;
@@ -490,96 +474,57 @@ const certs = [
     color: var(--accent);
     margin-top: 4px;
   }
-  /* One slow marquee: the list scrolls sideways and pauses on hover. */
-  .marquee {
-    display: flex;
-    overflow: hidden;
-    gap: 12px;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
-  }
   .certs {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 12px;
-    flex-shrink: 0;
-    animation: slide 45s linear infinite;
+    margin: 16px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 48px;
+    max-width: 960px;
   }
-  .marquee:hover .certs,
-  .marquee:focus-within .certs,
-  .marquee.is-paused .certs {
-    animation-play-state: paused;
-  }
-  .certs-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-  .marquee-toggle {
-    font: inherit;
-    font-size: 13px;
-    color: var(--muted);
-    background: none;
-    border: 0;
-    padding: 4px 0;
-    cursor: pointer;
-  }
-  .marquee-toggle:hover {
-    color: var(--fg);
-  }
-  @keyframes slide {
-    to {
-      transform: translateX(calc(-100% - 12px));
-    }
-  }
-  .badge {
+  .cert {
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 52px;
-    padding: 0 20px 0 14px;
-    border-radius: 999px;
-    background: var(--card);
-    border: 1px solid var(--line);
-    white-space: nowrap;
-    transition: border-color 0.2s;
-  }
-  a.badge[href]:hover {
-    border-color: var(--faint);
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
   }
   .seal {
     display: grid;
+    flex: none;
     color: var(--accent);
   }
   .seal :global(svg) {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
   }
-  .badge-name {
+  .cert-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .cert-name {
     font-weight: 500;
   }
-  .badge-meta {
+  .cert-meta {
     font-size: 13px;
     color: var(--faint);
   }
-  @media (prefers-reduced-motion: reduce) {
-    .marquee {
-      -webkit-mask-image: none;
-      mask-image: none;
-    }
+  .verify {
+    margin-left: auto;
+    flex: none;
+    font-size: 13px;
+    color: var(--accent);
+  }
+  .verify:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  @media (max-width: 640px) {
     .certs {
-      animation: none;
-      flex-wrap: wrap;
-      flex-shrink: 1;
-    }
-    .certs[aria-hidden] {
-      display: none;
-    }
-    .marquee-toggle {
-      display: none;
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 
