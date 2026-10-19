@@ -136,7 +136,12 @@ def ask_codex(question, model):
                "--ignore-rules", "-s", "read-only", "-m", model, question]
         p = subprocess.run(cmd, cwd=cwd, env={**os.environ, "CODEX_HOME": home}, stdin=subprocess.DEVNULL,
                            capture_output=True, text=True, timeout=900)
-    events = [json.loads(l) for l in p.stdout.splitlines() if l.startswith("{")]
+    events = []
+    for l in p.stdout.splitlines():
+        try:
+            events.append(json.loads(l))
+        except json.JSONDecodeError:
+            pass
     messages = [e["item"]["text"] for e in events
                 if e.get("type") == "item.completed" and e["item"].get("type") == "agent_message"]
     if p.returncode or not messages:
@@ -151,7 +156,7 @@ def ask_codex(question, model):
                     retrieved.append({"url": r["url"], "title": r.get("title")})
             if (item.get("action") or {}).get("url"):
                 retrieved.append({"url": item["action"]["url"], "title": None})
-    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": events}
+    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": scrub(events)}
 
 
 CLAUDE_SYSTEM = ("You are Claude, an AI assistant made by Anthropic. The current date is {date}. "
@@ -180,7 +185,23 @@ def ask_claude_code(question, model):
                 text = content if isinstance(content, str) else json.dumps(content)
                 retrieved += [{"url": u, "title": None} for u in links(text)]
     answer = result["result"]
-    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": events}
+    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": scrub(events)}
+
+
+KEEP_INIT = ("type", "subtype", "model", "tools", "claude_code_version", "permissionMode")
+PATH = re.compile(r"(/private)?/(var/folders|tmp|Users)/[^\s\"']*")
+
+
+def scrub(events):
+    """Drop local paths, session plumbing and account rate-limit events before saving raw output."""
+    out = []
+    for e in events:
+        if e.get("type") == "rate_limit_event":
+            continue
+        if e.get("type") == "system" and e.get("subtype") == "init":
+            e = {k: v for k, v in e.items() if k in KEEP_INIT}
+        out.append(json.loads(PATH.sub("<local path>", json.dumps(e))))
+    return out
 
 
 ENGINES = {"codex": ask_codex, "claude_code": ask_claude_code, "openai": ask_openai, "anthropic": ask_anthropic, "perplexity": ask_perplexity}

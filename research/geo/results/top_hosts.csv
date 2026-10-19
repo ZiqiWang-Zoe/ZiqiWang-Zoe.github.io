@@ -1,0 +1,76 @@
+company,host,kind,third_party_type,citations
+Mintlify,mintlify.com,own,,46
+Mintlify,gitbook.com,competitor,,20
+Mintlify,Mintlify,own,,18
+Mintlify,buildwithfern.com,competitor,,15
+Mintlify,docs.readme.com,competitor,,11
+Mintlify,readme.com,competitor,,8
+Mintlify,docusaurus.io,competitor,,5
+Mintlify,redocly.com,competitor,,5
+Mintlify,Documentation.AI,third_party,other vendor,5
+Mintlify,scalar.com,competitor,,4
+Mintlify,GitBook,competitor,,4
+Mintlify,www.braintrust.dev,third_party,other vendor,3
+Mintlify,developers.google.com,third_party,platform docs,2
+Mintlify,llmstxt.org,third_party,platform docs,2
+Mintlify,documentation.ai,third_party,other vendor,2
+Exa,exa.ai,own,,36
+Exa,Exa,own,,12
+Exa,tavily.com,competitor,,11
+Exa,parallel.ai,competitor,,10
+Exa,brave.com,competitor,,8
+Exa,docs.tavily.com,competitor,,8
+Exa,docs.perplexity.ai,competitor,,7
+Exa,learn.microsoft.com,third_party,platform docs,7
+Exa,api-dashboard.search.brave.com,competitor,,6
+Exa,you.com,competitor,,5
+Exa,developers.openai.com,third_party,platform docs,4
+Exa,rhumb.dev,third_party,review or comparison site,4
+Exa,serpapi.com,competitor,,3
+Exa,techsy.io,third_party,review or comparison site,3
+Exa,nimbleway.com,third_party,other vendor,3
+Fireworks AI,docs.fireworks.ai,own,,24
+Fireworks AI,fireworks.ai,own,,19
+Fireworks AI,together.ai,competitor,,11
+Fireworks AI,openrouter.ai,competitor,,10
+Fireworks AI,console.groq.com,competitor,,10
+Fireworks AI,Fireworks AI,own,,6
+Fireworks AI,Fireworks AI Docs,own,,5
+Fireworks AI,docs.vllm.ai,third_party,platform docs,4
+Fireworks AI,api-docs.deepseek.com,third_party,platform docs,4
+Fireworks AI,huggingface.co,third_party,platform docs,4
+Fireworks AI,docs.nvidia.com,third_party,platform docs,3
+Fireworks AI,learn.microsoft.com,third_party,platform docs,3
+Fireworks AI,trust.fireworks.ai,own,,3
+Fireworks AI,digitalocean.com,third_party,other vendor,3
+Fireworks AI,GIGAGPU,third_party,other vendor,3
+AssemblyAI,assemblyai.com,own,,39
+AssemblyAI,deepgram.com,competitor,,14
+AssemblyAI,developers.openai.com,competitor,,12
+AssemblyAI,gladia.io,competitor,,11
+AssemblyAI,AssemblyAI,own,,11
+AssemblyAI,developers.deepgram.com,competitor,,8
+AssemblyAI,pyannote.ai,third_party,other vendor,6
+AssemblyAI,costbench.com,third_party,review or comparison site,6
+AssemblyAI,Gladia,competitor,,6
+AssemblyAI,artificialanalysis.ai,third_party,benchmark or research,4
+AssemblyAI,learn.microsoft.com,third_party,platform docs,4
+AssemblyAI,github.com,third_party,platform docs,4
+AssemblyAI,docs.aws.amazon.com,competitor,,4
+AssemblyAI,dev.to,third_party,community or blog,4
+AssemblyAI,elevenlabs.io,competitor,,3
+LangChain,docs.langchain.com,own,,24
+LangChain,developers.openai.com,third_party,platform docs,13
+LangChain,openai.github.io,competitor,,8
+LangChain,langchain.com,own,,8
+LangChain,developers.llamaindex.ai,competitor,,6
+LangChain,mastra.ai,competitor,,6
+LangChain,pydantic.dev,competitor,,5
+LangChain,langfuse.com,competitor,,5
+LangChain,docs.haystack.deepset.ai,competitor,,4
+LangChain,ai-sdk.dev,third_party,platform docs,4
+LangChain,docs.crewai.com,competitor,,4
+LangChain,Towards AI,third_party,community or blog,4
+LangChain,langchain-ai.github.io,own,,3
+LangChain,learn.microsoft.com,competitor,,3
+LangChain,LangChain,own,,3

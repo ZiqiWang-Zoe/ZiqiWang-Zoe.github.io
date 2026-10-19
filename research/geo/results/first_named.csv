@@ -1,0 +1,64 @@
+company,engine,first_named,answers
+Mintlify,codex,Mintlify,9
+Mintlify,codex,(no tracked vendor),2
+Mintlify,codex,GitBook,1
+Mintlify,claude_code,Mintlify,11
+Mintlify,claude_code,Docusaurus,1
+Mintlify,aio,Mintlify,4
+Mintlify,aio,ReadMe,1
+Mintlify,aio,Docusaurus,1
+Exa,codex,Exa,4
+Exa,codex,Brave Search API,3
+Exa,codex,Tavily,3
+Exa,codex,(no tracked vendor),2
+Exa,claude_code,Tavily,6
+Exa,claude_code,Exa,3
+Exa,claude_code,Bing Search API,2
+Exa,claude_code,Perplexity Sonar,1
+Exa,aio,Tavily,2
+Exa,aio,Serper,1
+Exa,aio,Firecrawl,1
+Exa,aio,Exa,1
+Exa,aio,Bing Search API,1
+Fireworks AI,codex,Fireworks AI,7
+Fireworks AI,codex,Cerebras,2
+Fireworks AI,codex,OpenRouter,2
+Fireworks AI,codex,Together AI,1
+Fireworks AI,claude_code,Together AI,5
+Fireworks AI,claude_code,Cerebras,2
+Fireworks AI,claude_code,OpenRouter,2
+Fireworks AI,claude_code,Fireworks AI,2
+Fireworks AI,claude_code,Anyscale,1
+Fireworks AI,aio,Together AI,2
+Fireworks AI,aio,Cerebras,1
+Fireworks AI,aio,(no tracked vendor),1
+Fireworks AI,aio,OpenRouter,1
+Fireworks AI,aio,Fireworks AI,1
+AssemblyAI,codex,AssemblyAI,5
+AssemblyAI,codex,Deepgram,3
+AssemblyAI,codex,ElevenLabs Scribe,2
+AssemblyAI,codex,OpenAI Whisper,1
+AssemblyAI,codex,AWS Transcribe,1
+AssemblyAI,claude_code,AssemblyAI,5
+AssemblyAI,claude_code,Deepgram,4
+AssemblyAI,claude_code,OpenAI Whisper,2
+AssemblyAI,claude_code,Gladia,1
+AssemblyAI,aio,OpenAI Whisper,2
+AssemblyAI,aio,Gladia,1
+AssemblyAI,aio,Deepgram,1
+AssemblyAI,aio,AssemblyAI,1
+AssemblyAI,aio,AWS Transcribe,1
+LangChain,codex,LlamaIndex,2
+LangChain,codex,Pydantic AI,2
+LangChain,codex,Langfuse,2
+LangChain,codex,OpenAI Agents SDK,2
+LangChain,codex,Mastra,2
+LangChain,codex,LangChain,2
+LangChain,claude_code,LangChain,5
+LangChain,claude_code,LlamaIndex,2
+LangChain,claude_code,Langfuse,2
+LangChain,claude_code,Mastra,2
+LangChain,claude_code,OpenAI Agents SDK,1
+LangChain,aio,LangChain,3
+LangChain,aio,Mastra,2
+LangChain,aio,Langfuse,1

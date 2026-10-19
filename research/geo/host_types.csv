@@ -1,0 +1,285 @@
+host,type,coded_by
+ai-sdk.dev,platform docs,claude first pass
+ai.google.dev,platform docs,claude first pass
+api-docs.deepseek.com,platform docs,claude first pass
+aws.amazon.com,platform docs,claude first pass
+amazon web services (aws),platform docs,claude first pass
+developers.cloudflare.com,platform docs,claude first pass
+developers.google.com,platform docs,claude first pass
+developers.openai.com,platform docs,claude first pass
+dev.meta.ai,platform docs,claude first pass
+docs.anthropic.com,platform docs,claude first pass
+docs.aws.amazon.com,platform docs,claude first pass
+docs.cloud.google.com,platform docs,claude first pass
+docs.nvidia.com,platform docs,claude first pass
+docs.readthedocs.com,platform docs,claude first pass
+docs.vllm.ai,platform docs,claude first pass
+google cloud,platform docs,claude first pass
+help.aliyun.com,platform docs,claude first pass
+huggingface.co,platform docs,claude first pass
+learn.microsoft.com,platform docs,claude first pass
+learn.openapis.org,platform docs,claude first pass
+llmstxt.org,platform docs,claude first pass
+platform.openai.com,platform docs,claude first pass
+sgl-project.github.io,platform docs,claude first pass
+spec.openapis.org,platform docs,claude first pass
+squidfunk.github.io,platform docs,claude first pass
+starlight.astro.build,platform docs,claude first pass
+vercel.com,platform docs,claude first pass
+stripe.com,platform docs,claude first pass
+docs.apollo.io,platform docs,claude first pass
+docs.gtm.ai,platform docs,claude first pass
+docs.similarweb.com,platform docs,claude first pass
+promptfoo.dev,platform docs,claude first pass
+github.com,platform docs,claude first pass
+admix.software,other vendor,claude first pass
+agenta,other vendor,claude first pass
+agentready.it.com,other vendor,claude first pass
+alicelabs.ai,other vendor,claude first pass
+aodocs,other vendor,claude first pass
+atlan.com,other vendor,claude first pass
+braintrust.dev,other vendor,claude first pass
+brightdata.com,other vendor,claude first pass
+bunnydesk,other vendor,claude first pass
+cekura,other vendor,claude first pass
+benchmarks.cekura.ai,other vendor,claude first pass
+clickittech.com,other vendor,claude first pass
+clickup.com,other vendor,claude first pass
+cloudtalk,other vendor,claude first pass
+coldiq,other vendor,claude first pass
+companyenrich,other vendor,claude first pass
+composio,other vendor,claude first pass
+coval.ai,other vendor,claude first pass
+crail.ai,other vendor,claude first pass
+crustdata.com,other vendor,claude first pass
+dasha.ai,other vendor,claude first pass
+desearch ai,other vendor,claude first pass
+digitalocean,other vendor,claude first pass
+digitalocean.com,other vendor,claude first pass
+documentation.ai,other vendor,claude first pass
+documentation.,other vendor,claude first pass
+docuwiz,other vendor,claude first pass
+dokly.co,other vendor,claude first pass
+edenai.co,other vendor,claude first pass
+eesel ai,other vendor,claude first pass
+ekline,other vendor,claude first pass
+faros ai,other vendor,claude first pass
+fast.io,other vendor,claude first pass
+fastio,other vendor,claude first pass
+fastcrw,other vendor,claude first pass
+fastcrw.com,other vendor,claude first pass
+featurebase,other vendor,claude first pass
+featurebase.app,other vendor,claude first pass
+ferndesk,other vendor,claude first pass
+ferndesk.com,other vendor,claude first pass
+flexai,other vendor,claude first pass
+flexprice.io,other vendor,claude first pass
+forasoft.com,other vendor,claude first pass
+futureagi.com,other vendor,claude first pass
+futureagi.substack.com,other vendor,claude first pass
+gate.ai,other vendor,claude first pass
+getstream.io,other vendor,claude first pass
+gigagpu,other vendor,claude first pass
+gitdoc.ai,other vendor,claude first pass
+gmi cloud,other vendor,claude first pass
+gmicloud.ai,other vendor,claude first pass
+gradium.ai,other vendor,claude first pass
+greennode.ai,other vendor,claude first pass
+helpkit,other vendor,claude first pass
+hyperdocs.io,other vendor,claude first pass
+infercom,other vendor,claude first pass
+inworld.ai,other vendor,claude first pass
+kanopylabs.com,other vendor,claude first pass
+kili-technology.com,other vendor,claude first pass
+latitude.so,other vendor,claude first pass
+linkup,other vendor,claude first pass
+linkup web search,other vendor,claude first pass
+meetily.ai,other vendor,claude first pass
+meetstream.ai,other vendor,claude first pass
+metacto.com,other vendor,claude first pass
+metronome.com,other vendor,claude first pass
+milestone ai,other vendor,claude first pass
+mindstudio,other vendor,claude first pass
+morphllm.com,other vendor,claude first pass
+newsdata.io,other vendor,claude first pass
+nimbleway.com,other vendor,claude first pass
+northflank.com,other vendor,claude first pass
+nylas,other vendor,claude first pass
+olostep,other vendor,claude first pass
+olostep.com,other vendor,claude first pass
+oneinfer,other vendor,claude first pass
+oxylabs.io,other vendor,claude first pass
+picovoice.ai,other vendor,claude first pass
+promptloop,other vendor,claude first pass
+pyannote.ai,other vendor,claude first pass
+pydantic,other vendor,claude first pass
+qualix solutions,other vendor,claude first pass
+recall.ai,other vendor,claude first pass
+requesty,other vendor,claude first pass
+scrapegraphai.com,other vendor,claude first pass
+searchcans.com,other vendor,claude first pass
+serphouse,other vendor,claude first pass
+smallest ai,other vendor,claude first pass
+sonicribe,other vendor,claude first pass
+sonix,other vendor,claude first pass
+spheron,other vendor,claude first pass
+spheron.network,other vendor,claude first pass
+spider.cloud,other vendor,claude first pass
+the companies api,other vendor,claude first pass
+theneo,other vendor,claude first pass
+tinyfish.ai,other vendor,claude first pass
+veludocs.com,other vendor,claude first pass
+vellum.ai,other vendor,claude first pass
+vexascribe,other vendor,claude first pass
+vexascribe.com,other vendor,claude first pass
+voibe,other vendor,claude first pass
+voice writer,other vendor,claude first pass
+voiceflow.com,other vendor,claude first pass
+voicegain,other vendor,claude first pass
+withampersand.com,other vendor,claude first pass
+wonderchat,other vendor,claude first pass
+wonderchat ai,other vendor,claude first pass
+zenml.io,other vendor,claude first pass
+developer.puter.com,other vendor,claude first pass
+apiserpent.com,other vendor,claude first pass
+2tolead,other vendor,claude first pass
+second talent,other vendor,claude first pass
+futurense.com,other vendor,claude first pass
+blog.sandbase.ai,other vendor,claude first pass
+aicentralresources.com,review or comparison site,claude first pass
+aimultiple,review or comparison site,claude first pass
+research.aimultiple.com,review or comparison site,claude first pass
+alternativeto.net,review or comparison site,claude first pass
+apiscout.dev,review or comparison site,claude first pass
+automationatlas.io,review or comparison site,claude first pass
+beri.net,review or comparison site,claude first pass
+capterra,review or comparison site,claude first pass
+checkthat.ai,review or comparison site,claude first pass
+computecomparison.com,review or comparison site,claude first pass
+costbench.com,review or comparison site,claude first pass
+costgoat,review or comparison site,claude first pass
+deploybase.ai,review or comparison site,claude first pass
+dupple.com,review or comparison site,claude first pass
+freeapihub,review or comparison site,claude first pass
+freeapihub.com,review or comparison site,claude first pass
+g2.com,review or comparison site,claude first pass
+get ai perks,review or comparison site,claude first pass
+infrabase.ai,review or comparison site,claude first pass
+llm api,review or comparison site,claude first pass
+llmendpoint.com,review or comparison site,claude first pass
+metavert.io,review or comparison site,claude first pass
+neuronfeed.com,review or comparison site,claude first pass
+price per token,review or comparison site,claude first pass
+pricingsaas.com,review or comparison site,claude first pass
+pristren,review or comparison site,claude first pass
+rfp.wiki,review or comparison site,claude first pass
+rhumb.dev,review or comparison site,claude first pass
+select.keenable.ai,review or comparison site,claude first pass
+sourceforge,review or comparison site,claude first pass
+techstackups.com,review or comparison site,claude first pass
+techsy.io,review or comparison site,claude first pass
+the digital project manager,review or comparison site,claude first pass
+theaiagentindex.com,review or comparison site,claude first pass
+thegtmdirectory.com,review or comparison site,claude first pass
+toolfreebie.com,review or comparison site,claude first pass
+toolhalla.ai,review or comparison site,claude first pass
+tooliverse.ai,review or comparison site,claude first pass
+tooljunction,review or comparison site,claude first pass
+toolquestor.com,review or comparison site,claude first pass
+toolradar.com,review or comparison site,claude first pass
+usagepricing.com,review or comparison site,claude first pass
+vantaige.io,review or comparison site,claude first pass
+web3aiblog.com,review or comparison site,claude first pass
+webscraft.org,review or comparison site,claude first pass
+diy ai,review or comparison site,claude first pass
+diyai.io,review or comparison site,claude first pass
+stork.ai,review or comparison site,claude first pass
+respan,review or comparison site,claude first pass
+respan.ai,review or comparison site,claude first pass
+layer3labs,review or comparison site,claude first pass
+reddit,community or blog,claude first pass
+microsoft community hub,community or blog,claude first pass
+product hunt,community or blog,claude first pass
+medium,community or blog,claude first pass
+dev.to,community or blog,claude first pass
+dev community,community or blog,claude first pass
+substack,community or blog,claude first pass
+linkedin,community or blog,claude first pass
+hackernoon,community or blog,claude first pass
+level up coding,community or blog,claude first pass
+logrocket blog,community or blog,claude first pass
+suhasbhairav.com,community or blog,claude first pass
+daveswift.com,community or blog,claude first pass
+machine learning plus,community or blog,claude first pass
+kdnuggets,community or blog,claude first pass
+youtube,community or blog,claude first pass
+ai2.work,news or company profile,claude first pass
+askfuzz.ai,news or company profile,claude first pass
+businesswire.com,news or company profile,claude first pass
+dealroom.co,news or company profile,claude first pass
+getcoai.com,news or company profile,claude first pass
+hpcwire.com,news or company profile,claude first pass
+pulse2.com,news or company profile,claude first pass
+techcrunch,news or company profile,claude first pass
+techcrunch.com,news or company profile,claude first pass
+threatcluster.io,news or company profile,claude first pass
+verdict.co.uk,news or company profile,claude first pass
+y combinator,news or company profile,claude first pass
+ycombinator.com,news or company profile,claude first pass
+wikipedia,news or company profile,claude first pass
+marka.net.ua,news or company profile,claude first pass
+artificialanalysis.ai,benchmark or research,claude first pass
+isca-archive.org,benchmark or research,claude first pass
+stanford university,benchmark or research,claude first pass
+openbenchmarks.com,benchmark or research,claude first pass
+hokai.io,unclear,claude first pass
+oneaway,unclear,claude first pass
+link.sc,unclear,claude first pass
+privocio.com,unclear,claude first pass
+rtc league,unclear,claude first pass
+micdrop.dev,unclear,claude first pass
+microsoft learn,platform docs,claude first pass
+databricks,platform docs,claude first pass
+blog.google,platform docs,claude first pass
+ibm,platform docs,claude first pass
+oracle,platform docs,claude first pass
+the jetbrains blog,other vendor,claude first pass
+writechoice,other vendor,claude first pass
+docsio,other vendor,claude first pass
+jamdesk,other vendor,claude first pass
+reclear.io,other vendor,claude first pass
+shipdocs.sh,other vendor,claude first pass
+withremote,other vendor,claude first pass
+mastra,other vendor,claude first pass
+shaped.ai,other vendor,claude first pass
+meilisearch,other vendor,claude first pass
+codingscape,other vendor,claude first pass
+iternal ai,other vendor,claude first pass
+firecrawl,other vendor,claude first pass
+arcade.dev,other vendor,claude first pass
+splunk,other vendor,claude first pass
+inference.net,other vendor,claude first pass
+openlayer,other vendor,claude first pass
+truefoundry,other vendor,claude first pass
+metacto,other vendor,claude first pass
+atlan,other vendor,claude first pass
+alice labs,other vendor,claude first pass
+uvik software,other vendor,claude first pass
+forma nôrden,other vendor,claude first pass
+haktansuren.com,other vendor,claude first pass
+ay automate,review or comparison site,claude first pass
+stack-match.io,review or comparison site,claude first pass
+automationlabz.com,review or comparison site,claude first pass
+g2,review or comparison site,claude first pass
+pecollective.com,review or comparison site,claude first pass
+aitoolsbakery.com,review or comparison site,claude first pass
+devopsness.com,review or comparison site,claude first pass
+growth method,review or comparison site,claude first pass
+towards ai,community or blog,claude first pass
+towards data science,community or blog,claude first pass
+x,community or blog,claude first pass
+fusionpbx forums,community or blog,claude first pass
+geeksforgeeks,community or blog,claude first pass
+scrimba,community or blog,claude first pass
+the rundown ai,news or company profile,claude first pass
+ai.engineer,news or company profile,claude first pass

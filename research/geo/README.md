@@ -10,11 +10,11 @@ reproducible from the files here.
 - **Questions:** 60 in `questions.csv`, 12 per company. Six per company are unbranded (category and
   use case, where a buyer has not named a vendor yet) and six are branded (comparison, alternatives,
   pricing, fit, brand). Share of voice is measured on the unbranded six only.
-- **Engines:**
-  - ChatGPT: OpenAI Responses API with the `web_search` tool (`run.py`)
-  - Claude: Anthropic Messages API with the `web_search` server tool (`run.py`)
-  - Perplexity: Sonar API (`run.py`)
-  - Google AI Overviews: captured by hand in a logged-out browser, `aio/<date>.csv`
+- **Engines (as run on 2026-10-18):**
+  - OpenAI GPT-6 Sol through the Codex CLI with live web search, on the user's ChatGPT subscription (`run.py`, engine `codex`)
+  - Claude Sonnet 5.5 through Claude Code with only WebSearch and WebFetch, on the user's Claude subscription (`run.py`, engine `claude_code`)
+  - Google AI Overviews: read from a logged-out browser by a script, saved to `aio/2026-10-18-raw.json`
+  - Perplexity was dropped: its API needs a paid key and the website asked for sign-up. The API engines in `run.py` remain for a later run with keys.
 - **Runs:** 2 per question per API engine, on the same day, to show how stable answers are.
   AI Overviews: 1 run.
 - **Spot check:** 10 questions also asked in the consumer ChatGPT, Claude and Perplexity apps and
@@ -33,7 +33,10 @@ reproducible from the files here.
 | `aio/<date>.csv` | Hand-captured AI Overviews: `qid,shown,answer,cited_urls` |
 | `claims/<company>.md` | The company's own claims, copied from its site on run day, with URLs |
 | `coded.csv` | One row per answer, coded per the codebook below |
-| `analysis.py`, `results/` | Tables and the chart used in the case study |
+| `analysis.py`, `results/` | Tables used in the case study; `make_figure.py` draws the lead figure |
+| `competitors.csv`, `host_types.csv` | Competitor domains, and the hand-coded type of each third-party source |
+| `judge.py`, `judged.csv` | First-pass top-pick coding, with a verbatim quote per answer |
+| `pricing_check.csv`, `claims/` | Pricing answers checked against each pricing page (copied 2026-10-19) |
 
 ## Codebook (per answer)
 

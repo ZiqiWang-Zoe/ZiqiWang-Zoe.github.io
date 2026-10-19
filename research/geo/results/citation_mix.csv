@@ -1,0 +1,7 @@
+engine,branded,answers,citations,own,competitor,third_party,own_pct,competitor_pct,third_party_pct
+codex,no,60,282,60,132,90,21%,47%,32%
+codex,yes,60,234,112,108,14,48%,46%,6%
+claude_code,no,60,87,6,23,58,7%,26%,67%
+claude_code,yes,60,151,30,19,102,20%,13%,68%
+aio,no,30,188,9,24,155,5%,13%,82%
+aio,yes,30,162,46,8,108,28%,5%,67%

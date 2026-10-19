@@ -1,0 +1,16 @@
+company,engine,citations,own,competitor,third_party,own_pct,competitor_pct
+Mintlify,codex,112,39,59,14,35%,53%
+Mintlify,claude_code,20,9,4,7,45%,20%
+Mintlify,aio,76,18,11,47,24%,14%
+Exa,codex,100,32,49,19,32%,49%
+Exa,claude_code,73,6,19,48,8%,26%
+Exa,aio,84,12,8,64,14%,10%
+Fireworks AI,codex,107,38,42,27,36%,39%
+Fireworks AI,claude_code,42,8,1,33,19%,2%
+Fireworks AI,aio,78,11,1,66,14%,1%
+AssemblyAI,codex,96,30,45,21,31%,47%
+AssemblyAI,claude_code,83,10,17,56,12%,20%
+AssemblyAI,aio,65,11,9,45,17%,14%
+LangChain,codex,101,33,45,23,33%,45%
+LangChain,claude_code,20,3,1,16,15%,5%
+LangChain,aio,47,3,3,41,6%,6%

@@ -1,0 +1,57 @@
+company,competitor,aliases,domains
+Mintlify,GitBook,GitBook,gitbook.com;gitbook.io
+Mintlify,ReadMe,ReadMe;Readme;ReadMe.com;readme.com,readme.com;readme.io
+Mintlify,Docusaurus,Docusaurus,docusaurus.io
+Mintlify,Fern,Fern,buildwithfern.com
+Mintlify,Redocly,Redocly;Redoc,redocly.com
+Mintlify,Scalar,Scalar,scalar.com
+Mintlify,Document360,Document360,document360.com
+Mintlify,Nextra,Nextra,nextra.site
+Mintlify,Stoplight,Stoplight,stoplight.io
+Exa,Tavily,Tavily,tavily.com
+Exa,Perplexity Sonar,Perplexity,perplexity.ai
+Exa,Brave Search API,Brave,brave.com
+Exa,Parallel,Parallel,parallel.ai
+Exa,SerpAPI,SerpAPI;SerpApi,serpapi.com
+Exa,You.com,You.com,you.com
+Exa,Firecrawl,Firecrawl,firecrawl.dev
+Exa,Jina,Jina,jina.ai
+Exa,Serper,Serper,serper.dev
+Exa,Bing Search API,Bing,bing.com
+Fireworks AI,Together AI,Together AI;Together.ai,together.ai;together.xyz
+Fireworks AI,Groq,Groq,groq.com
+Fireworks AI,Baseten,Baseten,baseten.co
+Fireworks AI,Replicate,Replicate,replicate.com
+Fireworks AI,DeepInfra,DeepInfra,deepinfra.com
+Fireworks AI,Modal,Modal,modal.com
+Fireworks AI,OpenRouter,OpenRouter,openrouter.ai
+Fireworks AI,Cerebras,Cerebras,cerebras.ai;cerebras.net
+Fireworks AI,AWS Bedrock,Bedrock,aws.amazon.com/bedrock
+Fireworks AI,Anyscale,Anyscale,anyscale.com
+Fireworks AI,Hyperbolic,Hyperbolic,hyperbolic.xyz;hyperbolic.ai
+Fireworks AI,SambaNova,SambaNova,sambanova.ai
+AssemblyAI,Deepgram,Deepgram,deepgram.com
+AssemblyAI,OpenAI Whisper,Whisper;gpt-4o-transcribe;GPT-4o Transcribe,openai.com;platform.openai.com
+AssemblyAI,Google Speech-to-Text,Google Speech-to-Text;Google Cloud Speech;Google Cloud Speech-to-Text;Chirp,cloud.google.com/speech-to-text
+AssemblyAI,AWS Transcribe,Amazon Transcribe;AWS Transcribe,aws.amazon.com/transcribe
+AssemblyAI,Azure Speech,Azure Speech;Azure AI Speech;Microsoft Azure Speech,azure.microsoft.com
+AssemblyAI,Rev.ai,Rev.ai;Rev AI,rev.ai;rev.com
+AssemblyAI,Speechmatics,Speechmatics,speechmatics.com
+AssemblyAI,ElevenLabs Scribe,ElevenLabs,elevenlabs.io
+AssemblyAI,Gladia,Gladia,gladia.io
+AssemblyAI,Soniox,Soniox,soniox.com
+LangChain,LlamaIndex,LlamaIndex,llamaindex.ai
+LangChain,CrewAI,CrewAI,crewai.com
+LangChain,OpenAI Agents SDK,OpenAI Agents SDK;Agents SDK,openai.github.io
+LangChain,AutoGen,AutoGen,microsoft.github.io/autogen
+LangChain,Microsoft Agent Framework,Microsoft Agent Framework;Agent Framework,learn.microsoft.com/en-us/agent-framework
+LangChain,Pydantic AI,Pydantic AI;PydanticAI,ai.pydantic.dev;pydantic.dev
+LangChain,Mastra,Mastra,mastra.ai
+LangChain,Haystack,Haystack,haystack.deepset.ai;deepset.ai
+LangChain,Semantic Kernel,Semantic Kernel,learn.microsoft.com/en-us/semantic-kernel
+LangChain,DSPy,DSPy,dspy.ai
+LangChain,Langfuse,Langfuse,langfuse.com
+LangChain,Arize Phoenix,Arize;Phoenix,arize.com
+LangChain,Braintrust,Braintrust,braintrust.dev
+LangChain,Weights & Biases Weave,Weave;Weights & Biases;W&B,wandb.ai
+LangChain,Helicone,Helicone,helicone.ai

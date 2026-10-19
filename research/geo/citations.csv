@@ -1,0 +1,1105 @@
+engine,run,qid,company,branded,url,host,page_title,kind,vendor,third_party_type
+codex,2,MIN-01,Mintlify,no,https://www.mintlify.com/use-cases/api-reference,mintlify.com,,own,Mintlify,
+codex,2,MIN-01,Mintlify,no,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,2,MIN-01,Mintlify,no,https://docs.readme.com/main/docs/developer-dashboard,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-01,Mintlify,no,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,2,MIN-01,Mintlify,no,https://buildwithfern.com/learn/api-definitions/overview/project-structure,buildwithfern.com,,competitor,Fern,
+codex,2,MIN-01,Mintlify,no,https://docusaurus.io/docs/deployment,docusaurus.io,,competitor,Docusaurus,
+codex,1,MIN-01,Mintlify,no,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-01,Mintlify,no,https://www.mintlify.com/use-cases/api-reference,mintlify.com,,own,Mintlify,
+codex,1,MIN-01,Mintlify,no,https://buildwithfern.com/pricing,buildwithfern.com,,competitor,Fern,
+codex,1,MIN-01,Mintlify,no,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,1,MIN-01,Mintlify,no,https://scalar.com/products/docs/,scalar.com,,competitor,Scalar,
+codex,1,MIN-01,Mintlify,no,https://scalar.com/learn/openapi/api-documentation-best-practices,scalar.com,,competitor,Scalar,
+codex,1,MIN-02,Mintlify,no,https://www.mintlify.com/customers/anthropic,mintlify.com,,own,Mintlify,
+codex,1,MIN-02,Mintlify,no,https://www.mintlify.com/customers/perplexity,mintlify.com,,own,Mintlify,
+codex,1,MIN-02,Mintlify,no,https://www.mintlify.com/customers/togetherai,mintlify.com,,own,Mintlify,
+codex,1,MIN-02,Mintlify,no,https://buildwithfern.com/customers,buildwithfern.com,,competitor,Fern,
+codex,1,MIN-02,Mintlify,no,https://readme.com/customers/scale,readme.com,,competitor,ReadMe,
+codex,1,MIN-02,Mintlify,no,https://developers.cloudflare.com/pages/framework-guides/deploy-a-docusaurus-site/,developers.cloudflare.com,,third_party,,platform docs
+codex,2,MIN-02,Mintlify,no,https://www.mintlify.com/blog/developer-documentation,mintlify.com,,own,Mintlify,
+codex,2,MIN-02,Mintlify,no,https://buildwithfern.com/customers,buildwithfern.com,,competitor,Fern,
+codex,2,MIN-02,Mintlify,no,https://readme.com/customers/scale,readme.com,,competitor,ReadMe,
+codex,2,MIN-02,Mintlify,no,https://www.gitbook.com/customers,gitbook.com,,competitor,GitBook,
+codex,2,MIN-03,Mintlify,no,https://mintlify.com/docs/guides/assistant,mintlify.com,,own,Mintlify,
+codex,1,MIN-03,Mintlify,no,https://mintlify.com/docs/guides/assistant,mintlify.com,,own,Mintlify,
+codex,1,MIN-03,Mintlify,no,https://docs.readme.com/main/docs/ask-ai,docs.readme.com,,competitor,ReadMe,
+codex,1,MIN-05,Mintlify,no,https://mintlify.com/docs/quickstart,mintlify.com,,own,Mintlify,
+codex,1,MIN-05,Mintlify,no,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-05,Mintlify,no,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,1,MIN-04,Mintlify,no,https://spec.openapis.org/oas/v3.1.1.html,spec.openapis.org,,third_party,,platform docs
+codex,1,MIN-04,Mintlify,no,https://developers.google.com/search/docs/crawling-indexing/javascript/fix-search-javascript,developers.google.com,,third_party,,platform docs
+codex,1,MIN-04,Mintlify,no,https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/draft/server/tools.mdx,github.com,,third_party,,platform docs
+codex,1,MIN-04,Mintlify,no,https://llmstxt.org/,llmstxt.org,,third_party,,platform docs
+codex,2,MIN-05,Mintlify,no,https://gitbook.com/docs/getting-started/quickstart,gitbook.com,,competitor,GitBook,
+codex,2,MIN-05,Mintlify,no,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,2,MIN-05,Mintlify,no,https://mintlify.com/docs/quickstart,mintlify.com,,own,Mintlify,
+codex,2,MIN-04,Mintlify,no,https://learn.openapis.org/specification/,learn.openapis.org,,third_party,,platform docs
+codex,2,MIN-04,Mintlify,no,https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics,developers.google.com,,third_party,,platform docs
+codex,2,MIN-04,Mintlify,no,https://llmstxt.org/,llmstxt.org,,third_party,,platform docs
+codex,2,MIN-07,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,2,MIN-07,Mintlify,yes,https://www.gitbook.com/features/git-sync,gitbook.com,,competitor,GitBook,
+codex,2,MIN-07,Mintlify,yes,https://gitbook.com/docs/api-references/openapi/organize-your-endpoints,gitbook.com,,competitor,GitBook,
+codex,2,MIN-07,Mintlify,yes,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,1,MIN-06,Mintlify,no,https://mintlify.com/docs/ai/llmstxt,mintlify.com,,own,Mintlify,
+codex,1,MIN-06,Mintlify,no,https://mintlify.com/docs/ai/model-context-protocol,mintlify.com,,own,Mintlify,
+codex,1,MIN-06,Mintlify,no,https://gitbook.com/docs/changelog/april-2025/30-april-auto-updating-api-reference-docs-design-improvements-editor-updates-and-more,gitbook.com,,competitor,GitBook,
+codex,1,MIN-06,Mintlify,no,https://www.gitbook.com/blog/new-in-gitbook-september-2025,gitbook.com,,competitor,GitBook,
+codex,1,MIN-06,Mintlify,no,https://buildwithfern.com/learn/docs/ai-features/llms-txt,buildwithfern.com,,competitor,Fern,
+codex,1,MIN-06,Mintlify,no,https://buildwithfern.com/learn/docs/ai-features/mcp-server,buildwithfern.com,,competitor,Fern,
+codex,1,MIN-06,Mintlify,no,https://docs.readme.com/main/docs/ai-discoverability,docs.readme.com,,competitor,ReadMe,
+codex,1,MIN-06,Mintlify,no,https://docs.readme.com/main/docs/mcp,docs.readme.com,,competitor,ReadMe,
+codex,1,MIN-06,Mintlify,no,https://redocly.com/docs/realm/ai-ready,redocly.com,,competitor,Redocly,
+codex,1,MIN-06,Mintlify,no,https://redocly.com/docs/realm/config/mcp,redocly.com,,competitor,Redocly,
+codex,2,MIN-06,Mintlify,no,https://mintlify.com/docs/ai/llmstxt,mintlify.com,,own,Mintlify,
+codex,2,MIN-06,Mintlify,no,https://mintlify.com/docs/ai/model-context-protocol,mintlify.com,,own,Mintlify,
+codex,2,MIN-06,Mintlify,no,https://gitbook.com/docs/changelog/april-2025/30-april-auto-updating-api-reference-docs-design-improvements-editor-updates-and-more,gitbook.com,,competitor,GitBook,
+codex,2,MIN-06,Mintlify,no,https://www.gitbook.com/blog/new-in-gitbook-september-2025,gitbook.com,,competitor,GitBook,
+codex,2,MIN-06,Mintlify,no,https://buildwithfern.com/learn/docs/configuration/site-level-settings,buildwithfern.com,,competitor,Fern,
+codex,2,MIN-06,Mintlify,no,https://buildwithfern.com/learn/docs/ai-features/mcp-server,buildwithfern.com,,competitor,Fern,
+codex,2,MIN-06,Mintlify,no,https://documentation.ai/docs/seo-and-geo/llms-txt,documentation.ai,,third_party,,other vendor
+codex,2,MIN-06,Mintlify,no,https://documentation.ai/docs/ai/reader-mcp-server,documentation.ai,,third_party,,other vendor
+codex,2,MIN-06,Mintlify,no,https://docs.readme.com/main/docs/ai-ready-docs,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-06,Mintlify,no,https://docs.readme.com/main/docs/mcp,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-06,Mintlify,no,https://redocly.com/docs/realm/config/seo,redocly.com,,competitor,Redocly,
+codex,2,MIN-06,Mintlify,no,https://redocly.com/docs/realm/config/mcp,redocly.com,,competitor,Redocly,
+codex,2,MIN-06,Mintlify,no,https://docs.readthedocs.com/platform/stable/reference/llms-txt.html,docs.readthedocs.com,,third_party,,platform docs
+codex,1,MIN-07,Mintlify,yes,https://mintlify.com/docs/pages,mintlify.com,,own,Mintlify,
+codex,1,MIN-07,Mintlify,yes,https://mintlify.com/docs/api-playground/openapi/setup,mintlify.com,,own,Mintlify,
+codex,1,MIN-07,Mintlify,yes,https://gitbook.com/docs/getting-started/quickstart,gitbook.com,,competitor,GitBook,
+codex,1,MIN-07,Mintlify,yes,https://gitbook.com/docs/guides/api-documentation/document-your-api-in-gitbook-in-5-simple-steps,gitbook.com,,competitor,GitBook,
+codex,1,MIN-07,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-07,Mintlify,yes,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,1,MIN-08,Mintlify,yes,https://www.mintlify.com/use-cases/api-reference,mintlify.com,,own,Mintlify,
+codex,1,MIN-08,Mintlify,yes,https://mintlify.com/docs/api-playground/openapi-setup,mintlify.com,,own,Mintlify,
+codex,1,MIN-08,Mintlify,yes,https://docs.readme.com/main/docs/personalized-docs,docs.readme.com,,competitor,ReadMe,
+codex,1,MIN-08,Mintlify,yes,https://docs.readme.com/main/docs/developer-dashboard,docs.readme.com,,competitor,ReadMe,
+codex,1,MIN-08,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-08,Mintlify,yes,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,1,MIN-08,Mintlify,yes,https://docs.readme.com/main/docs/sync-docs-with-openapi,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-08,Mintlify,yes,https://mintlify.com/docs/api-playground/openapi-setup,mintlify.com,,own,Mintlify,
+codex,2,MIN-08,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,2,MIN-08,Mintlify,yes,https://docs.readme.com/main/docs/personalized-docs,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-08,Mintlify,yes,https://docs.readme.com/main/docs/developer-dashboard,docs.readme.com,,competitor,ReadMe,
+codex,2,MIN-08,Mintlify,yes,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,2,MIN-10,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-10,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-09,Mintlify,yes,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,1,MIN-09,Mintlify,yes,https://buildwithfern.com/pricing,buildwithfern.com,,competitor,Fern,
+codex,1,MIN-09,Mintlify,yes,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,1,MIN-09,Mintlify,yes,https://scalar.com/pricing,scalar.com,,competitor,Scalar,
+codex,1,MIN-09,Mintlify,yes,https://docusaurus.io/docs/,docusaurus.io,,competitor,Docusaurus,
+codex,1,MIN-09,Mintlify,yes,https://redocly.com/pricing,redocly.com,,competitor,Redocly,
+codex,2,MIN-09,Mintlify,yes,https://www.gitbook.com/pricing,gitbook.com,,competitor,GitBook,
+codex,2,MIN-09,Mintlify,yes,https://buildwithfern.com/pricing,buildwithfern.com,,competitor,Fern,
+codex,2,MIN-09,Mintlify,yes,https://readme.com/pricing,readme.com,,competitor,ReadMe,
+codex,2,MIN-09,Mintlify,yes,https://starlight.astro.build/,starlight.astro.build,,third_party,,platform docs
+codex,2,MIN-09,Mintlify,yes,https://docusaurus.io/docs/,docusaurus.io,,competitor,Docusaurus,
+codex,2,MIN-09,Mintlify,yes,https://scalar.com/solutions/openapi-documentation,scalar.com,,competitor,Scalar,
+codex,1,MIN-11,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,1,MIN-11,Mintlify,yes,https://mintlify.com/docs/quickstart,mintlify.com,,own,Mintlify,
+codex,1,MIN-11,Mintlify,yes,https://docusaurus.io/docs/deployment,docusaurus.io,,competitor,Docusaurus,
+codex,1,MIN-11,Mintlify,yes,https://squidfunk.github.io/mkdocs-material/publishing-your-site/,squidfunk.github.io,,third_party,,platform docs
+codex,1,MIN-11,Mintlify,yes,https://www.mintlify.com/oss-program,mintlify.com,,own,Mintlify,
+codex,2,MIN-11,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+codex,2,MIN-11,Mintlify,yes,https://www.mintlify.com/oss-program,mintlify.com,,own,Mintlify,
+codex,2,MIN-11,Mintlify,yes,https://www.mintlify.com/docs/editor/branching-and-publishing,mintlify.com,,own,Mintlify,
+codex,2,MIN-11,Mintlify,yes,https://docusaurus.io/,docusaurus.io,,competitor,Docusaurus,
+codex,2,MIN-11,Mintlify,yes,https://squidfunk.github.io/mkdocs-material/creating-your-site/,squidfunk.github.io,,third_party,,platform docs
+codex,1,MIN-12,Mintlify,yes,https://mintlify.com/docs,mintlify.com,,own,Mintlify,
+codex,1,MIN-12,Mintlify,yes,https://www.mintlify.com/use-cases/api-reference,mintlify.com,,own,Mintlify,
+codex,1,MIN-12,Mintlify,yes,https://mintlify.com/docs/guides/assistant,mintlify.com,,own,Mintlify,
+codex,2,MIN-12,Mintlify,yes,https://mintlify.com/docs/index,mintlify.com,,own,Mintlify,
+codex,2,MIN-12,Mintlify,yes,https://mintlify.com/docs/guides/assistant,mintlify.com,,own,Mintlify,
+codex,1,EXA-02,Exa,no,https://developers.openai.com/api/docs/guides/tools-web-search,developers.openai.com,,third_party,,platform docs
+codex,2,EXA-02,Exa,no,https://developers.openai.com/api/docs/guides/tools-web-search,developers.openai.com,,third_party,,platform docs
+codex,1,EXA-01,Exa,no,https://api-dashboard.search.brave.com/documentation/services/llm-context,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,1,EXA-01,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,1,EXA-01,Exa,no,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-01,Exa,no,https://docs.tavily.com/documentation/api-credits,docs.tavily.com,,competitor,Tavily,
+codex,1,EXA-01,Exa,no,https://serpapi.com/search-api,serpapi.com,,competitor,SerpAPI,
+codex,2,EXA-01,Exa,no,https://docs.tavily.com/documentation/api-reference/endpoint/search,docs.tavily.com,,competitor,Tavily,
+codex,2,EXA-01,Exa,no,https://www.tavily.com/pricing,tavily.com,,competitor,Tavily,
+codex,2,EXA-01,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,2,EXA-01,Exa,no,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,2,EXA-01,Exa,no,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-01,Exa,no,https://docs.perplexity.ai/docs/search/quickstart,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,2,EXA-01,Exa,no,https://docs.perplexity.ai/docs/getting-started/pricing,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,1,EXA-03,Exa,no,https://docs.tavily.com/documentation/api-reference/endpoint/search,docs.tavily.com,,competitor,Tavily,
+codex,1,EXA-03,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,1,EXA-03,Exa,no,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,1,EXA-03,Exa,no,https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview,learn.microsoft.com,,third_party,,platform docs
+codex,2,EXA-03,Exa,no,https://help.tavily.com/articles/4840311948-tavily-search-api,help.tavily.com,,competitor,Tavily,
+codex,2,EXA-03,Exa,no,https://www.tavily.com/pricing,tavily.com,,competitor,Tavily,
+codex,2,EXA-03,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,2,EXA-03,Exa,no,https://api-dashboard.search.brave.com/documentation/services/llm-context,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,2,EXA-03,Exa,no,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-03,Exa,no,https://github.com/pgvector/pgvector#hybrid-search,github.com,,third_party,,platform docs
+codex,2,EXA-04,Exa,no,https://exa.ai/docs/search/quickstart,exa.ai,,own,Exa,
+codex,2,EXA-04,Exa,no,https://help.tavily.com/articles/3363168593-extracting-web-content-using-tavily,help.tavily.com,,competitor,Tavily,
+codex,2,EXA-04,Exa,no,https://docs.firecrawl.dev/features/search,docs.firecrawl.dev,,competitor,Firecrawl,
+codex,2,EXA-04,Exa,no,https://jina.ai/reader/,jina.ai,,competitor,Jina,
+codex,2,EXA-04,Exa,no,https://api-dashboard.search.brave.com/documentation,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,2,EXA-04,Exa,no,https://api-dashboard.search.brave.com/documentation/services/llm-context,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,1,EXA-04,Exa,no,https://exa.ai/docs/search/quickstart,exa.ai,,own,Exa,
+codex,1,EXA-04,Exa,no,https://docs.tavily.com/documentation/api-reference/endpoint/search,docs.tavily.com,,competitor,Tavily,
+codex,1,EXA-04,Exa,no,https://github.com/firecrawl/firecrawl-docs/blob/main/api-reference/endpoint/search.mdx,github.com,,third_party,,platform docs
+codex,1,EXA-04,Exa,no,https://api-dashboard.search.brave.com/documentation/services/llm-context,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,1,EXA-05,Exa,no,https://metaphorapi.readme.io/reference/findsimilar,metaphorapi.readme.io,,own,Exa,
+codex,1,EXA-05,Exa,no,https://docs.similarweb.com/api-v5/api-reference/website-analysis-api/website-performance/similar-sites,docs.similarweb.com,,third_party,,platform docs
+codex,1,EXA-05,Exa,no,https://docs.gtm.ai/reference/companylookalikesinterface_companylookalikes,docs.gtm.ai,,third_party,,platform docs
+codex,2,EXA-05,Exa,no,https://docs.apollo.io/reference/organization-search,docs.apollo.io,,third_party,,platform docs
+codex,2,EXA-05,Exa,no,https://docs.similarweb.com/api-v5/api-reference/website-analysis-api/website-performance/similar-sites,docs.similarweb.com,,third_party,,platform docs
+codex,2,EXA-05,Exa,no,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,2,EXA-06,Exa,no,https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement,learn.microsoft.com,,third_party,,platform docs
+codex,2,EXA-06,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,2,EXA-06,Exa,no,https://www.tavily.com/pricing,tavily.com,,competitor,Tavily,
+codex,2,EXA-06,Exa,no,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-06,Exa,no,https://serpapi.com/bing-search-api,serpapi.com,,competitor,SerpAPI,
+codex,2,EXA-06,Exa,no,https://developers.openai.com/api/docs/guides/tools-web-search,developers.openai.com,,third_party,,platform docs
+codex,2,EXA-06,Exa,no,https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/web-search,learn.microsoft.com,,third_party,,platform docs
+codex,2,EXA-06,Exa,no,https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/bing-grounding,learn.microsoft.com,,third_party,,platform docs
+codex,1,EXA-06,Exa,no,https://api-dashboard.search.brave.com/api-reference/ai/llm_context/get,api-dashboard.search.brave.com,,competitor,Brave Search API,
+codex,1,EXA-06,Exa,no,https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement,learn.microsoft.com,,third_party,,platform docs
+codex,1,EXA-06,Exa,no,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,1,EXA-06,Exa,no,https://www.tavily.com/pricing,tavily.com,,competitor,Tavily,
+codex,1,EXA-06,Exa,no,https://developers.openai.com/api/docs/guides/tools-web-search,developers.openai.com,,third_party,,platform docs
+codex,1,EXA-06,Exa,no,https://learn.microsoft.com/mt-mt/azure/foundry/agents/how-to/tools/web-overview,learn.microsoft.com,,third_party,,platform docs
+codex,1,EXA-06,Exa,no,https://learn.microsoft.com/en-us/azure/foundry-classic/agents/how-to/tools-classic/bing-grounding,learn.microsoft.com,,third_party,,platform docs
+codex,1,EXA-06,Exa,no,https://developers.google.com/custom-search/v1/overview,developers.google.com,,third_party,,platform docs
+codex,1,EXA-07,Exa,yes,https://docs.tavily.com/documentation/api-reference/endpoint/search,docs.tavily.com,,competitor,Tavily,
+codex,1,EXA-07,Exa,yes,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,1,EXA-07,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-07,Exa,yes,https://docs.tavily.com/documentation/api-credits,docs.tavily.com,,competitor,Tavily,
+codex,2,EXA-07,Exa,yes,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,2,EXA-07,Exa,yes,https://docs.tavily.com/documentation/api-reference/endpoint/search,docs.tavily.com,,competitor,Tavily,
+codex,2,EXA-07,Exa,yes,https://docs.tavily.com/documentation/api-credits,docs.tavily.com,,competitor,Tavily,
+codex,2,EXA-07,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-08,Exa,yes,https://www.perplexity.ai/en-GB/hub/blog/agent-api-one-place-to-build-with-llms-the-web-and-agents,perplexity.ai,,competitor,Perplexity Sonar,
+codex,1,EXA-08,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-08,Exa,yes,https://www.perplexity.ai/api-platform,perplexity.ai,,competitor,Perplexity Sonar,
+codex,1,EXA-08,Exa,yes,https://docs.perplexity.ai/docs/getting-started/pricing,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,1,EXA-10,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-09,Exa,yes,https://www.tavily.com/pricing,tavily.com,,competitor,Tavily,
+codex,1,EXA-09,Exa,yes,https://parallel.ai/products/search,parallel.ai,,competitor,Parallel,
+codex,1,EXA-09,Exa,yes,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,1,EXA-09,Exa,yes,https://you.com/docs/quickstart,you.com,,competitor,You.com,
+codex,1,EXA-09,Exa,yes,https://serpapi.com/pricing,serpapi.com,,competitor,SerpAPI,
+codex,1,EXA-09,Exa,yes,https://serper.dev/,serper.dev,,competitor,Serper,
+codex,2,EXA-08,Exa,yes,https://docs.perplexity.ai/docs/agent-api/migrate-from-sonar/overview,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,2,EXA-08,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-08,Exa,yes,https://docs.perplexity.ai/docs/getting-started/pricing,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,2,EXA-09,Exa,yes,https://www.tavily.com/product,tavily.com,,competitor,Tavily,
+codex,2,EXA-09,Exa,yes,https://brave.com/search/api/,brave.com,,competitor,Brave Search API,
+codex,2,EXA-09,Exa,yes,https://docs.parallel.ai/introduction,docs.parallel.ai,,competitor,Parallel,
+codex,2,EXA-09,Exa,yes,https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia,docs.firecrawl.dev,,competitor,Firecrawl,
+codex,2,EXA-09,Exa,yes,https://you.com/docs/api-reference/research/v1-research,you.com,,competitor,You.com,
+codex,2,EXA-09,Exa,yes,https://docs.perplexity.ai/discuss/66b8de9e88a46a004b5c812e,docs.perplexity.ai,,competitor,Perplexity Sonar,
+codex,2,EXA-09,Exa,yes,https://exa.mintlify.app/tutorials/company-analyst,exa.mintlify.app,,own,Exa,
+codex,2,EXA-10,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,1,EXA-12,Exa,yes,https://exa.ai/about,exa.ai,,own,Exa,
+codex,1,EXA-12,Exa,yes,https://www.ycombinator.com/companies/exa,ycombinator.com,,third_party,,news or company profile
+codex,1,EXA-12,Exa,yes,https://exa.ai/blog/announcing-exa/,exa.ai,,own,Exa,
+codex,1,EXA-11,Exa,yes,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,1,EXA-11,Exa,yes,https://exa.ai/docs/reference/get-contents,exa.ai,,own,Exa,
+codex,1,EXA-11,Exa,yes,https://exa.ai/blog/exa-agent,exa.ai,,own,Exa,
+codex,1,EXA-11,Exa,yes,https://exa.ai/blog/another-search-benchmark,exa.ai,,own,Exa,
+codex,1,EXA-11,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-11,Exa,yes,https://exa.ai/docs/reference/search,exa.ai,,own,Exa,
+codex,2,EXA-11,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+codex,2,EXA-11,Exa,yes,https://exa.ai/blog/atlas-benchmark,exa.ai,,own,Exa,
+codex,2,EXA-12,Exa,yes,https://exa.ai/about,exa.ai,,own,Exa,
+codex,2,EXA-12,Exa,yes,https://exa.ai/blog/announcing-exa/,exa.ai,,own,Exa,
+codex,2,EXA-12,Exa,yes,https://exa.ai/enterprise,exa.ai,,own,Exa,
+codex,1,FW-01,Fireworks AI,no,https://artificialanalysis.ai/models/gpt-oss-120b/providers,artificialanalysis.ai,,third_party,,benchmark or research
+codex,2,FW-01,Fireworks AI,no,https://artificialanalysis.ai/models/gpt-oss-120b/providers,artificialanalysis.ai,,third_party,,benchmark or research
+codex,1,FW-02,Fireworks AI,no,https://docs.vllm.ai/en/latest/serving/openai_compatible_server/,docs.vllm.ai,,third_party,,platform docs
+codex,1,FW-02,Fireworks AI,no,https://docs.vllm.ai/en/latest/deployment/k8s/,docs.vllm.ai,,third_party,,platform docs
+codex,1,FW-02,Fireworks AI,no,https://sgl-project.github.io/basic_usage/deepseek_v3.html,sgl-project.github.io,,third_party,,platform docs
+codex,1,FW-02,Fireworks AI,no,https://docs.nvidia.com/tensorrt-llm/index.html,docs.nvidia.com,,third_party,,platform docs
+codex,1,FW-02,Fireworks AI,no,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-02,Fireworks AI,no,https://www.baseten.co/products/dedicated-inference/,baseten.co,,competitor,Baseten,
+codex,2,FW-02,Fireworks AI,no,https://docs.vllm.ai/en/latest/features/batch_invariance/,docs.vllm.ai,,third_party,,platform docs
+codex,2,FW-02,Fireworks AI,no,https://docs.vllm.ai/projects/production-stack/en/latest/use_cases/autoscaling-keda.html,docs.vllm.ai,,third_party,,platform docs
+codex,2,FW-02,Fireworks AI,no,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-02,Fireworks AI,no,https://www.together.ai/dedicated-model-inference,together.ai,,competitor,Together AI,
+codex,2,FW-02,Fireworks AI,no,https://github.com/sgl-project/sglang/blob/main/docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx,github.com,,third_party,,platform docs
+codex,2,FW-02,Fireworks AI,no,https://docs.nvidia.com/nim/large-language-models/latest/introduction.html,docs.nvidia.com,,third_party,,platform docs
+codex,2,FW-02,Fireworks AI,no,https://docs.nvidia.com/nim/large-language-models/latest/supported-models.html,docs.nvidia.com,,third_party,,platform docs
+codex,1,FW-03,Fireworks AI,no,https://openrouter.ai/deepseek/deepseek-v4-flash-20260731:free,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-03,Fireworks AI,no,https://openrouter.ai/deepseek/deepseek-v4.1-flash,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-03,Fireworks AI,no,https://openrouter.ai/blog/insights/model-routing/,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-03,Fireworks AI,no,https://openrouter.ai/blog/insights/governing-team-ai-spend/,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-03,Fireworks AI,no,https://api-docs.deepseek.com/quick_start/pricing/,api-docs.deepseek.com,,third_party,,platform docs
+codex,1,FW-04,Fireworks AI,no,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-04,Fireworks AI,no,https://huggingface.co/docs/inference-endpoints/en/about,huggingface.co,,third_party,,platform docs
+codex,1,FW-04,Fireworks AI,no,https://huggingface.co/docs/autotrain/main/index,huggingface.co,,third_party,,platform docs
+codex,1,FW-04,Fireworks AI,no,https://modal.com/docs/examples/llm-finetuning,modal.com,,competitor,Modal,
+codex,2,FW-03,Fireworks AI,no,https://openrouter.ai/deepseek/deepseek-v4-flash-20260731:free,openrouter.ai,,competitor,OpenRouter,
+codex,2,FW-03,Fireworks AI,no,https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017,openrouter.ai,,competitor,OpenRouter,
+codex,2,FW-03,Fireworks AI,no,https://openrouter.ai/pricing,openrouter.ai,,competitor,OpenRouter,
+codex,2,FW-03,Fireworks AI,no,https://api-docs.deepseek.com/quick_start/pricing/,api-docs.deepseek.com,,third_party,,platform docs
+codex,2,FW-04,Fireworks AI,no,https://www.together.ai/fine-tuning,together.ai,,competitor,Together AI,
+codex,2,FW-04,Fireworks AI,no,https://huggingface.co/docs/inference-endpoints/index,huggingface.co,,third_party,,platform docs
+codex,2,FW-04,Fireworks AI,no,https://modal.com/docs/guide,modal.com,,competitor,Modal,
+codex,2,FW-04,Fireworks AI,no,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-06,Fireworks AI,no,https://docs.fireworks.ai/guides/function-calling,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-06,Fireworks AI,no,https://docs.fireworks.ai/structured-responses/structured-response-formatting,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-06,Fireworks AI,no,https://inference-docs.cerebras.ai/capabilities/structured-outputs,inference-docs.cerebras.ai,,competitor,Cerebras,
+codex,2,FW-05,Fireworks AI,no,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-05,Fireworks AI,no,https://www.together.ai/pricing,together.ai,,competitor,Together AI,
+codex,2,FW-05,Fireworks AI,no,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,2,FW-05,Fireworks AI,no,https://docs.aws.amazon.com/bedrock/latest/userguide/models.html,docs.aws.amazon.com,,competitor,AWS Bedrock,
+codex,2,FW-05,Fireworks AI,no,https://docs.cloud.google.com/vertex-ai/generative-ai/docs/open-models/use-maas,docs.cloud.google.com,,third_party,,platform docs
+codex,2,FW-05,Fireworks AI,no,https://developers.cloudflare.com/workers-ai/,developers.cloudflare.com,,third_party,,platform docs
+codex,2,FW-05,Fireworks AI,no,https://huggingface.co/docs/inference-providers/en/index,huggingface.co,,third_party,,platform docs
+codex,2,FW-05,Fireworks AI,no,https://openrouter.ai/pricing,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-06,Fireworks AI,no,https://docs.fireworks.ai/guides/function-calling,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-06,Fireworks AI,no,https://docs.fireworks.ai/structured-responses/structured-response-formatting,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-06,Fireworks AI,no,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,1,FW-06,Fireworks AI,no,https://console.groq.com/docs/structured-outputs,console.groq.com,,competitor,Groq,
+codex,1,FW-05,Fireworks AI,no,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-05,Fireworks AI,no,https://www.together.ai/pricing,together.ai,,competitor,Together AI,
+codex,1,FW-05,Fireworks AI,no,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,1,FW-05,Fireworks AI,no,https://www.cerebras.ai/pricing,cerebras.ai,,competitor,Cerebras,
+codex,1,FW-05,Fireworks AI,no,https://developers.openai.com/api/docs/models,developers.openai.com,,third_party,,platform docs
+codex,1,FW-05,Fireworks AI,no,https://docs.anthropic.com/en/docs/about-claude/pricing,docs.anthropic.com,,third_party,,platform docs
+codex,1,FW-05,Fireworks AI,no,https://ai.google.dev/gemini-api/docs/pricing,ai.google.dev,,third_party,,platform docs
+codex,1,FW-05,Fireworks AI,no,https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/model-execution-strategies.html,docs.aws.amazon.com,,third_party,,platform docs
+codex,1,FW-05,Fireworks AI,no,https://learn.microsoft.com/en-us/azure/foundry/concepts/deployments-overview,learn.microsoft.com,,third_party,,platform docs
+codex,1,FW-05,Fireworks AI,no,https://openrouter.ai/pricing,openrouter.ai,,competitor,OpenRouter,
+codex,2,FW-07,Fireworks AI,yes,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-07,Fireworks AI,yes,https://www.together.ai/serverless-inference,together.ai,,competitor,Together AI,
+codex,2,FW-07,Fireworks AI,yes,https://fireworks.ai/models/fireworks/glm-5p3-flash,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-07,Fireworks AI,yes,https://www.together.ai/models/glm-5-3-flash,together.ai,,competitor,Together AI,
+codex,1,FW-08,Fireworks AI,yes,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-08,Fireworks AI,yes,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,1,FW-08,Fireworks AI,yes,https://console.groq.com/docs/service-tiers,console.groq.com,,competitor,Groq,
+codex,1,FW-08,Fireworks AI,yes,https://fireworks.ai/models?providers=OpenAI,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-07,Fireworks AI,yes,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-07,Fireworks AI,yes,https://www.together.ai/products,together.ai,,competitor,Together AI,
+codex,1,FW-07,Fireworks AI,yes,https://www.together.ai/dedicated-model-inference,together.ai,,competitor,Together AI,
+codex,1,FW-07,Fireworks AI,yes,https://fireworks.ai/models?modelTypes=LLM%2CServerless&providers=OpenAI,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-07,Fireworks AI,yes,https://www.together.ai/pricing,together.ai,,competitor,Together AI,
+codex,2,FW-08,Fireworks AI,yes,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-08,Fireworks AI,yes,https://fireworks.ai/inference,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-08,Fireworks AI,yes,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,2,FW-08,Fireworks AI,yes,https://console.groq.com/docs/performance-tier,console.groq.com,,competitor,Groq,
+codex,2,FW-08,Fireworks AI,yes,https://fireworks.ai/models?providers=OpenAI,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-08,Fireworks AI,yes,https://fireworks.ai/docs/faq/deployment/serverless/service-levels,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-10,Fireworks AI,yes,https://fireworks.ai/models?modelTypes=Serverless&show=serverless,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-10,Fireworks AI,yes,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-10,Fireworks AI,yes,https://docs.fireworks.ai/serverless/pricing,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-10,Fireworks AI,yes,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+codex,2,FW-09,Fireworks AI,yes,https://www.together.ai/products,together.ai,,competitor,Together AI,
+codex,2,FW-09,Fireworks AI,yes,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,2,FW-09,Fireworks AI,yes,https://deepinfra.com/models,deepinfra.com,,competitor,DeepInfra,
+codex,2,FW-09,Fireworks AI,yes,https://docs.baseten.co/examples/models/deepseek/deepseek-r1,docs.baseten.co,,competitor,Baseten,
+codex,2,FW-09,Fireworks AI,yes,https://openrouter.ai/docs/features/latency-and-performance,openrouter.ai,,competitor,OpenRouter,
+codex,1,FW-12,Fireworks AI,yes,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-12,Fireworks AI,yes,https://fireworks.ai/inference,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-09,Fireworks AI,yes,https://www.together.ai/serverless-inference,together.ai,,competitor,Together AI,
+codex,1,FW-09,Fireworks AI,yes,https://console.groq.com/docs/models,console.groq.com,,competitor,Groq,
+codex,1,FW-09,Fireworks AI,yes,https://deepinfra.com/llama,deepinfra.com,,competitor,DeepInfra,
+codex,1,FW-09,Fireworks AI,yes,https://github.com/OpenRouterTeam/docs/blob/main/guides/routing/provider-selection.mdx,github.com,,third_party,,platform docs
+codex,1,FW-09,Fireworks AI,yes,https://www.baseten.co/pricing/self-hosted/,baseten.co,,competitor,Baseten,
+codex,1,FW-09,Fireworks AI,yes,https://replicate.com/pricing,replicate.com,,competitor,Replicate,
+codex,2,FW-12,Fireworks AI,yes,https://docs.fireworks.ai/,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-12,Fireworks AI,yes,https://fireworks.ai/inference/,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-11,Fireworks AI,yes,https://trust.fireworks.ai/,trust.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_security,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_handling,docs.fireworks.ai,,own,Fireworks AI,
+codex,1,FW-11,Fireworks AI,yes,https://fireworks.ai/security/bulletins/october-2026-security-incident,fireworks.ai,,own,Fireworks AI,
+codex,1,FW-11,Fireworks AI,yes,https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/privacy-compliance-faq,learn.microsoft.com,,third_party,,platform docs
+codex,2,FW-11,Fireworks AI,yes,https://trust.fireworks.ai/,trust.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_security,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/audit_logs,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_handling,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://trust.fireworks.ai/faq,trust.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/serverless/us-only-serverless,docs.fireworks.ai,,own,Fireworks AI,
+codex,2,FW-11,Fireworks AI,yes,https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/privacy-compliance-faq,learn.microsoft.com,,third_party,,platform docs
+codex,1,AAI-01,AssemblyAI,no,https://artificialanalysis.ai/speech-to-text/non-streaming,artificialanalysis.ai,,third_party,,benchmark or research
+codex,1,AAI-01,AssemblyAI,no,https://elevenlabs.io/docs/api-reference/speech-to-text/convert,elevenlabs.io,,competitor,ElevenLabs Scribe,
+codex,1,AAI-01,AssemblyAI,no,https://artificialanalysis.ai/articles/aa-wer-v2,artificialanalysis.ai,,third_party,,benchmark or research
+codex,2,AAI-01,AssemblyAI,no,https://artificialanalysis.ai/speech-to-text/non-streaming,artificialanalysis.ai,,third_party,,benchmark or research
+codex,2,AAI-01,AssemblyAI,no,https://help.aliyun.com/en/model-studio/non-real-time-speech-recognition-for-fun-asr-realtime,help.aliyun.com,,third_party,,platform docs
+codex,2,AAI-01,AssemblyAI,no,https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe,learn.microsoft.com,,third_party,,platform docs
+codex,1,AAI-02,AssemblyAI,no,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-02,AssemblyAI,no,https://www.assemblyai.com/docs/pre-recorded-audio/transcribe-multiple-audio-channels,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-02,AssemblyAI,no,https://github.com/verliapp/stt-benchmark,github.com,,third_party,,platform docs
+codex,1,AAI-02,AssemblyAI,no,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,1,AAI-02,AssemblyAI,no,https://elevenlabs.io/speech-to-text,elevenlabs.io,,competitor,ElevenLabs Scribe,
+codex,1,AAI-02,AssemblyAI,no,https://elevenlabs.io/pricing/api,elevenlabs.io,,competitor,ElevenLabs Scribe,
+codex,2,AAI-03,AssemblyAI,no,https://www.assemblyai.com/benchmarks,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-03,AssemblyAI,no,https://www.pyannote.ai/blog/precision-3,pyannote.ai,,third_party,,other vendor
+codex,2,AAI-03,AssemblyAI,no,https://dev.meta.ai/resources/blog/meet-muse-voice-transcribe-streaming-speech-to-text,dev.meta.ai,,third_party,,platform docs
+codex,2,AAI-02,AssemblyAI,no,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,2,AAI-02,AssemblyAI,no,https://developers.deepgram.com/docs/diarization,developers.deepgram.com,,competitor,Deepgram,
+codex,2,AAI-02,AssemblyAI,no,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-02,AssemblyAI,no,https://docs.aws.amazon.com/transcribe/latest/dg/call-analytics.html,docs.aws.amazon.com,,competitor,AWS Transcribe,
+codex,1,AAI-04,AssemblyAI,no,https://www.assemblyai.com/blog/universal-3-6-pro-realtime,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-04,AssemblyAI,no,https://developers.deepgram.com/docs/flux/quickstart,developers.deepgram.com,,competitor,Deepgram,
+codex,1,AAI-04,AssemblyAI,no,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,1,AAI-03,AssemblyAI,no,https://www.isca-archive.org/interspeech_2025/durmus25_interspeech.pdf,isca-archive.org,,third_party,,benchmark or research
+codex,1,AAI-03,AssemblyAI,no,https://www.pyannote.ai/blog/precision-3,pyannote.ai,,third_party,,other vendor
+codex,1,AAI-03,AssemblyAI,no,https://www.pyannote.ai/pricing,pyannote.ai,,third_party,,other vendor
+codex,1,AAI-03,AssemblyAI,no,https://www.assemblyai.com/benchmarks,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-03,AssemblyAI,no,https://www.assemblyai.com/docs/pre-recorded-audio/label-speakers,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-04,AssemblyAI,no,https://developers.deepgram.com/docs/flux/quickstart,developers.deepgram.com,,competitor,Deepgram,
+codex,2,AAI-04,AssemblyAI,no,https://www.assemblyai.com/docs/voice-agents/best-practices,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-04,AssemblyAI,no,https://developers.openai.com/api/docs/guides/realtime-conversations,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-05,AssemblyAI,no,https://developers.openai.com/api/docs/guides/transcription,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-05,AssemblyAI,no,https://developers.openai.com/api/docs/pricing,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-05,AssemblyAI,no,https://developers.openai.com/api/docs/changelog,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-05,AssemblyAI,no,https://developers.openai.com/api/docs/guides/transcription,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-05,AssemblyAI,no,https://developers.deepgram.com/docs/model,developers.deepgram.com,,competitor,Deepgram,
+codex,1,AAI-06,AssemblyAI,no,https://www.assemblyai.com/docs/guardrails/redact-pii-from-transcripts,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-06,AssemblyAI,no,https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction.html,docs.aws.amazon.com,,competitor,AWS Transcribe,
+codex,1,AAI-06,AssemblyAI,no,https://docs.aws.amazon.com/transcribe/latest/dg/phi-id.html,docs.aws.amazon.com,,competitor,AWS Transcribe,
+codex,1,AAI-06,AssemblyAI,no,https://developers.deepgram.com/docs/detect-entities,developers.deepgram.com,,competitor,Deepgram,
+codex,1,AAI-06,AssemblyAI,no,https://developers.deepgram.com/changelog/2025/12/11,developers.deepgram.com,,competitor,Deepgram,
+codex,1,AAI-06,AssemblyAI,no,https://docs.cloud.google.com/gemini-enterprise-cx/insights/ingest-conversations-api,docs.cloud.google.com,,third_party,,platform docs
+codex,1,AAI-06,AssemblyAI,no,https://docs.cloud.google.com/contact-center/ccai-platform/docs/audio-redaction,docs.cloud.google.com,,third_party,,platform docs
+codex,1,AAI-06,AssemblyAI,no,https://learn.microsoft.com/en-us/azure/architecture/example-scenario/ai/speech-to-text-transcription-analytics,learn.microsoft.com,,third_party,,platform docs
+codex,2,AAI-07,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-07,AssemblyAI,yes,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,1,AAI-07,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-07,AssemblyAI,yes,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,1,AAI-07,AssemblyAI,yes,https://developers.deepgram.com/docs/flux/nova-3-migration,developers.deepgram.com,,competitor,Deepgram,
+codex,2,AAI-06,AssemblyAI,no,https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction.html,docs.aws.amazon.com,,competitor,AWS Transcribe,
+codex,2,AAI-06,AssemblyAI,no,https://developers.deepgram.com/docs/redaction,developers.deepgram.com,,competitor,Deepgram,
+codex,2,AAI-06,AssemblyAI,no,https://www.assemblyai.com/docs/guardrails/redact-pii-from-transcripts,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-06,AssemblyAI,no,https://learn.microsoft.com/en-us/azure/ai-services/language-service/personally-identifiable-information/conversation-pii-overview,learn.microsoft.com,,third_party,,platform docs
+codex,2,AAI-06,AssemblyAI,no,https://docs.cloud.google.com/contact-center/ccai-platform/docs/audio-redaction,docs.cloud.google.com,,third_party,,platform docs
+codex,2,AAI-06,AssemblyAI,no,https://docs.aws.amazon.com/en_en/transcribe/latest/dg/phi-id.html,docs.aws.amazon.com,,third_party,,platform docs
+codex,1,AAI-08,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/models/whisper-1,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/guides/speech-to-text,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-08,AssemblyAI,yes,https://github.com/openai/whisper,github.com,,third_party,,platform docs
+codex,1,AAI-10,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-09,AssemblyAI,yes,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,1,AAI-09,AssemblyAI,yes,https://www.speechmatics.com/pricing,speechmatics.com,,competitor,Speechmatics,
+codex,1,AAI-09,AssemblyAI,yes,https://www.gladia.io/product/speech-to-text-api,gladia.io,,competitor,Gladia,
+codex,1,AAI-09,AssemblyAI,yes,https://platform.openai.com/pricing,platform.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-09,AssemblyAI,yes,https://platform.openai.com/docs/models/gpt-4o-transcribe-diarize,platform.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-09,AssemblyAI,yes,https://cloud.google.com/speech-to-text/pricing,cloud.google.com,,competitor,Google Speech-to-Text,
+codex,1,AAI-09,AssemblyAI,yes,https://docs.cloud.google.com/speech-to-text/docs/multiple-voices,docs.cloud.google.com,,competitor,Google Speech-to-Text,
+codex,1,AAI-09,AssemblyAI,yes,https://docs.cloud.google.com/speech-to-text/docs/adaptation-model,docs.cloud.google.com,,competitor,Google Speech-to-Text,
+codex,1,AAI-09,AssemblyAI,yes,https://github.com/openai/whisper,github.com,,third_party,,platform docs
+codex,1,AAI-09,AssemblyAI,yes,https://www.assemblyai.com/blog/speech-recognition-cost,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-10,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-10,AssemblyAI,yes,https://www.assemblyai.com/docs/faq/how-does-universal-streaming-session-based-pricing-work,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-09,AssemblyAI,yes,https://deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+codex,2,AAI-09,AssemblyAI,yes,https://www.speechmatics.com/pricing,speechmatics.com,,competitor,Speechmatics,
+codex,2,AAI-09,AssemblyAI,yes,https://docs.speechmatics.com/,docs.speechmatics.com,,competitor,Speechmatics,
+codex,2,AAI-09,AssemblyAI,yes,https://developers.openai.com/api/docs/guides/transcription,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-09,AssemblyAI,yes,https://docs.cloud.google.com/speech-to-text/v2/docs/chirp-model,docs.cloud.google.com,,competitor,Google Speech-to-Text,
+codex,2,AAI-09,AssemblyAI,yes,https://learn.microsoft.com/en-us/azure/ai-services/Speech-Service/overview,learn.microsoft.com,,third_party,,platform docs
+codex,2,AAI-09,AssemblyAI,yes,https://github.com/SYSTRAN/faster-whisper,github.com,,third_party,,platform docs
+codex,2,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/deprecations,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-08,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-08,AssemblyAI,yes,https://www.assemblyai.com/docs/streaming/label-speakers-and-separate-channels,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/guides/speech-to-text,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-08,AssemblyAI,yes,https://openai.com/index/whisper/,openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/models/whisper-1,developers.openai.com,,competitor,OpenAI Whisper,
+codex,2,AAI-08,AssemblyAI,yes,https://developers.openai.com/api/docs/guides/transcription,developers.openai.com,,competitor,OpenAI Whisper,
+codex,1,AAI-12,AssemblyAI,yes,https://www.assemblyai.com/products/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-12,AssemblyAI,yes,https://www.assemblyai.com/products/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-12,AssemblyAI,yes,https://www.assemblyai.com/features,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/getting-started/end-to-end-examples/sales-call-intelligence,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/speech-understanding/getting-started,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/speech-understanding/summarization,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/speech-understanding/speaker-identification,assemblyai.com,,own,AssemblyAI,
+codex,1,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/pricing/,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/getting-started/end-to-end-examples/sales-call-intelligence,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/speech-understanding/summarization,assemblyai.com,,own,AssemblyAI,
+codex,2,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/docs/guardrails/redact-pii-from-transcripts,assemblyai.com,,own,AssemblyAI,
+codex,2,LC-02,LangChain,no,https://developers.llamaindex.ai/python/framework/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,2,LC-02,LangChain,no,https://docs.langchain.com/oss/python/learn,docs.langchain.com,,own,LangChain,
+codex,2,LC-02,LangChain,no,https://docs.haystack.deepset.ai/,docs.haystack.deepset.ai,,competitor,Haystack,
+codex,2,LC-02,LangChain,no,https://platform.openai.com/docs/guides/tools-file-search,platform.openai.com,,third_party,,platform docs
+codex,2,LC-01,LangChain,no,https://pydantic.dev/docs/ai/overview/,pydantic.dev,,competitor,Pydantic AI,
+codex,2,LC-01,LangChain,no,https://pydantic.dev/docs/ai/core-concepts/agent/,pydantic.dev,,competitor,Pydantic AI,
+codex,2,LC-01,LangChain,no,https://langchain-ai.github.io/langgraph/reference/,langchain-ai.github.io,,own,LangChain,
+codex,2,LC-01,LangChain,no,https://openai.github.io/openai-agents-python/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,1,LC-01,LangChain,no,https://pydantic.dev/docs/ai/overview/,pydantic.dev,,competitor,Pydantic AI,
+codex,1,LC-01,LangChain,no,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,1,LC-01,LangChain,no,https://developers.openai.com/api/docs/guides/agents/sdk,developers.openai.com,,third_party,,platform docs
+codex,1,LC-02,LangChain,no,https://developers.llamaindex.ai/python/framework/getting_started/concepts/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,1,LC-02,LangChain,no,https://docs.langchain.com/oss/python/learn,docs.langchain.com,,own,LangChain,
+codex,1,LC-02,LangChain,no,https://docs.haystack.deepset.ai/docs/intro,docs.haystack.deepset.ai,,competitor,Haystack,
+codex,2,LC-04,LangChain,no,https://langfuse.com/docs,langfuse.com,,competitor,Langfuse,
+codex,2,LC-04,LangChain,no,https://langfuse.com/docs/evaluation/core-concepts,langfuse.com,,competitor,Langfuse,
+codex,2,LC-04,LangChain,no,https://www.braintrust.dev/learn/ai-observability/v0,braintrust.dev,,competitor,Braintrust,
+codex,2,LC-04,LangChain,no,https://docs.langchain.com/langsmith/evaluation-types,docs.langchain.com,,own,LangChain,
+codex,2,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/orchestration,developers.openai.com,,third_party,,platform docs
+codex,2,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/results,developers.openai.com,,third_party,,platform docs
+codex,2,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/guardrails-approvals,developers.openai.com,,third_party,,platform docs
+codex,2,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/quickstart,developers.openai.com,,third_party,,platform docs
+codex,2,LC-05,LangChain,no,https://mastra.ai/docs,mastra.ai,,competitor,Mastra,
+codex,2,LC-05,LangChain,no,https://mastra.ai/docs/workflows/control-flow,mastra.ai,,competitor,Mastra,
+codex,2,LC-05,LangChain,no,https://ai-sdk.dev/docs/agents/building-agents,ai-sdk.dev,,third_party,,platform docs
+codex,2,LC-05,LangChain,no,https://docs.langchain.com/oss/javascript/langgraph/thinking-in-langgraph,docs.langchain.com,,own,LangChain,
+codex,2,LC-05,LangChain,no,https://openai.github.io/openai-agents-js/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/sdk,developers.openai.com,,third_party,,platform docs
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/results,developers.openai.com,,third_party,,platform docs
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/quickstart,developers.openai.com,,third_party,,platform docs
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/guardrails-approvals,developers.openai.com,,third_party,,platform docs
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/running-agents,developers.openai.com,,third_party,,platform docs
+codex,1,LC-03,LangChain,no,https://developers.openai.com/api/docs/guides/agents/orchestration,developers.openai.com,,third_party,,platform docs
+codex,1,LC-05,LangChain,no,https://mastra.ai/docs,mastra.ai,,competitor,Mastra,
+codex,1,LC-05,LangChain,no,https://mastra.ai/docs/workflows/control-flow,mastra.ai,,competitor,Mastra,
+codex,1,LC-05,LangChain,no,https://mastra.ai/docs/memory/overview,mastra.ai,,competitor,Mastra,
+codex,1,LC-05,LangChain,no,https://mastra.ai/docs/observability/overview,mastra.ai,,competitor,Mastra,
+codex,1,LC-05,LangChain,no,https://developers.openai.com/api/docs/guides/agents/sdk,developers.openai.com,,third_party,,platform docs
+codex,1,LC-05,LangChain,no,https://docs.langchain.com/oss/javascript/langgraph/thinking-in-langgraph,docs.langchain.com,,own,LangChain,
+codex,1,LC-05,LangChain,no,https://ai-sdk.dev/docs/agents/building-agents,ai-sdk.dev,,third_party,,platform docs
+codex,1,LC-06,LangChain,no,https://langchain-ai.github.io/langgraph/reference/,langchain-ai.github.io,,own,LangChain,
+codex,1,LC-06,LangChain,no,https://langchain-ai.github.io/langgraph/concepts/durable_execution/,langchain-ai.github.io,,own,LangChain,
+codex,1,LC-06,LangChain,no,https://github.com/langchain-ai/langgraph/blob/main/libs/langgraph/pyproject.toml,github.com,,third_party,,platform docs
+codex,1,LC-06,LangChain,no,https://developers.openai.com/api/docs/guides/agents/sdk,developers.openai.com,,third_party,,platform docs
+codex,1,LC-06,LangChain,no,https://learn.microsoft.com/en-us/agent-framework/overview/,learn.microsoft.com,,competitor,Microsoft Agent Framework,
+codex,1,LC-06,LangChain,no,https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/adk,docs.cloud.google.com,,third_party,,platform docs
+codex,1,LC-06,LangChain,no,https://docs.langchain.com/langsmith/data-plane,docs.langchain.com,,own,LangChain,
+codex,1,LC-07,LangChain,yes,https://docs.langchain.com/oss/python/langchain/overview,docs.langchain.com,,own,LangChain,
+codex,1,LC-07,LangChain,yes,https://developers.llamaindex.ai/python/framework/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,1,LC-07,LangChain,yes,https://docs.langchain.com/oss/python/deepagents/retrieval,docs.langchain.com,,own,LangChain,
+codex,2,LC-06,LangChain,no,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-06,LangChain,no,https://docs.langchain.com/oss/python/langgraph/persistence,docs.langchain.com,,own,LangChain,
+codex,2,LC-06,LangChain,no,https://github.com/langchain-ai/langgraph/blob/main/libs/langgraph/pyproject.toml,github.com,,third_party,,platform docs
+codex,2,LC-06,LangChain,no,https://openai.github.io/openai-agents-python/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,2,LC-06,LangChain,no,https://openai.github.io/openai-agents-python/models/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,2,LC-07,LangChain,yes,https://docs.langchain.com/oss/python/langchain/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-07,LangChain,yes,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-07,LangChain,yes,https://developers.llamaindex.ai/python/framework/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,1,LC-08,LangChain,yes,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,1,LC-08,LangChain,yes,https://docs.crewai.com/en/concepts/flows,docs.crewai.com,,competitor,CrewAI,
+codex,1,LC-08,LangChain,yes,https://docs.crewai.com/en/concepts/checkpointing,docs.crewai.com,,competitor,CrewAI,
+codex,1,LC-09,LangChain,yes,https://developers.llamaindex.ai/python/framework/understanding/rag/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,1,LC-09,LangChain,yes,https://docs.haystack.deepset.ai/docs/choosing-between-pipelines-and-agents,docs.haystack.deepset.ai,,competitor,Haystack,
+codex,1,LC-09,LangChain,yes,https://pydantic.dev/docs/ai/overview/,pydantic.dev,,competitor,Pydantic AI,
+codex,1,LC-09,LangChain,yes,https://vercel.com/docs/ai-sdk,vercel.com,,third_party,,platform docs
+codex,1,LC-09,LangChain,yes,https://openai.github.io/openai-agents-python/multi_agent/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,1,LC-09,LangChain,yes,https://learn.microsoft.com/en-us/agent-framework,learn.microsoft.com,,competitor,Microsoft Agent Framework,
+codex,2,LC-08,LangChain,yes,https://docs.crewai.com/en/concepts/crews,docs.crewai.com,,competitor,CrewAI,
+codex,2,LC-08,LangChain,yes,https://docs.crewai.com/en/concepts/flows,docs.crewai.com,,competitor,CrewAI,
+codex,2,LC-08,LangChain,yes,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-08,LangChain,yes,https://docs.langchain.com/oss/python/langchain/multi-agent,docs.langchain.com,,own,LangChain,
+codex,2,LC-09,LangChain,yes,https://developers.llamaindex.ai/python/framework/getting_started/concepts/,developers.llamaindex.ai,,competitor,LlamaIndex,
+codex,2,LC-09,LangChain,yes,https://docs.haystack.deepset.ai/docs/concepts-overview,docs.haystack.deepset.ai,,competitor,Haystack,
+codex,2,LC-09,LangChain,yes,https://pydantic.dev/docs/ai/overview/,pydantic.dev,,competitor,Pydantic AI,
+codex,2,LC-09,LangChain,yes,https://dspy.ai/getting-started/program-dont-prompt/,dspy.ai,,competitor,DSPy,
+codex,2,LC-09,LangChain,yes,https://ai-sdk.dev/docs/introduction,ai-sdk.dev,,third_party,,platform docs
+codex,2,LC-09,LangChain,yes,https://openai.github.io/openai-agents-python/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,2,LC-09,LangChain,yes,https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview,learn.microsoft.com,,competitor,Microsoft Agent Framework,
+codex,2,LC-10,LangChain,yes,https://www.langchain.com/pricing,langchain.com,,own,LangChain,
+codex,1,LC-10,LangChain,yes,https://www.langchain.com/pricing,langchain.com,,own,LangChain,
+codex,1,LC-10,LangChain,yes,https://docs.langchain.com/langsmith/billing,docs.langchain.com,,own,LangChain,
+codex,2,LC-12,LangChain,yes,https://www.langchain.com/langchain,langchain.com,,own,LangChain,
+codex,2,LC-12,LangChain,yes,https://reference.langchain.com/python/integrations/overview,reference.langchain.com,,own,LangChain,
+codex,2,LC-12,LangChain,yes,https://docs.langchain.com/oss/python/learn,docs.langchain.com,,own,LangChain,
+codex,1,LC-12,LangChain,yes,https://www.langchain.com/langchain,langchain.com,,own,LangChain,
+codex,1,LC-12,LangChain,yes,https://docs.langchain.com/oss/python/learn,docs.langchain.com,,own,LangChain,
+codex,1,LC-11,LangChain,yes,https://docs.langchain.com/oss/python/langchain/overview,docs.langchain.com,,own,LangChain,
+codex,1,LC-11,LangChain,yes,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,1,LC-11,LangChain,yes,https://openai.github.io/openai-agents-python/quickstart/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,1,LC-11,LangChain,yes,https://www.langchain.com/blog/langchain-langgraph-1dot0,langchain.com,,own,LangChain,
+codex,2,LC-11,LangChain,yes,https://docs.langchain.com/oss/python/langchain/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-11,LangChain,yes,https://docs.langchain.com/oss/python/langgraph/overview,docs.langchain.com,,own,LangChain,
+codex,2,LC-11,LangChain,yes,https://openai.github.io/openai-agents-python/,openai.github.io,,competitor,OpenAI Agents SDK,
+codex,2,LC-11,LangChain,yes,https://ai-sdk.dev/docs/getting-started/navigating-the-library,ai-sdk.dev,,third_party,,platform docs
+codex,1,LC-04,LangChain,no,https://langfuse.com/docs/observability/data-model,langfuse.com,,competitor,Langfuse,
+codex,1,LC-04,LangChain,no,https://langfuse.com/docs/evaluation/core-concepts,langfuse.com,,competitor,Langfuse,
+codex,1,LC-04,LangChain,no,https://langfuse.com/docs/administration/billable-units,langfuse.com,,competitor,Langfuse,
+codex,1,LC-04,LangChain,no,https://www.braintrust.dev/docs/guides/datasets,braintrust.dev,,competitor,Braintrust,
+codex,1,LC-04,LangChain,no,https://docs.langchain.com/langsmith/evaluation-types,docs.langchain.com,,own,LangChain,
+codex,1,LC-04,LangChain,no,https://arize.com/docs/phoenix/,arize.com,,competitor,Arize Phoenix,
+codex,1,LC-04,LangChain,no,https://www.promptfoo.dev/docs/integrations/ci-cd/,promptfoo.dev,,third_party,,platform docs
+claude_code,2,MIN-07,Mintlify,yes,https://www.mintlify.com/library/mintlify-vs-gitbook,mintlify.com,,own,Mintlify,
+claude_code,2,MIN-07,Mintlify,yes,https://www.gitbook.com/blog/gitbook-vs-mintlify,gitbook.com,,competitor,GitBook,
+claude_code,2,MIN-07,Mintlify,yes,https://www.featurebase.app/blog/gitbook-vs-mintlify,featurebase.app,,third_party,,other vendor
+claude_code,2,MIN-07,Mintlify,yes,https://ferndesk.com/blog/gitbook-vs-mintlify,ferndesk.com,,third_party,,other vendor
+claude_code,1,MIN-06,Mintlify,no,https://index.mintlify.com/library/best-llms-txt-platforms,index.mintlify.com,,own,Mintlify,
+claude_code,1,MIN-06,Mintlify,no,https://www.mintlify.com/blog/generate-mcp-servers-for-your-docs,mintlify.com,,own,Mintlify,
+claude_code,1,MIN-06,Mintlify,no,https://daveswift.com/documentation-ai/,daveswift.com,,third_party,,community or blog
+claude_code,1,MIN-06,Mintlify,no,https://www.agentready.it.com/blog/add-mcp-to-existing-docs,agentready.it.com,,third_party,,other vendor
+claude_code,2,MIN-06,Mintlify,no,https://index.mintlify.com/library/best-llms-txt-platforms,index.mintlify.com,,own,Mintlify,
+claude_code,2,MIN-06,Mintlify,no,https://www.mintlify.com/library/best-llms-txt-platforms,mintlify.com,,own,Mintlify,
+claude_code,2,MIN-06,Mintlify,no,https://gitbook.com/docs/~gitbook/embed/page/ai-and-search/llm-ready-docs,gitbook.com,,competitor,GitBook,
+claude_code,2,MIN-06,Mintlify,no,https://toolradar.com/guides/best-llms-txt-generators,toolradar.com,,third_party,,review or comparison site
+claude_code,2,MIN-10,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+claude_code,1,MIN-10,Mintlify,yes,https://www.mintlify.com/pricing,mintlify.com,,own,Mintlify,
+claude_code,1,MIN-11,Mintlify,yes,https://www.mintlify.com/blog/mintlify-pro-free-startups-open-source,mintlify.com,,own,Mintlify,
+claude_code,1,MIN-11,Mintlify,yes,https://www.gitbook.com/blog/best-mintlify-alternatives,gitbook.com,,competitor,GitBook,
+claude_code,1,MIN-11,Mintlify,yes,https://automationatlas.io/answers/mintlify-pricing-explained-2026/,automationatlas.io,,third_party,,review or comparison site
+claude_code,2,MIN-11,Mintlify,yes,https://www.mintlify.com/blog/mintlify-pro-free-startups-open-source,mintlify.com,,own,Mintlify,
+claude_code,2,MIN-11,Mintlify,yes,https://www.gitbook.com/blog/best-mintlify-alternatives,gitbook.com,,competitor,GitBook,
+claude_code,2,MIN-11,Mintlify,yes,https://automationatlas.io/answers/mintlify-pricing-explained-2026/,automationatlas.io,,third_party,,review or comparison site
+claude_code,2,EXA-01,Exa,no,https://www.edenai.co/post/best-web-search-apis-for-ai-agents,edenai.co,,third_party,,other vendor
+claude_code,2,EXA-01,Exa,no,https://www.firecrawl.dev/blog/best-search-tools-for-agents.md,firecrawl.dev,,competitor,Firecrawl,
+claude_code,2,EXA-01,Exa,no,https://dev.to/tonywangca/best-web-search-apis-for-ai-agents-in-2026-42jf,dev.to,,third_party,,community or blog
+claude_code,2,EXA-01,Exa,no,https://tavily.com/blog/7-best-exa-alternatives-for-ai-agents-in-2026,tavily.com,,competitor,Tavily,
+claude_code,2,EXA-01,Exa,no,https://rhumb.dev/blog/exa-vs-tavily-vs-serper-vs-brave-search,rhumb.dev,,third_party,,review or comparison site
+claude_code,2,EXA-01,Exa,no,https://techsy.io/en/blog/best-ai-search-apis-2026,techsy.io,,third_party,,review or comparison site
+claude_code,1,EXA-01,Exa,no,https://parallel.ai/ai/articles/best-web-search-api,parallel.ai,,competitor,Parallel,
+claude_code,1,EXA-01,Exa,no,https://parallel.ai/articles/tavily-alternatives,parallel.ai,,competitor,Parallel,
+claude_code,1,EXA-01,Exa,no,https://parallel.ai/articles/the-honest-2026-comparison-web-search-apis-for-ai-agents,parallel.ai,,competitor,Parallel,
+claude_code,1,EXA-01,Exa,no,https://you.com/resources/best-web-search-apis-for-ai-agents,you.com,,competitor,You.com,
+claude_code,1,EXA-01,Exa,no,https://research.aimultiple.com/agentic-search,research.aimultiple.com,,third_party,,review or comparison site
+claude_code,1,EXA-01,Exa,no,https://select.keenable.ai/r/best-search-interfaces-for-ai-agents-2026/MMBoAy2mLxybLFvQBvxuKA,select.keenable.ai,,third_party,,review or comparison site
+claude_code,2,EXA-03,Exa,no,https://parallel.ai/articles/the-honest-2026-comparison-web-search-apis-for-ai-agents,parallel.ai,,competitor,Parallel,
+claude_code,2,EXA-03,Exa,no,https://www.stork.ai/blog/best-web-search-apis-for-ai-applications-2026,stork.ai,,third_party,,review or comparison site
+claude_code,2,EXA-03,Exa,no,https://oxylabs.io/blog/top-ai-search-tools,oxylabs.io,,third_party,,other vendor
+claude_code,2,EXA-03,Exa,no,https://parallel.ai/articles/best-ai-search-for-agents,parallel.ai,,competitor,Parallel,
+claude_code,2,EXA-05,Exa,no,https://stripe.com,stripe.com,,third_party,,platform docs
+claude_code,1,EXA-05,Exa,no,https://stripe.com,stripe.com,,third_party,,platform docs
+claude_code,1,EXA-07,Exa,yes,https://you.com/resources/tavily-vs-exa,you.com,,competitor,You.com,
+claude_code,1,EXA-07,Exa,yes,https://rhumb.dev/blog/exa-vs-tavily-vs-serper-vs-brave-search,rhumb.dev,,third_party,,review or comparison site
+claude_code,1,EXA-07,Exa,yes,https://webscraft.org/blog/search-api-dlya-ai-agentiv-scho-obirayut-rozrobniki-i-de-pomilyayutsya?lang=en,webscraft.org,,third_party,,review or comparison site
+claude_code,1,EXA-07,Exa,yes,https://fastcrw.com/alternatives/exa-vs-tavily,fastcrw.com,,third_party,,other vendor
+claude_code,1,EXA-07,Exa,yes,https://www.nimbleway.com/blog/exa-alternatives,nimbleway.com,,third_party,,other vendor
+claude_code,1,EXA-07,Exa,yes,https://freeapihub.com/blog/tavily-vs-exa-search-api-ai-agents,freeapihub.com,,third_party,,review or comparison site
+claude_code,2,EXA-07,Exa,yes,https://you.com/resources/tavily-vs-exa,you.com,,competitor,You.com,
+claude_code,2,EXA-07,Exa,yes,https://fastcrw.com/alternatives/exa-vs-tavily,fastcrw.com,,third_party,,other vendor
+claude_code,2,EXA-07,Exa,yes,https://www.costbench.com/compare/exa-vs-tavily/,costbench.com,,third_party,,review or comparison site
+claude_code,2,EXA-07,Exa,yes,https://techstackups.com/comparisons/best-serp-api-comparison-serpapi-exa-tavily/,techstackups.com,,third_party,,review or comparison site
+claude_code,2,EXA-07,Exa,yes,https://theaiagentindex.com/compare/exa-ai-vs-tavily,theaiagentindex.com,,third_party,,review or comparison site
+claude_code,2,EXA-08,Exa,yes,https://docs.perplexity.ai/guides/pricing,docs.perplexity.ai,,competitor,Perplexity Sonar,
+claude_code,2,EXA-08,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+claude_code,2,EXA-08,Exa,yes,https://thegtmdirectory.com/compare/exa-vs-perplexity,thegtmdirectory.com,,third_party,,review or comparison site
+claude_code,1,EXA-09,Exa,yes,https://tavily.com/blog/7-best-exa-alternatives-for-ai-agents-in-2026,tavily.com,,competitor,Tavily,
+claude_code,1,EXA-09,Exa,yes,https://parallel.ai/articles/exa-alternatives.md,parallel.ai,,competitor,Parallel,
+claude_code,1,EXA-09,Exa,yes,https://www.nimbleway.com/blog/exa-alternatives,nimbleway.com,,third_party,,other vendor
+claude_code,1,EXA-09,Exa,yes,https://www.olostep.com/blog/exa-alternatives,olostep.com,,third_party,,other vendor
+claude_code,1,EXA-09,Exa,yes,https://crustdata.com/blog/exa-alternative,crustdata.com,,third_party,,other vendor
+claude_code,1,EXA-09,Exa,yes,https://brightdata.com/blog/ai/exa-alternatives.md,brightdata.com,,third_party,,other vendor
+claude_code,1,EXA-09,Exa,yes,https://scrapegraphai.com/blog/exa-alternatives,scrapegraphai.com,,third_party,,other vendor
+claude_code,1,EXA-09,Exa,yes,https://alternativeto.net/software/exa-ai/?p=2,alternativeto.net,,third_party,,review or comparison site
+claude_code,2,EXA-09,Exa,yes,https://tavily.com/blog/7-best-exa-alternatives-for-ai-agents-in-2026,tavily.com,,competitor,Tavily,
+claude_code,2,EXA-09,Exa,yes,https://www.nimbleway.com/blog/exa-alternatives,nimbleway.com,,third_party,,other vendor
+claude_code,2,EXA-09,Exa,yes,https://parallel.ai/articles/exa-alternatives.md,parallel.ai,,competitor,Parallel,
+claude_code,2,EXA-09,Exa,yes,https://www.olostep.com/blog/exa-alternatives,olostep.com,,third_party,,other vendor
+claude_code,2,EXA-09,Exa,yes,https://crustdata.com/blog/exa-alternative,crustdata.com,,third_party,,other vendor
+claude_code,2,EXA-09,Exa,yes,https://scrapegraphai.com/blog/exa-alternatives,scrapegraphai.com,,third_party,,other vendor
+claude_code,1,EXA-10,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+claude_code,2,EXA-10,Exa,yes,https://exa.ai/pricing,exa.ai,,own,Exa,
+claude_code,1,EXA-12,Exa,yes,https://techcrunch.com/2024/07/16/exa-raises-17m-lightspeed-nvidia-ycombinator-google-ai-models,techcrunch.com,,third_party,,news or company profile
+claude_code,1,EXA-12,Exa,yes,https://businesswire.com/news/home/20240716151157/en/Exa-Raises-22MM-to-Build-the-Search-Engine-for-AI/,businesswire.com,,third_party,,news or company profile
+claude_code,1,EXA-12,Exa,yes,https://exa.ai/blog/announcing-series-b,exa.ai,,own,Exa,
+claude_code,1,EXA-12,Exa,yes,https://pulse2.com/exa-search-focused-ai-company-secures-22-million/,pulse2.com,,third_party,,news or company profile
+claude_code,2,EXA-12,Exa,yes,https://www.verdict.co.uk/exa-receives-250m-series-c/,verdict.co.uk,,third_party,,news or company profile
+claude_code,2,EXA-12,Exa,yes,https://businesswire.com/news/home/20240716151157/en/Exa-Raises-22MM-to-Build-the-Search-Engine-for-AI/,businesswire.com,,third_party,,news or company profile
+claude_code,2,EXA-12,Exa,yes,https://askfuzz.ai/discover/news/startups/exa-labs-raises-250m-at-2-2b-valuation-led-by-a16z,askfuzz.ai,,third_party,,news or company profile
+claude_code,2,EXA-12,Exa,yes,https://dealroom.co/companies/exa/,dealroom.co,,third_party,,news or company profile
+claude_code,1,EXA-08,Exa,yes,https://exa.ai/docs/reference/pricing,exa.ai,,own,Exa,
+claude_code,1,EXA-08,Exa,yes,https://exa.ai/docs/changelog/pricing-update.md,exa.ai,,own,Exa,
+claude_code,1,EXA-08,Exa,yes,https://www.tinyfish.ai/blog/exa-pricing,tinyfish.ai,,third_party,,other vendor
+claude_code,1,EXA-08,Exa,yes,https://developer.puter.com/tutorials/perplexity-api-pricing/,developer.puter.com,,third_party,,other vendor
+claude_code,1,EXA-08,Exa,yes,https://flexprice.io/pricing-index/perplexity-sonar-api,flexprice.io,,third_party,,other vendor
+claude_code,1,EXA-08,Exa,yes,https://metronome.com/pricing-index/perplexity-search-api-and-sonar,metronome.com,,third_party,,other vendor
+claude_code,1,FW-01,Fireworks AI,no,https://www.hpcwire.com/off-the-wire/cerebras-leads-llm-inference-race-with-fastest-llama-4-maverick-performance/,hpcwire.com,,third_party,,news or company profile
+claude_code,1,FW-01,Fireworks AI,no,https://www.cerebras.ai/press-release/maverick,cerebras.ai,,competitor,Cerebras,
+claude_code,1,FW-01,Fireworks AI,no,https://costbench.com/best/fastest-llm-inference/,costbench.com,,third_party,,review or comparison site
+claude_code,1,EXA-11,Exa,yes,https://tavily.com/blog/7-best-exa-alternatives-for-ai-agents-in-2026,tavily.com,,competitor,Tavily,
+claude_code,1,EXA-11,Exa,yes,https://rhumb.dev/blog/exa-vs-tavily-vs-serper-vs-brave-search,rhumb.dev,,third_party,,review or comparison site
+claude_code,1,EXA-11,Exa,yes,https://parallel.ai/articles/exa-alternatives.md,parallel.ai,,competitor,Parallel,
+claude_code,1,EXA-11,Exa,yes,https://www.morphllm.com/exa-search-api,morphllm.com,,third_party,,other vendor
+claude_code,1,EXA-11,Exa,yes,https://www.beri.net/article/tavily-vs-exa-vs-brave-vs-perplexity-search-api-agent-cost-2026,beri.net,,third_party,,review or comparison site
+claude_code,1,EXA-11,Exa,yes,https://techsy.io/en/blog/best-ai-search-apis-2026,techsy.io,,third_party,,review or comparison site
+claude_code,2,FW-03,Fireworks AI,no,https://api-docs.deepseek.com/quick_start/pricing,api-docs.deepseek.com,,third_party,,platform docs
+claude_code,2,FW-03,Fireworks AI,no,https://www.morphllm.com/deepseek-api,morphllm.com,,third_party,,other vendor
+claude_code,2,FW-03,Fireworks AI,no,https://developer.puter.com/tutorials/deepseek-api-pricing/,developer.puter.com,,third_party,,other vendor
+claude_code,1,FW-03,Fireworks AI,no,https://api-docs.deepseek.com/quick_start/pricing,api-docs.deepseek.com,,third_party,,platform docs
+claude_code,2,FW-06,Fireworks AI,no,https://www.digitalocean.com/resources/articles/best-inference-providers-ai-agents,digitalocean.com,,third_party,,other vendor
+claude_code,2,FW-06,Fireworks AI,no,https://apiscout.dev/blog/fireworks-ai-vs-together-ai-vs-groq-inference-apis-2026,apiscout.dev,,third_party,,review or comparison site
+claude_code,2,FW-06,Fireworks AI,no,https://infrabase.ai/blog/ai-inference-api-providers-compared,infrabase.ai,,third_party,,review or comparison site
+claude_code,2,FW-06,Fireworks AI,no,https://digitalocean.com/community/tutorials/openai-compatible-inference-apis-drop-in-alternatives-2026,digitalocean.com,,third_party,,other vendor
+claude_code,2,FW-06,Fireworks AI,no,https://deploybase.ai/articles/best-llm-for-function-calling-tool-use-comparison,deploybase.ai,,third_party,,review or comparison site
+claude_code,1,FW-08,Fireworks AI,yes,https://metavert.io/compare/fireworks-ai-vs-groq,metavert.io,,third_party,,review or comparison site
+claude_code,1,FW-08,Fireworks AI,yes,https://toolhalla.ai/blog/groq-vs-together-vs-fireworks-2026,toolhalla.ai,,third_party,,review or comparison site
+claude_code,1,FW-08,Fireworks AI,yes,https://www.web3aiblog.com/blog/llm-inference-providers-compared-groq-cerebras-together-fireworks-2026,web3aiblog.com,,third_party,,review or comparison site
+claude_code,1,FW-08,Fireworks AI,yes,https://www.voiceflow.com/blog/groq,voiceflow.com,,third_party,,other vendor
+claude_code,1,FW-08,Fireworks AI,yes,https://ai2.work/blog/groq-s-350m-reset-from-nvidia-rival-to-nvidia-powered-neocloud,ai2.work,,third_party,,news or company profile
+claude_code,1,FW-08,Fireworks AI,yes,https://threatcluster.io/cluster/groq-seeks-650m-funding-after-nvidias-20b-not-acquisition-de-75f28bd4,threatcluster.io,,third_party,,news or company profile
+claude_code,2,EXA-11,Exa,yes,https://rhumb.dev/blog/exa-vs-tavily-vs-serper-vs-brave-search,rhumb.dev,,third_party,,review or comparison site
+claude_code,2,EXA-11,Exa,yes,https://www.beri.net/article/tavily-vs-exa-vs-brave-vs-perplexity-search-api-agent-cost-2026,beri.net,,third_party,,review or comparison site
+claude_code,2,EXA-11,Exa,yes,https://research.aimultiple.com/agentic-search,research.aimultiple.com,,third_party,,review or comparison site
+claude_code,2,EXA-11,Exa,yes,https://tavily.com/blog/7-best-exa-alternatives-for-ai-agents-in-2026,tavily.com,,competitor,Tavily,
+claude_code,2,EXA-11,Exa,yes,https://parallel.ai/articles/exa-alternatives.md,parallel.ai,,competitor,Parallel,
+claude_code,1,FW-09,Fireworks AI,yes,https://www.digitalocean.com/resources/articles/fireworks-ai-alternatives,digitalocean.com,,third_party,,other vendor
+claude_code,1,FW-09,Fireworks AI,yes,https://futureagi.com/blog/best-fireworks-ai-alternatives-2026/,futureagi.com,,third_party,,other vendor
+claude_code,1,FW-09,Fireworks AI,yes,https://northflank.com/blog/7-best-fireworks-ai-alternatives-for-inference,northflank.com,,third_party,,other vendor
+claude_code,1,FW-09,Fireworks AI,yes,https://spheron.network/blog/fireworks-ai-alternatives/,spheron.network,,third_party,,other vendor
+claude_code,1,FW-09,Fireworks AI,yes,https://toolradar.com/alternatives/fireworks-ai,toolradar.com,,third_party,,review or comparison site
+claude_code,2,FW-10,Fireworks AI,yes,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+claude_code,2,FW-08,Fireworks AI,yes,https://metavert.io/compare/fireworks-ai-vs-groq,metavert.io,,third_party,,review or comparison site
+claude_code,2,FW-08,Fireworks AI,yes,https://www.web3aiblog.com/blog/llm-inference-providers-compared-groq-cerebras-together-fireworks-2026,web3aiblog.com,,third_party,,review or comparison site
+claude_code,2,FW-08,Fireworks AI,yes,https://toolhalla.ai/blog/groq-vs-together-vs-fireworks-2026,toolhalla.ai,,third_party,,review or comparison site
+claude_code,2,FW-08,Fireworks AI,yes,https://www.respan.ai/market-map/compare/fireworks-ai-vs-groq,respan.ai,,third_party,,review or comparison site
+claude_code,2,FW-08,Fireworks AI,yes,https://neuronfeed.com/compare/groq-vs-fireworks-ai,neuronfeed.com,,third_party,,review or comparison site
+claude_code,1,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_security,docs.fireworks.ai,,own,Fireworks AI,
+claude_code,1,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_handling,docs.fireworks.ai,,own,Fireworks AI,
+claude_code,1,FW-11,Fireworks AI,yes,https://fireworks.ai/blog/fireworks-ai-achieves-soc-2-type-ii-and-hipaa-compliance,fireworks.ai,,own,Fireworks AI,
+claude_code,1,FW-11,Fireworks AI,yes,https://meetily.ai/llm-privacy/fireworks,meetily.ai,,third_party,,other vendor
+claude_code,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/guides/security_compliance/data_security,docs.fireworks.ai,,own,Fireworks AI,
+claude_code,2,FW-11,Fireworks AI,yes,https://fireworks.ai/blog/fireworks-ai-achieves-soc-2-type-ii-and-hipaa-compliance,fireworks.ai,,own,Fireworks AI,
+claude_code,2,FW-11,Fireworks AI,yes,https://docs.fireworks.ai/faq-new/security-compliance/what-type-of-certifications-do-you-have,docs.fireworks.ai,,own,Fireworks AI,
+claude_code,2,FW-01,Fireworks AI,no,https://costbench.com/best/fastest-llm-inference/,costbench.com,,third_party,,review or comparison site
+claude_code,2,FW-01,Fireworks AI,no,https://www.fast.io/resources/fastest-ai-2026.md,fast.io,,third_party,,other vendor
+claude_code,2,FW-01,Fireworks AI,no,https://www.gmicloud.ai/en/blog/fastest-open-model-inference-platforms,gmicloud.ai,,third_party,,other vendor
+claude_code,2,FW-01,Fireworks AI,no,https://www.gmicloud.ai/en/blog/fastest-llm-platform-compare,gmicloud.ai,,third_party,,other vendor
+claude_code,2,FW-01,Fireworks AI,no,https://getcoai.com/?p=72952,getcoai.com,,third_party,,news or company profile
+claude_code,2,AAI-01,AssemblyAI,no,https://benchmarks.cekura.ai/stt,benchmarks.cekura.ai,,third_party,,other vendor
+claude_code,2,AAI-01,AssemblyAI,no,https://dev.to/moksh/speech-to-text-apis-in-2026-what-the-pricing-pages-dont-tell-you-12kb,dev.to,,third_party,,community or blog
+claude_code,2,AAI-01,AssemblyAI,no,https://www.assemblyai.com/blog/how-accurate-speech-to-text,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-01,AssemblyAI,no,https://deepgram.com/learn/best-speech-to-text-apis,deepgram.com,,competitor,Deepgram,
+claude_code,2,AAI-01,AssemblyAI,no,https://northflank.com/blog/best-open-source-speech-to-text-stt-model-in-2026-benchmarks,northflank.com,,third_party,,other vendor
+claude_code,2,AAI-01,AssemblyAI,no,https://futureagi.substack.com/p/speech-to-text-apis-in-2026-benchmarks,futureagi.substack.com,,third_party,,other vendor
+claude_code,1,AAI-03,AssemblyAI,no,https://picovoice.ai/blog/state-of-speaker-diarization/,picovoice.ai,,third_party,,other vendor
+claude_code,1,AAI-03,AssemblyAI,no,https://www.gladia.io/blog/best-speech-to-text-apis,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-03,AssemblyAI,no,https://www.pyannote.ai/blog/top-7-speaker-diarization-apis-and-models-in-2026,pyannote.ai,,third_party,,other vendor
+claude_code,1,AAI-03,AssemblyAI,no,https://www.forasoft.com/blog/article/speaker-diarization-api-comparison,forasoft.com,,third_party,,other vendor
+claude_code,1,AAI-03,AssemblyAI,no,https://kili-technology.com/blog/speaker-diarization-models-guide-benchmarks-and-failure-modes-2026,kili-technology.com,,third_party,,other vendor
+claude_code,2,AAI-03,AssemblyAI,no,https://www.assemblyai.com/blog/top-speaker-diarization-libraries-and-apis-in-2022/,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-03,AssemblyAI,no,https://www.pyannote.ai/blog/top-7-speaker-diarization-apis-and-models-in-2026,pyannote.ai,,third_party,,other vendor
+claude_code,2,AAI-03,AssemblyAI,no,https://www.gladia.io/blog/diarization-error-rate-der-explained,gladia.io,,competitor,Gladia,
+claude_code,2,AAI-03,AssemblyAI,no,https://picovoice.ai/docs/benchmark/speaker-diarization/,picovoice.ai,,third_party,,other vendor
+claude_code,2,AAI-03,AssemblyAI,no,https://www.forasoft.com/blog/article/speaker-diarization-api-comparison,forasoft.com,,third_party,,other vendor
+claude_code,2,AAI-03,AssemblyAI,no,https://vexascribe.com/how-accurate-is-speechmatics,vexascribe.com,,third_party,,other vendor
+claude_code,1,AAI-01,AssemblyAI,no,https://gradium.ai/content/stt-api-benchmark-2026-latency-accuracy,gradium.ai,,third_party,,other vendor
+claude_code,1,AAI-01,AssemblyAI,no,https://futureagi.com/blog/speech-to-text-apis-in-2026-benchmarks-pricing-developer-s-decision-guide,futureagi.com,,third_party,,other vendor
+claude_code,1,AAI-01,AssemblyAI,no,https://vexascribe.com/how-accurate-is-speechmatics,vexascribe.com,,third_party,,other vendor
+claude_code,1,AAI-01,AssemblyAI,no,https://artificialanalysis.ai/speech-to-text/models/llm-speech,artificialanalysis.ai,,third_party,,benchmark or research
+claude_code,1,AAI-04,AssemblyAI,no,https://futureagi.com/blog/speech-to-text-apis-in-2026-benchmarks-pricing-developer-s-decision-guide/,futureagi.com,,third_party,,other vendor
+claude_code,1,AAI-04,AssemblyAI,no,https://www.coval.ai/blog/best-speech-to-text-providers-in-2026-independent-benchmarks-and-how-to-choose/,coval.ai,,third_party,,other vendor
+claude_code,1,AAI-04,AssemblyAI,no,https://deepgram.com/learn/deepgram-vs-assemblyai-vs-whisper,deepgram.com,,competitor,Deepgram,
+claude_code,1,AAI-04,AssemblyAI,no,https://inworld.ai/resources/best-voice-to-text-api,inworld.ai,,third_party,,other vendor
+claude_code,1,AAI-04,AssemblyAI,no,https://www.gladia.io/blog/assemblyai-vs-deepgram,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-04,AssemblyAI,no,https://www.gladia.io/blog/best-speech-to-text-apis,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-04,AssemblyAI,no,https://diyai.io/ai-tools/speech-to-text/best-real-time-speech-to-text-apis/,diyai.io,,third_party,,review or comparison site
+claude_code,2,AAI-04,AssemblyAI,no,https://www.gladia.io/blog/best-speech-to-text-apis,gladia.io,,competitor,Gladia,
+claude_code,2,AAI-04,AssemblyAI,no,https://www.gladia.io/blog/assemblyai-vs-deepgram,gladia.io,,competitor,Gladia,
+claude_code,2,AAI-04,AssemblyAI,no,https://deepgram.com/learn/deepgram-vs-assemblyai-vs-whisper,deepgram.com,,competitor,Deepgram,
+claude_code,2,AAI-04,AssemblyAI,no,https://futureagi.substack.com/p/speech-to-text-apis-in-2026-benchmarks,futureagi.substack.com,,third_party,,other vendor
+claude_code,2,AAI-04,AssemblyAI,no,https://www.coval.ai/blog/best-speech-to-text-providers-in-2026-independent-benchmarks-and-how-to-choose/,coval.ai,,third_party,,other vendor
+claude_code,2,AAI-04,AssemblyAI,no,https://diyai.io/ai-tools/speech-to-text/best-real-time-speech-to-text-apis/,diyai.io,,third_party,,review or comparison site
+claude_code,1,AAI-07,AssemblyAI,yes,https://deepgram.com/learn/assemblyai-vs-deepgram,deepgram.com,,competitor,Deepgram,
+claude_code,1,AAI-07,AssemblyAI,yes,https://assemblyai.com/blog/assemblyai-vs-deepgram-best-voice-agent-api,assemblyai.com,,own,AssemblyAI,
+claude_code,1,AAI-07,AssemblyAI,yes,https://gladia.io/blog/assemblyai-vs-deepgram-vs-gladia-which-speech-to-text-api-should-you-choose-in-2026,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-07,AssemblyAI,yes,https://dev.to/eli_9c82b7dfe52c1bc371ffe/ai-transcription-pricing-2026-whisper-vs-deepgram-vs-assemblyai-2eec,dev.to,,third_party,,community or blog
+claude_code,1,AAI-07,AssemblyAI,yes,https://tooliverse.ai/compare/assemblyai-vs-deepgram,tooliverse.ai,,third_party,,review or comparison site
+claude_code,1,AAI-07,AssemblyAI,yes,https://costbench.com/compare/assemblyai-vs-deepgram,costbench.com,,third_party,,review or comparison site
+claude_code,1,AAI-08,AssemblyAI,yes,https://www.assemblyai.com/compare/whisper-vs-assemblyai,assemblyai.com,,own,AssemblyAI,
+claude_code,1,AAI-08,AssemblyAI,yes,https://dev.to/eli_9c82b7dfe52c1bc371ffe/ai-transcription-pricing-2026-whisper-vs-deepgram-vs-assemblyai-2eec,dev.to,,third_party,,community or blog
+claude_code,1,AAI-08,AssemblyAI,yes,https://costbench.com/compare/assemblyai-vs-openai-whisper/,costbench.com,,third_party,,review or comparison site
+claude_code,1,AAI-08,AssemblyAI,yes,https://www.g2.com/compare/assemblyai-speech-to-text-api-vs-openai-whisper,g2.com,,third_party,,review or comparison site
+claude_code,1,AAI-08,AssemblyAI,yes,https://fast.io/resources/best-ai-transcription-tools-2026/,fast.io,,third_party,,other vendor
+claude_code,1,AAI-08,AssemblyAI,yes,https://toolfreebie.com/?p=237,toolfreebie.com,,third_party,,review or comparison site
+claude_code,1,FW-10,Fireworks AI,yes,https://fireworks.ai/pricing,fireworks.ai,,own,Fireworks AI,
+claude_code,2,AAI-08,AssemblyAI,yes,https://costbench.com/compare/assemblyai-vs-openai-whisper/,costbench.com,,third_party,,review or comparison site
+claude_code,2,AAI-08,AssemblyAI,yes,https://dev.to/eli_9c82b7dfe52c1bc371ffe/ai-transcription-pricing-2026-whisper-vs-deepgram-vs-assemblyai-2eec,dev.to,,third_party,,community or blog
+claude_code,2,AAI-08,AssemblyAI,yes,https://www.edenai.co/post/whisper-vs-assemblyai-best-speech-to-text-api,edenai.co,,third_party,,other vendor
+claude_code,2,AAI-08,AssemblyAI,yes,https://www.g2.com/compare/assemblyai-speech-to-text-api-vs-openai-whisper,g2.com,,third_party,,review or comparison site
+claude_code,2,AAI-08,AssemblyAI,yes,https://fast.io/resources/best-ai-transcription-tools-2026/,fast.io,,third_party,,other vendor
+claude_code,2,AAI-08,AssemblyAI,yes,https://toolfreebie.com/?p=237,toolfreebie.com,,third_party,,review or comparison site
+claude_code,1,AAI-10,AssemblyAI,yes,https://www.assemblyai.com/pricing,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-09,AssemblyAI,yes,https://developer.puter.com/blog/assemblyai-alternatives/,developer.puter.com,,third_party,,other vendor
+claude_code,2,AAI-09,AssemblyAI,yes,https://clickup.com/blog/assemblyai-alternatives/,clickup.com,,third_party,,other vendor
+claude_code,2,AAI-09,AssemblyAI,yes,https://toolradar.com/tools/assemblyai/alternatives,toolradar.com,,third_party,,review or comparison site
+claude_code,2,AAI-09,AssemblyAI,yes,https://toolquestor.com/alternative/assemblyai,toolquestor.com,,third_party,,review or comparison site
+claude_code,2,AAI-09,AssemblyAI,yes,https://vantaige.io/ai-tool/assemblyai/alternatives,vantaige.io,,third_party,,review or comparison site
+claude_code,2,AAI-07,AssemblyAI,yes,https://www.deepgram.com/pricing,deepgram.com,,competitor,Deepgram,
+claude_code,2,AAI-07,AssemblyAI,yes,https://deepgram.com/learn/assemblyai-vs-deepgram,deepgram.com,,competitor,Deepgram,
+claude_code,2,AAI-07,AssemblyAI,yes,https://assemblyai.com/blog/assemblyai-vs-deepgram-best-voice-agent-api,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-07,AssemblyAI,yes,https://www.assemblyai.com/blog/deepgram-alternatives,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-07,AssemblyAI,yes,https://tooliverse.ai/compare/assemblyai-vs-deepgram,tooliverse.ai,,third_party,,review or comparison site
+claude_code,2,AAI-07,AssemblyAI,yes,https://costbench.com/compare/assemblyai-vs-deepgram,costbench.com,,third_party,,review or comparison site
+claude_code,2,AAI-07,AssemblyAI,yes,https://dasha.ai/blog/deepgram-alternatives,dasha.ai,,third_party,,other vendor
+claude_code,2,AAI-10,AssemblyAI,yes,https://flexprice.io/pricing-index/assemblyai,flexprice.io,,third_party,,other vendor
+claude_code,2,AAI-10,AssemblyAI,yes,https://gladia.io/blog/assemblyai-pricing,gladia.io,,competitor,Gladia,
+claude_code,2,AAI-10,AssemblyAI,yes,https://www.costbench.com/software/ai-transcription-apis/assemblyai/,costbench.com,,third_party,,review or comparison site
+claude_code,2,AAI-10,AssemblyAI,yes,https://costbench.com/software/ai-transcription-apis/assemblyai/calculator/,costbench.com,,third_party,,review or comparison site
+claude_code,2,AAI-10,AssemblyAI,yes,https://toolradar.com/tools/assemblyai/pricing,toolradar.com,,third_party,,review or comparison site
+claude_code,1,AAI-11,AssemblyAI,yes,https://aws.amazon.com/marketplace/pp/prodview-j45hta6jdej7c,aws.amazon.com,,third_party,,platform docs
+claude_code,1,AAI-11,AssemblyAI,yes,https://assemblyai.com/blog/introducing-lemur-claude-3,assemblyai.com,,own,AssemblyAI,
+claude_code,1,AAI-11,AssemblyAI,yes,https://pricingsaas.com/companies/assemblyai/diffs/2024Q1,pricingsaas.com,,third_party,,review or comparison site
+claude_code,1,AAI-11,AssemblyAI,yes,https://tooliverse.ai/tools/assemblyai,tooliverse.ai,,third_party,,review or comparison site
+claude_code,1,AAI-11,AssemblyAI,yes,https://changelog.assemblyai.com/page/12,changelog.assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-11,AssemblyAI,yes,https://www.assemblyai.com/pricing.md,assemblyai.com,,own,AssemblyAI,
+claude_code,2,AAI-11,AssemblyAI,yes,https://www.usagepricing.com/blueprint/activity/assemblyai-2026-09-20-summarization-effort-tiers,usagepricing.com,,third_party,,review or comparison site
+claude_code,2,AAI-11,AssemblyAI,yes,https://usagepricing.com/blueprint/assemblyai,usagepricing.com,,third_party,,review or comparison site
+claude_code,1,LC-04,LangChain,no,https://arize.com/resources/arize-alternatives/,arize.com,,competitor,Arize Phoenix,
+claude_code,1,LC-04,LangChain,no,https://www.latitude.so/blog/llm-observability-tools-compared,latitude.so,,third_party,,other vendor
+claude_code,1,LC-04,LangChain,no,https://dupple.com/learn/best-llm-observability-tools,dupple.com,,third_party,,review or comparison site
+claude_code,1,LC-04,LangChain,no,https://latitude.so/blog/best-langfuse-alternatives,latitude.so,,third_party,,other vendor
+claude_code,1,LC-04,LangChain,no,https://checkthat.ai/answers/what-are-the-best-ai-observability-tools,checkthat.ai,,third_party,,review or comparison site
+claude_code,1,LC-10,LangChain,yes,https://www.langchain.com/pricing,langchain.com,,own,LangChain,
+claude_code,1,AAI-02,AssemblyAI,no,https://www.gladia.io/blog/best-whisper-alternatives-2026,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-02,AssemblyAI,no,https://www.pyannote.ai/blog/top-7-speaker-diarization-apis-and-models-in-2026,pyannote.ai,,third_party,,other vendor
+claude_code,1,AAI-02,AssemblyAI,no,https://www.gladia.io/blog/best-real-time-stt-models-for-meeting-assistants-2026,gladia.io,,competitor,Gladia,
+claude_code,1,AAI-02,AssemblyAI,no,https://www.speechmatics.com/company/articles-and-news/best-speech-to-text-ai-guide-apis-platforms-and-services-compared,speechmatics.com,,competitor,Speechmatics,
+claude_code,1,AAI-02,AssemblyAI,no,https://vexascribe.com/compare/best-speaker-diarization-tools,vexascribe.com,,third_party,,other vendor
+claude_code,2,LC-10,LangChain,yes,https://www.langchain.com/langsmith-pricing,langchain.com,,own,LangChain,
+claude_code,2,LC-10,LangChain,yes,https://langchain.com/pricing,langchain.com,,own,LangChain,
+claude_code,2,LC-10,LangChain,yes,https://www.zenml.io/blog/langsmith-pricing,zenml.io,,third_party,,other vendor
+claude_code,2,LC-10,LangChain,yes,https://www.metacto.com/blogs/the-true-cost-of-langsmith-a-comprehensive-pricing-integration-guide,metacto.com,,third_party,,other vendor
+claude_code,2,LC-10,LangChain,yes,https://www.costbench.com/software/ai-observability/langsmith/,costbench.com,,third_party,,review or comparison site
+claude_code,1,LC-11,LangChain,yes,https://www.clickittech.com/ai/langchain-1-0-vs-langgraph-1-0/,clickittech.com,,third_party,,other vendor
+claude_code,1,LC-11,LangChain,yes,https://metavert.io/compare/langchain-vs-langgraph,metavert.io,,third_party,,review or comparison site
+claude_code,1,LC-11,LangChain,yes,https://futurense.com/blog/langgraph-vs-langchain,futurense.com,,third_party,,other vendor
+claude_code,1,LC-11,LangChain,yes,https://atlan.com/know/ai-agent/ai-agent-memory/langchain-vs-langgraph/,atlan.com,,third_party,,other vendor
+claude_code,2,LC-11,LangChain,yes,https://www.clickittech.com/ai/langchain-1-0-vs-langgraph-1-0/,clickittech.com,,third_party,,other vendor
+claude_code,2,LC-11,LangChain,yes,https://futureagi.com/blog/best-langgraph-alternatives-2026/,futureagi.com,,third_party,,other vendor
+claude_code,2,LC-11,LangChain,yes,https://metavert.io/compare/langchain-vs-langgraph,metavert.io,,third_party,,review or comparison site
+claude_code,2,LC-11,LangChain,yes,https://alicelabs.ai/en/insights/langgraph-vs-autogen-2026,alicelabs.ai,,third_party,,other vendor
+claude_code,2,LC-11,LangChain,yes,https://www.marka.net.ua/news/langchain-vs-langgraph-the-decision-framework-that-saves-you-a-rewrite/,marka.net.ua,,third_party,,news or company profile
+aio,1,MIN-01,Mintlify,no,,GitBook,The 10 best software documentation tools in 2026 | GitBook Blog,competitor,GitBook,
+aio,1,MIN-01,Mintlify,no,,Theneo,Best API Documentation Platform for Startups: From YC to ...,third_party,,other vendor
+aio,1,MIN-01,Mintlify,no,,Documentation.AI,7 Best API Documentation Tools in 2026,third_party,,other vendor
+aio,1,MIN-01,Mintlify,no,,www.braintrust.dev,10 best software documentation tools for AI teams,third_party,,other vendor
+aio,1,MIN-01,Mintlify,no,,Docuwiz,Best API Documentation Tools in 2026: Comparison Guide,third_party,,other vendor
+aio,1,MIN-01,Mintlify,no,,buildwithfern.com,The best API documentation platforms for enterprise teams in ...,competitor,Fern,
+aio,1,MIN-02,Mintlify,no,,www.braintrust.dev,10 best software documentation tools for AI teams - Braintrust,third_party,,other vendor
+aio,1,MIN-02,Mintlify,no,,www.aicentralresources.com,8 Best AI Documentation Tools in 2026 (Mintlify vs GitBook vs ...,third_party,,review or comparison site
+aio,1,MIN-03,Mintlify,no,,www.braintrust.dev,10 best software documentation tools for AI teams - Braintrust,third_party,,other vendor
+aio,1,MIN-03,Mintlify,no,,AODOCS,AI Assistant - AODocs,third_party,,other vendor
+aio,1,MIN-03,Mintlify,no,,Mintlify,Introducing AI Assistant: Turning docs into your product expert,own,Mintlify,
+aio,1,MIN-03,Mintlify,no,,The Digital Project Manager,10 Best Process Documentation Software Reviewed in 2026,third_party,,review or comparison site
+aio,1,MIN-03,Mintlify,no,,Wonderchat AI,8 Best AI Assistants for Engineering Documentation Teams,third_party,,other vendor
+aio,1,MIN-03,Mintlify,no,,Wonderchat,10 Best AI Tools for Technical Documentation,third_party,,other vendor
+aio,1,MIN-04,Mintlify,no,,ReadMe,How to Get Your API Documentation LLM-Ready (+ Checklist),competitor,ReadMe,
+aio,1,MIN-04,Mintlify,no,,LogRocket Blog,How to write agent-friendly API documentation,third_party,,community or blog
+aio,1,MIN-04,Mintlify,no,,buildwithfern.com,Prepare APIs for AI agents - March 2026,competitor,Fern,
+aio,1,MIN-04,Mintlify,no,,buildwithfern.com,Write LLM,competitor,Fern,
+aio,1,MIN-04,Mintlify,no,,Documentation.AI,How to Create AI Documentation for AI Agents and LLMs,third_party,,other vendor
+aio,1,MIN-04,Mintlify,no,,LinkedIn·Jonathan Miz,How to train an LLM with your internal API/Docs,third_party,,community or blog
+aio,1,MIN-04,Mintlify,no,,Redocly,How to optimize your docs for LLMs - Redocly,competitor,Redocly,
+aio,1,MIN-04,Mintlify,no,,GitBook,A faster way to build API documentation with OpenAPI and AI,competitor,GitBook,
+aio,1,MIN-05,Mintlify,no,,EkLine,11 Docusaurus Alternatives Compared for 2026,third_party,,other vendor
+aio,1,MIN-05,Mintlify,no,,www.hyperdocs.io,Docusaurus Alternative for SaaS Documentation,third_party,,other vendor
+aio,1,MIN-05,Mintlify,no,,www.hyperdocs.io,7 Best Docusaurus Alternatives for SaaS Documentation Teams,third_party,,other vendor
+aio,1,MIN-05,Mintlify,no,,gitdoc.ai,Best Docusaurus alternatives in 2026: when self-hosting docs ...,third_party,,other vendor
+aio,1,MIN-05,Mintlify,no,,HelpKit,Docusaurus Alternative: No-Code Docs From Notion (2026),third_party,,other vendor
+aio,1,MIN-05,Mintlify,no,,www.dokly.co,"Docusaurus Alternative 2026 — Dokly | Hosted Docs, No Build Step",third_party,,other vendor
+aio,1,MIN-06,Mintlify,no,,Mintlify,Best Documentation Platforms for AI Agents in 2026,own,Mintlify,
+aio,1,MIN-06,Mintlify,no,,Mintlify,llms.txt,own,Mintlify,
+aio,1,MIN-06,Mintlify,no,,Documentation.,AI,third_party,,other vendor
+aio,1,MIN-06,Mintlify,no,,buildwithfern.com,llms.txt | Fern Documentation,competitor,Fern,
+aio,1,MIN-07,Mintlify,yes,,Mintlify,Mintlify vs. GitBook: which platform is better in 2026?,own,Mintlify,
+aio,1,MIN-07,Mintlify,yes,,GitBook,GitBook vs Mintlify in 2026: all the features compared,competitor,GitBook,
+aio,1,MIN-07,Mintlify,yes,,WriteChoice,Mintlify vs. GitBook vs. ReadMe: The 2026 Guide for Startups | WriteChoice,third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,Documentation.AI,GitBook vs Mintlify: Detailed Comparison (2026),third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,Growth Method,Mintlify vs GitBook: Which Is Better for Your Docs?,third_party,,review or comparison site
+aio,1,MIN-07,Mintlify,yes,,Docsio,GitBook vs Mintlify: Which Docs Platform (2026),third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,DEV Community,"Developer Documentation Platforms in 2026: GitBook, Mintlify, ...",third_party,,community or blog
+aio,1,MIN-07,Mintlify,yes,,Jamdesk,GitBook vs Mintlify vs ReadMe (2026 Comparison),third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,reclear.io,Mintlify vs. Docusaurus vs. GitBook: Which Is Best in 2026?,third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,Ferndesk,GitBook vs Mintlify: The Definitive 2025 Comparison - Ferndesk,third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,shipdocs.sh,Mintlify vs GitBook: Which Is Better for Developer Documentation in ...,third_party,,other vendor
+aio,1,MIN-07,Mintlify,yes,,withRemote,GitBook vs Mintlify vs Docusaurus | Cadence blog,third_party,,other vendor
+aio,1,MIN-10,Mintlify,yes,,Mintlify,Pricing - Mintlify,own,Mintlify,
+aio,1,MIN-10,Mintlify,yes,,Documentation.AI,Mintlify vs Documentation.AI: Features & Credits in 2026,third_party,,other vendor
+aio,1,MIN-10,Mintlify,yes,,Featurebase,Mintlify Pricing 2026: Is It Worth It? - Featurebase,third_party,,other vendor
+aio,1,MIN-10,Mintlify,yes,,www.usagepricing.com,"Mintlify brings back a paid Pro tier, moves AI features off free Starter",third_party,,review or comparison site
+aio,1,MIN-10,Mintlify,yes,,Mintlify,Credit pricing - Mintlify,own,Mintlify,
+aio,1,MIN-10,Mintlify,yes,,www.usagepricing.com,Mintlify switches AI credits to fixed per-action prices,third_party,,review or comparison site
+aio,1,MIN-10,Mintlify,yes,,Mintlify,"Simpler, outcome-based AI pricing - Mintlify",own,Mintlify,
+aio,1,MIN-11,Mintlify,yes,,Mintlify,Mintlify Pro for Startups and Open Source Projects,own,Mintlify,
+aio,1,MIN-11,Mintlify,yes,,buildwithfern.com,"Mintlify reviews, pricing, and alternatives (September 2026)",competitor,Fern,
+aio,1,MIN-11,Mintlify,yes,,www.veludocs.com,Mintlify review 2026: is it still worth it for modern ...,third_party,,other vendor
+aio,1,MIN-11,Mintlify,yes,,DEV Community,# Why I Chose Mintlify (And What I Wish I Knew Earlier) - DEV ...,third_party,,community or blog
+aio,1,MIN-11,Mintlify,yes,,GitBook,GitBook vs Mintlify in 2026: all the features compared,competitor,GitBook,
+aio,1,MIN-11,Mintlify,yes,,Mintlify,Mintlify vs. GitBook: which platform is better in 2026?,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Mintlify - The documentation platform for agents,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Want to try an open-source documentation tool? Read this first,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Documentation - Mintlify,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,PromptLoop,What Does Mintlify Do? Modern AI Documentation for Developers,third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,Documentation.AI,"Mintlify Review 2026: Features, Pricing, Performance & Verdict",third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,Milestone AI,What Is Mintlify? Key features & What Makes It Unique,third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,Ferndesk,"Mintlify Review 2026: Features, AI Agent, and Is It Worth $450 ...",third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,BunnyDesk,Mintlify Review 2026: Is $250/Month Actually Worth It for Docs?,third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,www.veludocs.com,Mintlify review 2026: is it still worth it for modern ...,third_party,,other vendor
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Concepts - Mintlify,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Mintlify Alternatives: What to Consider (and Why There's No True ...,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,LinkedIn·Mintlify,Mintlify | LinkedIn,third_party,,community or blog
+aio,1,MIN-12,Mintlify,yes,,Product Hunt,Mintlify: The intelligent knowledge platform - Product Hunt,third_party,,community or blog
+aio,1,MIN-12,Mintlify,yes,,Mintlify,AI-native documentation,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Introducing AI Assistant: Turning docs into your product expert,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Y Combinator,Mintlify: The intelligent knowledge platform | Y Combinator,third_party,,news or company profile
+aio,1,MIN-12,Mintlify,yes,,Mintlify,What is the agent? - Mintlify,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,Mintlify,Introducing the Mintlify Agent to write documentation with AI,own,Mintlify,
+aio,1,MIN-12,Mintlify,yes,,TechCrunch,Mintlify is building a next-gen platform for writing software docs,third_party,,news or company profile
+aio,1,EXA-01,Exa,no,,www.vellum.ai,Best Web Search APIs & MCPs for AI Agents 2026,third_party,,other vendor
+aio,1,EXA-01,Exa,no,,www.braintrust.dev,Best web search APIs and MCPs for AI agents in 2026,third_party,,other vendor
+aio,1,EXA-01,Exa,no,,Reddit·r/AI_Agents,What's the best tool/API for web search in an agentic stack?,third_party,,community or blog
+aio,1,EXA-01,Exa,no,,Mastra,The 10 Best AI Agent Search Tools (August 2026),third_party,,other vendor
+aio,1,EXA-01,Exa,no,,Firecrawl,How do I add web search to my AI agent? | Firecrawl Glossary,competitor,Firecrawl,
+aio,1,EXA-01,Exa,no,,www.withampersand.com,The best web search APIs for AI agents in 2026,third_party,,other vendor
+aio,1,EXA-01,Exa,no,,Exa,The 8 best AI search APIs in 2026 | Exa Blog,own,Exa,
+aio,1,EXA-01,Exa,no,,Exa,The 8 best web search tools for AI agents in 2026 | Exa Blog,own,Exa,
+aio,1,EXA-01,Exa,no,,Microsoft Community Hub,What is Web IQ? Web search and grounding APIs for AI agents,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,SerpApi,How to Connect Your Local LLM with Web Search Data,competitor,SerpAPI,
+aio,1,EXA-02,Exa,no,,Medium,How to Add Real-Time Web Search to Your LLM Using Tavily | by Manish Shivanandhan | Data Science Collective | Medium,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,Medium·Francesca Petracci,A Guide to the Brave Search MCP Server,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,Firecrawl,What is real,competitor,Firecrawl,
+aio,1,EXA-02,Exa,no,,DEV Community,How to Add Real,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,LinkedIn·Saiful Islam🇧🇩,Add Free Web Search Power to Your Local LLM,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,HackerNoon,How to Add Real-Time Web Search to Your LLM | HackerNoon,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,YouTube,How to connect Local AI to Internet (Web Search MCP,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,YouTube,LM Studio web search Tutorial: How to Get Real-Time ...,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,Medium,The various ways to connect an LLM to the internet,third_party,,community or blog
+aio,1,EXA-02,Exa,no,,Reddit·r/LocalLLaMA,"How to give a local LLM/agent access to a ""real"" web browser",third_party,,community or blog
+aio,1,EXA-02,Exa,no,,Medium,Local LLM + MCP: Real,third_party,,community or blog
+aio,1,EXA-03,Exa,no,,Amazon Web Services (AWS),What is RAG? - Retrieval-Augmented Generation AI Explained,third_party,,platform docs
+aio,1,EXA-03,Exa,no,,www.shaped.ai,The 7 Best RAG APIs for Personalization in 2025 | Shaped,third_party,,other vendor
+aio,1,EXA-03,Exa,no,,Google Cloud,What is Retrieval-Augmented Generation (RAG)?,third_party,,platform docs
+aio,1,EXA-03,Exa,no,,Meilisearch,14 types of RAG (Retrieval-Augmented Generation),third_party,,other vendor
+aio,1,EXA-03,Exa,no,,Codingscape,Best AI tools for retrieval augmented generation (RAG),third_party,,other vendor
+aio,1,EXA-03,Exa,no,,Databricks,What is Retrieval Augmented Generation (RAG)?,third_party,,platform docs
+aio,1,EXA-03,Exa,no,,Microsoft Learn,Retrieval augmented generation (RAG) and indexes - Microsoft Learn,third_party,,platform docs
+aio,1,EXA-03,Exa,no,,techsy.io,9 Best RAG Tools Ranked for 2026 - TECHSY,third_party,,review or comparison site
+aio,1,EXA-03,Exa,no,,Medium·Vinod Rane,"Mastering Advanced RAG: Smarter Search, Better Results",third_party,,community or blog
+aio,1,EXA-04,Exa,no,,www.vellum.ai,Best Web Search APIs & MCPs for AI Agents 2026 - Vellum,third_party,,other vendor
+aio,1,EXA-04,Exa,no,,Olostep,Best Search API for LLM Pipelines,third_party,,other vendor
+aio,1,EXA-04,Exa,no,,Olostep,Best Web Search APIs: Compare Top Search API Tools,third_party,,other vendor
+aio,1,EXA-04,Exa,no,,Reddit·r/ProxyEngineering,(Learn with us) Simplest web search API for developers - Reddit,third_party,,community or blog
+aio,1,EXA-04,Exa,no,,Firecrawl,What's the difference between web search APIs and Google Custom ...,competitor,Firecrawl,
+aio,1,EXA-04,Exa,no,,spider.cloud,Web Search API - Crawl Every Result,third_party,,other vendor
+aio,1,EXA-05,Exa,no,,Parallel Web Systems,Web Search API: What It Is and When AI Agents Need One | Parallel,competitor,Parallel,
+aio,1,EXA-05,Exa,no,,The Companies API,"Search for similar companies (competitors, your customers, etc.)",third_party,,other vendor
+aio,1,EXA-05,Exa,no,,CompanyEnrich,Similar Companies API,third_party,,other vendor
+aio,1,EXA-05,Exa,no,,Parallel Web Systems,The Best Web Search API in 2026: 5 Tools Compared | Parallel,competitor,Parallel,
+aio,1,EXA-05,Exa,no,,Medium·Fardeen Khan,8 Web Search APIs You Need to Know About (If You're ...,third_party,,community or blog
+aio,1,EXA-06,Exa,no,,Linkup web search,Linkup - Bing Search API Is Retired: Best Alternatives for AI Agents in 2026,third_party,,other vendor
+aio,1,EXA-06,Exa,no,,SERPHouse,Bing Search API Alternative: Migration Guide,third_party,,other vendor
+aio,1,EXA-06,Exa,no,,NewsData.io,7 Best Bing Search API Alternatives in 2026 (Compared),third_party,,other vendor
+aio,1,EXA-06,Exa,no,,www.searchcans.com,Bing Search Alternatives for LLM Grounding in 2026,third_party,,other vendor
+aio,1,EXA-06,Exa,no,,Brave,Brave Search API vs the Bing API,competitor,Brave Search API,
+aio,1,EXA-06,Exa,no,,Composio,Best AI Search Engine API tools for agents in 2026,third_party,,other vendor
+aio,1,EXA-06,Exa,no,,Desearch AI,Bing Search API Alternative for Developers - Desearch,third_party,,other vendor
+aio,1,EXA-07,Exa,yes,,Exa,Exa vs Tavily: Search API Benchmarks and Comparison,own,Exa,
+aio,1,EXA-07,Exa,yes,,fastCRW,Exa vs Tavily — Neural Search vs Agent Web Access (2026),third_party,,other vendor
+aio,1,EXA-07,Exa,yes,,Reddit·r/Rag,Tavily vs Exa for agentic search—what's your pick in 2026?,third_party,,community or blog
+aio,1,EXA-07,Exa,yes,,apiserpent.com,SERP API vs Tavily vs Exa: Which Search API for AI Agents?,third_party,,other vendor
+aio,1,EXA-07,Exa,yes,,ColdIQ,Exa vs Tavily (2026): Which AI Search API Wins? (47 chara...,third_party,,other vendor
+aio,1,EXA-07,Exa,yes,,DEV Community,Exa vs Tavily vs Serper vs Brave Search for AI Agents,third_party,,community or blog
+aio,1,EXA-07,Exa,yes,,suhasbhairav.com,Exa vs Tavily: Neural Search APIs for Enterprise AI,third_party,,community or blog
+aio,1,EXA-07,Exa,yes,,fastCRW,Exa vs Tavily vs Firecrawl: Which Search API Is Best for AI Agents?,third_party,,other vendor
+aio,1,EXA-07,Exa,yes,,link.sc,Exa vs Tavily: Which Search API Is Better for AI Agents? - link.sc,third_party,,unclear
+aio,1,EXA-07,Exa,yes,,blog.sandbase.ai,Exa vs Tavily vs Firecrawl: Search APIs (2026) | SandBase Blog,third_party,,other vendor
+aio,1,EXA-08,Exa,yes,,www.crail.ai,Perplexity Sonar API vs Exa - Crail,third_party,,other vendor
+aio,1,EXA-08,Exa,yes,,Linkup,Why Developers are Choosing the Linkup API Over Perplexity Sonar,third_party,,other vendor
+aio,1,EXA-08,Exa,yes,,SourceForge,Exa vs. Sonar Comparison,third_party,,review or comparison site
+aio,1,EXA-10,Exa,yes,,Exa,Exa API Pricing | Pay-as-You-Go Plans for AI Search,own,Exa,
+aio,1,EXA-10,Exa,yes,,Exa,Pricing - Exa,own,Exa,
+aio,1,EXA-10,Exa,yes,,Exa,Changelog - Exa,own,Exa,
+aio,1,EXA-10,Exa,yes,,eesel AI,"Exa Agent Ultra pricing: effort levels, ACU costs, and ... - eesel AI",third_party,,other vendor
+aio,1,EXA-11,Exa,yes,,Pydantic,Building a research agent with Pydantic AI Harness and Exa,third_party,,other vendor
+aio,1,EXA-11,Exa,yes,,Amazon Web Services (AWS),Building web search-enabled agents with Strands and Exa,third_party,,platform docs
+aio,1,EXA-11,Exa,yes,,Exa,Open-source deep research agents: how they work and ...,own,Exa,
+aio,1,EXA-11,Exa,yes,,www.withampersand.com,The best semantic search APIs for AI agents in 2026,third_party,,other vendor
+aio,1,EXA-11,Exa,yes,,Exa,The 8 best web search tools for AI agents in 2026 | Exa Blog,own,Exa,
+aio,1,EXA-11,Exa,yes,,Exa,Deep Search - Exa,own,Exa,
+aio,1,EXA-11,Exa,yes,,hokai.io,Exa Review (2026): Neural Search API for AI Agents - HokAI,third_party,,unclear
+aio,1,EXA-11,Exa,yes,,Exa,Exa vs Parallel: Search API Benchmarks and Comparison,own,Exa,
+aio,1,EXA-11,Exa,yes,,theaiagentindex.com,Exa AI Review (2026): AI,third_party,,review or comparison site
+aio,1,EXA-11,Exa,yes,,Reddit·r/Rag,Exa vs. Tavily vs. Firecrawl for LLM Retrieval & Data Scraping,third_party,,community or blog
+aio,1,EXA-11,Exa,yes,,Parallel Web Systems,OpenAI Web Search vs Parallel vs Exa vs Tavily: Best API | Parallel,competitor,Parallel,
+aio,1,EXA-12,Exa,yes,,Exa,Exa | Search API for AI Agents — Real-Time Web Data,own,Exa,
+aio,1,EXA-12,Exa,yes,,LinkedIn,Exa,third_party,,community or blog
+aio,1,EXA-12,Exa,yes,,Exa,Exa: The Search Engine for Developers & Custom AI Search Solution,own,Exa,
+aio,1,EXA-12,Exa,yes,,OneAway,What Is Exa AI? The $700M Search Engine Built for AI,third_party,,unclear
+aio,1,EXA-12,Exa,yes,,theaiagentindex.com,Exa AI Review (2026): AI,third_party,,review or comparison site
+aio,1,EXA-12,Exa,yes,,"Substack·Guru On Tech, Startups, Venture","Search, Perfected for AI: Why We're Doubling Down on Exa",third_party,,community or blog
+aio,1,EXA-12,Exa,yes,,fastCRW,"Exa AI Explained: What It Does, What It Costs, and ... - fastCRW",third_party,,other vendor
+aio,1,EXA-12,Exa,yes,,Y Combinator,Exa: Web search rebuilt for LLMs | Y Combinator,third_party,,news or company profile
+aio,1,FW-01,Fireworks AI,no,,KDnuggets,Top 5 Super Fast LLM API Providers - KDnuggets,third_party,,community or blog
+aio,1,FW-01,Fireworks AI,no,,GMI Cloud,Fastest Open-Source LLM Inference in 2026 | GMI Cloud,third_party,,other vendor
+aio,1,FW-01,Fireworks AI,no,,rtc league,Best Low Latency AI Inference APIs of 2026: Ranked and Compared,third_party,,unclear
+aio,1,FW-01,Fireworks AI,no,,Reddit·r/better_claw,"Every free LLM provider, ranked by how fast the free tier ...",third_party,,community or blog
+aio,1,FW-01,Fireworks AI,no,,Infercom,"Fast LLM Inference, Measured: Tokens per Second | Infercom",third_party,,other vendor
+aio,1,FW-01,Fireworks AI,no,,openbenchmarks.com,Fastest LLM Inference API by Tokens per Second 2026,third_party,,benchmark or research
+aio,1,FW-02,Fireworks AI,no,,DigitalOcean,11 Best Open-Source LLM Hosting Providers in 2026,third_party,,other vendor
+aio,1,FW-02,Fireworks AI,no,,GIGAGPU,Open Source LLM Hosting - GIGAGPU,third_party,,other vendor
+aio,1,FW-02,Fireworks AI,no,,FreeAPIHub,Best Open-Source AI Models to Self-Host (2026) - FreeAPIHub,third_party,,review or comparison site
+aio,1,FW-02,Fireworks AI,no,,Faros AI,Best open-weight models for coding,third_party,,other vendor
+aio,1,FW-02,Fireworks AI,no,,admix.software,Llama 4 vs Qwen 3 vs DeepSeek V4: Best Open,third_party,,other vendor
+aio,1,FW-02,Fireworks AI,no,,gate.ai,"Best Open-Weight LLMs in 2026: DeepSeek, Qwen, Kimi ...",third_party,,other vendor
+aio,1,FW-03,Fireworks AI,no,,Spheron,DeepSeek API Pricing vs Self,third_party,,other vendor
+aio,1,FW-03,Fireworks AI,no,,www.morphllm.com,DeepSeek API Pricing (2026): Cost per Token and How to Call It,third_party,,other vendor
+aio,1,FW-03,Fireworks AI,no,,GIGAGPU,Cost to Run DeepSeek vs Using the DeepSeek API - GIGAGPU,third_party,,other vendor
+aio,1,FW-03,Fireworks AI,no,,CostGoat,DeepSeek API Pricing Calculator & Cost Guide (Oct 2026),third_party,,review or comparison site
+aio,1,FW-03,Fireworks AI,no,,Get AI Perks,"Run DeepSeek Locally: Ollama, Open Weights, Real Cost",third_party,,review or comparison site
+aio,1,FW-03,Fireworks AI,no,,GIGAGPU,Self,third_party,,other vendor
+aio,1,FW-04,Fireworks AI,no,,Stanford University,Fine,third_party,,benchmark or research
+aio,1,FW-04,Fireworks AI,no,,GreenNode.ai,Best Open,third_party,,other vendor
+aio,1,FW-04,Fireworks AI,no,,Second Talent,Top 8 Platforms to Fine,third_party,,other vendor
+aio,1,FW-04,Fireworks AI,no,,Level Up Coding,11 Open-Source Frameworks for Fine,third_party,,community or blog
+aio,1,FW-04,Fireworks AI,no,,Reddit·r/LocalLLaMA,Best frameworks for fine-tuning models—what's everyone ...,third_party,,community or blog
+aio,1,FW-05,Fireworks AI,no,,Qualix Solutions,21 Best Cloud Provider for AI Inference Tasks,third_party,,other vendor
+aio,1,FW-05,Fireworks AI,no,,DigitalOcean,Top 5 Scalable AI Inference Providers for Startups (2026),third_party,,other vendor
+aio,1,FW-05,Fireworks AI,no,,Fastio,Best Inference Providers for AI Agents in 2026,third_party,,other vendor
+aio,1,FW-05,Fireworks AI,no,,llmendpoint.com,Inference Providers for LLM Apps | LLMEndpoint,third_party,,review or comparison site
+aio,1,FW-05,Fireworks AI,no,,ToolJunction,Top 10 LLM Inference Providers of 2026,third_party,,review or comparison site
+aio,1,FW-05,Fireworks AI,no,,AIMultiple,Best 10 Serverless GPU Clouds & 14 Cost-Effective GPUs - AIMultiple,third_party,,review or comparison site
+aio,1,FW-06,Fireworks AI,no,,Spheron,Structured Output and Function Calling on GPU Cloud,third_party,,other vendor
+aio,1,FW-06,Fireworks AI,no,,Agenta,The guide to structured outputs and function calling with LLMs,third_party,,other vendor
+aio,1,FW-06,Fireworks AI,no,,FlexAI,Best Open-Source LLM for Function Calling: 5 Checks,third_party,,other vendor
+aio,1,FW-06,Fireworks AI,no,,Composio,Best Dedicated Inference Providers for Coding Agents in 2026,third_party,,other vendor
+aio,1,FW-06,Fireworks AI,no,,openbenchmarks.com,Most Reliable LLM API for Structured Output 2026,third_party,,benchmark or research
+aio,1,FW-06,Fireworks AI,no,,ToolJunction,Top 10 LLM Inference Providers of 2026 - ToolJunction,third_party,,review or comparison site
+aio,1,FW-06,Fireworks AI,no,,Reddit·r/LocalLLaMA,Best Open source LLMs for tool call / structured output - Reddit,third_party,,community or blog
+aio,1,FW-06,Fireworks AI,no,,OpenRouter,Best AI Models for Tool Calling and Function Calling,competitor,OpenRouter,
+aio,1,FW-06,Fireworks AI,no,,deploybase.ai,Best LLM for Function Calling: Tool Use Comparison and Benchmarks,third_party,,review or comparison site
+aio,1,FW-06,Fireworks AI,no,,Requesty,Structured Outputs Across LLM Providers: 244 Models Tested (2026),third_party,,other vendor
+aio,1,FW-07,Fireworks AI,yes,,Medium,Comparing API Providers for Hosted Open,third_party,,community or blog
+aio,1,FW-07,Fireworks AI,yes,,www.rfp.wiki,Together AI vs Fireworks AI (2026): We tried both - see who wins,third_party,,review or comparison site
+aio,1,FW-08,Fireworks AI,yes,,Pristren,Groq vs. Together AI vs. Fireworks AI: Fast LLM Inference 2026,third_party,,review or comparison site
+aio,1,FW-08,Fireworks AI,yes,,Respan,Fireworks AI vs Groq (2026) - Respan,third_party,,review or comparison site
+aio,1,FW-08,Fireworks AI,yes,,www.braintrust.dev,Best AI APIs in 2026: speed and price compared - Braintrust,third_party,,other vendor
+aio,1,FW-08,Fireworks AI,yes,,Reddit·r/LocalLLaMA,LLaMa 4 behaving differently on Groq vs Fireworks AI - Reddit,third_party,,community or blog
+aio,1,FW-08,Fireworks AI,yes,,"Medium·Hamman Samuel, PhD",Comparing API Providers for Hosted Open,third_party,,community or blog
+aio,1,FW-08,Fireworks AI,yes,,Pristren,Groq vs. Together AI vs. Fireworks AI: Fast LLM Inference Compared,third_party,,review or comparison site
+aio,1,FW-08,Fireworks AI,yes,,kanopylabs.com,Together AI vs Groq vs Fireworks: LLM Inference APIs ...,third_party,,other vendor
+aio,1,FW-08,Fireworks AI,yes,,www.morphllm.com,Fireworks AI vs Groq (2026): Groq Runs Llama 70B at 394 tok ...,third_party,,other vendor
+aio,1,FW-08,Fireworks AI,yes,,computecomparison.com,"Groq vs Fireworks AI: Token Pricing, Speed & Intelligence Comparison",third_party,,review or comparison site
+aio,1,FW-08,Fireworks AI,yes,,Machine Learning Plus,Groq vs Fireworks vs Together AI: Speed Benchmark,third_party,,community or blog
+aio,1,FW-08,Fireworks AI,yes,,OneInfer,The 5 Best AI Inference Providers in 2026,third_party,,other vendor
+aio,1,FW-10,Fireworks AI,yes,,Fireworks AI,Fireworks - Pricing,own,Fireworks AI,
+aio,1,FW-10,Fireworks AI,yes,,Fireworks AI Docs,Cost structure,own,Fireworks AI,
+aio,1,FW-10,Fireworks AI,yes,,Spheron,Fireworks AI Pricing 2026: Inference API Cost vs GPU Rental,third_party,,other vendor
+aio,1,FW-10,Fireworks AI,yes,,Price Per Token,"Fireworks AI Free Tier 2026 — Free Models, Credits & Limits",third_party,,review or comparison site
+aio,1,FW-10,Fireworks AI,yes,,Fireworks AI Docs,Serverless Pricing - Fireworks AI Docs,own,Fireworks AI,
+aio,1,FW-10,Fireworks AI,yes,,www.usagepricing.com,Fireworks adds two new serverless models,third_party,,review or comparison site
+aio,1,FW-10,Fireworks AI,yes,,Capterra,Fireworks AI Pricing 2026 - Capterra,third_party,,review or comparison site
+aio,1,FW-10,Fireworks AI,yes,,www.usagepricing.com,Fireworks AI announces a Series D and $1B ARR,third_party,,review or comparison site
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI,"Fireworks Achieves Triple ISO Certification, Giving Enterprises ...",own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,eesel AI,"An honest Fireworks AI review (2026): The good, the bad, and the alternatives | eesel AI",third_party,,other vendor
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI,Fireworks - Privacy Policy,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI,Fireworks.ai Achieves SOC 2 Type II and HIPAA Compliance,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI Docs,Enterprise features - Fireworks AI Docs,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,MindStudio,How to Evaluate Enterprise AI Platforms for Security and Compliance,third_party,,other vendor
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI,FAQ - Trust Center - Fireworks AI,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI Docs,Data Security - Fireworks AI Docs,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI,Products - Enterprise - Fireworks AI,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Fireworks AI Docs,Secure Training,own,Fireworks AI,
+aio,1,FW-11,Fireworks AI,yes,,Microsoft Community Hub,Open Model Inference at Scale on Foundry: What’s New with ...,third_party,,community or blog
+aio,1,FW-11,Fireworks AI,yes,,2toLead,Fireworks AI on Microsoft Foundry Explained,third_party,,other vendor
+aio,1,FW-12,Fireworks AI,yes,,TechCrunch,Fireworks.ai open source API puts generative AI in reach of ...,third_party,,news or company profile
+aio,1,FW-12,Fireworks AI,yes,,Wikipedia,Fireworks AI - Wikipedia,third_party,,news or company profile
+aio,1,FW-12,Fireworks AI,yes,,eesel AI,What is Fireworks AI? A complete overview for 2026 | eesel AI,third_party,,other vendor
+aio,1,FW-12,Fireworks AI,yes,,Layer3Labs,"Fireworks AI Explained: Pricing, Models, and Speed (2026)",third_party,,review or comparison site
+aio,1,FW-12,Fireworks AI,yes,,Google Cloud,Fireworks.ai: Lighting up gen AI through a more efficient inference engine | Google Cloud Blog,third_party,,platform docs
+aio,1,FW-12,Fireworks AI,yes,,LinkedIn·,Fireworks AI,third_party,,community or blog
+aio,1,AAI-01,AssemblyAI,no,,Gladia,Gladia - Best Speech-to-Text APIs in 2026,competitor,Gladia,
+aio,1,AAI-01,AssemblyAI,no,,AssemblyAI,Best real-time speech-to-text apps in 2026,own,AssemblyAI,
+aio,1,AAI-01,AssemblyAI,no,,Voice Writer,The Best Speech Recognition API in 2025,third_party,,other vendor
+aio,1,AAI-01,AssemblyAI,no,,Rev AI,The Most Accurate Speech-To-Text API | Rev AI,competitor,Rev.ai,
+aio,1,AAI-01,AssemblyAI,no,,Reddit·r/speechtech,I benchmarked 12+ speech-to-text APIs under various ... - Reddit,third_party,,community or blog
+aio,1,AAI-02,AssemblyAI,no,,MeetStream.ai,Which Meeting Recording API Has the Best Transcript Accuracy?,third_party,,other vendor
+aio,1,AAI-02,AssemblyAI,no,,LLM API,Best Speech-to,third_party,,review or comparison site
+aio,1,AAI-02,AssemblyAI,no,,Recall.ai,Real-Time Transcription Providers: A 2026 Guide,third_party,,other vendor
+aio,1,AAI-02,AssemblyAI,no,,MeetStream.ai,Best Meeting Transcription APIs for Developers (2026),third_party,,other vendor
+aio,1,AAI-02,AssemblyAI,no,,Nylas,Best meeting transcription tools for developers in 2026,third_party,,other vendor
+aio,1,AAI-02,AssemblyAI,no,,Gladia,Gladia - Best Speech-to,competitor,Gladia,
+aio,1,AAI-02,AssemblyAI,no,,AssemblyAI,Best dictation APIs in 2026: 9 options compared for developers,own,AssemblyAI,
+aio,1,AAI-02,AssemblyAI,no,,Sonix,8 Best Transcription Tools for Customer Service Calls in 2026,third_party,,other vendor
+aio,1,AAI-03,AssemblyAI,no,,AssemblyAI,Does Whisper do speaker diarization? Whisper + pyannote ...,own,AssemblyAI,
+aio,1,AAI-03,AssemblyAI,no,,Gladia,Gladia - Best Speech-to,competitor,Gladia,
+aio,1,AAI-03,AssemblyAI,no,,CloudTalk,Best Speech to Text AI: Top Solutions for 2026 - CloudTalk,third_party,,other vendor
+aio,1,AAI-03,AssemblyAI,no,,Gladia,Best open-source speech-to-text models in 2026,competitor,Gladia,
+aio,1,AAI-03,AssemblyAI,no,,Smallest AI,Speaker Diarization API Comparison: Accuracy,third_party,,other vendor
+aio,1,AAI-03,AssemblyAI,no,,Reddit·r/LocalLLaMA,Best Open source Speech to text+ diarization models - Reddit,third_party,,community or blog
+aio,1,AAI-04,AssemblyAI,no,,getstream.io,Top 6 Real-Time Speech-to-Speech APIs and Libraries To ...,third_party,,other vendor
+aio,1,AAI-04,AssemblyAI,no,,Cekura,9 Best Voice AI APIs for Real-Time Audio Processing in 2026,third_party,,other vendor
+aio,1,AAI-04,AssemblyAI,no,,micdrop.dev,Best Speech to Text APIs for Voice Agents in 2026,third_party,,unclear
+aio,1,AAI-04,AssemblyAI,no,,Reddit·r/AI_Agents,Best STT API for voice agents? I care more about useable text ...,third_party,,community or blog
+aio,1,AAI-04,AssemblyAI,no,,Cekura,Best AI Voice APIs for Developers in 2026 (Ranked),third_party,,other vendor
+aio,1,AAI-05,AssemblyAI,no,,VexaScribe,"Whisper Alternatives 2026 — 3 Categories, 12+ Options",third_party,,other vendor
+aio,1,AAI-05,AssemblyAI,no,,Voibe,9 Best OpenAI Whisper Alternatives for Speech-to-Text (2026),third_party,,other vendor
+aio,1,AAI-05,AssemblyAI,no,,Sonicribe,Sonicribe vs Self,third_party,,other vendor
+aio,1,AAI-05,AssemblyAI,no,,Reddit·r/LocalLLaMA,Speech to Text - Whisper alternatives? : r/LocalLLaMA - Reddit,third_party,,community or blog
+aio,1,AAI-05,AssemblyAI,no,,privocio.com,Privacy,third_party,,unclear
+aio,1,AAI-05,AssemblyAI,no,,privocio.com,OpenAI Whisper API Alternative: When to Switch to Privocio,third_party,,unclear
+aio,1,AAI-05,AssemblyAI,no,,DIY AI,Offline Speech-to-Text 2026: Best Local and Self,third_party,,review or comparison site
+aio,1,AAI-06,AssemblyAI,no,,LLM API,Best Speech-to-Text APIs in 2026,third_party,,review or comparison site
+aio,1,AAI-06,AssemblyAI,no,,Voicegain,PII Text and Audio Redaction now available in Speech Analytics API,third_party,,other vendor
+aio,1,AAI-06,AssemblyAI,no,,Smallest AI,"Speech-to-Text APIs with HIPAA, SOC 2 - Smallest AI",third_party,,other vendor
+aio,1,AAI-06,AssemblyAI,no,,Amazon Web Services (AWS),Introducing PII identification and redaction in streaming ... - AWS,third_party,,platform docs
+aio,1,AAI-06,AssemblyAI,no,,Amazon Web Services (AWS),Now available in Amazon Transcribe: Automatic Redaction of ...,third_party,,platform docs
+aio,1,AAI-06,AssemblyAI,no,,Voibe,7 Best Speech-to,third_party,,other vendor
+aio,1,AAI-06,AssemblyAI,no,,HackerNoon,The Best Medical Speech Recognition Software and APIs in ...,third_party,,community or blog
+aio,1,AAI-07,AssemblyAI,yes,,stack-match.io,Deepgram vs AssemblyAI – Honest Comparison,third_party,,review or comparison site
+aio,1,AAI-07,AssemblyAI,yes,,www.automationlabz.com,Deepgram vs AssemblyAI: best speech-to-text API,third_party,,review or comparison site
+aio,1,AAI-07,AssemblyAI,yes,,deepgram.com,Compare AssemblyAI Speech-to-Text Alternatives - Deepgram,competitor,Deepgram,
+aio,1,AAI-09,AssemblyAI,yes,,www.aicentralresources.com,20 Best AssemblyAI Alternatives (2026): Ranked & Free,third_party,,review or comparison site
+aio,1,AAI-10,AssemblyAI,yes,,AssemblyAI,AssemblyAI | Pricing | Production-ready AI Models,own,AssemblyAI,
+aio,1,AAI-10,AssemblyAI,yes,,AssemblyAI,Billing and Pricing - AssemblyAI,own,AssemblyAI,
+aio,1,AAI-10,AssemblyAI,yes,,AssemblyAI,Speech-to-Text Pricing: What It Really Costs in 2026 - AssemblyAI,own,AssemblyAI,
+aio,1,AAI-10,AssemblyAI,yes,,The Rundown AI,AssemblyAI: Speech-to,third_party,,news or company profile
+aio,1,AAI-10,AssemblyAI,yes,,www.usagepricing.com,AssemblyAI Pricing,third_party,,review or comparison site
+aio,1,AAI-10,AssemblyAI,yes,,www.usagepricing.com,AssemblyAI Pricing Calculator,third_party,,review or comparison site
+aio,1,AAI-10,AssemblyAI,yes,,Cekura,"AssemblyAI Pricing 2026: Every Product, Rate & Add-On",third_party,,other vendor
+aio,1,AAI-10,AssemblyAI,yes,,Gladia | AI,AssemblyAI Pricing: Worth It or Consider Gladia? - Gladia,competitor,Gladia,
+aio,1,AAI-10,AssemblyAI,yes,,www.haktansuren.com,AWS Transcribe Pricing vs AssemblyAI (2026),third_party,,other vendor
+aio,1,AAI-11,AssemblyAI,yes,,AssemblyAI,AI-powered call analytics: How to extract insights from customer conversations,own,AssemblyAI,
+aio,1,AAI-11,AssemblyAI,yes,,G2,AssemblyAI - Speech to Text API Reviews & Product Details - G2,third_party,,review or comparison site
+aio,1,AAI-11,AssemblyAI,yes,,Forma Nôrden,Best APIs for Transcribing and Analyzing Sales Calls,third_party,,other vendor
+aio,1,AAI-11,AssemblyAI,yes,,Amazon Web Services (AWS),Start building voice intelligence with AssemblyAI's speech-to ...,third_party,,platform docs
+aio,1,AAI-11,AssemblyAI,yes,,AssemblyAI,Business use cases for Generative AI,own,AssemblyAI,
+aio,1,AAI-11,AssemblyAI,yes,,Gladia,"AssemblyAI Review 2026: Features, Pricing ... - Gladia",competitor,Gladia,
+aio,1,AAI-11,AssemblyAI,yes,,AssemblyAI,How to Analyze a Call Recording With AI (No Code Needed),own,AssemblyAI,
+aio,1,AAI-11,AssemblyAI,yes,,FusionPBX Forums,New in FS PBX — AI-Powered Call Transcriptions ...,third_party,,community or blog
+aio,1,AAI-12,AssemblyAI,yes,,AssemblyAI,AssemblyAI | AI models to transcribe and understand speech,own,AssemblyAI,
+aio,1,AAI-12,AssemblyAI,yes,,YouTube,AssemblyAI: Building a Scalable Machine Learning Platform for ...,third_party,,community or blog
+aio,1,AAI-12,AssemblyAI,yes,,LinkedIn·AssemblyAI,AssemblyAI | LinkedIn,third_party,,community or blog
+aio,1,AAI-12,AssemblyAI,yes,,Gladia,"AssemblyAI Review 2026: Features, Pricing ... - Gladia",competitor,Gladia,
+aio,1,AAI-12,AssemblyAI,yes,,ai.engineer,AssemblyAI: Speech AI Models and Voice Infrastructure,third_party,,news or company profile
+aio,1,AAI-12,AssemblyAI,yes,,AssemblyAI,What is speech to text? The complete guide,own,AssemblyAI,
+aio,1,LC-01,LangChain,no,,Langfuse,Comparing Open-Source AI Agent Frameworks - Langfuse,competitor,Langfuse,
+aio,1,LC-01,LangChain,no,,The JetBrains Blog,Top Agentic Frameworks for Building Applications 2026,third_party,,other vendor
+aio,1,LC-01,LangChain,no,,Uvik Software,Best Python AI Agent Frameworks in 2026 Compared,third_party,,other vendor
+aio,1,LC-01,LangChain,no,,GeeksforGeeks,AI Agent Frameworks - GeeksforGeeks,third_party,,community or blog
+aio,1,LC-01,LangChain,no,,Towards AI,Python AI Agent Frameworks Compared: LangGraph vs CrewAI vs PydanticAI vs OpenAI SDK vs Smolagents vs Google ADK (2026) | Towards AI,third_party,,community or blog
+aio,1,LC-01,LangChain,no,,Reddit·r/AI_Agents,What framework did you choose to build your agent ... - Reddit,third_party,,community or blog
+aio,1,LC-01,LangChain,no,,DEV Community,7 Best Python Frameworks for Building AI Agents in 2026 - DEV Community,third_party,,community or blog
+aio,1,LC-01,LangChain,no,,AY Automate,11 Best Python AI Agent Frameworks in 2026,third_party,,review or comparison site
+aio,1,LC-02,LangChain,no,,Reddit,What is the best RAG framework??,third_party,,community or blog
+aio,1,LC-02,LangChain,no,,Iternal AI,Best RAG Framework 2026: LangChain vs LlamaIndex vs DSPy,third_party,,other vendor
+aio,1,LC-02,LangChain,no,,AIMultiple,"Best RAG Tools, Frameworks, and Libraries",third_party,,review or comparison site
+aio,1,LC-02,LangChain,no,,www.devopsness.com,Best RAG Frameworks in 2026 Compared,third_party,,review or comparison site
+aio,1,LC-03,LangChain,no,,Mastra,LangGraph: a guide to stateful AI agent orchestration,competitor,Mastra,
+aio,1,LC-03,LangChain,no,,X,Post,third_party,,community or blog
+aio,1,LC-03,LangChain,no,,Microsoft Learn,Microsoft Agent Framework Workflows - Human-in-the-loop ...,third_party,,platform docs
+aio,1,LC-03,LangChain,no,,Towards AI,Building Stateful Multi-Agent Workflows in Java ... - Towards AI,third_party,,community or blog
+aio,1,LC-03,LangChain,no,,Medium·Somendradev,LangGraph: The Complete Guide to Building Stateful AI Agents,third_party,,community or blog
+aio,1,LC-03,LangChain,no,,Towards Data Science,Building Human-In-The-Loop Agentic Workflows,third_party,,community or blog
+aio,1,LC-04,LangChain,no,,LangChain,9 LLM Observability Tools for Production AI Agents,own,LangChain,
+aio,1,LC-04,LangChain,no,,Firecrawl,Best LLM Observability Tools in 2026,third_party,,other vendor
+aio,1,LC-05,LangChain,no,,blog.google,Introducing Agent Development Kit for TypeScript: Build AI ...,third_party,,platform docs
+aio,1,LC-05,LangChain,no,,www.arcade.dev,Best TypeScript AI Agent Frameworks for Next.js 2026,third_party,,other vendor
+aio,1,LC-05,LangChain,no,,Scrimba,"Best AI Agent Frameworks [2026]: LangGraph, CrewAI, AutoGen",third_party,,community or blog
+aio,1,LC-05,LangChain,no,,AY Automate,12 Best TypeScript AI Agent Frameworks in 2026,third_party,,review or comparison site
+aio,1,LC-06,LangChain,no,,Langfuse,Comparing Open-Source AI Agent Frameworks - Langfuse,competitor,Langfuse,
+aio,1,LC-06,LangChain,no,,Towards AI,Top AI Agent Frameworks in 2026: A Production-Ready Comparison | by Pratik K Rupareliya | Towards AI,third_party,,community or blog
+aio,1,LC-06,LangChain,no,,The JetBrains Blog,Top Agentic Frameworks for Building Applications 2026,third_party,,other vendor
+aio,1,LC-06,LangChain,no,,Alice Labs,Best AI Agent Frameworks 2026: Alice Labs Top 10 Ranked,third_party,,other vendor
+aio,1,LC-06,LangChain,no,,Towards AI,The 4 Best Open Source Multi-Agent AI Frameworks 2026 | by Devin Rosario | Towards AI,third_party,,community or blog
+aio,1,LC-06,LangChain,no,,Microsoft Learn,Microsoft Agent Framework Overview,third_party,,platform docs
+aio,1,LC-06,LangChain,no,,Splunk,Top Agent Frameworks To Use in 2026: A Comparison - Splunk,third_party,,other vendor
+aio,1,LC-10,LangChain,yes,,LangChain,LangSmith Plans and Pricing,own,LangChain,
+aio,1,LC-10,LangChain,yes,,pecollective.com,"LangSmith Pricing: Free Tier, Plus, and Overage Costs",third_party,,review or comparison site
+aio,1,LC-10,LangChain,yes,,Inference.net,"LangSmith Pricing Explained (2026): Traces, Seats ...",third_party,,other vendor
+aio,1,LC-10,LangChain,yes,,Openlayer,LangSmith Pricing & Alternatives: September 2026 Guide ...,third_party,,other vendor
+aio,1,LC-10,LangChain,yes,,TrueFoundry,LangGraph Pricing: A Complete Breakdown for 2026,third_party,,other vendor
+aio,1,LC-10,LangChain,yes,,aitoolsbakery.com,LangSmith Review 2026: LLM Observability and Pricing,third_party,,review or comparison site
+aio,1,LC-10,LangChain,yes,,Metacto,"LangSmith Pricing Guide 2026: True Costs, Tiers & Integration",third_party,,other vendor
+aio,1,LC-12,LangChain,yes,,Amazon Web Services (AWS),What is LangChain? - AWS,third_party,,platform docs
+aio,1,LC-12,LangChain,yes,,IBM,What Is LangChain? | IBM,third_party,,platform docs
+aio,1,LC-12,LangChain,yes,,LangChain,About LangChain: an open platform to own your intelligence,own,LangChain,
+aio,1,LC-12,LangChain,yes,,Google Cloud,What Is LangChain? Examples and definition | Google Cloud,third_party,,platform docs
+aio,1,LC-12,LangChain,yes,,DigitalOcean,LangChain Explained: The Ultimate Framework for Building LLM ...,third_party,,other vendor
+aio,1,LC-12,LangChain,yes,,Atlan,What is LangChain? Open,third_party,,other vendor
+aio,1,LC-12,LangChain,yes,,Oracle,What is LangChain?,third_party,,platform docs
+aio,1,LC-12,LangChain,yes,,Medium,Understanding LangChain and LangGraph: A Beginner’s Guide to ...,third_party,,community or blog
+aio,1,LC-12,LangChain,yes,,Reddit·r/LangChain,can someone explain Langchain in a simple manner - Reddit,third_party,,community or blog

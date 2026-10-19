@@ -1,0 +1,18 @@
+engine,third_party_type,citations,pct_of_third_party
+codex,platform docs,92,88%
+codex,benchmark or research,6,6%
+codex,other vendor,5,5%
+codex,news or company profile,1,1%
+claude_code,other vendor,73,46%
+claude_code,review or comparison site,63,39%
+claude_code,news or company profile,12,8%
+claude_code,community or blog,6,4%
+claude_code,platform docs,5,3%
+claude_code,benchmark or research,1,1%
+aio,other vendor,128,49%
+aio,community or blog,60,23%
+aio,review or comparison site,42,16%
+aio,platform docs,16,6%
+aio,news or company profile,7,3%
+aio,unclear,7,3%
+aio,benchmark or research,3,1%
