@@ -141,6 +141,30 @@ const certs = [
     </ul>
   </section>
 
+  {
+    writing.length > 0 && (
+      <section class="wrap writing" id="writing" aria-labelledby="writing-title">
+        <h2 id="writing-title" class="label">Writing</h2>
+        <ul class="posts">
+          {writing.map((p) => (
+            <li>
+              <a href={`/writing/${p.id}/`} class="post">
+                <span class="post-title">{p.data.title}</span>
+                <span class="post-summary muted">{p.data.summary}</span>
+                <span class="post-date">{fmtDate(p.data.date)}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        {site.newsletter.url && (
+          <p class="newsletter muted">
+            New teardowns every week in <a href={site.newsletter.url}>{site.newsletter.name}</a>. Subscribe to get them by email.
+          </p>
+        )}
+      </section>
+    )
+  }
+
   <section class="wrap certs-strip" aria-labelledby="certs-title">
     <div class="certs-head">
       <h2 id="certs-title" class="label">Certified</h2>
@@ -197,32 +221,6 @@ const certs = [
       )
     }
   </section>
-
-  {
-    writing.length > 0 && (
-      <section class="wrap" id="writing">
-        <div class="more writing">
-          <h2 class="label">Writing</h2>
-          <ul class="rows">
-            {writing.map((p) => (
-              <li>
-                <a href={`/writing/${p.id}/`} class="row">
-                  <span>{p.data.title}</span>
-                  <span class="muted">{fmtDate(p.data.date)}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-          {site.newsletter.url && (
-            <p class="newsletter muted">
-              New posts go out in <a href={site.newsletter.url}>{site.newsletter.name}</a>, a free weekly newsletter on AI
-              infrastructure.
-            </p>
-          )}
-        </div>
-      </section>
-    )
-  }
 
   <section class="wrap cv" id="experience">
     <div>
@@ -364,18 +362,57 @@ const certs = [
     max-width: 640px;
   }
   .writing {
-    margin-top: 0;
+    margin-top: 80px;
+  }
+  .posts {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
     max-width: 760px;
   }
-  .writing .row span:last-child {
-    flex: none;
+  .post {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 24px;
+    padding: 16px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .post-title {
+    font-weight: 500;
+  }
+  .post:hover .post-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .post-summary {
+    grid-column: 1;
+    font-size: 14px;
+  }
+  .post-date {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 14px;
+    color: var(--faint);
   }
   .newsletter {
-    margin-top: 16px;
+    margin-top: 14px;
     font-size: 14px;
   }
   .newsletter a {
     color: var(--accent);
+  }
+  .certs-strip {
+    margin-top: 72px;
+  }
+  @media (max-width: 640px) {
+    .post {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .post-date {
+      grid-column: 1;
+      grid-row: auto;
+    }
   }
 
   .rows {
@@ -452,9 +489,6 @@ const certs = [
     font-size: 13px;
     color: var(--accent);
     margin-top: 4px;
-  }
-  .certs-strip {
-    margin-top: 72px;
   }
   /* One slow marquee: the list scrolls sideways and pauses on hover. */
   .marquee {
