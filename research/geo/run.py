@@ -1,17 +1,25 @@
-"""Ask every question in a CSV to ChatGPT, Claude and Perplexity (via their APIs, with web search on)
-and save the full raw answers, so every number in the case study traces back to a stored response.
+"""Ask every question in a CSV to ChatGPT and Claude with web search on, and save the full raw
+answers, so every number in the case study traces back to a stored response.
+
+Default engines run on the user's own subscriptions through the local CLIs, so no API key is needed:
+  codex        Codex CLI (`codex --search exec`), signed in with ChatGPT. Model: GEO_CODEX_MODEL.
+  claude_code  Claude Code (`claude -p`) with only WebSearch and WebFetch. Model: GEO_CLAUDE_MODEL.
+Both run in an empty folder with user config, memory, skills and MCP servers switched off, and with a
+one-line assistant system prompt in place of the coding-agent prompt where the CLI allows it (Claude
+Code does; Codex keeps its own). Codex needs GEO_CODEX_HOME: a folder holding only a copy of
+~/.codex/auth.json, so ~/.codex/AGENTS.md, memories and skills are not loaded.
+
+The API engines (openai, anthropic, perplexity) are kept for a later run with API keys from
+OPENAI_API_KEY, ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, exported or as KEY=value lines in
+research/geo/.env (gitignored).
 
 Usage:
-  research/geo/.venv/bin/python research/geo/run.py --engines openai,anthropic,perplexity --runs 2
-  research/geo/.venv/bin/python research/geo/run.py --questions research/geo/baseline-ziqi.csv --engines perplexity --runs 1
+  research/geo/.venv/bin/python research/geo/run.py --engines codex,claude_code --runs 2
+  research/geo/.venv/bin/python research/geo/run.py --questions research/geo/baseline-ziqi.csv --runs 2
 
-Keys come from OPENAI_API_KEY, ANTHROPIC_API_KEY, PERPLEXITY_API_KEY, either exported or as
-KEY=value lines in research/geo/.env (gitignored). Exported values win.
 Output: research/geo/raw/<date>/<engine>.jsonl, one line per (question, run). Re-running skips
-lines that already exist, so an interrupted run can be resumed.
-
-The question is sent as-is, with no system prompt, so each engine answers the way it would answer a
-user. Google AI Overviews has no API and is captured by hand (see README).
+lines that already exist, so an interrupted run can be resumed. Google AI Overviews has no API and is
+captured in a logged-out browser (see README).
 """
 
 import argparse
@@ -19,7 +27,10 @@ import csv
 import datetime as dt
 import json
 import os
+import re
+import subprocess
 import sys
+import tempfile
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -34,6 +45,8 @@ if env_file.exists():
             os.environ.setdefault(key.strip(), value.strip().strip("'\""))
 
 MODELS = {
+    "codex": os.environ.get("GEO_CODEX_MODEL", "gpt-6-sol"),
+    "claude_code": os.environ.get("GEO_CLAUDE_MODEL", "claude-sonnet-5-5"),
     "openai": os.environ.get("GEO_OPENAI_MODEL", "gpt-5"),
     "anthropic": os.environ.get("GEO_ANTHROPIC_MODEL", "claude-opus-5-5"),
     "perplexity": os.environ.get("GEO_PERPLEXITY_MODEL", "fast"),
@@ -104,13 +117,79 @@ def ask_perplexity(question, model):
     return "".join(text), cited, [], data
 
 
-ENGINES = {"openai": ask_openai, "anthropic": ask_anthropic, "perplexity": ask_perplexity}
+LINK = re.compile(r"\]\((https?://[^)\s]+)\)|(https?://[^\s)\]>\"'<]+)")
+
+
+def links(text):
+    out = []
+    for m in LINK.finditer(text or ""):
+        url = (m.group(1) or m.group(2)).rstrip(".,;:")
+        if url not in out:
+            out.append(url)
+    return out
+
+
+def ask_codex(question, model):
+    home = os.environ["GEO_CODEX_HOME"]
+    with tempfile.TemporaryDirectory() as cwd:
+        cmd = ["codex", "--search", "exec", "--json", "--skip-git-repo-check", "--ephemeral",
+               "--ignore-rules", "-s", "read-only", "-m", model, question]
+        p = subprocess.run(cmd, cwd=cwd, env={**os.environ, "CODEX_HOME": home}, stdin=subprocess.DEVNULL,
+                           capture_output=True, text=True, timeout=900)
+    events = [json.loads(l) for l in p.stdout.splitlines() if l.startswith("{")]
+    messages = [e["item"]["text"] for e in events
+                if e.get("type") == "item.completed" and e["item"].get("type") == "agent_message"]
+    if p.returncode or not messages:
+        raise RuntimeError(f"codex exit {p.returncode}: {p.stderr[-500:]}")
+    answer = messages[-1]
+    retrieved = []
+    for e in events:
+        item = e.get("item") or {}
+        if e.get("type") == "item.completed" and item.get("type") == "web_search":
+            for r in item.get("results") or []:
+                if r.get("url"):
+                    retrieved.append({"url": r["url"], "title": r.get("title")})
+            if (item.get("action") or {}).get("url"):
+                retrieved.append({"url": item["action"]["url"], "title": None})
+    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": events}
+
+
+CLAUDE_SYSTEM = ("You are Claude, an AI assistant made by Anthropic. The current date is {date}. "
+                 "Search the web when a question needs current information.")
+
+
+def ask_claude_code(question, model):
+    with tempfile.TemporaryDirectory() as cwd:
+        cmd = ["claude", "-p", question, "--model", model,
+               "--system-prompt", CLAUDE_SYSTEM.format(date=dt.date.today().isoformat()),
+               "--tools", "WebSearch,WebFetch", "--allowedTools", "WebSearch", "WebFetch",
+               "--setting-sources", "", "--strict-mcp-config", "--disable-slash-commands",
+               "--no-session-persistence", "--output-format", "stream-json", "--verbose"]
+        p = subprocess.run(cmd, cwd=cwd, stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=900)
+    events = [json.loads(l) for l in p.stdout.splitlines() if l.startswith("{")]
+    result = next((e for e in events if e.get("type") == "result"), None)
+    if p.returncode or not result or result.get("subtype") != "success":
+        raise RuntimeError(f"claude exit {p.returncode}: {(result or {}).get('subtype')} {p.stderr[-500:]}")
+    retrieved = []
+    for e in events:
+        if e.get("type") != "user":
+            continue
+        for block in e["message"].get("content") or []:
+            if isinstance(block, dict) and block.get("type") == "tool_result":
+                content = block.get("content")
+                text = content if isinstance(content, str) else json.dumps(content)
+                retrieved += [{"url": u, "title": None} for u in links(text)]
+    answer = result["result"]
+    return answer, [{"url": u, "title": None} for u in links(answer)], retrieved, {"events": events}
+
+
+ENGINES = {"codex": ask_codex, "claude_code": ask_claude_code, "openai": ask_openai, "anthropic": ask_anthropic, "perplexity": ask_perplexity}
 
 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--questions", default=str(HERE / "questions.csv"))
-    p.add_argument("--engines", default="openai,anthropic,perplexity")
+    p.add_argument("--engines", default="codex,claude_code")
     p.add_argument("--runs", type=int, default=2)
     p.add_argument("--date", default=dt.date.today().isoformat())
     p.add_argument("--limit", type=int, default=0, help="only the first N questions (smoke test)")
