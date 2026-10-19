@@ -1,47 +1,56 @@
 ---
-title: AI Attention Tracker, a Daily Market Signal Dashboard
-summary: A live dashboard that tracks which AI topics are gaining share of attention on Hacker News and Hugging Face, rebuilt every morning from public data and checked by an AI reviewer before it goes live.
+title: AI Attention Tracker, a Daily Dashboard of AI Topic Trends
+summary: I built an automated dashboard in Python and SQL that shows which AI topics are gaining ground with developers, researchers and model builders, so a marketer can see where interest is moving.
 metric: "2.6M"
-metricLabel: stories, papers and models tracked since January 2025
+metricLabel: stories, papers and models analyzed, refreshed every morning
 org: Independent project
 period: "2026"
-role: Analyst and builder
+role: Sole analyst and builder
 order: 1.5
 featured: true
 wide: true
 tint: gray
 cover: ../../assets/work/attention-tracker.png
-coverAlt: Chart of AI topics rising on Hacker News in the last 30 days, comparing each topic's share with the 90 days before
+coverAlt: The dashboard's summary tiles and its chart of AI topics rising on Hacker News in the last 30 days
 coverFit: cover
 status: ready
 ---
 
-## At a Glance
+**[Open the live dashboard](https://ziqiwang-zoe.github.io/ai-attention-tracker/)** · [Code and data on GitHub](https://github.com/ZiqiWang-Zoe/ai-attention-tracker)
 
-- **The question:** where is attention in AI moving, and which audience notices first?
-- **What it tracks:** every Hacker News story, every paper featured on Hugging Face, and every public model uploaded to the Hugging Face Hub, each day since January 1, 2025.
-- **What it shows:** each topic's share of everything on that source, so growth in the source itself doesn't look like growth in a topic.
-- **How often:** every morning, with each day's results saved so the history stays visible.
+## What I Built
 
-[Open the live dashboard](https://ziqiwang-zoe.github.io/ai-attention-tracker/) · [Code and data](https://github.com/ZiqiWang-Zoe/ai-attention-tracker)
+A public dashboard that tracks 59 AI topics across three places where AI work shows up first: Hacker News (what developers discuss), Hugging Face's daily papers (what researchers publish) and the Hugging Face Hub (what model builders release). Every morning it collects the previous day's data, updates the numbers and publishes a new snapshot.
 
-## Why Share, Not Counts
+## My Contribution
 
-Hacker News, Hugging Face papers and the Hub all grow over time, so raw counts rise for almost every topic. The dashboard divides each topic by the source's total for the same days. A topic counts as rising when its share in the last 30 days is higher than in the 90 days before.
+- **Framed the question and the metric.** Each topic is measured as a share of everything posted on that source, so the growth of the source itself doesn't look like growth in a topic.
+- **Defined the 59 topics** and the keyword rules behind them, including competing terms such as "open weights" and "open source".
+- **Wrote the data collection** in Python against the Hacker News and Hugging Face APIs: about 2.6 million items since January 2025.
+- **Wrote the analysis in SQL** (DuckDB): monthly share by topic and a ranked list of rising topics.
+- **Designed and built the dashboard**, including the charts, topic comparison and the evidence links behind each number.
+- **Automated the daily refresh**, with an AI review step that checks the numbers before anything goes live.
 
-## What the First Run Found
+I used Claude Code and Codex as coding assistants throughout.
 
-When the dashboard first went live (data through October 17, 2026), one topic was rising on all three sources at once: **computer and browser use**, AI that operates a browser or desktop for you. Its share was up 1.6x on Hacker News, 1.9x in research papers and 2.1x among model uploaders. Over the longer run, agents went from 11% to 34% of featured papers between early 2025 and the third quarter of 2026.
+**Skills shown:** Python, SQL, API data collection, data quality checks, dashboard design, automation and turning data into marketing recommendations.
 
-For a marketer, a topic rising with developers, researchers and model builders at the same time is one message that can work for all three audiences. A topic rising in papers but not yet on Hacker News is a chance to explain it before the developer crowd arrives.
+## Key Finding
 
-## How It Works
+When the dashboard first went live (data through October 17, 2026), one topic was gaining share on all three sources at once: **computer and browser use**, AI that operates a browser or desktop for you. Its share was up 1.6x on Hacker News, 1.9x in research papers and 2.1x among model uploaders, and the rise was spread across many days rather than one spike.
 
-1. **Collect.** Python scripts pull every item from the Hacker News and Hugging Face APIs each day, not only AI items, so the totals are honest.
-2. **Match.** Each item is matched to 59 topics with keyword rules I wrote and keep refining. On Hacker News, generic topics such as "medical" only count when the title also mentions AI.
-3. **Analyze.** SQL in DuckDB turns daily counts into monthly share of voice and a ranked list of rising topics.
-4. **Check.** Before each update goes live, Codex reviews the new numbers for broken collection, one-day spikes and bad keyword matches. Its first two reviews caught five matching problems, which I fixed before launch.
-5. **Publish.** The page rebuilds automatically and keeps a snapshot of every day's rankings.
+Over the longer run, agents went from 11% to 34% of featured research papers between early 2025 and the third quarter of 2026.
+
+## What a Marketer Could Do With It
+
+- **If you market an agent or automation product to developers,** computer use is a theme developers, researchers and model builders are all moving toward right now, so one message can serve all three audiences.
+- **What to check first:** search interest and your own pipeline. This data measures what people post and build, not what customers buy.
+
+The dashboard writes suggestions like these from the latest numbers every day, and labels them as leads to check rather than conclusions.
+
+## How I Checked the Data
+
+Before each update goes live, Codex reviews the new numbers for broken collection, one-day spikes and bad keyword matches. Its first reviews caught five problems, which I fixed before launch. One example: model tags containing "perplexity", an evaluation metric, were being counted as Perplexity, the AI search company. I added an exclude rule and re-ran the full history, and AI search dropped out of the list of rising topics for models, where it had been ranked first.
 
 ## What the Dashboard Lets You Do
 
@@ -49,8 +58,6 @@ For a marketer, a topic rising with developers, researchers and model builders a
 - **Compare words.** Put up to three topics side by side for any range of months. "Open weights" has been gaining on "open source" across all three sources, which matters for anyone positioning an AI model.
 - **See how the list moved.** Every day's rankings are saved, so you can go back and see what was new.
 
-## Limits I State on the Page
+## Limits
 
-Keyword matching misses items that never use the keywords and catches some that use them in another sense. Hacker News titles are short, so every topic is undercounted there. A rising share says more people wrote or built around a topic, not why.
-
-Related: my earlier [sector performance analysis of Yahoo Finance data](/work/yahoo-finance-analysis/), a one-day snapshot that led to this project's daily, share-based design.
+This measures activity, what people post, publish and release, not customer demand. Keyword matching misses items that never use the keywords and catches some that use them in another sense. Hacker News titles are short, so every topic is undercounted there. A rising share says more people wrote or built around a topic, not why.

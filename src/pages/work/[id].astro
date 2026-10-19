@@ -36,7 +36,7 @@ const d = entry.data;
     {
       d.cover && (
         <figure class:list={['frame', d.coverFit === 'cover' && 'landscape']}>
-          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 960, 1280, 1600]} sizes="(max-width: 640px) 100vw, 592px" loading="eager" />
+          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 960, 1280, 1600, 1920]} sizes={d.coverFit === 'cover' ? '(max-width: 640px) 100vw, 912px' : '(max-width: 640px) 100vw, 592px'} loading="eager" />
         </figure>
       )
     }
