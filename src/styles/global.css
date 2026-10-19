@@ -82,7 +82,8 @@ img {
 
 .label {
   font-size: 13px;
-  color: var(--faint);
+  font-weight: 500;
+  color: var(--muted);
   margin-bottom: 16px;
 }
 

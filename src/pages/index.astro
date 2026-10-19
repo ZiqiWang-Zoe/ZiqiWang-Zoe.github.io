@@ -6,6 +6,7 @@ import Base from '../layouts/Base.astro';
 import WorkCard from '../components/WorkCard.astro';
 import IconLink from '../components/IconLink.astro';
 import seal from '@phosphor-icons/core/assets/regular/seal-check.svg?raw';
+import arrowOut from '@phosphor-icons/core/assets/regular/arrow-up-right.svg?raw';
 import { site, SHOW_PLACEHOLDERS, showDraft } from '../site';
 
 const work = (await getCollection('work'))
@@ -71,14 +72,15 @@ const education = [
 ];
 
 const certs = [
-  { name: 'Google Data Analytics', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/3BPH4R94PCVL' },
-  { name: 'Google AI Essentials', issuer: 'Google, Coursera', when: '2026', url: 'https://www.coursera.org/account/accomplishments/specialization/51J86WZ63O1G' },
-  { name: 'Google Analytics (GAIQ)', issuer: 'Google', when: '2025', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
-  { name: 'Google Ads Search', issuer: 'Google', when: '2023', id: '195888093' },
-  { name: 'Google Ads Display', issuer: 'Google', when: '2023', id: '196427467' },
-  { name: 'Amazon Sponsored Ads', issuer: 'Amazon Ads', when: '2022', url: 'https://learningconsole.amazonadvertising.com/student/award/LeyCPjyFyDqyJmVoWernTgxY' },
-  { name: 'Social Media Monitoring', issuer: 'LinkedIn Learning', when: '2023', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
+  { name: 'Google Data Analytics', issuer: 'Google, Coursera', when: '2026', group: 'Analytics and AI', url: 'https://www.coursera.org/account/accomplishments/specialization/3BPH4R94PCVL' },
+  { name: 'Google AI Essentials', issuer: 'Google, Coursera', when: '2026', group: 'Analytics and AI', url: 'https://www.coursera.org/account/accomplishments/specialization/51J86WZ63O1G' },
+  { name: 'Google Analytics (GAIQ)', issuer: 'Google', when: '2025', group: 'Analytics and AI', url: 'https://skillshop.credential.net/999b3c90-1d12-484b-8c0b-2e656d71c151#acc.NxMrTO6C' },
+  { name: 'Google Ads Search', issuer: 'Google', when: '2023', group: 'Advertising and social', id: '195888093' },
+  { name: 'Google Ads Display', issuer: 'Google', when: '2023', group: 'Advertising and social', id: '196427467' },
+  { name: 'Amazon Sponsored Ads', issuer: 'Amazon Ads', when: '2022', group: 'Advertising and social', url: 'https://learningconsole.amazonadvertising.com/student/award/LeyCPjyFyDqyJmVoWernTgxY' },
+  { name: 'Social Media Monitoring', issuer: 'LinkedIn Learning', when: '2023', group: 'Advertising and social', url: 'https://www.linkedin.com/learning/certificates/41c38e4a1d0e02eaa22ba31bf0d521481b02b3c78d5f7c2ce2cbaeafa962c09e' },
 ];
+const certGroups = ['Analytics and AI', 'Advertising and social'].map((g) => ({ name: g, items: certs.filter((c) => c.group === g) }));
 
 
 ---
@@ -165,27 +167,36 @@ const certs = [
 
   <section class="wrap certs-strip" aria-labelledby="certs-title">
     <h2 id="certs-title" class="label">Certifications</h2>
-    <ul class="certs">
+    <div class="cert-groups">
       {
-        certs.map((c) => (
-          <li class="cert">
-            <span class="seal" set:html={seal} />
-            <span class="cert-text">
-              <span class="cert-name">{c.name}</span>
-              <span class="cert-meta">
-                {c.issuer}, {c.when}
-                {c.id && <>. ID {c.id}</>}
-              </span>
-            </span>
-            {c.url && (
-              <a class="verify" href={c.url} target="_blank" rel="noopener" aria-label={`Verify ${c.name}`}>
-                Verify
-              </a>
-            )}
-          </li>
+        certGroups.map((g) => (
+          <div>
+            <h3 class="cert-group">{g.name}</h3>
+            <ul class="certs">
+              {g.items.map((c) => {
+                const inner = (
+                  <>
+                    <span class="seal" set:html={seal} />
+                    <span class="cert-name">{c.name}</span>
+                    <span class="cert-meta">{c.issuer}, {c.when}</span>
+                    {c.url ? <span class="out" set:html={arrowOut} /> : <span class="out" aria-hidden="true" />}
+                  </>
+                );
+                return (
+                  <li>
+                    {c.url ? (
+                      <a class="cert" href={c.url} target="_blank" rel="noopener" title={`View the ${c.name} credential`}>{inner}</a>
+                    ) : (
+                      <span class="cert" title={c.id ? `Credential ID ${c.id}` : undefined}>{inner}</span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         ))
       }
-    </ul>
+    </div>
   </section>
 
   <section class="wrap" id="work">
@@ -349,7 +360,7 @@ const certs = [
     list-style: none;
     padding: 0;
     margin: 16px 0 0;
-    max-width: 760px;
+    max-width: 1100px;
     border-top: 1px solid var(--line);
   }
   .post {
@@ -367,7 +378,7 @@ const certs = [
     text-underline-offset: 3px;
   }
   .post-summary {
-    grid-column: 1;
+    grid-column: 1 / -1;
     font-size: 14px;
   }
   .post-date {
@@ -387,7 +398,7 @@ const certs = [
     text-underline-offset: 3px;
   }
   .certs-strip {
-    margin-top: 72px;
+    margin-top: 64px;
   }
   @media (max-width: 640px) {
     .post {
@@ -474,36 +485,64 @@ const certs = [
     color: var(--accent);
     margin-top: 4px;
   }
-  .certs {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0 0;
+  .cert-groups {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 48px;
-    max-width: 960px;
+    max-width: 1100px;
+    margin-top: 16px;
+  }
+  .cert-group {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--faint);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .certs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   .cert {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
     align-items: center;
-    gap: 12px;
+    column-gap: 12px;
     padding: 12px 0;
     border-bottom: 1px solid var(--line);
+    position: relative;
+    isolation: isolate;
+  }
+  /* Hover tint drawn behind the row, a little wider than the text, so the dividers stay aligned. */
+  a.cert::before {
+    content: '';
+    position: absolute;
+    inset: 3px -8px;
+    z-index: -1;
+    border-radius: 6px;
+    background: #eef1fc;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  a.cert:hover::before {
+    opacity: 1;
+  }
+  a.cert:focus-visible {
+    outline: none;
+  }
+  a.cert:focus-visible::before {
+    opacity: 1;
+    box-shadow: inset 0 0 0 2px #b9c5f4;
   }
   .seal {
     display: grid;
-    flex: none;
     color: var(--accent);
   }
   .seal :global(svg) {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
-  }
-  .cert-text {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
   }
   .cert-name {
     font-weight: 500;
@@ -511,20 +550,49 @@ const certs = [
   .cert-meta {
     font-size: 13px;
     color: var(--faint);
+    white-space: nowrap;
   }
-  .verify {
-    margin-left: auto;
-    flex: none;
-    font-size: 13px;
-    color: var(--accent);
+  .out {
+    display: grid;
+    color: #667085;
+    transition: color 0.15s, transform 0.15s;
   }
-  .verify:hover {
+  .out :global(svg) {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
+  a.cert:hover .cert-name {
     text-decoration: underline;
     text-underline-offset: 3px;
   }
-  @media (max-width: 640px) {
-    .certs {
+  a.cert:hover .out {
+    color: var(--accent);
+    transform: translate(2px, -2px);
+  }
+  .out:empty {
+    width: 14px;
+  }
+  @media (max-width: 767px) {
+    .cert-groups {
       grid-template-columns: minmax(0, 1fr);
+      row-gap: 32px;
+    }
+  }
+  @media (max-width: 420px) {
+    .cert {
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: start;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .seal,
+    .out {
+      margin-top: 2px;
+    }
+    .cert-meta {
+      grid-column: 2;
+      grid-row: 2;
     }
   }
 
