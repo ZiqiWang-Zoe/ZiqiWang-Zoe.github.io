@@ -43,6 +43,14 @@ For a marketer, a topic rising with developers, researchers and model builders a
 4. **Check.** Before each update goes live, Codex reviews the new numbers for broken collection, one-day spikes and bad keyword matches. Its first two reviews caught five matching problems, which I fixed before launch.
 5. **Publish.** The page rebuilds automatically and keeps a snapshot of every day's rankings.
 
+## What the Dashboard Lets You Do
+
+- **Check the evidence.** Click any rising topic to see the most-upvoted stories, papers or models behind it, with links. Mistral's jump on Hacker News, for example, traces back to the Mistral Large 4 launch.
+- **Compare words.** Put up to three topics side by side for any range of months. "Open weights" has been gaining on "open source" across all three sources, which matters for anyone positioning an AI model.
+- **See how the list moved.** Every day's rankings are saved, so you can go back and see what was new.
+
 ## Limits I State on the Page
 
 Keyword matching misses items that never use the keywords and catches some that use them in another sense. Hacker News titles are short, so every topic is undercounted there. A rising share says more people wrote or built around a topic, not why.
+
+Related: my earlier [sector performance analysis of Yahoo Finance data](/work/yahoo-finance-analysis/), a one-day snapshot that led to this project's daily, share-based design.
