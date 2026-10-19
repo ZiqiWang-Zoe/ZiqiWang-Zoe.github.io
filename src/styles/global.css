@@ -7,7 +7,7 @@
   --card: #ffffff;
   --fg: #151618;
   --muted: #555963;
-  --faint: #737780;
+  --faint: #656a73;
   --line: #e6e6e8;
   --accent: #2346c7;
   --tint-blue: #e9edfb;
@@ -82,7 +82,8 @@ img {
 
 .label {
   font-size: 13px;
-  color: var(--faint);
+  font-weight: 500;
+  color: var(--muted);
   margin-bottom: 16px;
 }
 
