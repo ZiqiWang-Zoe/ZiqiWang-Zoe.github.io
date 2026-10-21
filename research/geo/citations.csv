@@ -514,7 +514,7 @@ codex,1,LC-04,LangChain,no,https://langfuse.com/docs/administration/billable-uni
 codex,1,LC-04,LangChain,no,https://www.braintrust.dev/docs/guides/datasets,braintrust.dev,,competitor,Braintrust,
 codex,1,LC-04,LangChain,no,https://docs.langchain.com/langsmith/evaluation-types,docs.langchain.com,,own,LangChain,
 codex,1,LC-04,LangChain,no,https://arize.com/docs/phoenix/,arize.com,,competitor,Arize Phoenix,
-codex,1,LC-04,LangChain,no,https://www.promptfoo.dev/docs/integrations/ci-cd/,promptfoo.dev,,third_party,,platform docs
+codex,1,LC-04,LangChain,no,https://www.promptfoo.dev/docs/integrations/ci-cd/,promptfoo.dev,,third_party,,other vendor
 claude_code,2,MIN-07,Mintlify,yes,https://www.mintlify.com/library/mintlify-vs-gitbook,mintlify.com,,own,Mintlify,
 claude_code,2,MIN-07,Mintlify,yes,https://www.gitbook.com/blog/gitbook-vs-mintlify,gitbook.com,,competitor,GitBook,
 claude_code,2,MIN-07,Mintlify,yes,https://www.featurebase.app/blog/gitbook-vs-mintlify,featurebase.app,,third_party,,other vendor
@@ -1041,7 +1041,7 @@ aio,1,AAI-10,AssemblyAI,yes,,www.usagepricing.com,AssemblyAI Pricing,third_party
 aio,1,AAI-10,AssemblyAI,yes,,www.usagepricing.com,AssemblyAI Pricing Calculator,third_party,,review or comparison site
 aio,1,AAI-10,AssemblyAI,yes,,Cekura,"AssemblyAI Pricing 2026: Every Product, Rate & Add-On",third_party,,other vendor
 aio,1,AAI-10,AssemblyAI,yes,,Gladia | AI,AssemblyAI Pricing: Worth It or Consider Gladia? - Gladia,competitor,Gladia,
-aio,1,AAI-10,AssemblyAI,yes,,www.haktansuren.com,AWS Transcribe Pricing vs AssemblyAI (2026),third_party,,other vendor
+aio,1,AAI-10,AssemblyAI,yes,,www.haktansuren.com,AWS Transcribe Pricing vs AssemblyAI (2026),third_party,,community or blog
 aio,1,AAI-11,AssemblyAI,yes,,AssemblyAI,AI-powered call analytics: How to extract insights from customer conversations,own,AssemblyAI,
 aio,1,AAI-11,AssemblyAI,yes,,G2,AssemblyAI - Speech to Text API Reviews & Product Details - G2,third_party,,review or comparison site
 aio,1,AAI-11,AssemblyAI,yes,,Forma Nôrden,Best APIs for Transcribing and Analyzing Sales Calls,third_party,,other vendor

@@ -1,17 +1,17 @@
 engine,run,qid,company,intent,branded,searched,mentioned,position,vendors_named,first_named,citations,citations_own,citations_competitor,citations_third_party,top_pick,recommended,claims_correct,claims_wrong,claims_missing,judged_by
-codex,2,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;ReadMe;Fern;Docusaurus,Mintlify,6,2,4,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;Scalar,Mintlify,6,2,4,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;Docusaurus,Mintlify,6,3,2,1,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;GitBook;Docusaurus,Mintlify,4,1,3,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify,Mintlify,1,1,0,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify;ReadMe,Mintlify,2,1,1,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-05,Mintlify,use-case,no,yes,yes,1,Mintlify;Docusaurus;GitBook,Mintlify,3,2,1,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-04,Mintlify,use-case,no,yes,no,,,,4,0,0,4,OpenAPI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-05,Mintlify,use-case,no,yes,yes,3,GitBook;Docusaurus;Mintlify,GitBook,3,1,2,0,GitBook,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-04,Mintlify,use-case,no,yes,no,,,,3,0,0,3,OpenAPI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,2,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;ReadMe;Fern;Docusaurus,Mintlify,6,2,4,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;Scalar,Mintlify,6,2,4,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;Docusaurus,Mintlify,6,3,2,1,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;Fern;ReadMe;GitBook;Docusaurus,Mintlify,4,1,3,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify,Mintlify,1,1,0,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify;ReadMe,Mintlify,2,1,1,0,,no,,,,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
+codex,1,MIN-05,Mintlify,use-case,no,yes,yes,1,Mintlify;Docusaurus;GitBook,Mintlify,3,2,1,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-04,Mintlify,use-case,no,yes,no,,,,4,0,0,4,OpenAPI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-05,Mintlify,use-case,no,yes,yes,3,GitBook;Docusaurus;Mintlify,GitBook,3,1,2,0,GitBook,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-04,Mintlify,use-case,no,yes,no,,,,3,0,0,3,OpenAPI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,2,MIN-07,Mintlify,comparison,yes,yes,yes,1,Mintlify;GitBook,Mintlify,4,1,3,0,,,,,,
-codex,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;Fern;ReadMe;Redocly,Mintlify,10,2,8,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;Fern;ReadMe;Redocly,Mintlify,13,2,8,3,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;Fern;ReadMe;Redocly,Mintlify,10,2,8,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;Fern;ReadMe;Redocly,Mintlify,13,2,8,3,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,1,MIN-07,Mintlify,comparison,yes,yes,yes,1,Mintlify;GitBook,Mintlify,6,3,3,0,,,,,,
 codex,1,MIN-08,Mintlify,comparison,yes,yes,yes,1,Mintlify;ReadMe,Mintlify,7,3,4,0,,,,,,
 codex,2,MIN-08,Mintlify,comparison,yes,yes,yes,1,Mintlify;ReadMe,Mintlify,5,2,3,0,,,,,,
@@ -23,18 +23,18 @@ codex,1,MIN-11,Mintlify,fit,yes,yes,yes,1,Mintlify;Docusaurus,Mintlify,5,3,1,1,,
 codex,2,MIN-11,Mintlify,fit,yes,yes,yes,1,Mintlify;Docusaurus,Mintlify,5,3,1,1,,,,,,
 codex,1,MIN-12,Mintlify,brand,yes,yes,yes,1,Mintlify,Mintlify,3,3,0,0,,,,,,
 codex,2,MIN-12,Mintlify,brand,yes,yes,yes,1,Mintlify,Mintlify,2,2,0,0,,,,,,
-codex,1,EXA-02,Exa,category,no,yes,no,,,,1,0,0,1,OpenAI web_search tool (Responses API),no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-02,Exa,category,no,yes,no,,,,1,0,0,1,OpenAI Responses API web_search tool,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-01,Exa,category,no,yes,yes,2,Brave Search API;Exa;Tavily;SerpAPI,Brave Search API,5,1,4,0,Brave Search API (LLM Context endpoint),no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-01,Exa,category,no,yes,yes,3,Tavily;Brave Search API;Exa;Perplexity Sonar,Tavily,7,2,5,0,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-03,Exa,use-case,no,yes,yes,3,Tavily;Brave Search API;Exa,Tavily,4,1,2,1,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-03,Exa,use-case,no,yes,yes,3,Tavily;Brave Search API;Exa,Tavily,6,1,4,1,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-04,Exa,use-case,no,yes,yes,1,Exa;Tavily;Firecrawl;Jina;Brave Search API,Exa,6,1,5,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-04,Exa,use-case,no,yes,yes,1,Exa;Tavily;Firecrawl;Brave Search API,Exa,4,1,2,1,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-05,Exa,use-case,no,yes,yes,1,Exa,Exa,3,1,0,2,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-05,Exa,use-case,no,yes,yes,1,Exa,Exa,3,1,0,2,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-06,Exa,use-case,no,yes,yes,4,Brave Search API;Bing Search API;Tavily;Exa;SerpAPI,Brave Search API,8,1,3,4,Brave Search API,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-06,Exa,use-case,no,yes,no,,Brave Search API;Bing Search API;Tavily,Brave Search API,8,0,3,5,Brave Search API,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,1,EXA-02,Exa,category,no,yes,no,,,,1,0,0,1,OpenAI web_search tool (Responses API),no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-02,Exa,category,no,yes,no,,,,1,0,0,1,OpenAI Responses API web_search tool,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-01,Exa,category,no,yes,yes,2,Brave Search API;Exa;Tavily;SerpAPI,Brave Search API,5,1,4,0,Brave Search API (LLM Context endpoint),no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-01,Exa,category,no,yes,yes,3,Tavily;Brave Search API;Exa;Perplexity Sonar,Tavily,7,2,5,0,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-03,Exa,use-case,no,yes,yes,3,Tavily;Brave Search API;Exa,Tavily,4,1,2,1,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-03,Exa,use-case,no,yes,yes,3,Tavily;Brave Search API;Exa,Tavily,6,1,4,1,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-04,Exa,use-case,no,yes,yes,1,Exa;Tavily;Firecrawl;Jina;Brave Search API,Exa,6,1,5,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-04,Exa,use-case,no,yes,yes,1,Exa;Tavily;Firecrawl;Brave Search API,Exa,4,1,2,1,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-05,Exa,use-case,no,yes,yes,1,Exa,Exa,3,1,0,2,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-05,Exa,use-case,no,yes,yes,1,Exa,Exa,3,1,0,2,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-06,Exa,use-case,no,yes,yes,4,Brave Search API;Bing Search API;Tavily;Exa;SerpAPI,Brave Search API,8,1,3,4,Brave Search API,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-06,Exa,use-case,no,yes,no,,Brave Search API;Bing Search API;Tavily,Brave Search API,8,0,3,5,Brave Search API,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,1,EXA-07,Exa,comparison,yes,yes,yes,2,Tavily;Exa,Tavily,4,2,2,0,,,,,,
 codex,2,EXA-07,Exa,comparison,yes,yes,yes,1,Exa;Tavily,Exa,4,2,2,0,,,,,,
 codex,1,EXA-08,Exa,comparison,yes,yes,yes,1,Exa;Perplexity Sonar,Exa,4,1,3,0,,,,,,
@@ -47,18 +47,18 @@ codex,1,EXA-12,Exa,brand,yes,yes,yes,1,Exa,Exa,3,2,0,1,,,,,,
 codex,1,EXA-11,Exa,fit,yes,yes,yes,1,Exa,Exa,5,5,0,0,,,,,,
 codex,2,EXA-11,Exa,fit,yes,yes,yes,1,Exa,Exa,3,3,0,0,,,,,,
 codex,2,EXA-12,Exa,brand,yes,yes,yes,1,Exa,Exa,3,3,0,0,,,,,,
-codex,1,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;SambaNova;Groq,Cerebras,1,0,0,1,Cerebras Inference,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;SambaNova;Groq,Cerebras,1,0,0,1,Cerebras Inference,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-02,Fireworks AI,category,no,yes,yes,1,Fireworks AI;Baseten,Fireworks AI,6,1,1,4,vLLM,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-02,Fireworks AI,category,no,yes,yes,1,Fireworks AI;Together AI,Fireworks AI,7,1,1,5,vLLM,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,5,0,4,1,OpenRouter,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-04,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Modal,Fireworks AI,4,1,1,2,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter;DeepInfra,OpenRouter,4,0,3,1,OpenRouter,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-04,Fireworks AI,use-case,no,yes,yes,3,Together AI;Modal;Fireworks AI,Together AI,4,1,2,1,Together AI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Cerebras,Fireworks AI,3,2,1,0,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-05,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Groq;AWS Bedrock;OpenRouter,Fireworks AI,8,1,4,3,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Groq,Fireworks AI,4,2,2,0,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-05,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Groq;Cerebras;AWS Bedrock;OpenRouter,Fireworks AI,10,1,4,5,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,1,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;SambaNova;Groq,Cerebras,1,0,0,1,Cerebras Inference,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;SambaNova;Groq,Cerebras,1,0,0,1,Cerebras Inference,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-02,Fireworks AI,category,no,yes,yes,1,Fireworks AI;Baseten,Fireworks AI,6,1,1,4,vLLM,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-02,Fireworks AI,category,no,yes,yes,1,Fireworks AI;Together AI,Fireworks AI,7,1,1,5,vLLM,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,5,0,4,1,OpenRouter,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-04,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Modal,Fireworks AI,4,1,1,2,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter;DeepInfra,OpenRouter,4,0,3,1,OpenRouter,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-04,Fireworks AI,use-case,no,yes,yes,3,Together AI;Modal;Fireworks AI,Together AI,4,1,2,1,Together AI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Cerebras,Fireworks AI,3,2,1,0,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-05,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Groq;AWS Bedrock;OpenRouter,Fireworks AI,8,1,4,3,,no,,,,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
+codex,1,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Groq,Fireworks AI,4,2,2,0,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-05,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Groq;Cerebras;AWS Bedrock;OpenRouter,Fireworks AI,10,1,4,5,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,2,FW-07,Fireworks AI,comparison,yes,yes,yes,1,Fireworks AI;Together AI,Fireworks AI,4,2,2,0,,,,,,
 codex,1,FW-08,Fireworks AI,comparison,yes,yes,yes,1,Fireworks AI;Groq,Fireworks AI,4,2,2,0,,,,,,
 codex,1,FW-07,Fireworks AI,comparison,yes,yes,yes,1,Fireworks AI;Together AI,Fireworks AI,5,2,3,0,,,,,,
@@ -71,20 +71,20 @@ codex,1,FW-09,Fireworks AI,alternatives,yes,yes,yes,1,Fireworks AI;Together AI;G
 codex,2,FW-12,Fireworks AI,brand,yes,yes,yes,1,Fireworks AI,Fireworks AI,2,2,0,0,,,,,,
 codex,1,FW-11,Fireworks AI,fit,yes,yes,yes,1,Fireworks AI,Fireworks AI,5,4,0,1,,,,,,
 codex,2,FW-11,Fireworks AI,fit,yes,yes,yes,1,Fireworks AI,Fireworks AI,7,6,0,1,,,,,,
-codex,1,AAI-01,AssemblyAI,category,no,yes,no,,ElevenLabs Scribe,ElevenLabs Scribe,3,0,1,2,Alibaba Cloud Fun-Realtime-ASR-preview,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-01,AssemblyAI,category,no,yes,no,,ElevenLabs Scribe,ElevenLabs Scribe,3,0,0,3,Alibaba Cloud Fun-Realtime-ASR-preview,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-02,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Deepgram;ElevenLabs Scribe,AssemblyAI,6,2,3,1,AssemblyAI Universal-3.5 Pro,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI,AssemblyAI,3,1,0,2,AssemblyAI Universal-3.5 Pro,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-02,AssemblyAI,category,no,yes,yes,2,Deepgram;AssemblyAI;AWS Transcribe,Deepgram,4,1,3,0,Deepgram Nova-3,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-04,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,3,1,2,0,AssemblyAI Universal-3.6 Pro Realtime,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI,AssemblyAI,5,2,0,3,pyannoteAI Precision-3,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI,Deepgram,3,1,2,0,Deepgram Flux,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-05,AssemblyAI,use-case,no,yes,no,,OpenAI Whisper,OpenAI Whisper,3,0,3,0,OpenAI gpt-transcribe,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-05,AssemblyAI,use-case,no,yes,no,,Deepgram;OpenAI Whisper,Deepgram,2,0,2,0,OpenAI gpt-transcribe,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-06,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;AWS Transcribe;Deepgram;Azure Speech,AssemblyAI,8,1,4,3,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,1,AAI-01,AssemblyAI,category,no,yes,no,,ElevenLabs Scribe,ElevenLabs Scribe,3,0,1,2,Alibaba Cloud Fun-Realtime-ASR-preview,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-01,AssemblyAI,category,no,yes,no,,ElevenLabs Scribe,ElevenLabs Scribe,3,0,0,3,Alibaba Cloud Fun-Realtime-ASR-preview,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-02,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Deepgram;ElevenLabs Scribe,AssemblyAI,6,2,3,1,AssemblyAI Universal-3.5 Pro,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI,AssemblyAI,3,1,0,2,AssemblyAI Universal-3.5 Pro,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-02,AssemblyAI,category,no,yes,yes,2,Deepgram;AssemblyAI;AWS Transcribe,Deepgram,4,1,3,0,Deepgram Nova-3,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-04,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,3,1,2,0,AssemblyAI Universal-3.6 Pro Realtime,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI,AssemblyAI,5,2,0,3,pyannoteAI Precision-3,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI,Deepgram,3,1,2,0,Deepgram Flux,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-05,AssemblyAI,use-case,no,yes,no,,OpenAI Whisper,OpenAI Whisper,3,0,3,0,OpenAI gpt-transcribe,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-05,AssemblyAI,use-case,no,yes,no,,Deepgram;OpenAI Whisper,Deepgram,2,0,2,0,OpenAI gpt-transcribe,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-06,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;AWS Transcribe;Deepgram;Azure Speech,AssemblyAI,8,1,4,3,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,2,AAI-07,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,2,1,1,0,,,,,,
 codex,1,AAI-07,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,3,1,2,0,,,,,,
-codex,2,AAI-06,AssemblyAI,use-case,no,yes,yes,3,AWS Transcribe;Deepgram;AssemblyAI;Azure Speech;Google Speech-to-Text,AWS Transcribe,6,1,2,3,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,2,AAI-06,AssemblyAI,use-case,no,yes,yes,3,AWS Transcribe;Deepgram;AssemblyAI;Azure Speech;Google Speech-to-Text,AWS Transcribe,6,1,2,3,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,1,AAI-08,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;OpenAI Whisper,AssemblyAI,4,1,2,1,,,,,,
 codex,1,AAI-10,AssemblyAI,pricing,yes,yes,yes,1,AssemblyAI,AssemblyAI,1,1,0,0,,,,,,
 codex,1,AAI-09,AssemblyAI,alternatives,yes,yes,yes,1,AssemblyAI;Deepgram;Speechmatics;Gladia;OpenAI Whisper;Google Speech-to-Text,AssemblyAI,10,1,8,1,,,,,,
@@ -95,18 +95,18 @@ codex,1,AAI-12,AssemblyAI,brand,yes,yes,yes,1,AssemblyAI,AssemblyAI,1,1,0,0,,,,,
 codex,2,AAI-12,AssemblyAI,brand,yes,yes,yes,1,AssemblyAI,AssemblyAI,2,2,0,0,,,,,,
 codex,1,AAI-11,AssemblyAI,fit,yes,yes,yes,1,AssemblyAI,AssemblyAI,5,5,0,0,,,,,,
 codex,2,AAI-11,AssemblyAI,fit,yes,yes,yes,1,AssemblyAI,AssemblyAI,3,3,0,0,,,,,,
-codex,2,LC-02,LangChain,category,no,yes,yes,2,LlamaIndex;LangChain;Haystack,LlamaIndex,4,1,2,1,LlamaIndex,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-01,LangChain,category,no,yes,yes,2,Pydantic AI;LangChain;OpenAI Agents SDK,Pydantic AI,4,1,3,0,PydanticAI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-01,LangChain,category,no,yes,yes,2,Pydantic AI;LangChain;OpenAI Agents SDK,Pydantic AI,3,1,1,1,Pydantic AI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-02,LangChain,category,no,yes,yes,2,LlamaIndex;LangChain;Haystack,LlamaIndex,3,1,2,0,LlamaIndex,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-04,LangChain,use-case,no,yes,yes,3,Langfuse;Braintrust;LangChain,Langfuse,4,1,3,0,Langfuse,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-03,LangChain,use-case,no,yes,no,,OpenAI Agents SDK,OpenAI Agents SDK,4,0,0,4,OpenAI Agents SDK,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-05,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;OpenAI Agents SDK,Mastra,5,1,3,1,Mastra,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-03,LangChain,use-case,no,yes,no,,OpenAI Agents SDK,OpenAI Agents SDK,6,0,0,6,OpenAI Agents SDK,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-05,LangChain,use-case,no,yes,yes,3,Mastra;OpenAI Agents SDK;LangChain,Mastra,7,1,4,2,Mastra,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-06,LangChain,use-case,no,yes,yes,1,LangChain;OpenAI Agents SDK;Microsoft Agent Framework;AutoGen;Semantic Kernel,LangChain,7,3,1,3,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,2,LC-02,LangChain,category,no,yes,yes,2,LlamaIndex;LangChain;Haystack,LlamaIndex,4,1,2,1,LlamaIndex,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-01,LangChain,category,no,yes,yes,2,Pydantic AI;LangChain;OpenAI Agents SDK,Pydantic AI,4,1,3,0,PydanticAI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-01,LangChain,category,no,yes,yes,2,Pydantic AI;LangChain;OpenAI Agents SDK,Pydantic AI,3,1,1,1,Pydantic AI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-02,LangChain,category,no,yes,yes,2,LlamaIndex;LangChain;Haystack,LlamaIndex,3,1,2,0,LlamaIndex,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-04,LangChain,use-case,no,yes,yes,3,Langfuse;Braintrust;LangChain,Langfuse,4,1,3,0,Langfuse,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-03,LangChain,use-case,no,yes,no,,OpenAI Agents SDK,OpenAI Agents SDK,4,0,0,4,OpenAI Agents SDK,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-05,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;OpenAI Agents SDK,Mastra,5,1,3,1,Mastra,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-03,LangChain,use-case,no,yes,no,,OpenAI Agents SDK,OpenAI Agents SDK,6,0,0,6,OpenAI Agents SDK,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-05,LangChain,use-case,no,yes,yes,3,Mastra;OpenAI Agents SDK;LangChain,Mastra,7,1,4,2,Mastra,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-06,LangChain,use-case,no,yes,yes,1,LangChain;OpenAI Agents SDK;Microsoft Agent Framework;AutoGen;Semantic Kernel,LangChain,7,3,1,3,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,1,LC-07,LangChain,comparison,yes,yes,yes,1,LangChain;LlamaIndex,LangChain,3,2,1,0,,,,,,
-codex,2,LC-06,LangChain,use-case,no,yes,yes,1,LangChain;OpenAI Agents SDK,LangChain,5,2,2,1,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,2,LC-06,LangChain,use-case,no,yes,yes,1,LangChain;OpenAI Agents SDK,LangChain,5,2,2,1,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 codex,2,LC-07,LangChain,comparison,yes,yes,yes,1,LangChain;LlamaIndex,LangChain,3,2,1,0,,,,,,
 codex,1,LC-08,LangChain,comparison,yes,yes,yes,2,CrewAI;LangChain,CrewAI,3,1,2,0,,,,,,
 codex,1,LC-09,LangChain,alternatives,yes,yes,yes,1,LangChain;LlamaIndex;Haystack;Pydantic AI;OpenAI Agents SDK;Microsoft Agent Framework;AutoGen;Semantic Kernel,LangChain,6,0,5,1,,,,,,
@@ -118,22 +118,22 @@ codex,2,LC-12,LangChain,brand,yes,yes,yes,1,LangChain,LangChain,3,3,0,0,,,,,,
 codex,1,LC-12,LangChain,brand,yes,yes,yes,1,LangChain,LangChain,2,2,0,0,,,,,,
 codex,1,LC-11,LangChain,fit,yes,yes,yes,1,LangChain;OpenAI Agents SDK,LangChain,4,3,1,0,,,,,,
 codex,2,LC-11,LangChain,fit,yes,yes,yes,1,LangChain;OpenAI Agents SDK,LangChain,4,2,1,1,,,,,,
-codex,1,LC-04,LangChain,use-case,no,yes,yes,3,Langfuse;Braintrust;LangChain;Arize Phoenix,Langfuse,7,1,5,1,Langfuse,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-02,Mintlify,category,no,no,yes,1,Mintlify;Fern;ReadMe;GitBook;Docusaurus;Nextra,Mintlify,0,0,0,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-01,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;Docusaurus;Fern;Stoplight;Redocly;Nextra;Scalar,Mintlify,0,0,0,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-01,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;Fern;Docusaurus;Nextra;Scalar;Redocly;GitBook;Stoplight,Mintlify,0,0,0,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-02,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;GitBook;Docusaurus;Nextra;Fern,Mintlify,0,0,0,0,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-03,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;Docusaurus;ReadMe;Document360,Mintlify,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-03,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;Docusaurus;ReadMe;Document360,Mintlify,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-05,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;ReadMe;Document360;Fern,Mintlify,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-05,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;ReadMe;Fern;Document360;Docusaurus,Mintlify,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-04,Mintlify,use-case,no,no,yes,1,Mintlify;Docusaurus;ReadMe,Mintlify,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-04,Mintlify,use-case,no,no,yes,2,Docusaurus;Mintlify;ReadMe,Docusaurus,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+codex,1,LC-04,LangChain,use-case,no,yes,yes,3,Langfuse;Braintrust;LangChain;Arize Phoenix,Langfuse,7,1,5,1,Langfuse,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-02,Mintlify,category,no,no,yes,1,Mintlify;Fern;ReadMe;GitBook;Docusaurus;Nextra,Mintlify,0,0,0,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-01,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;Docusaurus;Fern;Stoplight;Redocly;Nextra;Scalar,Mintlify,0,0,0,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-01,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;Fern;Docusaurus;Nextra;Scalar;Redocly;GitBook;Stoplight,Mintlify,0,0,0,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-02,Mintlify,category,no,no,yes,1,Mintlify;ReadMe;GitBook;Docusaurus;Nextra;Fern,Mintlify,0,0,0,0,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-03,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;Docusaurus;ReadMe;Document360,Mintlify,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-03,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;Docusaurus;ReadMe;Document360,Mintlify,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-05,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;ReadMe;Document360;Fern,Mintlify,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-05,Mintlify,use-case,no,no,yes,1,Mintlify;GitBook;ReadMe;Fern;Document360;Docusaurus,Mintlify,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-04,Mintlify,use-case,no,no,yes,1,Mintlify;Docusaurus;ReadMe,Mintlify,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-04,Mintlify,use-case,no,no,yes,2,Docusaurus;Mintlify;ReadMe,Docusaurus,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,MIN-07,Mintlify,comparison,yes,no,yes,1,Mintlify;GitBook,Mintlify,0,0,0,0,,,,,,
 claude_code,1,MIN-08,Mintlify,comparison,yes,no,yes,1,Mintlify;ReadMe,Mintlify,0,0,0,0,,,,,,
 claude_code,2,MIN-07,Mintlify,comparison,yes,yes,yes,1,Mintlify;GitBook,Mintlify,4,1,1,2,,,,,,
-claude_code,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;Fern;GitBook;ReadMe;Redocly;Docusaurus,Mintlify,4,2,0,2,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;ReadMe;Docusaurus,Mintlify,4,2,1,1,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;Fern;GitBook;ReadMe;Redocly;Docusaurus,Mintlify,4,2,0,2,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;GitBook;ReadMe;Docusaurus,Mintlify,4,2,1,1,,no,,,,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
 claude_code,2,MIN-09,Mintlify,alternatives,yes,no,yes,1,Mintlify;GitBook;ReadMe;Docusaurus;Fern;Redocly;Stoplight;Nextra;Document360,Mintlify,0,0,0,0,,,,,,
 claude_code,2,MIN-08,Mintlify,comparison,yes,no,yes,1,Mintlify;ReadMe,Mintlify,0,0,0,0,,,,,,
 claude_code,1,MIN-09,Mintlify,alternatives,yes,no,yes,1,Mintlify;GitBook;ReadMe;Docusaurus;Redocly;Fern;Document360;Nextra,Mintlify,0,0,0,0,,,,,,
@@ -143,18 +143,18 @@ claude_code,1,MIN-11,Mintlify,fit,yes,yes,yes,1,Mintlify;Docusaurus;GitBook,Mint
 claude_code,1,MIN-12,Mintlify,brand,yes,no,yes,1,Mintlify;Docusaurus;GitBook;ReadMe;Nextra,Mintlify,0,0,0,0,,,,,,
 claude_code,2,MIN-12,Mintlify,brand,yes,no,yes,1,Mintlify;Docusaurus;ReadMe;GitBook,Mintlify,0,0,0,0,,,,,,
 claude_code,2,MIN-11,Mintlify,fit,yes,yes,yes,1,Mintlify;Docusaurus;GitBook,Mintlify,3,1,1,1,,,,,,
-claude_code,2,EXA-02,Exa,category,no,no,yes,2,Tavily;Exa;Brave Search API;SerpAPI;Serper;Perplexity Sonar;Firecrawl;Jina,Tavily,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-02,Exa,category,no,no,yes,2,Tavily;Exa;Brave Search API;SerpAPI;Serper;Perplexity Sonar;Firecrawl;Jina,Tavily,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-01,Exa,category,no,yes,yes,2,Tavily;Exa;Brave Search API;Bing Search API;Serper;SerpAPI;Perplexity Sonar;Firecrawl,Tavily,6,0,2,4,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-01,Exa,category,no,yes,yes,3,Perplexity Sonar;Parallel;Exa;Brave Search API;Tavily;SerpAPI;You.com,Perplexity Sonar,6,0,4,2,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-03,Exa,use-case,no,no,yes,2,Tavily;Exa;Brave Search API;Perplexity Sonar;SerpAPI;Serper;Firecrawl;Jina,Tavily,0,0,0,0,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-04,Exa,use-case,no,no,yes,2,Tavily;Exa;Firecrawl;Jina;Parallel;You.com;Brave Search API;SerpAPI;Serper;Bing Search API,Tavily,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-04,Exa,use-case,no,no,yes,1,Exa;Tavily;Firecrawl;Jina;Perplexity Sonar;You.com;Brave Search API;Parallel;Bing Search API;SerpAPI;Serper,Exa,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-03,Exa,use-case,no,yes,yes,2,Tavily;Exa;Brave Search API;Bing Search API;Perplexity Sonar;Parallel,Tavily,4,0,2,2,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-05,Exa,use-case,no,no,yes,1,Exa;Brave Search API;Bing Search API,Exa,1,0,0,1,Exa,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-05,Exa,use-case,no,no,yes,1,Exa;Brave Search API;Bing Search API,Exa,1,0,0,1,Exa,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-06,Exa,use-case,no,no,yes,3,Bing Search API;Tavily;Exa;Perplexity Sonar;Brave Search API;Serper;SerpAPI;Firecrawl;Jina,Bing Search API,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-06,Exa,use-case,no,no,yes,4,Bing Search API;Brave Search API;Tavily;Exa;Perplexity Sonar;Firecrawl;You.com;Serper;SerpAPI,Bing Search API,0,0,0,0,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,2,EXA-02,Exa,category,no,no,yes,2,Tavily;Exa;Brave Search API;SerpAPI;Serper;Perplexity Sonar;Firecrawl;Jina,Tavily,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-02,Exa,category,no,no,yes,2,Tavily;Exa;Brave Search API;SerpAPI;Serper;Perplexity Sonar;Firecrawl;Jina,Tavily,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-01,Exa,category,no,yes,yes,2,Tavily;Exa;Brave Search API;Bing Search API;Serper;SerpAPI;Perplexity Sonar;Firecrawl,Tavily,6,0,2,4,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-01,Exa,category,no,yes,yes,3,Perplexity Sonar;Parallel;Exa;Brave Search API;Tavily;SerpAPI;You.com,Perplexity Sonar,6,0,4,2,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-03,Exa,use-case,no,no,yes,2,Tavily;Exa;Brave Search API;Perplexity Sonar;SerpAPI;Serper;Firecrawl;Jina,Tavily,0,0,0,0,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-04,Exa,use-case,no,no,yes,2,Tavily;Exa;Firecrawl;Jina;Parallel;You.com;Brave Search API;SerpAPI;Serper;Bing Search API,Tavily,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-04,Exa,use-case,no,no,yes,1,Exa;Tavily;Firecrawl;Jina;Perplexity Sonar;You.com;Brave Search API;Parallel;Bing Search API;SerpAPI;Serper,Exa,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-03,Exa,use-case,no,yes,yes,2,Tavily;Exa;Brave Search API;Bing Search API;Perplexity Sonar;Parallel,Tavily,4,0,2,2,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-05,Exa,use-case,no,no,yes,1,Exa;Brave Search API;Bing Search API,Exa,1,0,0,1,Exa,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-05,Exa,use-case,no,no,yes,1,Exa;Brave Search API;Bing Search API,Exa,1,0,0,1,Exa,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-06,Exa,use-case,no,no,yes,3,Bing Search API;Tavily;Exa;Perplexity Sonar;Brave Search API;Serper;SerpAPI;Firecrawl;Jina,Bing Search API,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-06,Exa,use-case,no,no,yes,4,Bing Search API;Brave Search API;Tavily;Exa;Perplexity Sonar;Firecrawl;You.com;Serper;SerpAPI,Bing Search API,0,0,0,0,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,EXA-07,Exa,comparison,yes,yes,yes,1,Exa;Tavily;Brave Search API;Serper;You.com,Exa,6,0,1,5,,,,,,
 claude_code,2,EXA-07,Exa,comparison,yes,yes,yes,2,Tavily;Exa;You.com,Tavily,5,0,1,4,,,,,,
 claude_code,2,EXA-08,Exa,comparison,yes,yes,yes,1,Exa;Perplexity Sonar,Exa,3,1,1,1,,,,,,
@@ -165,18 +165,18 @@ claude_code,2,EXA-10,Exa,pricing,yes,no,yes,1,Exa,Exa,1,1,0,0,,,,,,
 claude_code,1,EXA-12,Exa,brand,yes,yes,yes,1,Exa,Exa,4,1,0,3,,,,,,
 claude_code,2,EXA-12,Exa,brand,yes,yes,yes,1,Exa,Exa,4,0,0,4,,,,,,
 claude_code,1,EXA-08,Exa,comparison,yes,yes,yes,1,Exa;Perplexity Sonar,Exa,6,2,0,4,,,,,,
-claude_code,1,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;Groq;SambaNova,Cerebras,3,0,1,2,Cerebras,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-02,Fireworks AI,category,no,no,yes,2,Anyscale;Fireworks AI;Together AI;Baseten;DeepInfra;Groq;Cerebras;Modal;Replicate;AWS Bedrock,Anyscale,0,0,0,0,vLLM,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-02,Fireworks AI,category,no,no,yes,2,Together AI;Fireworks AI;Baseten;DeepInfra;Groq;Cerebras;AWS Bedrock;Modal,Together AI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;Groq;SambaNova,Cerebras,3,0,1,2,Cerebras,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-02,Fireworks AI,category,no,no,yes,2,Anyscale;Fireworks AI;Together AI;Baseten;DeepInfra;Groq;Cerebras;Modal;Replicate;AWS Bedrock,Anyscale,0,0,0,0,vLLM,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-02,Fireworks AI,category,no,no,yes,2,Together AI;Fireworks AI;Baseten;DeepInfra;Groq;Cerebras;AWS Bedrock;Modal,Together AI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,EXA-11,Exa,fit,yes,yes,yes,1,Exa;Brave Search API;Perplexity Sonar;Tavily;Bing Search API;Serper;Parallel,Exa,6,0,2,4,,,,,,
-claude_code,2,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,3,0,0,3,DeepSeek first-party API (deepseek-flash),no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-04,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;AWS Bedrock;Modal,Together AI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-04,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;AWS Bedrock;Modal,Together AI,0,0,0,0,Together AI,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-05,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;Groq;Cerebras;DeepInfra;Baseten;Modal;Replicate;OpenRouter;AWS Bedrock,Together AI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-03,Fireworks AI,use-case,no,yes,yes,2,OpenRouter;Fireworks AI;DeepInfra,OpenRouter,1,0,0,1,DeepSeek API,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-05,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;Groq;Cerebras;DeepInfra;Modal;Replicate;Baseten;OpenRouter;AWS Bedrock,Together AI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-06,Fireworks AI,use-case,no,no,yes,1,Fireworks AI;Together AI;Groq;Cerebras;OpenRouter,Fireworks AI,0,0,0,0,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Groq;Cerebras;Together AI;DeepInfra;OpenRouter,Fireworks AI,5,0,0,5,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,2,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,3,0,0,3,DeepSeek first-party API (deepseek-flash),no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-04,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;AWS Bedrock;Modal,Together AI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-04,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;AWS Bedrock;Modal,Together AI,0,0,0,0,Together AI,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-05,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;Groq;Cerebras;DeepInfra;Baseten;Modal;Replicate;OpenRouter;AWS Bedrock,Together AI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-03,Fireworks AI,use-case,no,yes,yes,2,OpenRouter;Fireworks AI;DeepInfra,OpenRouter,1,0,0,1,DeepSeek API,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-05,Fireworks AI,use-case,no,no,yes,2,Together AI;Fireworks AI;Groq;Cerebras;DeepInfra;Modal;Replicate;Baseten;OpenRouter;AWS Bedrock,Together AI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-06,Fireworks AI,use-case,no,no,yes,1,Fireworks AI;Together AI;Groq;Cerebras;OpenRouter,Fireworks AI,0,0,0,0,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Groq;Cerebras;Together AI;DeepInfra;OpenRouter,Fireworks AI,5,0,0,5,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,FW-07,Fireworks AI,comparison,yes,no,yes,1,Fireworks AI;Together AI,Fireworks AI,0,0,0,0,,,,,,
 claude_code,2,FW-07,Fireworks AI,comparison,yes,no,yes,1,Fireworks AI;Together AI,Fireworks AI,0,0,0,0,,,,,,
 claude_code,1,FW-08,Fireworks AI,comparison,yes,yes,yes,1,Fireworks AI;Groq,Fireworks AI,6,0,0,6,,,,,,
@@ -189,18 +189,18 @@ claude_code,1,FW-11,Fireworks AI,fit,yes,yes,yes,1,Fireworks AI;AWS Bedrock,Fire
 claude_code,1,FW-12,Fireworks AI,brand,yes,no,yes,1,Fireworks AI;Together AI;Baseten;Groq;Replicate,Fireworks AI,0,0,0,0,,,,,,
 claude_code,2,FW-12,Fireworks AI,brand,yes,no,yes,1,Fireworks AI;Together AI;Baseten;Groq;Replicate,Fireworks AI,0,0,0,0,,,,,,
 claude_code,2,FW-11,Fireworks AI,fit,yes,yes,yes,1,Fireworks AI;Together AI;AWS Bedrock,Fireworks AI,3,3,0,0,,,,,,
-claude_code,2,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;Groq;SambaNova,Cerebras,5,0,0,5,Cerebras,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-01,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Speechmatics;Deepgram,AssemblyAI,6,1,1,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-02,AssemblyAI,category,no,no,yes,2,Deepgram;AssemblyAI;Speechmatics;Google Speech-to-Text;Azure Speech;AWS Transcribe;OpenAI Whisper;Gladia;Rev.ai;ElevenLabs Scribe,Deepgram,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-03,AssemblyAI,use-case,no,yes,yes,2,Gladia;AssemblyAI;Deepgram;ElevenLabs Scribe;Speechmatics,Gladia,5,0,1,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;ElevenLabs Scribe;Gladia;Deepgram;Speechmatics;Google Speech-to-Text,AssemblyAI,6,1,1,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-01,AssemblyAI,category,no,yes,yes,3,Deepgram;Speechmatics;AssemblyAI,Deepgram,4,0,0,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI;Gladia;ElevenLabs Scribe;Speechmatics;OpenAI Whisper,Deepgram,7,0,3,4,Deepgram (Nova-3 / Flux),no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI;ElevenLabs Scribe;Gladia;OpenAI Whisper,Deepgram,6,0,3,3,Deepgram Flux,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-05,AssemblyAI,use-case,no,no,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Google Speech-to-Text;Azure Speech;AWS Transcribe;ElevenLabs Scribe;Speechmatics;Gladia,OpenAI Whisper,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-06,AssemblyAI,use-case,no,no,yes,1,AssemblyAI;Deepgram;AWS Transcribe;Google Speech-to-Text;Azure Speech;Speechmatics;Rev.ai;OpenAI Whisper,AssemblyAI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-06,AssemblyAI,use-case,no,no,yes,1,AssemblyAI;Deepgram;Speechmatics;Rev.ai;Gladia;AWS Transcribe;Google Speech-to-Text;Azure Speech,AssemblyAI,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-05,AssemblyAI,use-case,no,no,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Google Speech-to-Text;Azure Speech;AWS Transcribe;ElevenLabs Scribe;Speechmatics,OpenAI Whisper,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,2,FW-01,Fireworks AI,category,no,yes,no,,Cerebras;Groq;SambaNova,Cerebras,5,0,0,5,Cerebras,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-01,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Speechmatics;Deepgram,AssemblyAI,6,1,1,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-02,AssemblyAI,category,no,no,yes,2,Deepgram;AssemblyAI;Speechmatics;Google Speech-to-Text;Azure Speech;AWS Transcribe;OpenAI Whisper;Gladia;Rev.ai;ElevenLabs Scribe,Deepgram,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-03,AssemblyAI,use-case,no,yes,yes,2,Gladia;AssemblyAI;Deepgram;ElevenLabs Scribe;Speechmatics,Gladia,5,0,1,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-03,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;ElevenLabs Scribe;Gladia;Deepgram;Speechmatics;Google Speech-to-Text,AssemblyAI,6,1,1,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-01,AssemblyAI,category,no,yes,yes,3,Deepgram;Speechmatics;AssemblyAI,Deepgram,4,0,0,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI;Gladia;ElevenLabs Scribe;Speechmatics;OpenAI Whisper,Deepgram,7,0,3,4,Deepgram (Nova-3 / Flux),no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-04,AssemblyAI,use-case,no,yes,yes,2,Deepgram;AssemblyAI;ElevenLabs Scribe;Gladia;OpenAI Whisper,Deepgram,6,0,3,3,Deepgram Flux,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-05,AssemblyAI,use-case,no,no,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Google Speech-to-Text;Azure Speech;AWS Transcribe;ElevenLabs Scribe;Speechmatics;Gladia,OpenAI Whisper,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-06,AssemblyAI,use-case,no,no,yes,1,AssemblyAI;Deepgram;AWS Transcribe;Google Speech-to-Text;Azure Speech;Speechmatics;Rev.ai;OpenAI Whisper,AssemblyAI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-06,AssemblyAI,use-case,no,no,yes,1,AssemblyAI;Deepgram;Speechmatics;Rev.ai;Gladia;AWS Transcribe;Google Speech-to-Text;Azure Speech,AssemblyAI,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-05,AssemblyAI,use-case,no,no,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Google Speech-to-Text;Azure Speech;AWS Transcribe;ElevenLabs Scribe;Speechmatics,OpenAI Whisper,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,AAI-07,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;Deepgram;Gladia,AssemblyAI,6,1,2,3,,,,,,
 claude_code,1,AAI-08,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;OpenAI Whisper;Deepgram,AssemblyAI,6,1,0,5,,,,,,
 claude_code,1,FW-10,Fireworks AI,pricing,yes,no,yes,1,Fireworks AI,Fireworks AI,1,1,0,0,,,,,,
@@ -214,85 +214,85 @@ claude_code,1,AAI-11,AssemblyAI,fit,yes,yes,yes,1,AssemblyAI;Deepgram;OpenAI Whi
 claude_code,1,AAI-12,AssemblyAI,brand,yes,no,yes,1,AssemblyAI;Deepgram;OpenAI Whisper;Google Speech-to-Text;AWS Transcribe,AssemblyAI,0,0,0,0,,,,,,
 claude_code,2,AAI-11,AssemblyAI,fit,yes,yes,yes,1,AssemblyAI,AssemblyAI,3,1,0,2,,,,,,
 claude_code,2,AAI-12,AssemblyAI,brand,yes,no,yes,1,AssemblyAI;Deepgram;OpenAI Whisper;Google Speech-to-Text;AWS Transcribe;Rev.ai,AssemblyAI,0,0,0,0,,,,,,
-claude_code,1,LC-01,LangChain,category,no,no,yes,3,OpenAI Agents SDK;Pydantic AI;LangChain;CrewAI;AutoGen;Microsoft Agent Framework;LlamaIndex,OpenAI Agents SDK,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-01,LangChain,category,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;CrewAI;AutoGen;Microsoft Agent Framework;LlamaIndex,LangChain,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-02,LangChain,category,no,no,yes,2,LlamaIndex;LangChain;Haystack;DSPy,LlamaIndex,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-02,LangChain,category,no,no,yes,2,LlamaIndex;LangChain;Haystack;DSPy,LlamaIndex,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-03,LangChain,use-case,no,no,yes,1,LangChain;AutoGen;CrewAI;OpenAI Agents SDK,LangChain,0,0,0,0,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-03,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;CrewAI;AutoGen,LangChain,0,0,0,0,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-04,LangChain,use-case,no,no,yes,2,Langfuse;LangChain;Arize Phoenix;Braintrust;Weights & Biases Weave;Helicone,Langfuse,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-04,LangChain,use-case,no,yes,yes,2,Langfuse;LangChain;Braintrust;Arize Phoenix;Helicone,Langfuse,5,0,1,4,Langfuse,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-05,LangChain,use-case,no,no,yes,2,Mastra;LangChain;OpenAI Agents SDK;LlamaIndex,Mastra,0,0,0,0,Vercel AI SDK,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-06,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;Microsoft Agent Framework;AutoGen;Semantic Kernel;CrewAI;Langfuse,LangChain,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,LC-01,LangChain,category,no,no,yes,3,OpenAI Agents SDK;Pydantic AI;LangChain;CrewAI;AutoGen;Microsoft Agent Framework;LlamaIndex,OpenAI Agents SDK,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-01,LangChain,category,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;CrewAI;AutoGen;Microsoft Agent Framework;LlamaIndex,LangChain,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-02,LangChain,category,no,no,yes,2,LlamaIndex;LangChain;Haystack;DSPy,LlamaIndex,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-02,LangChain,category,no,no,yes,2,LlamaIndex;LangChain;Haystack;DSPy,LlamaIndex,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-03,LangChain,use-case,no,no,yes,1,LangChain;AutoGen;CrewAI;OpenAI Agents SDK,LangChain,0,0,0,0,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-03,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;CrewAI;AutoGen,LangChain,0,0,0,0,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-04,LangChain,use-case,no,no,yes,2,Langfuse;LangChain;Arize Phoenix;Braintrust;Weights & Biases Weave;Helicone,Langfuse,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-04,LangChain,use-case,no,yes,yes,2,Langfuse;LangChain;Braintrust;Arize Phoenix;Helicone,Langfuse,5,0,1,4,Langfuse,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-05,LangChain,use-case,no,no,yes,2,Mastra;LangChain;OpenAI Agents SDK;LlamaIndex,Mastra,0,0,0,0,Vercel AI SDK,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-06,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;Microsoft Agent Framework;AutoGen;Semantic Kernel;CrewAI;Langfuse,LangChain,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,LC-07,LangChain,comparison,yes,no,yes,1,LangChain;LlamaIndex;Arize Phoenix;Langfuse,LangChain,0,0,0,0,,,,,,
 claude_code,2,LC-07,LangChain,comparison,yes,no,yes,1,LangChain;LlamaIndex;Arize Phoenix;Langfuse,LangChain,0,0,0,0,,,,,,
 claude_code,1,LC-08,LangChain,comparison,yes,no,yes,1,LangChain;CrewAI,LangChain,0,0,0,0,,,,,,
-claude_code,1,LC-05,LangChain,use-case,no,no,yes,2,Mastra;LangChain;OpenAI Agents SDK;LlamaIndex,Mastra,0,0,0,0,Vercel AI SDK,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,LC-05,LangChain,use-case,no,no,yes,2,Mastra;LangChain;OpenAI Agents SDK;LlamaIndex,Mastra,0,0,0,0,Vercel AI SDK,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,2,LC-08,LangChain,comparison,yes,no,yes,1,LangChain;CrewAI;OpenAI Agents SDK;AutoGen;Microsoft Agent Framework;Pydantic AI,LangChain,0,0,0,0,,,,,,
 claude_code,2,LC-09,LangChain,alternatives,yes,no,yes,3,LlamaIndex;Haystack;LangChain;Semantic Kernel;DSPy;CrewAI;AutoGen;Microsoft Agent Framework;OpenAI Agents SDK;Pydantic AI;Mastra,LlamaIndex,0,0,0,0,,,,,,
 claude_code,1,LC-10,LangChain,pricing,yes,no,yes,1,LangChain,LangChain,1,1,0,0,,,,,,
-claude_code,1,AAI-02,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Deepgram;Speechmatics;Gladia;AWS Transcribe;OpenAI Whisper,AssemblyAI,5,0,3,2,AssemblyAI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,AAI-02,AssemblyAI,category,no,yes,yes,1,AssemblyAI;Deepgram;Speechmatics;Gladia;AWS Transcribe;OpenAI Whisper,AssemblyAI,5,0,3,2,AssemblyAI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,2,LC-10,LangChain,pricing,yes,yes,yes,1,LangChain,LangChain,5,2,0,3,,,,,,
 claude_code,1,LC-09,LangChain,alternatives,yes,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;CrewAI;AutoGen;Microsoft Agent Framework;LlamaIndex;Haystack;DSPy;Mastra,LangChain,0,0,0,0,,,,,,
-claude_code,1,LC-06,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;LlamaIndex;Microsoft Agent Framework;AutoGen;Semantic Kernel;CrewAI,LangChain,0,0,0,0,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+claude_code,1,LC-06,LangChain,use-case,no,no,yes,1,LangChain;OpenAI Agents SDK;Pydantic AI;LlamaIndex;Microsoft Agent Framework;AutoGen;Semantic Kernel;CrewAI,LangChain,0,0,0,0,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 claude_code,1,LC-11,LangChain,fit,yes,yes,yes,1,LangChain,LangChain,4,0,0,4,,,,,,
 claude_code,2,LC-11,LangChain,fit,yes,yes,yes,1,LangChain;AutoGen;CrewAI;Mastra,LangChain,5,0,0,5,,,,,,
 claude_code,1,LC-12,LangChain,brand,yes,no,yes,1,LangChain,LangChain,0,0,0,0,,,,,,
 claude_code,2,LC-12,LangChain,brand,yes,no,yes,1,LangChain,LangChain,0,0,0,0,,,,,,
-aio,1,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;GitBook;ReadMe;Fern;Docusaurus;Document360,Mintlify,6,0,2,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;GitBook;ReadMe;Document360;Docusaurus;Fern;Redocly,Mintlify,2,0,0,2,Mintlify,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify;Document360;Docusaurus;GitBook,Mintlify,6,1,0,5,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-04,Mintlify,use-case,no,yes,no,,ReadMe;Redocly;GitBook,ReadMe,8,0,5,3,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-05,Mintlify,use-case,no,yes,yes,2,Docusaurus;Mintlify;GitBook;ReadMe,Docusaurus,6,0,0,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;Fern;Docusaurus,Mintlify,4,2,1,1,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,MIN-01,Mintlify,category,no,yes,yes,1,Mintlify;GitBook;ReadMe;Fern;Docusaurus;Document360,Mintlify,6,0,2,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-02,Mintlify,category,no,yes,yes,1,Mintlify;GitBook;ReadMe;Document360;Docusaurus;Fern;Redocly,Mintlify,2,0,0,2,Mintlify,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-03,Mintlify,use-case,no,yes,yes,1,Mintlify;Document360;Docusaurus;GitBook,Mintlify,6,1,0,5,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-04,Mintlify,use-case,no,yes,no,,ReadMe;Redocly;GitBook,ReadMe,8,0,5,3,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-05,Mintlify,use-case,no,yes,yes,2,Docusaurus;Mintlify;GitBook;ReadMe,Docusaurus,6,0,0,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-06,Mintlify,use-case,no,yes,yes,1,Mintlify;Fern;Docusaurus,Mintlify,4,2,1,1,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 aio,1,MIN-07,Mintlify,comparison,yes,yes,yes,1,Mintlify;GitBook;ReadMe,Mintlify,12,1,1,10,,,,,,
 aio,1,MIN-08,Mintlify,comparison,yes,yes,yes,1,Mintlify;ReadMe,Mintlify,0,0,0,0,,,,,,
 aio,1,MIN-09,Mintlify,alternatives,yes,yes,yes,1,Mintlify;Docusaurus;GitBook;Fern;ReadMe,Mintlify,0,0,0,0,,,,,,
 aio,1,MIN-10,Mintlify,pricing,yes,yes,yes,1,Mintlify,Mintlify,7,3,0,4,,,,,,
 aio,1,MIN-11,Mintlify,fit,yes,yes,yes,1,Mintlify;GitBook;Docusaurus;Fern;ReadMe,Mintlify,6,2,2,2,,,,,,
 aio,1,MIN-12,Mintlify,brand,yes,yes,yes,1,Mintlify;Docusaurus,Mintlify,19,9,0,10,,,,,,
-aio,1,EXA-01,Exa,category,no,yes,yes,3,Tavily;Firecrawl;Exa;Parallel;Perplexity Sonar;Serper;Brave Search API;You.com,Tavily,9,2,1,6,Tavily,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-02,Exa,category,no,yes,no,,Serper;SerpAPI;Tavily;Brave Search API;Perplexity Sonar,Serper,12,0,2,10,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-03,Exa,use-case,no,yes,yes,2,Tavily;Exa;Brave Search API,Tavily,9,0,0,9,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-04,Exa,use-case,no,yes,yes,2,Firecrawl;Exa;Tavily,Firecrawl,6,0,1,5,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-05,Exa,use-case,no,yes,yes,1,Exa;Parallel;Tavily;Brave Search API,Exa,5,0,2,3,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-06,Exa,use-case,no,yes,yes,3,Bing Search API;Tavily;Exa;Brave Search API;SerpAPI,Bing Search API,7,0,1,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,EXA-01,Exa,category,no,yes,yes,3,Tavily;Firecrawl;Exa;Parallel;Perplexity Sonar;Serper;Brave Search API;You.com,Tavily,9,2,1,6,Tavily,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-02,Exa,category,no,yes,no,,Serper;SerpAPI;Tavily;Brave Search API;Perplexity Sonar,Serper,12,0,2,10,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-03,Exa,use-case,no,yes,yes,2,Tavily;Exa;Brave Search API,Tavily,9,0,0,9,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-04,Exa,use-case,no,yes,yes,2,Firecrawl;Exa;Tavily,Firecrawl,6,0,1,5,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-05,Exa,use-case,no,yes,yes,1,Exa;Parallel;Tavily;Brave Search API,Exa,5,0,2,3,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-06,Exa,use-case,no,yes,yes,3,Bing Search API;Tavily;Exa;Brave Search API;SerpAPI,Bing Search API,7,0,1,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 aio,1,EXA-07,Exa,comparison,yes,yes,yes,1,Exa;Tavily,Exa,10,1,0,9,,,,,,
 aio,1,EXA-08,Exa,comparison,yes,yes,yes,1,Exa;Perplexity Sonar,Exa,3,0,0,3,,,,,,
 aio,1,EXA-09,Exa,alternatives,yes,yes,yes,1,Exa;Tavily;Brave Search API;Perplexity Sonar;SerpAPI;Serper;Firecrawl,Exa,0,0,0,0,,,,,,
 aio,1,EXA-10,Exa,pricing,yes,yes,yes,1,Exa,Exa,4,3,0,1,,,,,,
 aio,1,EXA-11,Exa,fit,yes,yes,yes,1,Exa;Parallel,Exa,11,4,1,6,,,,,,
 aio,1,EXA-12,Exa,brand,yes,yes,yes,1,Exa,Exa,8,2,0,6,,,,,,
-aio,1,FW-01,Fireworks AI,category,no,yes,yes,4,Cerebras;Groq;SambaNova;Fireworks AI,Cerebras,6,0,0,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-02,Fireworks AI,category,no,yes,no,,,,6,0,0,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,6,0,0,6,Official DeepSeek API,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-04,Fireworks AI,use-case,no,yes,no,,Together AI;Modal,Together AI,5,0,0,5,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-05,Fireworks AI,use-case,no,yes,yes,3,Together AI;Groq;Fireworks AI;Modal;DeepInfra;Baseten,Together AI,6,0,0,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Modal,Fireworks AI,10,0,1,9,Fireworks AI,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,FW-01,Fireworks AI,category,no,yes,yes,4,Cerebras;Groq;SambaNova;Fireworks AI,Cerebras,6,0,0,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-02,Fireworks AI,category,no,yes,no,,,,6,0,0,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-03,Fireworks AI,use-case,no,yes,no,,OpenRouter,OpenRouter,6,0,0,6,Official DeepSeek API,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-04,Fireworks AI,use-case,no,yes,no,,Together AI;Modal,Together AI,5,0,0,5,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-05,Fireworks AI,use-case,no,yes,yes,3,Together AI;Groq;Fireworks AI;Modal;DeepInfra;Baseten,Together AI,6,0,0,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-06,Fireworks AI,use-case,no,yes,yes,1,Fireworks AI;Together AI;Modal,Fireworks AI,10,0,1,9,Fireworks AI,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 aio,1,FW-07,Fireworks AI,comparison,yes,yes,yes,2,Together AI;Fireworks AI,Together AI,2,0,0,2,,,,,,
 aio,1,FW-08,Fireworks AI,comparison,yes,yes,yes,1,Fireworks AI;Groq;Together AI,Fireworks AI,11,0,0,11,,,,,,
 aio,1,FW-09,Fireworks AI,alternatives,yes,yes,yes,1,Fireworks AI;Groq;Together AI;DeepInfra;AWS Bedrock,Fireworks AI,0,0,0,0,,,,,,
 aio,1,FW-10,Fireworks AI,pricing,yes,yes,yes,1,Fireworks AI,Fireworks AI,8,3,0,5,,,,,,
 aio,1,FW-11,Fireworks AI,fit,yes,yes,yes,1,Fireworks AI,Fireworks AI,12,8,0,4,,,,,,
 aio,1,FW-12,Fireworks AI,brand,yes,yes,yes,1,Fireworks AI,Fireworks AI,6,0,0,6,,,,,,
-aio,1,AAI-01,AssemblyAI,category,no,yes,yes,4,Gladia;OpenAI Whisper;Deepgram;AssemblyAI;Rev.ai;AWS Transcribe;Soniox,Gladia,5,1,2,2,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-02,AssemblyAI,category,no,yes,yes,2,Deepgram;AssemblyAI;Gladia;OpenAI Whisper,Deepgram,8,1,1,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-03,AssemblyAI,use-case,no,yes,yes,2,OpenAI Whisper;AssemblyAI;Gladia;Deepgram;Speechmatics,OpenAI Whisper,6,1,2,3,Gladia,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-04,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,5,0,0,5,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-05,AssemblyAI,use-case,no,yes,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Azure Speech,OpenAI Whisper,7,0,0,7,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-06,AssemblyAI,use-case,no,yes,yes,2,AWS Transcribe;AssemblyAI;Deepgram;Google Speech-to-Text,AWS Transcribe,7,0,0,7,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,AAI-01,AssemblyAI,category,no,yes,yes,4,Gladia;OpenAI Whisper;Deepgram;AssemblyAI;Rev.ai;AWS Transcribe;Soniox,Gladia,5,1,2,2,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-02,AssemblyAI,category,no,yes,yes,2,Deepgram;AssemblyAI;Gladia;OpenAI Whisper,Deepgram,8,1,1,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-03,AssemblyAI,use-case,no,yes,yes,2,OpenAI Whisper;AssemblyAI;Gladia;Deepgram;Speechmatics,OpenAI Whisper,6,1,2,3,Gladia,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-04,AssemblyAI,use-case,no,yes,yes,1,AssemblyAI;Deepgram,AssemblyAI,5,0,0,5,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-05,AssemblyAI,use-case,no,yes,yes,3,OpenAI Whisper;Deepgram;AssemblyAI;Azure Speech,OpenAI Whisper,7,0,0,7,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-06,AssemblyAI,use-case,no,yes,yes,2,AWS Transcribe;AssemblyAI;Deepgram;Google Speech-to-Text,AWS Transcribe,7,0,0,7,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 aio,1,AAI-07,AssemblyAI,comparison,yes,yes,yes,2,Deepgram;AssemblyAI;Gladia;OpenAI Whisper,Deepgram,3,0,1,2,,,,,,
 aio,1,AAI-08,AssemblyAI,comparison,yes,yes,yes,1,AssemblyAI;OpenAI Whisper;Deepgram,AssemblyAI,0,0,0,0,,,,,,
 aio,1,AAI-09,AssemblyAI,alternatives,yes,yes,yes,1,AssemblyAI;Deepgram;OpenAI Whisper;Speechmatics;Google Speech-to-Text;AWS Transcribe,AssemblyAI,1,0,0,1,,,,,,
 aio,1,AAI-10,AssemblyAI,pricing,yes,yes,yes,1,AssemblyAI;Gladia,AssemblyAI,9,3,1,5,,,,,,
 aio,1,AAI-11,AssemblyAI,fit,yes,yes,yes,1,AssemblyAI;Gladia;Deepgram,AssemblyAI,8,3,1,4,,,,,,
 aio,1,AAI-12,AssemblyAI,brand,yes,yes,yes,1,AssemblyAI,AssemblyAI,6,2,1,3,,,,,,
-aio,1,LC-01,LangChain,category,no,yes,yes,1,LangChain;CrewAI;Pydantic AI;Langfuse;LlamaIndex;Mastra,LangChain,8,0,1,7,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-02,LangChain,category,no,yes,yes,1,LangChain;LlamaIndex;Haystack;DSPy,LangChain,4,0,0,4,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-03,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;Microsoft Agent Framework,Mastra,6,0,1,5,LangGraph,yes,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-04,LangChain,use-case,no,yes,yes,1,LangChain;Langfuse;Arize Phoenix;Braintrust;Helicone;LlamaIndex,LangChain,2,1,0,1,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-05,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;LlamaIndex,Mastra,4,0,0,4,Mastra,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-06,LangChain,use-case,no,yes,yes,2,Langfuse;LangChain;CrewAI;Pydantic AI;Mastra;Microsoft Agent Framework;Semantic Kernel;AutoGen,Langfuse,7,0,1,6,,no,,,,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,LC-01,LangChain,category,no,yes,yes,1,LangChain;CrewAI;Pydantic AI;Langfuse;LlamaIndex;Mastra,LangChain,8,0,1,7,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-02,LangChain,category,no,yes,yes,1,LangChain;LlamaIndex;Haystack;DSPy,LangChain,4,0,0,4,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-03,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;Microsoft Agent Framework,Mastra,6,0,1,5,LangGraph,yes,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-04,LangChain,use-case,no,yes,yes,1,LangChain;Langfuse;Arize Phoenix;Braintrust;Helicone;LlamaIndex,LangChain,2,1,0,1,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-05,LangChain,use-case,no,yes,yes,2,Mastra;LangChain;LlamaIndex,Mastra,4,0,0,4,Mastra,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-06,LangChain,use-case,no,yes,yes,2,Langfuse;LangChain;CrewAI;Pydantic AI;Mastra;Microsoft Agent Framework;Semantic Kernel;AutoGen,Langfuse,7,0,1,6,,no,,,,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
 aio,1,LC-07,LangChain,comparison,yes,yes,yes,2,LlamaIndex;LangChain,LlamaIndex,0,0,0,0,,,,,,
 aio,1,LC-08,LangChain,comparison,yes,yes,yes,1,LangChain;CrewAI;Langfuse;Arize Phoenix,LangChain,0,0,0,0,,,,,,
 aio,1,LC-09,LangChain,alternatives,yes,yes,yes,1,LangChain;LlamaIndex;Haystack;Semantic Kernel;Pydantic AI;CrewAI;AutoGen,LangChain,0,0,0,0,,,,,,

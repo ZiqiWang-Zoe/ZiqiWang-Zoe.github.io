@@ -1,151 +1,151 @@
 engine,run,qid,top_pick,quote,quote_found,recommended,judged_by
-aio,1,AAI-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-01,Alibaba Cloud Fun-Realtime-ASR-preview,"For recorded audio, Alibaba Cloud’s Fun-Realtime-ASR-preview currently has the lowest word error rate on Artificial Analysis’s independent leaderboard: 1.7%.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-01,Alibaba Cloud Fun-Realtime-ASR-preview,"**For English transcription, Alibaba Cloud’s Fun-Realtime-ASR-preview is the current accuracy leader** on Artificial Analysis’s independent speech-to-text benchmark, at **1.7% word error rate**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-02,AssemblyAI,**AssemblyAI:** A good default for developers.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-02,AssemblyAI Universal-3.5 Pro,"**For recorded call center calls and meetings, I’d start with AssemblyAI Universal-3.5 Pro.**",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-02,Deepgram Nova-3,"**For one API to transcribe both recorded calls and meetings, I’d start with Deepgram Nova-3.**",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-03,Gladia,Go with Gladia if your priority is pure diarization accuracy.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-03,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-03,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-03,pyannoteAI Precision-3,**My pick for speaker diarization is pyannoteAI Precision-3.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-03,AssemblyAI Universal-3.5 Pro,"**For a single API that returns a transcript with speaker labels, I’d start with AssemblyAI Universal‑3.5 Pro.**",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-04,Deepgram (Nova-3 / Flux),"**There's no single best API. For most voice agents, start with Deepgram (Nova-3 or Flux).**",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-04,Deepgram Flux,"**There's no single best option. For most voice agents, start with Deepgram (Flux), and compare it against AssemblyAI.**",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-04,AssemblyAI Universal-3.6 Pro Realtime,**My default pick for a new voice agent is AssemblyAI Universal-3.6 Pro Realtime.**,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-04,Deepgram Flux,**My default pick for a voice agent with a separate speech recognition API is Deepgram Flux.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-05,OpenAI gpt-transcribe,"If you want to stop operating Whisper yourself, use **OpenAI’s hosted `gpt-transcribe`** for recorded audio.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-05,OpenAI gpt-transcribe,"For most apps, I’d start with **OpenAI’s `gpt-transcribe` API** for recorded audio.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,AAI-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,AAI-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,AAI-06,,For a quick pick: **AssemblyAI or Deepgram** are the easiest options with built-in redaction.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,AAI-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,AAI-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-01,Tavily,Tavily: The Best Overall Generalist,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-01,Tavily,Start with Tavily if you want the least friction.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-01,Brave Search API (LLM Context endpoint),**My default pick is Brave Search API’s LLM Context endpoint.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-01,Tavily,**Tavily is my default pick for an AI agent that needs to search the web and read what it finds.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-02,OpenAI web_search tool (Responses API),"If you’re using the OpenAI API, add the hosted `web_search` tool to a **Responses API** request.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-02,OpenAI Responses API web_search tool,"If you use OpenAI, the simplest setup is the Responses API with `web_search`:",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-03,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-03,Tavily,"| **Tavily** | Default choice for LLM apps | It returns clean, LLM-ready snippets and has extract and crawl endpoints. It integrates easily with LangChain and LlamaIndex. |",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-03,Tavily,"| General-purpose default | **Tavily** | It has the least friction for RAG and agent pipelines, and it returns results already formatted for LLMs. |",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-03,Tavily,"If you mean **searching the public web for a RAG app**, I’d start with **[Tavily](https://docs.tavily.com/documentation/api-reference/endpoint/search)**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-03,Tavily,"**For RAG over the live web, I’d start with Tavily.**",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-05,Exa,"For a quick start with a URL as input, use **Exa `findSimilar`**.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-05,Exa,"For arbitrary web pages or startups from a URL, start with **Exa `findSimilar`**.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,EXA-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,EXA-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,EXA-06,Tavily,**Default pick:** Tavily if you want the fastest path to a working agent.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,EXA-06,Brave Search API,"**Use Brave Search API as the default replacement** if your application calls Bing for ranked web results, snippets, and URLs.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,EXA-06,Brave Search API,**Use Brave Search API as the starting replacement** if your application needs a general web search API that returns results your own LLM can process.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-01,Cerebras,"**Cerebras** looks fastest in the data I found, with Groq and SambaNova behind it.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-01,Cerebras,**Cerebras** is most consistently reported as the fastest for raw output speed on open-source models.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-01,Cerebras Inference,**Cerebras Inference** is the best current answer if you mean the fastest *single-request output speed* for an open-weight LLM.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-01,Cerebras Inference,**Cerebras Inference** is the fastest hosted API I’d try first for an open-weight LLM.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-02,vLLM,**vLLM**: The default choice for most teams.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-02,vLLM,**My default choice is vLLM** if you’re running your own GPUs.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-02,vLLM,**My default recommendation is vLLM if you’re running the GPUs yourself.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-03,Official DeepSeek API,"For most users, using the official DeepSeek API directly is significantly cheaper than self-hosting and heavily undercuts third-party providers.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-03,DeepSeek API,"The cheapest option is usually DeepSeek's own API, with your requests timed for off-peak hours.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-03,DeepSeek first-party API (deepseek-flash),"The cheapest option I found is DeepSeek's own first-party API, using the Flash model and running jobs off-peak.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-03,OpenRouter,**Cheapest to try:** OpenRouter currently lists an older DeepSeek V4 Flash API route at **$0 per token**: `deepseek/deepseek-v4-flash-0731:free`.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-03,OpenRouter,**Cheapest for light use:** OpenRouter currently lists `deepseek/deepseek-v4-flash-0731:free` at **$0 per input and output token**.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-04,Together AI,It's a good default for most teams.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-04,Fireworks AI,"If you mean an **open-weight language model**, I’d start with **[Fireworks AI](https://docs.fireworks.ai/)**.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-04,Together AI,"For most teams fine-tuning an **open-weight language model** and serving it through an API, I’d start with **[Together AI](https://www.together.ai/fine-tuning)**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-05,Fireworks AI,"For most LLM apps, I’d start with **Fireworks AI or Together AI** for open models, then benchmark **Groq** if response speed is central to the experience.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,FW-06,Fireworks AI,Fireworks AI: Tied for the top score (100.0% task-success and 0.0% operational failure rate) in real-world structured JSON schema extraction benchmarks.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,FW-06,Fireworks AI,"For a hosted service, start with **Fireworks**, and use Together as the alternative.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,FW-06,Fireworks AI,**Fireworks AI** is the most consistently recommended provider for function calling and structured output with open models.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,FW-06,Fireworks AI,**My default pick is Fireworks AI** for open models when you need both function calling and structured output.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,FW-06,Fireworks AI,**Fireworks AI is my default pick** if you need both function calling and structured output across open models.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-01,LangGraph,"If you are building complex, commercial-grade agents, LangGraph is the industry standard.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-01,Pydantic AI,**My default pick is [Pydantic AI](https://pydantic.dev/docs/ai/overview/)** for a new Python agent.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-01,PydanticAI,"For a new Python project, I’d start with **[PydanticAI](https://pydantic.dev/docs/ai/overview/)**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-02,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-02,LlamaIndex,**LlamaIndex is my default recommendation for a document focused RAG app.**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-02,LlamaIndex,"For a **Python app that answers questions over your documents**, I’d start with **[LlamaIndex](https://developers.llamaindex.ai/python/framework/)**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-03,LangGraph,"The industry standard for achieving this in Python is LangGraph (by LangChain), though frameworks like Microsoft Agent Framework (for Go/C#) or Temporal (for general microservice orchestration) follow identical structural patterns.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-03,LangGraph,The most common way to do this is with **LangGraph**.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-03,LangGraph,The most common approach is **LangGraph**.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-03,OpenAI Agents SDK,"Assuming you’re building with OpenAI, the **Agents SDK** is a good fit: it handles agent handoffs and tool calls, while your application owns storage and approval decisions.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-03,OpenAI Agents SDK,"In the OpenAI Agents SDK, use a *handoff* when a specialist should take over the conversation, or expose a specialist *as a tool* when the coordinator should keep responsibility for the answer.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-04,Langfuse,**Default recommendation:** Start with **Langfuse** if you want flexibility and no lock-in.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-04,Langfuse,**My default pick is Langfuse** for a team that wants one tool for LLM observability and evaluation.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-04,Langfuse,**My default pick is [Langfuse](https://langfuse.com/docs).**,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-05,Mastra,"Mastra: Best all-in-one, agent-first framework for full-stack TypeScript applications, long-running autonomous systems, built-in memory, graph-based workflows, RAG, and evaluations.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-05,Vercel AI SDK,**Vercel AI SDK**: The best default for most TypeScript developers.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-05,Vercel AI SDK,"My suggestion is to start with the Vercel AI SDK, or Mastra if you want more structure.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-05,Mastra,**My default pick is [Mastra](https://mastra.ai/docs)** for a new TypeScript agent project.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-05,Mastra,**My default pick is [Mastra](https://mastra.ai/docs)** for a new TypeScript agent project.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,LC-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,LC-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,LC-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,LC-06,LangGraph,"**My default pick is LangGraph** for a production agent that has several steps, needs to resume after failures, or requires human approval.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,LC-06,LangGraph,**My default pick is LangGraph** for a production agent that needs to run across multiple steps or sessions.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-01,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-01,Mintlify,"For most developer-facing API startups, I'd pick **Mintlify**.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-01,Mintlify,**My default pick for most API startups: Mintlify**,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-01,Mintlify,**My default pick is Mintlify** for a developer-facing API startup.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-01,Mintlify,**My default pick is Mintlify** for a developer-facing API startup.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-02,Mintlify,"Mintlify: Widely used as a standard for AI and API engineering docs; features Git-based MDX, automated update drafts, design-led developer layouts, and agent-friendly text formatting like llms.txt.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-02,Mintlify,**Mintlify** is probably the most popular among AI startups.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-02,Mintlify,"If you're choosing for your own project, Mintlify is the easiest to start with, and Docusaurus or Fumadocs suit you better if you want to self-host.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-02,Mintlify,"If you’re choosing one, **Mintlify is the clearest starting point for a fast launch**, while **Fern is especially relevant when API specs, SDKs, and docs need to stay in sync**.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-02,Mintlify,"If you’re choosing one, **Mintlify is a common starting point** for hosted AI API docs; look at **Fern** when SDK generation and API specs are central to the workflow.",yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-03,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-03,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-03,,Mintlify and GitBook are the usual picks if you want it built in with little setup.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-03,Mintlify,**Mintlify** is one option.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-03,Mintlify,**Mintlify** has a built-in AI Assistant that answers readers’ questions using your documentation and links to the source pages.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-04,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-04,OpenAPI,"**Publish a current OpenAPI file** at a stable URL, linked from your docs home page.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-04,OpenAPI,"If you can do only one thing first, make your **OpenAPI file complete and correct**, then add one end-to-end quickstart for your most common use case.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-05,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-05,Mintlify,**Mintlify** is a good hosted alternative to Docusaurus for a startup.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-05,GitBook,**GitBook** is a good default if the startup wants someone else to host the docs site.,yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-aio,1,MIN-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,1,MIN-06,,,,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-claude_code,2,MIN-06,Mintlify,Mintlify and GitBook are the clearest cases of platforms that do this automatically.,yes,yes,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,1,MIN-06,,"If you want **both with minimal setup**, Mintlify and GitBook are the clearest defaults.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
-codex,2,MIN-06,,"For the least setup, start with **Mintlify or GitBook**.",yes,no,"claude-sonnet-5-5 first pass, not yet reviewed"
+aio,1,AAI-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-01,Alibaba Cloud Fun-Realtime-ASR-preview,"For recorded audio, Alibaba Cloud’s Fun-Realtime-ASR-preview currently has the lowest word error rate on Artificial Analysis’s independent leaderboard: 1.7%.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-01,Alibaba Cloud Fun-Realtime-ASR-preview,"**For English transcription, Alibaba Cloud’s Fun-Realtime-ASR-preview is the current accuracy leader** on Artificial Analysis’s independent speech-to-text benchmark, at **1.7% word error rate**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-02,AssemblyAI,**AssemblyAI:** A good default for developers.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-02,AssemblyAI Universal-3.5 Pro,"**For recorded call center calls and meetings, I’d start with AssemblyAI Universal-3.5 Pro.**",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-02,Deepgram Nova-3,"**For one API to transcribe both recorded calls and meetings, I’d start with Deepgram Nova-3.**",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-03,Gladia,Go with Gladia if your priority is pure diarization accuracy.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-03,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-03,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-03,pyannoteAI Precision-3,**My pick for speaker diarization is pyannoteAI Precision-3.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-03,AssemblyAI Universal-3.5 Pro,"**For a single API that returns a transcript with speaker labels, I’d start with AssemblyAI Universal‑3.5 Pro.**",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-04,Deepgram (Nova-3 / Flux),"**There's no single best API. For most voice agents, start with Deepgram (Nova-3 or Flux).**",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-04,Deepgram Flux,"**There's no single best option. For most voice agents, start with Deepgram (Flux), and compare it against AssemblyAI.**",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-04,AssemblyAI Universal-3.6 Pro Realtime,**My default pick for a new voice agent is AssemblyAI Universal-3.6 Pro Realtime.**,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-04,Deepgram Flux,**My default pick for a voice agent with a separate speech recognition API is Deepgram Flux.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-05,OpenAI gpt-transcribe,"If you want to stop operating Whisper yourself, use **OpenAI’s hosted `gpt-transcribe`** for recorded audio.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-05,OpenAI gpt-transcribe,"For most apps, I’d start with **OpenAI’s `gpt-transcribe` API** for recorded audio.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,AAI-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,AAI-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,AAI-06,,For a quick pick: **AssemblyAI or Deepgram** are the easiest options with built-in redaction.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,AAI-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,AAI-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-01,Tavily,Tavily: The Best Overall Generalist,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-01,Tavily,Start with Tavily if you want the least friction.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-01,Brave Search API (LLM Context endpoint),**My default pick is Brave Search API’s LLM Context endpoint.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-01,Tavily,**Tavily is my default pick for an AI agent that needs to search the web and read what it finds.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-02,OpenAI web_search tool (Responses API),"If you’re using the OpenAI API, add the hosted `web_search` tool to a **Responses API** request.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-02,OpenAI Responses API web_search tool,"If you use OpenAI, the simplest setup is the Responses API with `web_search`:",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-03,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-03,Tavily,"| **Tavily** | Default choice for LLM apps | It returns clean, LLM-ready snippets and has extract and crawl endpoints. It integrates easily with LangChain and LlamaIndex. |",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-03,Tavily,"| General-purpose default | **Tavily** | It has the least friction for RAG and agent pipelines, and it returns results already formatted for LLMs. |",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-03,Tavily,"If you mean **searching the public web for a RAG app**, I’d start with **[Tavily](https://docs.tavily.com/documentation/api-reference/endpoint/search)**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-03,Tavily,"**For RAG over the live web, I’d start with Tavily.**",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-05,Exa,"For a quick start with a URL as input, use **Exa `findSimilar`**.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-05,Exa,"For arbitrary web pages or startups from a URL, start with **Exa `findSimilar`**.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,EXA-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,EXA-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,EXA-06,Tavily,**Default pick:** Tavily if you want the fastest path to a working agent.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,EXA-06,Brave Search API,"**Use Brave Search API as the default replacement** if your application calls Bing for ranked web results, snippets, and URLs.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,EXA-06,Brave Search API,**Use Brave Search API as the starting replacement** if your application needs a general web search API that returns results your own LLM can process.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-01,Cerebras,"**Cerebras** looks fastest in the data I found, with Groq and SambaNova behind it.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-01,Cerebras,**Cerebras** is most consistently reported as the fastest for raw output speed on open-source models.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-01,Cerebras Inference,**Cerebras Inference** is the best current answer if you mean the fastest *single-request output speed* for an open-weight LLM.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-01,Cerebras Inference,**Cerebras Inference** is the fastest hosted API I’d try first for an open-weight LLM.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-02,vLLM,**vLLM**: The default choice for most teams.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-02,vLLM,**My default choice is vLLM** if you’re running your own GPUs.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-02,vLLM,**My default recommendation is vLLM if you’re running the GPUs yourself.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-03,Official DeepSeek API,"For most users, using the official DeepSeek API directly is significantly cheaper than self-hosting and heavily undercuts third-party providers.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-03,DeepSeek API,"The cheapest option is usually DeepSeek's own API, with your requests timed for off-peak hours.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-03,DeepSeek first-party API (deepseek-flash),"The cheapest option I found is DeepSeek's own first-party API, using the Flash model and running jobs off-peak.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-03,OpenRouter,**Cheapest to try:** OpenRouter currently lists an older DeepSeek V4 Flash API route at **$0 per token**: `deepseek/deepseek-v4-flash-0731:free`.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-03,OpenRouter,**Cheapest for light use:** OpenRouter currently lists `deepseek/deepseek-v4-flash-0731:free` at **$0 per input and output token**.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-04,Together AI,It's a good default for most teams.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-04,Fireworks AI,"If you mean an **open-weight language model**, I’d start with **[Fireworks AI](https://docs.fireworks.ai/)**.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-04,Together AI,"For most teams fine-tuning an **open-weight language model** and serving it through an API, I’d start with **[Together AI](https://www.together.ai/fine-tuning)**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,FW-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-05,,"For most LLM apps, I’d start with **Fireworks AI or Together AI** for open models, then benchmark **Groq** if response speed is central to the experience.",yes,no,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
+aio,1,FW-06,Fireworks AI,Fireworks AI: Tied for the top score (100.0% task-success and 0.0% operational failure rate) in real-world structured JSON schema extraction benchmarks.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,FW-06,Fireworks AI,"For a hosted service, start with **Fireworks**, and use Together as the alternative.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,FW-06,Fireworks AI,**Fireworks AI** is the most consistently recommended provider for function calling and structured output with open models.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,FW-06,Fireworks AI,**My default pick is Fireworks AI** for open models when you need both function calling and structured output.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,FW-06,Fireworks AI,**Fireworks AI is my default pick** if you need both function calling and structured output across open models.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-01,LangGraph,"If you are building complex, commercial-grade agents, LangGraph is the industry standard.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-01,Pydantic AI,**My default pick is [Pydantic AI](https://pydantic.dev/docs/ai/overview/)** for a new Python agent.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-01,PydanticAI,"For a new Python project, I’d start with **[PydanticAI](https://pydantic.dev/docs/ai/overview/)**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-02,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-02,LlamaIndex,**LlamaIndex is my default recommendation for a document focused RAG app.**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-02,LlamaIndex,"For a **Python app that answers questions over your documents**, I’d start with **[LlamaIndex](https://developers.llamaindex.ai/python/framework/)**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-03,LangGraph,"The industry standard for achieving this in Python is LangGraph (by LangChain), though frameworks like Microsoft Agent Framework (for Go/C#) or Temporal (for general microservice orchestration) follow identical structural patterns.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-03,LangGraph,The most common way to do this is with **LangGraph**.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-03,LangGraph,The most common approach is **LangGraph**.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-03,OpenAI Agents SDK,"Assuming you’re building with OpenAI, the **Agents SDK** is a good fit: it handles agent handoffs and tool calls, while your application owns storage and approval decisions.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-03,OpenAI Agents SDK,"In the OpenAI Agents SDK, use a *handoff* when a specialist should take over the conversation, or expose a specialist *as a tool* when the coordinator should keep responsibility for the answer.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-04,Langfuse,**Default recommendation:** Start with **Langfuse** if you want flexibility and no lock-in.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-04,Langfuse,**My default pick is Langfuse** for a team that wants one tool for LLM observability and evaluation.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-04,Langfuse,**My default pick is [Langfuse](https://langfuse.com/docs).**,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-05,Mastra,"Mastra: Best all-in-one, agent-first framework for full-stack TypeScript applications, long-running autonomous systems, built-in memory, graph-based workflows, RAG, and evaluations.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-05,Vercel AI SDK,**Vercel AI SDK**: The best default for most TypeScript developers.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-05,Vercel AI SDK,"My suggestion is to start with the Vercel AI SDK, or Mastra if you want more structure.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-05,Mastra,**My default pick is [Mastra](https://mastra.ai/docs)** for a new TypeScript agent project.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-05,Mastra,**My default pick is [Mastra](https://mastra.ai/docs)** for a new TypeScript agent project.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,LC-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,LC-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,LC-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,LC-06,LangGraph,"**My default pick is LangGraph** for a production agent that has several steps, needs to resume after failures, or requires human approval.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,LC-06,LangGraph,**My default pick is LangGraph** for a production agent that needs to run across multiple steps or sessions.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-01,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-01,Mintlify,"For most developer-facing API startups, I'd pick **Mintlify**.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-01,Mintlify,**My default pick for most API startups: Mintlify**,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-01,Mintlify,**My default pick is Mintlify** for a developer-facing API startup.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-01,Mintlify,**My default pick is Mintlify** for a developer-facing API startup.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-02,Mintlify,"Mintlify: Widely used as a standard for AI and API engineering docs; features Git-based MDX, automated update drafts, design-led developer layouts, and agent-friendly text formatting like llms.txt.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-02,Mintlify,**Mintlify** is probably the most popular among AI startups.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-02,Mintlify,"If you're choosing for your own project, Mintlify is the easiest to start with, and Docusaurus or Fumadocs suit you better if you want to self-host.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-02,Mintlify,"If you’re choosing one, **Mintlify is the clearest starting point for a fast launch**, while **Fern is especially relevant when API specs, SDKs, and docs need to stay in sync**.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-02,Mintlify,"If you’re choosing one, **Mintlify is a common starting point** for hosted AI API docs; look at **Fern** when SDK generation and API specs are central to the workflow.",yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-03,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-03,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-03,,Mintlify and GitBook are the usual picks if you want it built in with little setup.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-03,,**Mintlify** is one option.,yes,no,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
+codex,2,MIN-03,Mintlify,**Mintlify** has a built-in AI Assistant that answers readers’ questions using your documentation and links to the source pages.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-04,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-04,OpenAPI,"**Publish a current OpenAPI file** at a stable URL, linked from your docs home page.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-04,OpenAPI,"If you can do only one thing first, make your **OpenAPI file complete and correct**, then add one end-to-end quickstart for your most common use case.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-05,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,1,MIN-05,Mintlify,**Mintlify** is a good hosted alternative to Docusaurus for a startup.,yes,yes,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-05,GitBook,**GitBook** is a good default if the startup wants someone else to host the docs site.,yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+aio,1,MIN-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,1,MIN-06,,,,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+claude_code,2,MIN-06,,Mintlify and GitBook are the clearest cases of platforms that do this automatically.,yes,no,"hand-reviewed 2026-10-20: two options named side by side or a list, so no single top pick"
+codex,1,MIN-06,,"If you want **both with minimal setup**, Mintlify and GitBook are the clearest defaults.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
+codex,2,MIN-06,,"For the least setup, start with **Mintlify or GitBook**.",yes,no,claude-sonnet-5-5 first pass; hand-reviewed 2026-10-20 against the quote
