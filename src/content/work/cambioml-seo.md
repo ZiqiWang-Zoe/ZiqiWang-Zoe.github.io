@@ -1,6 +1,6 @@
 ---
 title: SEO and B2B Growth at an AI Startup
-summary: At CambioML I grew backlinks 12% and weekly website reach about 15% through SEO and content work, and built a list of 100+ potential B2B partners.
+summary: "At CambioML I grew backlinks 12% and weekly website reach about 15% through SEO and content work, and helped market AnyParser on Product Hunt, where it reached #1 Product of the Day."
 metric: "~15%"
 metricLabel: weekly growth in website reach
 org: CambioML, San Jose
@@ -16,5 +16,6 @@ todo:
 ---
 
 - Improved SEO and content, raising backlinks 12% and weekly website reach about 15%.
+- Helped market AnyParser on Product Hunt, where it reached #1 Product of the Day.
 - Built a database of 100+ potential B2B partners in the Bay Area.
 - Supported recruiting of 10 software engineering interns through tech and social campaigns.
