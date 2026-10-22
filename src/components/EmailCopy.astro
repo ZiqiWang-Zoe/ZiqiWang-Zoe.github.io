@@ -1,7 +1,7 @@
 ---
 // Email shown as selectable text, with a copy button. Icons are Phosphor "regular" to match IconLink.
 import envelope from '@phosphor-icons/core/assets/regular/envelope-simple.svg?raw';
-import copy from '@phosphor-icons/core/assets/regular/copy-simple.svg?raw';
+import copy from '@phosphor-icons/core/assets/regular/copy.svg?raw';
 import check from '@phosphor-icons/core/assets/regular/check.svg?raw';
 
 interface Props {
@@ -12,27 +12,26 @@ const { email } = Astro.props;
 ---
 
 <div class="email">
-  <a class="addr" href={`mailto:${email}`} aria-label={`Email ${email}`}>
+  <a class="addr" href={`mailto:${email}`}>
     <span class="ico" aria-hidden="true" set:html={envelope} />
+    <span class="text">{email}</span>
   </a>
-  <span class="text" title={email}>{email}</span>
-  <button class="copy" type="button" data-email={email} aria-label="Copy email address">
+  <button class="copy" type="button" data-email={email} aria-label="Copy email address" title="Copy">
     <span class="ico when-idle" aria-hidden="true" set:html={copy} />
     <span class="ico when-done" aria-hidden="true" set:html={check} />
-    <span class="copy-text" aria-hidden="true">Copy</span>
   </button>
   <span class="sr-status" role="status" aria-live="polite"></span>
 </div>
 
 <script>
   document.querySelectorAll<HTMLButtonElement>('.email .copy').forEach((btn) => {
-    const label = btn.querySelector('.copy-text');
     const status = btn.parentElement?.querySelector('.sr-status');
     const text = btn.parentElement?.querySelector('.text');
     let timer: number | undefined;
     const show = (copied: boolean) => {
       btn.classList.toggle('done', copied);
-      if (label) label.textContent = copied ? 'Copied' : 'Copy';
+      btn.title = copied ? 'Copied' : 'Copy';
+      btn.setAttribute('aria-label', copied ? 'Email address copied' : 'Copy email address');
       if (status) status.textContent = copied ? 'Email address copied' : '';
     };
     btn.addEventListener('click', async () => {
@@ -60,72 +59,70 @@ const { email } = Astro.props;
 <style>
   .email {
     display: inline-flex;
-    align-items: center;
+    align-items: stretch;
     height: 40px;
-    border-radius: 999px;
-    background: var(--fg);
-    color: var(--bg);
-    box-shadow: 0 1px 2px rgb(21 26 43 / 0.04);
     max-width: 100%;
+    border-radius: 999px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--fg);
+    box-shadow: 0 1px 2px rgb(21 26 43 / 0.04);
+    overflow: hidden;
   }
   .addr {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    padding: 0 8px 0 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 0 14px;
     color: inherit;
-    border-radius: 999px 0 0 999px;
-  }
-  .text {
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.01em;
-    user-select: all;
+    transition: background 0.2s;
+  }
+  .text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    min-width: 0;
   }
   .copy {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    height: 30px;
-    margin: 0 5px 0 10px;
-    padding: 0 11px 0 9px;
-    border: 0;
-    border-radius: 999px;
-    background: rgb(255 255 255 / 0.12);
-    color: inherit;
-    font: inherit;
-    font-size: 13px;
-    font-weight: 500;
+    display: grid;
+    place-items: center;
     flex: none;
+    width: 42px;
+    border: 0;
+    border-left: 1px solid var(--line);
+    background: none;
+    color: var(--muted);
     cursor: pointer;
-    transition: background 0.2s, transform 0.15s;
+    transition: background 0.2s, color 0.2s;
+  }
+  .addr:hover,
+  .copy:hover {
+    background: var(--surface);
   }
   .copy:hover {
-    background: rgb(255 255 255 / 0.2);
+    color: var(--fg);
   }
-  .copy:active {
-    transform: translateY(1px);
+  .copy.done {
+    color: var(--accent);
   }
-  .copy:focus-visible,
-  .addr:focus-visible {
+  .addr:focus-visible,
+  .copy:focus-visible {
     outline: 2px solid var(--accent);
-    outline-offset: 2px;
+    outline-offset: -2px;
   }
   .ico {
     display: grid;
   }
   .ico :global(svg) {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
-  .addr .ico :global(svg) {
     width: 18px;
     height: 18px;
+    fill: currentColor;
+  }
+  .copy .ico :global(svg) {
+    width: 16px;
+    height: 16px;
   }
   .when-done,
   .copy.done .when-idle {
@@ -143,6 +140,7 @@ const { email } = Astro.props;
     white-space: nowrap;
   }
   @media (prefers-reduced-motion: reduce) {
+    .addr,
     .copy {
       transition: none;
     }
