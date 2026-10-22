@@ -1,0 +1,150 @@
+---
+// Email shown as selectable text, with a copy button. Icons are Phosphor "regular" to match IconLink.
+import envelope from '@phosphor-icons/core/assets/regular/envelope-simple.svg?raw';
+import copy from '@phosphor-icons/core/assets/regular/copy-simple.svg?raw';
+import check from '@phosphor-icons/core/assets/regular/check.svg?raw';
+
+interface Props {
+  email: string;
+}
+
+const { email } = Astro.props;
+---
+
+<div class="email">
+  <a class="addr" href={`mailto:${email}`} aria-label={`Email ${email}`}>
+    <span class="ico" aria-hidden="true" set:html={envelope} />
+  </a>
+  <span class="text" title={email}>{email}</span>
+  <button class="copy" type="button" data-email={email} aria-label="Copy email address">
+    <span class="ico when-idle" aria-hidden="true" set:html={copy} />
+    <span class="ico when-done" aria-hidden="true" set:html={check} />
+    <span class="copy-text" aria-hidden="true">Copy</span>
+  </button>
+  <span class="sr-status" role="status" aria-live="polite"></span>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.email .copy').forEach((btn) => {
+    const label = btn.querySelector('.copy-text');
+    const status = btn.parentElement?.querySelector('.sr-status');
+    const text = btn.parentElement?.querySelector('.text');
+    let timer: number | undefined;
+    const show = (copied: boolean) => {
+      btn.classList.toggle('done', copied);
+      if (label) label.textContent = copied ? 'Copied' : 'Copy';
+      if (status) status.textContent = copied ? 'Email address copied' : '';
+    };
+    btn.addEventListener('click', async () => {
+      const email = btn.dataset.email ?? '';
+      let copied = false;
+      try {
+        await navigator.clipboard.writeText(email);
+        copied = true;
+      } catch {
+        // Older browsers: select the address and use the legacy copy command.
+        if (text) window.getSelection()?.selectAllChildren(text);
+        copied = document.execCommand('copy');
+      }
+      if (!copied) {
+        if (status) status.textContent = 'Address selected. Press Command or Control C to copy.';
+        return;
+      }
+      clearTimeout(timer);
+      show(true);
+      timer = window.setTimeout(() => show(false), 1600);
+    });
+  });
+</script>
+
+<style>
+  .email {
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 999px;
+    background: var(--fg);
+    color: var(--bg);
+    box-shadow: 0 1px 2px rgb(21 26 43 / 0.04);
+    max-width: 100%;
+  }
+  .addr {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: 0 8px 0 14px;
+    color: inherit;
+    border-radius: 999px 0 0 999px;
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    user-select: all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+  .copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 30px;
+    margin: 0 5px 0 10px;
+    padding: 0 11px 0 9px;
+    border: 0;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.12);
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    flex: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .copy:hover {
+    background: rgb(255 255 255 / 0.2);
+  }
+  .copy:active {
+    transform: translateY(1px);
+  }
+  .copy:focus-visible,
+  .addr:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .ico {
+    display: grid;
+  }
+  .ico :global(svg) {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+  .addr .ico :global(svg) {
+    width: 18px;
+    height: 18px;
+  }
+  .when-done,
+  .copy.done .when-idle {
+    display: none;
+  }
+  .copy.done .when-done {
+    display: grid;
+  }
+  .sr-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .copy {
+      transition: none;
+    }
+  }
+</style>
