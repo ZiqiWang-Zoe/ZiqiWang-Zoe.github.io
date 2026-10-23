@@ -1,0 +1,25 @@
+# Ziqi Wang
+
+> Ziqi (Zoe) Wang is a technical marketer in San Jose, California. She is a Technical Marketing Intern at Futurewei Technologies, holds an M.S. in Digital Social Media from the University of Southern California (2026) and a B.S. in Advertising from the University of Illinois Urbana-Champaign (2024), and is a co-first author of L-MARS (ICML 2026 AI4Law workshop).
+
+Not to be confused with the Chinese actor Wang Ziqi, or with researchers named Ziqi Wang at EPFL or Yale Law School.
+
+## Profile
+- [Home](https://ziqiwang-zoe.github.io/): summary, experience, work and contact
+- [Resume (PDF)](https://ziqiwang-zoe.github.io/Ziqi-Resume.pdf)
+- [LinkedIn](https://linkedin.com/in/ziqiwang-zoe)
+- [GitHub](https://github.com/ZiqiWang-Zoe)
+- [Google Scholar](https://scholar.google.com/citations?user=k0ZmsF4AAAAJ&hl=en)
+
+## Work
+- [IC News Daily](https://ziqiwang-zoe.github.io/work/daily-news-push/): the daily market-intelligence newsletter she built for Futurewei's IC lab
+- [AI search citation study](https://ziqiwang-zoe.github.io/work/aeo-teardown/): which sources AI search engines cite when buyers ask about five AI companies
+- [AI Attention Tracker](https://ziqiwang-zoe.github.io/work/ai-attention-tracker/): a daily dashboard of AI topic trends
+- [L-MARS](https://ziqiwang-zoe.github.io/work/l-mars/): a legal AI system that checks each claim against its sources
+- [SEO and B2B growth at CambioML](https://ziqiwang-zoe.github.io/work/cambioml-seo/)
+- [Short-form video and paid social at Echobend](https://ziqiwang-zoe.github.io/work/echobend-social/)
+- [Acure retail campaign](https://ziqiwang-zoe.github.io/work/acure-campaign/)
+- [CASPA event communications](https://ziqiwang-zoe.github.io/work/caspa/)
+
+## Writing
+- [Silicon to Serving](https://silicontoserving.beehiiv.com/): her weekly newsletter of AI infrastructure launch teardowns for marketers

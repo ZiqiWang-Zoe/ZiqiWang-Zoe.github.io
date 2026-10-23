@@ -1,6 +1,8 @@
 // Single source for identity details used across pages and structured data.
 export const site = {
   name: 'Ziqi Wang',
+  // Other forms of her name, for structured data. Helps search engines tell her apart from other people named Ziqi Wang.
+  alternateNames: ['Zoe Wang', 'Ziqi (Zoe) Wang'],
   // TODO(Ziqi): confirm which address recruiters should use. Profile switched to gmail on 2026-08-10.
   email: 'zoewangzq2001@gmail.com',
   linkedin: 'https://linkedin.com/in/ziqiwang-zoe',

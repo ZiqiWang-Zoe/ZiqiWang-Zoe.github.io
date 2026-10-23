@@ -10,9 +10,11 @@ interface Props {
   description?: string;
   narrow?: boolean;
   noindex?: boolean;
+  // Set on case-study pages so search engines tie the page to Ziqi as its author.
+  article?: boolean;
 }
 
-const { title, description = site.description, narrow = false, noindex = false } = Astro.props;
+const { title, description = site.description, narrow = false, noindex = false, article = false } = Astro.props;
 const pageTitle = title ? `${title} | ${site.name}` : `${site.name} | Technical Marketing`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const photo = new URL((await getImage({ src: headshot, width: 600, height: 600, format: 'jpg' })).src, Astro.site).href;
@@ -21,7 +23,10 @@ const ogImage = new URL('/og.png', Astro.site).href;
 const person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': new URL('/#person', Astro.site).href,
   name: site.name,
+  alternateName: site.alternateNames,
+  description: site.description,
   url: Astro.site?.href,
   image: photo,
   email: `mailto:${site.email}`,
@@ -42,7 +47,18 @@ const person = {
     'SEO',
     'Claude Code',
   ],
-  sameAs: [site.linkedin, site.github, site.scholar].filter(Boolean),
+  sameAs: [site.linkedin, site.github, site.scholar, site.arxiv, 'https://silicontoserving.beehiiv.com/'].filter(Boolean),
+};
+
+const articleLd = article && {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url: canonical,
+  mainEntityOfPage: canonical,
+  image: ogImage,
+  author: { '@type': 'Person', '@id': person['@id'], name: site.name, url: Astro.site?.href },
 };
 ---
 
@@ -70,6 +86,7 @@ const person = {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={ogImage} />
     {!noindex && <script type="application/ld+json" set:html={JSON.stringify(person)} />}
+    {!noindex && articleLd && <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />}
   </head>
   <body>
     <main>

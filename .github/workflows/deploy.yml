@@ -50,3 +50,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Tell Bing and other IndexNow engines that pages changed, so they recrawl right away.
+      # The key file lives at /3cd5ebd390f90d4b6b751c61f8d213b0.txt. A failed ping never fails the deploy.
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: |
+          urls=$(curl -fsS https://ziqiwang-zoe.github.io/sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>//' | jq -R . | jq -s -c .)
+          curl -sS -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"ziqiwang-zoe.github.io\",\"key\":\"3cd5ebd390f90d4b6b751c61f8d213b0\",\"keyLocation\":\"https://ziqiwang-zoe.github.io/3cd5ebd390f90d4b6b751c61f8d213b0.txt\",\"urlList\":$urls}" \
+            -w '\nIndexNow HTTP %{http_code}\n'
