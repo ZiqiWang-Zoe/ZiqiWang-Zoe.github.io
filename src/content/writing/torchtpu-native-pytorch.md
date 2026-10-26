@@ -5,7 +5,7 @@ date: 2026-10-26
 # draft: shown only in local dev (npm run dev). Change to published to put it on the live site.
 status: published
 # The same post on beehiiv, once it is up. Leave empty until then.
-beehiiv: ""
+beehiiv: "https://silicontoserving.beehiiv.com/p/google-s-torchtpu-launch-the-claim-the-proof-and-what-buyers-should-check"
 ---
 **TL;DR**
 
