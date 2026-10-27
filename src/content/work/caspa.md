@@ -20,8 +20,8 @@ gallery:
     caption: Welcoming guests at registration.
     wide: true
   - src: ../../assets/work/caspa/speakers-media-wall.webp
-    alt: Ziqi with speakers and members of the marketing team in front of the CEO Summit media wall
-    caption: With speakers and the marketing team at the media wall.
+    alt: Ziqi with David Lam, founder of Lam Research, and members of the marketing team in front of the CEO Summit backdrop in the interview room
+    caption: With David Lam, founder of Lam Research, and the marketing team in the interview room.
   - src: ../../assets/work/caspa/interview-studio.webp
     alt: Ziqi with interview guests and the marketing team in the summit's interview room
     caption: With interview guests in the summit's media room.
