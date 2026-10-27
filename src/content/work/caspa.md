@@ -15,22 +15,22 @@ cover: ../../assets/work/caspa/fireside-chat.webp
 coverAlt: Intel CEO Lip-Bu Tan in a fireside chat on stage at CASPA's CEO Summit, his name and title on the screen behind him
 coverFit: photo
 gallery:
-  - src: ../../assets/work/caspa/registration-desk.webp
-    alt: Ziqi and four volunteers seated at the registration desk, badges and lanyards laid out in front of them
-    caption: Welcoming guests at registration.
-    wide: true
   - src: ../../assets/work/caspa/speakers-media-wall.webp
     alt: Ziqi with David Lam, founder of Lam Research, and members of the marketing team in front of the CEO Summit backdrop in the interview room
     caption: With David Lam, founder of Lam Research, and the marketing team in the interview room.
-  - src: ../../assets/work/caspa/interview-studio.webp
-    alt: Ziqi with interview guests and the marketing team in the summit's interview room
-    caption: With interview guests in the summit's media room.
-  - src: ../../assets/work/caspa/nyse-wired-interview.webp
-    alt: Two guests and an interviewer at a table in front of the CEO Summit backdrop with NYSE Wired, theCUBE and CASPA logos
-    caption: NYSE Wired and theCUBE interviews took the summit to a wider audience.
+    wide: true
+  - src: ../../assets/work/caspa/registration-desk.webp
+    alt: Ziqi and four volunteers seated at the registration desk, badges and lanyards laid out in front of them
+    caption: Welcoming guests at registration.
   - src: ../../assets/work/caspa/award-stage.webp
     alt: Three men on stage holding glass awards in front of the CEO Summit screen, which reads Santa Clara, CA
     caption: An award presentation at the dinner banquet.
+  - src: ../../assets/work/caspa/nyse-wired-interview.webp
+    alt: Two guests and an interviewer at a table in front of the CEO Summit backdrop with NYSE Wired, theCUBE and CASPA logos
+    caption: NYSE Wired and theCUBE interviews took the summit to a wider audience.
+  - src: ../../assets/work/caspa/interview-studio.webp
+    alt: Ziqi with interview guests and the marketing team in the summit's interview room
+    caption: With interview guests in the summit's media room.
   - src: ../../assets/work/caspa/volunteer-team.webp
     alt: Ziqi in a red CASPA volunteer polo with a radio, standing with the volunteer and photo team beside a CASPA banner
     caption: On shift with the volunteer team.
