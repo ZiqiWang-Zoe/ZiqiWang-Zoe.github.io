@@ -58,7 +58,7 @@ for (const g of d.gallery) {
           {runs.map((run) =>
             run.wide ? (
               <figure class="wide">
-                <Image src={run.items[0].src} alt={run.items[0].alt} widths={[640, 960, 1280, 1920]} sizes="(max-width: 700px) 100vw, 960px" />
+                <Image src={run.items[0].src} alt={run.items[0].alt} widths={[640, 960, 1280, 1920]} sizes="(max-width: 700px) 100vw, 960px" quality={90} />
                 <figcaption>{run.items[0].caption}</figcaption>
               </figure>
             ) : (

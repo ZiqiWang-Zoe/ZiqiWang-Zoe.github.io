@@ -15,7 +15,7 @@ cover: ../../assets/work/caspa/fireside-chat.webp
 coverAlt: Intel CEO Lip-Bu Tan in a fireside chat on stage at CASPA's CEO Summit, his name and title on the screen behind him
 coverFit: photo
 gallery:
-  - src: ../../assets/work/caspa/speakers-media-wall.webp
+  - src: ../../assets/work/caspa/speakers-media-wall.jpg
     alt: Ziqi with David Lam, founder of Lam Research, and members of the marketing team in front of the CEO Summit backdrop in the interview room
     caption: With David Lam, founder of Lam Research, and the marketing team in the interview room.
     wide: true
