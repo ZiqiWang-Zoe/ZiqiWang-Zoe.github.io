@@ -6,7 +6,7 @@ metricLabel: annual conference, the largest CEO gathering in CASPA's history
 org: CASPA, Santa Clara
 period: October 23-24, 2026
 role: Marketing, content capture and guest welcome
-order: 3
+order: 0
 featured: true
 wide: true
 tint: ink
@@ -43,22 +43,22 @@ gallery:
     wide: true
 ---
 
-CASPA's 35th Annual Conference and Dinner Banquet, The CEO Summit, ran October 23 to 24, 2026 in Santa Clara. It was the largest CEO gathering in CASPA's 35-year history, with talks on AI compute, storage, optics and chip design.
+CASPA's 35th Annual Conference and Dinner Banquet, The CEO Summit, brought semiconductor and AI leaders to Santa Clara on October 23 and 24, 2026. It was the largest CEO gathering in the association's 35-year history, with sessions on AI compute, storage, optics and chip design.
 
-I've volunteered with CASPA's marketing and proceedings teams since earlier in 2026, when I also edited the published video from the CASPA × IEEE Summer Symposium, "Paving the AI Super-highway: Where Power Meets Intelligence" ([watch on LinkedIn](https://www.linkedin.com/posts/caspa-office-595263a_caspa-ieee-aiinfrastructure-ugcPost-7503592070998073345--NfS/)).
+## My role
 
-## Before the summit
+I worked on the summit as part of CASPA's marketing team. In the weeks leading up to it I supported event marketing. On site I captured photos and video of keynotes, panels and guests for CASPA's marketing, and welcomed attendees at registration.
 
-I spent weeks working on marketing for the event as part of CASPA's marketing team.
+I joined the team earlier in 2026 and edited the published video from the CASPA × IEEE Summer Symposium, "Paving the AI Super-highway: Where Power Meets Intelligence" ([watch on LinkedIn](https://www.linkedin.com/posts/caspa-office-595263a_caspa-ieee-aiinfrastructure-ugcPost-7503592070998073345--NfS/)).
 
-## During the summit
+## Reach
 
-On site my main job was capturing photos and video of the sessions, speakers and guests for CASPA's marketing. I also welcomed guests at registration and helped wherever the team needed me. The summit also reached a much wider audience through NYSE Wired interviews and ABC broadcast coverage.
+The summit's audience extended well beyond the ballroom, through NYSE Wired interviews recorded on site and ABC broadcast coverage.
 
 ## On stage
 
-Capturing content put me in the room for Intel CEO Lip-Bu Tan's fireside chat with CASPA President Jimmy Cheng at the dinner banquet. Over the two days I also met David Lam, founder of Lam Research, Hong Hou of Semtech, and Professor Chenming Hu of UC Berkeley, known as the father of the 3D transistor.
+The dinner banquet featured Intel CEO Lip-Bu Tan in a fireside chat with CASPA President Jimmy Cheng. Over the two days I also met David Lam, founder of Lam Research; Hong Hou of Semtech; and Professor Chenming Hu of UC Berkeley, known as the father of the 3D transistor.
 
-## What I took away
+## Why it matters for my work
 
-I came into semiconductors from a marketing background, and I learn something new at every event like this.
+I write about semiconductors every week in market reports at Futurewei and in my newsletter. Hearing the people who run the industry talk through AI compute, storage and optics in person adds real context to that writing.
