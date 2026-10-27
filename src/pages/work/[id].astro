@@ -16,6 +16,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
+// Group the gallery into runs, in order: consecutive regular photos share a two-column block, wide photos stand alone.
+const runs: { wide: boolean; items: typeof d.gallery }[] = [];
+for (const g of d.gallery) {
+  const last = runs[runs.length - 1];
+  if (!g.wide && last && !last.wide) last.items.push(g);
+  else runs.push({ wide: g.wide, items: [g] });
+}
 ---
 
 <Base title={d.title} description={d.summary} narrow article>
@@ -35,8 +42,8 @@ const d = entry.data;
 
     {
       d.cover && (
-        <figure class:list={['frame', d.coverFit === 'cover' && 'landscape']}>
-          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 960, 1280, 1600, 1920]} sizes={d.coverFit === 'cover' ? '(max-width: 640px) 100vw, 912px' : '(max-width: 640px) 100vw, 592px'} loading="eager" />
+        <figure class:list={['frame', d.coverFit === 'cover' && 'landscape', d.coverFit === 'photo' && 'photo']}>
+          <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[640, 960, 1280, 1600, 1920]} sizes={d.coverFit === 'contain' ? '(max-width: 640px) 100vw, 592px' : '(max-width: 640px) 100vw, 960px'} loading="eager" />
         </figure>
       )
     }
@@ -44,6 +51,30 @@ const d = entry.data;
     <div class="body">
       <Content />
     </div>
+
+    {
+      d.gallery.length > 0 && (
+        <section class="gallery" aria-label="Photos">
+          {runs.map((run) =>
+            run.wide ? (
+              <figure class="wide">
+                <Image src={run.items[0].src} alt={run.items[0].alt} widths={[640, 960, 1280, 1920]} sizes="(max-width: 700px) 100vw, 960px" />
+                <figcaption>{run.items[0].caption}</figcaption>
+              </figure>
+            ) : (
+              <div class="cols">
+                {run.items.map((g) => (
+                  <figure>
+                    <Image src={g.src} alt={g.alt} widths={[480, 720, 960]} sizes="(max-width: 700px) 100vw, 472px" />
+                    <figcaption>{g.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            )
+          )}
+        </section>
+      )
+    }
 
     {SHOW_PLACEHOLDERS && d.todo.length > 0 && <Placeholder need={`Still needed: ${d.todo.join('; ')}`} />}
   </article>
@@ -117,6 +148,48 @@ const d = entry.data;
     background: #fff;
     padding: 16px;
   }
+  /* Event photo: edge to edge, no padding or shadow. */
+  .photo {
+    max-height: none;
+    padding: 0;
+    background: none;
+  }
+  .photo img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: none;
+  }
+  .gallery {
+    width: min(960px, calc(100vw - 48px));
+    margin: 56px 0 0 50%;
+    transform: translateX(-50%);
+  }
+  .cols {
+    columns: 2;
+    column-gap: 16px;
+  }
+  .gallery figure {
+    margin: 0 0 28px;
+    break-inside: avoid;
+  }
+  .gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .gallery .wide + .cols,
+  .gallery .cols + .wide {
+    margin-top: 20px;
+  }
+  .gallery figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--muted);
+    max-width: 60ch;
+  }
   .body {
     margin-top: 48px;
     max-width: 680px;
@@ -185,6 +258,21 @@ const d = entry.data;
     .landscape img {
       width: 100%;
       padding: 8px;
+    }
+    .photo {
+      padding: 0;
+    }
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .gallery {
+      width: calc(100vw - 40px);
+    }
+  }
+  @media (max-width: 700px) {
+    .cols {
+      columns: 1;
     }
   }
 </style>

@@ -22,7 +22,12 @@ const work = defineCollection({
       cover: image().optional(),
       coverAlt: z.string().optional(),
       // contain: tall screenshot cropped at the bottom. cover: landscape image shown whole and centered.
-      coverFit: z.enum(['contain', 'cover']).default('contain'),
+      // photo: an event photo shown edge to edge, with no frame around it.
+      coverFit: z.enum(['contain', 'cover', 'photo']).default('contain'),
+      // Event photos shown after the write-up. wide: the photo spans the full gallery width.
+      gallery: z
+        .array(z.object({ src: image(), alt: z.string(), caption: z.string(), wide: z.boolean().default(false) }))
+        .default([]),
       // Card styling on the home grid.
       tint: z.enum(['gray', 'blue', 'ink']).default('gray'),
       wide: z.boolean().default(false),
