@@ -1,11 +1,11 @@
 ---
 title: Behind the Scenes at CASPA's CEO Summit 2026
-summary: Weeks of marketing, then registration and proceedings on site, at the summit where Intel CEO Lip-Bu Tan gave the dinner fireside chat.
+summary: Weeks of marketing, then capturing photos and video and welcoming guests on site, at the summit where Intel CEO Lip-Bu Tan gave the dinner fireside chat.
 metric: 35th
 metricLabel: annual conference, the largest CEO gathering in CASPA's history
 org: CASPA, Santa Clara
 period: October 23-24, 2026
-role: Marketing and proceedings volunteer
+role: Marketing, content capture and guest welcome
 order: 3
 featured: true
 wide: true
@@ -17,7 +17,7 @@ coverFit: photo
 gallery:
   - src: ../../assets/work/caspa/registration-desk.webp
     alt: Ziqi and four volunteers seated at the registration desk, badges and lanyards laid out in front of them
-    caption: Running the registration desk.
+    caption: Welcoming guests at registration.
     wide: true
   - src: ../../assets/work/caspa/speakers-media-wall.webp
     alt: Ziqi with speakers and members of the marketing team in front of the CEO Summit media wall
@@ -53,11 +53,11 @@ I spent weeks working on marketing for the event as part of CASPA's marketing te
 
 ## During the summit
 
-On site I covered registration, supported the conference proceedings and helped wherever the team needed me. The summit also reached a much wider audience through NYSE Wired interviews and ABC broadcast coverage.
+On site my main job was capturing photos and video of the sessions, speakers and guests for CASPA's marketing. I also welcomed guests at registration and helped wherever the team needed me. The summit also reached a much wider audience through NYSE Wired interviews and ABC broadcast coverage.
 
 ## On stage
 
-Working the event put me in the room for Intel CEO Lip-Bu Tan's fireside chat with CASPA President Jimmy Cheng at the dinner banquet, and I took photos of it. Over the two days I also met David Lam, founder of Lam Research, Hong Hou of Semtech, and Professor Chenming Hu of UC Berkeley, known as the father of the 3D transistor.
+Capturing content put me in the room for Intel CEO Lip-Bu Tan's fireside chat with CASPA President Jimmy Cheng at the dinner banquet. Over the two days I also met David Lam, founder of Lam Research, Hong Hou of Semtech, and Professor Chenming Hu of UC Berkeley, known as the father of the 3D transistor.
 
 ## What I took away
 
